@@ -188,6 +188,10 @@ var TRANS = map[string]map[string]string{
 		"en-US": "I'm fine with just the bot!",
 	},
 	MESSAGE_TEXT_YOUR_AD_COULD_BE_HERE: map[string]string{
+		"ru-RU": "Здесь можно <a href>разместить рекламу</a>",
+		"en-US": "You can <a href>advertise here</a>",
+	},
+	MESSAGE_TEXT_YOUR_ABOUT_ADS: map[string]string{
 		"ru-RU": `Здесь может быть ваша реклама если напишите нам на ads@debtstracker.io.
 А пока что я порекламирую наше приложения для смартфонов.
 
@@ -376,9 +380,17 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "<b>%v</b> - долг вам %v",
 		"en-US": "<b>%v</b> - owes you %v",
 	},
-	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER:map[string]string{
+	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER: map[string]string{
 		"ru-RU": "Вам должны %v",
 		"en-US": "Owes to you %v",
+	},
+	MESSAGE_TEXT_ON_RETURN_USER_DOES_NOT_OWE_ANYTHING_TO_COUNTERPARTY_ANYMORE: map[string]string{
+		"ru-RU": "Поздравляем! У вас не осталось долгов перед <b>%v</b>.",
+		"en-US": "Congratulations! You don't owe anything more to <b>%v</b>.",
+	},
+	MESSAGE_TEXT_ON_RETURN_COUNTERPARTY_DOES_NOT_OWE_ANYTHING_TO_USER_ANYMORE: map[string]string{
+		"ru-RU": "У <b>%v</b> больше не осталось долгов перед вами.",
+		"en-US": "<b>%v</b> does not owe anything more to you.",
 	},
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_BY_USER:map[string]string{
 		"ru-RU": "Вы должны %v",
@@ -445,12 +457,12 @@ Do you want to get an invite when it gets released?
 		"en-US": "You owe to <b>%v</b> <b>%v</b>. Has this debt been returned in full?",
 	},
 	BUTTON_TEXT_YOU_OWE_AMOUNT_TO_SOMEONE: map[string]string{
-		"ru-RU": "%v (вы должны): %v",
-		"en-US": "%v (you owe): %v",
+		"ru-RU": "%v | вы должны: %v",
+		"en-US": "%v | you owe: %v",
 	},
 	BUTTON_TEXT_SOMEONE_OWES_TO_YOU_AMOUNT: map[string]string{
-		"ru-RU": "%v (долг вам): %v",
-		"en-US": "%v (owes to you): %v",
+		"ru-RU": "%v | долг вам: %v",
+		"en-US": "%v | owes to you: %v",
 	},
 	BUTTON_TEXT_DEBT_RETURNED_FULLY: map[string]string{
 		"ru-RU": "Да, целиком",
@@ -532,9 +544,9 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Баланс",
 		"en-US": "%Balance",
 	},
-	INLINE_BUTTON_MORE_TRANSFER_HISTORY_ROWS: map[string]string{
-		"ru-RU": "Показать ещё",
-		"en-US": "Show more",
+	INLINE_BUTTON_SHOW_FULL_HISTORY: map[string]string{
+		"ru-RU": "Показать всю историю",
+		"en-US": "Show full history",
 	},
 	MESSAGE_TEXT_INCORRECT_VALUE_NOT_A_NUMBER: map[string]string{
 		"ru-RU": "Это не цифра",
@@ -545,8 +557,8 @@ How do you want to pass the invite code?`,
 		"en-US": "The number should be positive (<i>greater than 0</i>)",
 	},
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: map[string]string{
-		"ru-RU": "Сколько %v было возвращено?",
-		"en-US": "How much %v have been returned?",
+		"ru-RU": "Сколько было возвращено?",
+		"en-US": "How much have been returned?",
 	},
 	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
 		"ru-RU": "%s ⇒ %s ⇒ Вам",
