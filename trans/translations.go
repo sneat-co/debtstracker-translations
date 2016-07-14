@@ -253,6 +253,14 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Вернуть до: %v",
 		"en-US": "Return till: %v",
 	},
+	MESSAGE_TEXT_NOTE: map[string]string{
+		"ru-RU": "Заметка",
+		"en-US": "Note",
+	},
+	MESSAGE_TEXT_COMMENT: map[string]string{
+		"ru-RU": "Комментарий",
+		"en-US": "Comment",
+	},
 	MESSAGE_TEXT_SETTINGS: map[string]string{
 		"ru-RU": "Что будем настраивать?",
 		"en-US": "What do you want to adjust?",
@@ -542,7 +550,7 @@ How do you want to pass the invite code?`,
 	},
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
-		"en-US": "%Balance",
+		"en-US": "Balance",
 	},
 	INLINE_BUTTON_SHOW_FULL_HISTORY: map[string]string{
 		"ru-RU": "Показать всю историю",
@@ -655,5 +663,49 @@ You invitation code is: {{.InviteCode}}`,
 	SMS_RECEIPT_YOU_GAVE: map[string]string{
 		"ru-RU": "Вы дали %v - взял %v.",
 		"en-US": "You've given %v to %v.",
+	},
+	MESSAGE_TEXT_PLEASE_CHOOSE_FROM_OPTIONS_PROVIDED: map[string]string{
+		"ru-RU": "Пожалуйста выберете из предоставленных опций.",
+		"en-US": "Please choose from provided options.",
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE_OR_COMMENT: map[string]string{
+		"ru-RU": "<b>Хотите добавить заметку или комментарий?</b>\n%v Заметки хранятся для вашего личго пользования.\n%v Комментарий виден всем кому разрешён просмотр этой транзакции.",
+		"en-US": "<b>Do you want to add a note or comment?</b>\n%v Memos are private records for yoru own reference.\n%v Comments are available to everyone who has permission to view this transaction.",
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: map[string]string{
+		"ru-RU": "Напишите заметку:",
+		"en-US": "Please write a note:",
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: map[string]string{
+		"ru-RU": "Напишите комментарий:",
+		"en-US": "Please write the comment:",
+	},
+	MESSAGE_TEXT_TRANSFER_NOTE_ADDED_ASK_FOR_COMMENT: map[string]string{
+		"ru-RU": "Заметка добавлена. Хотите написать комментарий?",
+		"en-US": "Memo have been added. Do you want to write a comment?",
+	},
+	MESSAGE_TEXT_TRANSFER_COMMENT_ADDED_ASK_FOR_NOTE: map[string]string{
+		"ru-RU": "Комментарий добавлен. Хотите написать заметку?",
+		"en-US": "Comment have been added. Do you want to write a note?",
+	},
+	COMMAND_TEXT_NO_COMMENT_OR_NOTE_FOR_TRANSFER: map[string]string{
+		"ru-RU": "Без заметок и комментариев",
+		"en-US": "Without notes or comments",
+	},
+	COMMAND_TEXT_NO_COMMENT_FOR_TRANSFER: map[string]string{
+		"ru-RU": "Без комментариев",
+		"en-US": "No comments",
+	},
+	COMMAND_TEXT_NO_NOTE_FOR_TRANSFER: map[string]string{
+		"ru-RU": "Без заметок",
+		"en-US": "Without notes",
+	},
+	COMMAND_TEXT_ADD_NOTE_TO_TRANSFER: map[string]string{
+		"ru-RU": "Добавить заметку",
+		"en-US": "Add a note (private)",
+	},
+	COMMAND_TEXT_ADD_COMMENT_TO_TRANSFER: map[string]string{
+		"ru-RU": "Добавить комментарий",
+		"en-US": "Add a comment (public)",
 	},
 }
