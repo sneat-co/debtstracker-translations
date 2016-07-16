@@ -668,6 +668,14 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "Вы дали %v - взял %v.",
 		"en-US": "You've given %v to %v.",
 	},
+	TELEGRAM_RECEIPT_YOU_GOT: map[string]string{
+		"ru-RU": "Вы получили %v от %v.",
+		"en-US": "You've got %v from %v.",
+	},
+	TELEGRAM_RECEIPT_YOU_GAVE: map[string]string{
+		"ru-RU": "Вы дали %v - взял %v.",
+		"en-US": "You've given %v to %v.",
+	},
 	MESSAGE_TEXT_PLEASE_CHOOSE_FROM_OPTIONS_PROVIDED: map[string]string{
 		"ru-RU": "Пожалуйста выберете из предоставленных опций.",
 		"en-US": "Please choose from provided options.",
