@@ -92,8 +92,8 @@ var TRANS = map[string]map[string]string{
 		"en-US": "Sunday",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TELEGRAM: map[string]string{
-		"ru-RU": "Отправить квиток через Telelgram",
-		"en-US": "Send receipt by Telegram",
+		"ru-RU": "Отправить через Telelgram",
+		"en-US": "Send by Telegram",
 	},
 	COMMAND_TEXT_MAIN_MENU_TITLE: map[string]string{
 		"ru-RU": "Главное /меню",
@@ -238,8 +238,8 @@ Do you want to get an invite when it gets released?
 		"en-US": "Who lended to you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: map[string]string{
-		"ru-RU": "Возможно стоит отправить ему/ей квитанцию подтверждения чтобы потом не было разногласий.",
-		"en-US": "Probably it's a good idea to send him/here a receipt to make sure you are on the same page.",
+		"ru-RU": "Отправить квитанцию для %v?",
+		"en-US": "Should we send a receipt to %v?",
 	},
 	MESSAGE_TEXT_TRANSFER_FROM_USER_COMPLETED: map[string]string{
 		"ru-RU": "%v взял(а) в долг %v.",
@@ -487,6 +487,10 @@ Do you want to get an invite when it gets released?
 		"en-US": `At the moment access to our bot is limited but you can invite your friend.
 
 How do you want to pass the invite code?`,
+	},
+	MESSAGE_TEXT_USER_BLOCKED_TRANSFER_NOTIFICATIONS_BY: map[string]string{
+		"ru-RU": "%v заблокировал получение оповешений о транзакиях через: %v.",
+		"en-US": "%v blocked notifications about transactions by: %v",
 	},
 	COMMAND_TEXT_ACCEPT_INVITE: map[string]string{
 		"ru-RU": "Принять приглашение",
