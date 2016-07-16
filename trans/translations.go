@@ -250,8 +250,8 @@ Do you want to get an invite when it gets released?
 		"en-US": "%v lended to you %v.",
 	},
 	MESSAGE_TEXT_DUE_ON: map[string]string{
-		"ru-RU": "Вернуть до: %v",
-		"en-US": "Return till: %v",
+		"ru-RU": "<b>Вернуть до</b>: %v",
+		"en-US": "<b>Return till</b>: %v",
 	},
 	MESSAGE_TEXT_NOTE: map[string]string{
 		"ru-RU": "Заметка",
@@ -532,6 +532,10 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Введите email вашего друга на который мы отправим код приглашения.",
 		"en-US": "Please enter emaill address of your friend where we should send an invite code.",
 	},
+	MESSAGE_TEXT_INVITE_ASK_EMAIL_FOR_RECEIPT: map[string]string{
+		"ru-RU": "Введите email вашего друга (%v) на который мы отправим квитанцию подтверждения.",
+		"en-US": "Please enter emaill address of your friend (%v) where we should send the receipt.",
+	},
 	MESSAGE_TEXT_INVITE_BY_SMS: map[string]string{
 		"ru-RU": "Введите номер телефона вашего друга на который мы отправим код приглашения.",
 		"en-US": "Please share a contact or enter phone number of your friend where we should send an invite code.",
@@ -673,16 +677,16 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "View receipt online",
 	},
 	SMS_RECEIPT_YOU_GOT: map[string]string{
-		"ru-RU": "Вы получили %v от %v.",
-		"en-US": "You've got %v from %v.",
+		"ru-RU": "Вы получили %v от %v. Подробнее тут: %v",
+		"en-US": "You've got %v from %v. Details here: %v",
 	},
 	SMS_RECEIPT_YOU_GAVE: map[string]string{
-		"ru-RU": "Вы дали %v - взял %v.",
-		"en-US": "You've given %v to %v.",
+		"ru-RU": "Вы дали %v - взял %v. Подробнее тут: %v",
+		"en-US": "You've given %v to %v. Details here: %v",
 	},
 	TELEGRAM_RECEIPT_YOU_GOT: map[string]string{
-		"ru-RU": "Вы получили %v от %v.",
-		"en-US": "You've got %v from %v.",
+		"ru-RU": "Вы получили <b>%v</b> от <b>%v</b>.",
+		"en-US": "You've got some <b>%v</b> from <b>%v</b>.",
 	},
 	TELEGRAM_RECEIPT_YOU_GAVE: map[string]string{
 		"ru-RU": "Вы дали %v - взял %v.",
