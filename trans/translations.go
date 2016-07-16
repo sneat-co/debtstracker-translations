@@ -480,6 +480,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Нет, только часть",
 		"en-US": "No, just partially",
 	},
+	MESSAGE_TEXT_ATTEMPT_TO_USE_OWN_INVITE: map[string]string{
+		"ru-RU": "Хорошая попытка пригласить самого себя ;)",
+		"en-US": "You should not use your own invite ;)",
+	},
 	MESSAGE_TEXT_ABOUT_INVITES: map[string]string{
 		"ru-RU": `На данный момент доступ к нашему боту ограничен, но вы можете пригласить друга.
 
@@ -631,6 +635,14 @@ You invitation code is: {{.InviteCode}}`,
 	EMAIL_INVITE_HTML: map[string]string{
 		"ru-RU": "",
 		"en-US": "",
+	},
+	EMAIL_RECEIPT_SUBJ: map[string]string{
+		"ru-RU": "Запись о долге - {{.FromName}}",
+		"en-US": "Debt record - {{.FromName}}",
+	},
+	EMAIL_RECEIPT_BODY_TEXT: map[string]string{
+		"ru-RU": "{{.FromName}} создал запись о долге: {{.ReceiptURL}}",
+		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
 	},
 	INLINE_RECEIPT_TITLE: map[string]string{
 		"ru-RU": "Квитанция: %v",
