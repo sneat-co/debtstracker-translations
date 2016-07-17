@@ -95,6 +95,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 		"en-US": "Send by Telegram",
 	},
+	COMMAND_TEXT_CANCEL_SENDING_RECEIPT_BY_TELEGRAM: map[string]string{
+		"ru-RU": "Отменить отправку через Telelgram",
+		"en-US": "Cancel sending receipt by Telegram",
+	},
 	COMMAND_TEXT_MAIN_MENU_TITLE: map[string]string{
 		"ru-RU": "Главное /меню",
 		"en-US": "Main /menu",
@@ -179,6 +183,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Имя для нового контакта:\n<i>(отправьте '.' для отмены)</i>",
 		"en-US": "Please enter a name for the new contact:\n<i>(send '.' to cancel)</i>",
 	},
+	MESSAGE_TEXT_TRANSFER_IS_CREATING: map[string]string{
+		"ru-RU": "Создаю запись...",
+		"en-US": "Creating transfer...",
+	},
 	COMMAND_TEXT_SUBSCRIBE_TO_APP: map[string]string{
 		"ru-RU": "Хочу приложение!",
 		"en-US": "I want the app!",
@@ -240,6 +248,10 @@ Do you want to get an invite when it gets released?
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: map[string]string{
 		"ru-RU": "Отправить квитанцию для %v?",
 		"en-US": "Should we send a receipt to %v?",
+	},
+	MESSAGE_TEXT_RECEIPT_IS_SENDING_BY_TELEGRAM: map[string]string{
+		"ru-RU": "Отправляем для %v извещение через Telegram...",
+		"en-US": "We are sending receipt to %v by Telegram...",
 	},
 	MESSAGE_TEXT_TRANSFER_FROM_USER_COMPLETED: map[string]string{
 		"ru-RU": "%v взял(а) в долг %v.",
