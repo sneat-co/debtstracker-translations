@@ -484,6 +484,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Хорошая попытка пригласить самого себя ;)",
 		"en-US": "You should not use your own invite ;)",
 	},
+	BUTTON_TEXT_SEE_RECEIPT_DETAILS:  map[string]string{
+		"ru-RU": "Показать детали",
+		"en-US": "Show receipt details ",
+	},
 	MESSAGE_TEXT_ABOUT_INVITES: map[string]string{
 		"ru-RU": `На данный момент доступ к нашему боту ограничен, но вы можете пригласить друга.
 
@@ -684,13 +688,9 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "Вы дали %v - взял %v. Подробнее тут: %v",
 		"en-US": "You've given %v to %v. Details here: %v",
 	},
-	TELEGRAM_RECEIPT_YOU_GOT: map[string]string{
-		"ru-RU": "Вы получили <b>%v</b> от <b>%v</b>.",
-		"en-US": "You've got some <b>%v</b> from <b>%v</b>.",
-	},
-	TELEGRAM_RECEIPT_YOU_GAVE: map[string]string{
-		"ru-RU": "Вы дали %v - взял %v.",
-		"en-US": "You've given %v to %v.",
+	TELEGRAM_RECEIPT: map[string]string{
+		"ru-RU": "{.FromName} создал запись о долге ({.TransferCurrency})",
+		"en-US": "{.FromName} created a debtrecord ({.TransferCurrency})",
 	},
 	MESSAGE_TEXT_PLEASE_CHOOSE_FROM_OPTIONS_PROVIDED: map[string]string{
 		"ru-RU": "Пожалуйста выберете из предоставленных опций.",
