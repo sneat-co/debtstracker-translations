@@ -689,8 +689,8 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "You've given %v to %v. Details here: %v",
 	},
 	TELEGRAM_RECEIPT: map[string]string{
-		"ru-RU": "{.FromName} создал запись о долге ({.TransferCurrency})",
-		"en-US": "{.FromName} created a debtrecord ({.TransferCurrency})",
+		"ru-RU": "{{.FromName}} создал запись о долге ({{.TransferCurrency}})",
+		"en-US": "{{.FromName}} created a debtrecord ({{.TransferCurrency}})",
 	},
 	MESSAGE_TEXT_PLEASE_CHOOSE_FROM_OPTIONS_PROVIDED: map[string]string{
 		"ru-RU": "Пожалуйста выберете из предоставленных опций.",
