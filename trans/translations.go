@@ -673,8 +673,8 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "Click here to send the receipt",
 	},
 	INLINE_RECEIPT_MESSAGE: map[string]string{
-		"ru-RU": "%v создал для вас запись о долге",
-		"en-US": "%v recorded a debt associated with you",
+		"ru-RU": "%v создал(а) запись о долге.\n\n<i>Выберите язык чтобы посмотреть подробности.</i>",
+		"en-US": "%v recorded a debt associated with you.\n\n<i>Choose language to see details.</i>",
 	},
 	INLINE_INVITE_TITLE: map[string]string{
 		"ru-RU": "Приглашение в %v",
