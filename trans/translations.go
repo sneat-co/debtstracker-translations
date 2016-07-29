@@ -608,6 +608,14 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Квитанция просмотрена",
 		"en-US": "Receipt viewed",
 	},
+	MESSAGE_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: map[string]string{
+		"ru-RU": "Вы можете посмотреть свой номер телефона в ожидаемоем нами формате.",
+		"en-US": "You can view your own phone number in the format we are expecting.",
+	},
+	COMMAND_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: map[string]string{
+		"ru-RU": "Посмотреть мой номер в ожидаемоем формате",
+		"en-US": "View my number in the expectd format",
+	},
 	INLINE_BUTTON_SHOW_FULL_HISTORY: map[string]string{
 		"ru-RU": "Показать всю историю",
 		"en-US": "Show full history",
