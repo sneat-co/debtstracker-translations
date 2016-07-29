@@ -452,6 +452,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Вам вернули %v",
 		"en-US": "You've got back %v",
 	},
+	MESSAGE_TEXT_PLEASE_ACKNOWLEDGE_TRANSFER: map[string]string{
+		"ru-RU": "Пожалуйста подтвердите или отклоните эту транзакцию.",
+		"en-US": "Please confirm or decline this transfer.",
+	},
 	MESSAGE_TEXT_RECEIPT_LINK: map[string]string{
 		"ru-RU": "Подробнее тут: %v",
 		"en-US": "Details here: %v",
@@ -511,6 +515,22 @@ How do you want to pass the invite code?`,
 	MESSAGE_TEXT_USER_BLOCKED_TRANSFER_NOTIFICATIONS_BY: map[string]string{
 		"ru-RU": "%v заблокировал получение оповешений о транзакиях через: %v.",
 		"en-US": "%v blocked notifications about transactions by: %v",
+	},
+	COMMAND_TEXT_ACCEPT: map[string]string{
+		"ru-RU": "Согласиться",
+		"en-US": "Accept",
+	},
+	BUTTON_TEXT_ACCEPT_TRANSFER_USING_TELEGRAM: map[string]string{
+		"ru-RU": "Подтвердить (используя Telegram)",
+		"en-US": "Accept (using Telegram messenger)",
+	},
+	BUTTON_TEXT_DECLINE_TRANSFER_USING_TELEGRAM: map[string]string{
+		"ru-RU": "Отказаться (используя Telegram)",
+		"en-US": "Decline (using Telegram messenger)",
+	},
+	COMMAND_TEXT_DECLINE: map[string]string{
+		"ru-RU": "Отклонить",
+		"en-US": "Decline",
 	},
 	COMMAND_TEXT_ACCEPT_INVITE: map[string]string{
 		"ru-RU": "Принять приглашение",
@@ -579,6 +599,14 @@ How do you want to pass the invite code?`,
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
 		"en-US": "Balance",
+	},
+	MESSAGE_TEXT_RECEIPT_SENT_THROW_TELEGRAM: map[string]string{
+		"ru-RU": "Квитанция отправлена через телеграм",
+		"en-US": "Receipt sent through Telegram",
+	},
+	MESSAGE_TEXT_RECEIPT_VIEWED_BY_COUNTERPARTY: map[string]string{
+		"ru-RU": "Квитанция просмотрена",
+		"en-US": "Receipt viewed",
 	},
 	INLINE_BUTTON_SHOW_FULL_HISTORY: map[string]string{
 		"ru-RU": "Показать всю историю",
@@ -699,6 +727,22 @@ You invitation code is: {{.InviteCode}}`,
 	SMS_RECEIPT_YOU_GAVE: map[string]string{
 		"ru-RU": "Вы дали %v - взял %v. Подробнее тут: %v",
 		"en-US": "You've given %v to %v. Details here: %v",
+	},
+	HTML_RECEIPT: map[string]string{
+		"ru-RU": "Квитанция",
+		"en-US": "Receipt",
+	},
+	HTML_AMOUNT: map[string]string{
+		"ru-RU": "Сумма",
+		"en-US": "Amount",
+	},
+	HTML_FROM: map[string]string{
+		"ru-RU": "Дал",
+		"en-US": "From",
+	},
+	HTML_TO: map[string]string{
+		"ru-RU": "Получил",
+		"en-US": "To",
 	},
 	TELEGRAM_RECEIPT: map[string]string{
 		"ru-RU": "{{.FromName}} создал запись о долге ({{.TransferCurrency}})",
