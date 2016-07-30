@@ -187,6 +187,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Создаю запись...",
 		"en-US": "Creating transfer...",
 	},
+	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: map[string]string{
+		"ru-RU": "Подтверждение ожидается от %v",
+		"en-US": "Acknowledgement is expected from %v",
+	},
 	COMMAND_TEXT_SUBSCRIBE_TO_APP: map[string]string{
 		"ru-RU": "Хочу приложение!",
 		"en-US": "I want the app!",
@@ -246,8 +250,8 @@ Do you want to get an invite when it gets released?
 		"en-US": "Who lended to you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: map[string]string{
-		"ru-RU": "Отправить квитанцию для %v?",
-		"en-US": "Should we send a receipt to %v?",
+		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
+		"en-US": "Should we send a <a receipt>receipt</a> to <a counterparty>%v</a>?",
 	},
 	MESSAGE_TEXT_RECEIPT_IS_SENDING_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отправляем для %v извещение через Telegram...",
@@ -500,6 +504,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Хорошая попытка пригласить самого себя ;)",
 		"en-US": "You should not use your own invite ;)",
 	},
+	MESSAGE_TEXT_FOR_COUNTERPARTY_ONLY:  map[string]string{
+		"ru-RU": "Это действие доступно только для %v",
+		"en-US": "This action for %v only.",
+	},
 	BUTTON_TEXT_SEE_RECEIPT_DETAILS:  map[string]string{
 		"ru-RU": "Показать детали",
 		"en-US": "Show receipt details ",
@@ -595,6 +603,10 @@ How do you want to pass the invite code?`,
 	MESSAGE_TEXT_HISTORY_ROW_FROM_USER_WITH_NAME: map[string]string{
 		"ru-RU": "Вы ⇒ %s ⇒ %s",
 		"en-US": "You ⇒ %s ⇒ %s",
+	},
+	MESSAGE_TEXT_LETS_SEND_SMS: map[string]string{
+		"ru-RU": "Давайте отправим SMS",
+		"en-US": "Let's send SMS",
 	},
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
@@ -723,10 +735,6 @@ You invitation code is: {{.InviteCode}}`,
 	INLINE_INVITE_MESSAGE: map[string]string{
 		"ru-RU": "%v пригласил вас попробовать %v",
 		"en-US": "%v invited you to try %v",
-	},
-	LINK_VIEW_RECEIPT: map[string]string{
-		"ru-RU": "Посмотреть квитанцию",
-		"en-US": "View receipt online",
 	},
 	SMS_RECEIPT_YOU_GOT: map[string]string{
 		"ru-RU": "Вы получили %v от %v. Подробнее тут: %v",
