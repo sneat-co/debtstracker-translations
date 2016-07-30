@@ -596,6 +596,10 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Неверный номер. Проверьте и попробуйте ещё раз? /меню",
 		"en-US": "Invalid phone number. Check and try it again? /menu",
 	},
+	MESSAGE_TEXT_PHONE_NUMBER_IS_NOT_SMS_CAPABLE: map[string]string{
+		"ru-RU": "Данный номер не принимает SMS. Попробуйте другой номер? /меню",
+		"en-US": "This phone number not able to receive SMS. Try another number? /menu",
+	},
 	MESSAGE_TEXT_NO_CONTACT_RECEIVED: map[string]string{
 		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /меню",
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
@@ -607,6 +611,14 @@ How do you want to pass the invite code?`,
 	MESSAGE_TEXT_LETS_SEND_SMS: map[string]string{
 		"ru-RU": "Давайте отправим SMS",
 		"en-US": "Let's send SMS",
+	},
+	MESSAGE_TEXT_SMS_QUEUING_FOR_SENDING: map[string]string{
+		"ru-RU": "SMS ставится в очередь на отправку...",
+		"en-US": "Queuing SMS for sending...",
+	},
+	MESSAGE_TEXT_SMS_QUEUED_FOR_SENDING: map[string]string{
+		"ru-RU": "SMS поставлена в очередь на отправку",
+		"en-US": "SMS is queued for sending",
 	},
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
