@@ -372,6 +372,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "На каком языке вы хотели бы общаться со мной?",
 		"en-US": "Which language you would like to talk to me?",
 	},
+	MESSAGE_TEXT_LOCALE_CHANGED: map[string]string{
+		"ru-RU": "Вы поменяли языка на %v",
+		"en-US": "You've switched language to %v",
+	},
 	MESSAGE_TEXT_WHATS_NEXT: map[string]string{
 		"ru-RU": "Что будем делать дальше?",
 		"en-US": "What's next?",
@@ -659,6 +663,14 @@ How do you want to pass the invite code?`,
 	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
 		"ru-RU": "%s ⇒ %s ⇒ Вам",
 		"en-US": "%s ⇒ %s ⇒ to you",
+	},
+	MESSAGE_TEXT_HELP: map[string]string{
+		"ru-RU": "Вы можете сообщить о проблеме или сделать предложения по улучшению программы на нашем сайте.",
+		"en-US": "Please report any issue or submit a feature request at our website.",
+	},
+	COMMAND_TEXT_OPEN_USER_REPORT: map[string]string{
+		"ru-RU": "Открыть страницу поддержки.",
+		"en-US": "Open support page",
 	},
 	MESSAGE_TEXT_WELCOME: map[string]string{
 		"ru-RU": `Привет, я Коллектиус - Ваш персональный счетовод и коллектор.
