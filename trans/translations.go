@@ -199,24 +199,27 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Меня вполне устраивает бот!",
 		"en-US": "I'm fine with just the bot!",
 	},
+	MESSAGE_TEXT_SUBSCRIBED_TO_APP: map[string]string{
+		"ru-RU": "Мы сообщим вам когда приложение будет доступно для загруки.",
+		"en-US": "We'll let you know once the app is available for download.",
+	},
+	MESSAGE_TEXT_NOT_INTERESTED_IN_APP: map[string]string{
+		"ru-RU": "Чтож, мы рады что вас устраивает наш бот и нет необходимости загружать приложение.",
+		"en-US": "Well, we are happy our bot is good enough and there is no need to download an app.",
+	},
 	MESSAGE_TEXT_YOUR_AD_COULD_BE_HERE: map[string]string{
 		"ru-RU": "Здесь можно <a href>разместить рекламу</a>",
 		"en-US": "You can <a href>advertise here</a>",
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: map[string]string{
-		"ru-RU": `Здесь может быть ваша реклама если напишите нам на ads@debtstracker.io.
-А пока что я порекламирую наше приложения для смартфонов.
+		"ru-RU": `У нас можно <a href="https://debtstracker.io/ru/ads">разместить рекламу</a>.
 
-🤖: Я конечно клёвый и обоятельный робот, но пользоваться специализированным приложением может быть даже удобнее. Иногда.
-
-Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как оно будет выглядеть: https://debtstracker.io/#utm_source=telegram&utm_campaign=ads_screen
+🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href="https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
 
 Хотите получить оповещение когда оно выйдет?`,
-		"en-US": `Here could be your ad if you write us to ads@debtstracker.io. But for now we'll promote our own app for smartphones.
+		"en-US": `You can <a href="https://debtstracker.io/ru/ads">advertise in our app</a>.
 
-🤖: I'm a good robot, for sure, but sometimes it just more convinient to use a nice specialized app.
-
-It's not ready for public preview just yet but you arleady can have check how it's going to looks: https://debtstracker.io/#utm_source=telegram&utm_campaign=ads_screen
+🤖: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href="https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 Do you want to get an invite when it gets released?
 `,
@@ -276,6 +279,57 @@ Do you want to get an invite when it gets released?
 	MESSAGE_TEXT_COMMENT: map[string]string{
 		"ru-RU": "Комментарий",
 		"en-US": "Comment",
+	},
+	MESSAGE_TEXT_DO_YOU_LIKE_OUR_BOT: map[string]string{
+		"ru-RU": "Вам нравится наш бот?",
+		"en-US": "Do you like our bot?",
+	},
+
+	COMMAND_TEXT_OPEN_STOREBOT_FOR_FEEDBACK: map[string]string{
+		"ru-RU": "Оценить на сайте Srotebot.me",
+		"en-US": "Leave rating at Storebot.me",
+	},
+	MESSAGE_TEXT_ON_FEEDBACK_POSITIVE: map[string]string{
+		"ru-RU": `Спасибо, мы очень старались!
+
+		Вы нам очень поможете если оставите положительный отзыв в каталоге ботов.
+
+		Так же будем рады услышать от вас предложения по улучшению программы.
+		`,
+		/*------------------------------------------------------------*/
+		"en-US": `Thanks, we worked hard!
+
+		You can help us a lot by leaving a review at a bot store.
+
+		We also will be more than happy to hear your suggestion for program improvements.
+		`,
+	},
+	MESSAGE_TEXT_ON_FEEDBACK_NEUTRAL: map[string]string{
+		"ru-RU": `Чтож, мы очень старались. Может быть вы подскажите что можно улучшить?`,
+		/*------------------------------------------------------------*/
+		"en-US": `Well, we worked hard. Maybe you can suggest what can be improved?`,
+	},
+	MESSAGE_TEXT_ON_FEEDBACK_NEGATIVE: map[string]string{
+		"ru-RU": `Нам очень стыдно. Может быть вы подскажите что не так или предложите какие-либо усовершенствования?`,
+		/*------------------------------------------------------------*/
+		"en-US": `We are very sorry. Maybe you can suggest what's wrong or some improvemnts we can do to make it better?`,
+	},
+
+	COMMAND_TEXT_FEEDBACK_POSITIVE: map[string]string{
+		"ru-RU": "Да, отличное приложение!",
+		"en-US": "Yes, it's a great app!",
+	},
+	COMMAND_TEXT_FEEDBACK_NEUTRAL: map[string]string{
+		"ru-RU": "Неплохо, но можно лучше.",
+		"en-US": "Not bad but can be better.",
+	},
+	COMMAND_TEXT_FEEDBACK_NEGATIVE: map[string]string{
+		"ru-RU": "Ненавижу, просто бесит!",
+		"en-US": "Hate it, drives me crazy!",
+	},
+	COMMAND_TEXT_FEEDBACK_NOT_READY: map[string]string{
+		"ru-RU": "Пока не понятяно.",
+		"en-US": "I have no judgement yet.",
 	},
 	MESSAGE_TEXT_SETTINGS: map[string]string{
 		"ru-RU": "Что будем настраивать?",
@@ -669,8 +723,16 @@ How do you want to pass the invite code?`,
 		"en-US": "Please report any issue or submit a feature request at our website.",
 	},
 	COMMAND_TEXT_OPEN_USER_REPORT: map[string]string{
-		"ru-RU": "Открыть страницу поддержки.",
-		"en-US": "Open support page",
+		"ru-RU": "Cтраница поддержки ",
+		"en-US": "Support page",
+	},
+	COMMAND_TEXT_REPORT_A_BUG: map[string]string{
+		"ru-RU": "Сообщить об ошибке",
+		"en-US": "Report a bug",
+	},
+	COMMAND_TEXT_SUBMIT_AN_IDEA: map[string]string{
+		"ru-RU": "Предложить идею",
+		"en-US": "Add an idea",
 	},
 	MESSAGE_TEXT_WELCOME: map[string]string{
 		"ru-RU": `Привет, я Коллектиус - Ваш персональный счетовод и коллектор.
