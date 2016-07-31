@@ -590,6 +590,10 @@ How do you want to pass the invite code?`,
 		"ru-RU": "%v заблокировал получение оповешений о транзакиях через: %v.",
 		"en-US": "%v blocked notifications about transactions by: %v",
 	},
+	COMMAND_TEXT_WAIT_A_SECOND: map[string]string{
+		"ru-RU": "Секундочку...",
+		"en-US": "Wait a second...",
+	},
 	COMMAND_TEXT_ACCEPT: map[string]string{
 		"ru-RU": "Согласиться",
 		"en-US": "Accept",
