@@ -1,11 +1,19 @@
 package trans
 
-import "github.com/strongo/bots-framework/core"
+import (
+	"github.com/strongo/bots-framework/core"
+)
+
+const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": map[string]string{
 		"ru-RU": "ПРИМЕР",
 		"en-US": "SAMPLE",
+	},
+	adsCommandTitle: map[string]string{
+		"ru-RU": adsCommandTitle,
+		"en-US": adsCommandTitle,
 	},
 	" and ": map[string]string{
 		"ru-RU": " и ",
