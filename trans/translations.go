@@ -143,9 +143,26 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/старт",
 		"en-US": "/start",
 	},
-	COMMAND_TEXT_NOTIFICATIONS: map[string]string{
-		"ru-RU": "/Извещения",
-		"en-US": "/Notifications",
+	COMMAND_TEXT_DUE_RETURNS: map[string]string{
+		"ru-RU": "/К_возврату",
+		"en-US": "/Due returns",
+	},
+	MESSAGE_TEXT_DUE_RETURNS_HEADER: map[string]string{
+		"ru-RU": "<b>Ближайшие долги к возрату:</b>",
+		"en-US": "<b>Closest debts to return:</b>",
+	},
+	MESSAGE_TEXT_DUE_RETURNS_ROW_BY_USER: map[string]string{
+		"ru-RU": "%v ожидает от вас возврата %v через %v",
+		"en-US": "%v expects %v from you in %v",
+	},
+	MESSAGE_TEXT_DUE_RETURNS_ROW_BY_COUNTERPARTY: map[string]string{
+		"ru-RU": "Вы ожидаете от %v возврата %v через %v",
+		"en-US": "You expect %v to retun %v to you in %v",
+	},
+
+	MESSAGE_TEXT_DUE_RETURNS_EMPTY: map[string]string{
+		"ru-RU": "У вас нет долгов с назначеным сроком к возврату.",
+		"en-US": "You have no debts with set due date.",
 	},
 	COMMAND_TEXT_GAVE: map[string]string{
 		"ru-RU": "/Дал",
@@ -905,5 +922,29 @@ You invitation code is: {{.InviteCode}}`,
 	COMMAND_TEXT_ADD_COMMENT_TO_TRANSFER: map[string]string{
 		"ru-RU": "Добавить комментарий",
 		"en-US": "Add a comment (public)",
+	},
+	DUE_IN_NOW: map[string]string{
+		"ru-RU": "прямо сейчас",
+		"en-US": "now",
+	},
+	DUE_IN_A_MINUTE: map[string]string{
+		"ru-RU": "через минуту",
+		"en-US": "in a minute",
+	},
+	DUE_IN_X_MINUTES: map[string]string{
+		"ru-RU": "через %v минут(ы)",
+		"en-US": "in %v minutes",
+	},
+	DUE_IN_AN_HOUR: map[string]string{
+		"ru-RU": "через час",
+		"en-US": "in an hour",
+	},
+	DUE_IN_X_HOURS: map[string]string{
+		"ru-RU": "через %v часа/часов",
+		"en-US": "in %v hours",
+	},
+	DUE_IN_X_DAYS: map[string]string{
+		"ru-RU": "через %v дня/дней",
+		"en-US": "in %v days",
 	},
 }
