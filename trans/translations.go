@@ -127,6 +127,26 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Что-то другое",
 		"en-US": "Something else",
 	},
+	MESSAGE_TEXT_REMINDER_OUTSTANDING_DEBT: map[string]string{
+		"ru-RU": "Был ли этот долг возвращён?",
+		"en-US": "Have this debt been returned?",
+	},
+	MESSAGE_TEXT_REMINDER_ASK_IF_RETURNED: map[string]string{
+		"ru-RU": "Был ли этот долг возвращён?",
+		"en-US": "Have this debt been returned?",
+	},
+	COMMAND_TEXT_REMINDER_RETURNED_IN_FULL: map[string]string{
+		"ru-RU": "Да, возвращено полностью",
+		"en-US": "Yes, returne in full",
+	},
+	COMMAND_TEXT_REMINDER_RETURNED_PARTIALLY: map[string]string{
+		"ru-RU": "Возврашено частично",
+		"en-US": "Returned partially",
+	},
+	COMMAND_TEXT_REMINDER_NOT_RETURNED: map[string]string{
+		"ru-RU": "Не возвращено",
+		"en-US": "Not returned",
+	},
 	"book": map[string]string{
 		"ru-RU": "книгу",
 		"en-US": "book",
