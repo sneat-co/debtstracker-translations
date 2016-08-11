@@ -127,10 +127,6 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Что-то другое",
 		"en-US": "Something else",
 	},
-	MESSAGE_TEXT_REMINDER_OUTSTANDING_DEBT: map[string]string{
-		"ru-RU": "Был ли этот долг возвращён?",
-		"en-US": "Have this debt been returned?",
-	},
 	MESSAGE_TEXT_REMINDER_ASK_IF_RETURNED: map[string]string{
 		"ru-RU": "Был ли этот долг возвращён?",
 		"en-US": "Have this debt been returned?",
@@ -967,4 +963,43 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "через %v дня/дней",
 		"en-US": "in %v days",
 	},
+
+	WS_ALEX_T: map[string]string{
+		"ru-RU": "Александр Трахимёнок",
+		"en-US": "Alexander Trakhimenok",
+		"fa-IR": "Alexander Trakhimenok",
+	},
+
+	WS_INDEX_TITLE: map[string]string{
+		"ru-RU": "DebtsTracker.IO - программа для учёта личных долгов",
+		"en-US": "DebtsTracker.IO - an app to track your personal debts",
+		"fa-IR": "DebtsTracker.IO - برنامه برای پیگیری بدهی های شخصی خود را",
+	},
+	WS_INDEX_TG_BOT_H2: map[string]string{
+		"ru-RU": "Бот для Telegram",
+		"en-US": "Chat bot for Telegram messenger",
+		"fa-IR": "ربات چت برای رسول تلگرام",
+	},
+	WS_INDEX_TG_BOT_OPEN: map[string]string{
+		"ru-RU": "Открыть в Телеграмме &#x1F680;",
+		"en-US": "Open in Telegram &#x1F680;",
+		"fa-IR": "باز کردن در تلگرام &#x1F680;",
+	},
+
+	WS_INDEX_TG_BOT_P: map[string]string{
+		"ru-RU": "В настоящий момент наша программа доступна в мессенджере <a href='https://telegram.org/'>Телеграм</a>.",
+		"en-US": "At the moment our program is available just on <a href='https://telegram.org/'><b>Telegram</b> messenger</a>",
+		"fa-IR": "در حال حاضر برنامه های ما فقط در دسترس است <a href='https://telegram.org/'>Telegram</a>",
+	},
+	WS_MOTO: map[string]string{
+		"ru-RU": "Платежи по долгам целиком и вовремя!",
+		"en-US": "Know your bottom line & never miss a payment!",
+		"fa-IR": "مطمئن شوید خط پایین خود را و هرگز پرداخت از دست ندهید!",
+	},
+	WS_SHORT_DESC: map[string]string{
+		"ru-RU": "DebtsTracker.IO - мобильное приложение и сервис напоминаний для учёта и своевременной выплаты долгов. Отсылает автоматические уведомления вашим должникам по email и SMS.",
+		"en-US": "DebtsTracker is a mobile apps & reminder service that helps to track your debts & credits. Sends automated email & SMS notifications to your debtors.",
+		"fa-IR": "DebtsTracker یک سرویس برنامه های تلفن همراه و یادآوری است که کمک می کند تا برای پیگیری بدهی و اعتبار خود را است. ارسال ایمیل و اس ام اس اطلاعیه های خودکار به بدهکاران خود را.",
+	},
+
 }
