@@ -453,22 +453,22 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Незнакомый язык. Пожалуйста выберете один из предоставленных:",
 		"en-US": "Unknown language. Please choose 1 from the options:",
 	},
+	MESSAGE_TEXT_HI: map[string]string{ // This is the same for all languages.
+		"en-US": `¡Hola! Hi! Привет! سلام!`,
+		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
+	},
 	MESSAGE_TEXT_ONBOARDING_ASK_TO_CHOOSE_LANGUAGE: map[string]string{
-		"ru-RU": `¡Hola! Hi! Привет! سلام!
-
-<b>%v</b>, на каком языке вы хотели бы общаться?
+		"ru-RU": `<b>%v</b>, на каком языке вы хотели бы общаться?
 
 (What is your prefered language?)`,
-		"en-US": `¡Hola! Hi! Привет! سلام!
-
-<b>%v</b>, what is your prefered language?`,
+		"en-US": `<b>%v</b>, what is your prefered language?`,
 	},
 	MESSAGE_TEXT_CHOOSE_UI_LANGUAGE: map[string]string{
 		"ru-RU": "На каком языке вы хотели бы общаться со мной?",
 		"en-US": "Which language you would like to talk to me?",
 	},
 	MESSAGE_TEXT_LOCALE_CHANGED: map[string]string{
-		"ru-RU": "Вы поменяли языка на %v",
+		"ru-RU": "Вы поменяли язык на %v",
 		"en-US": "You've switched language to %v",
 	},
 	MESSAGE_TEXT_WHATS_NEXT: map[string]string{
