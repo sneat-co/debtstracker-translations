@@ -548,12 +548,12 @@ Do you want to get an invite when it gets released?
 		"en-US": "Please choose a debt that has been returned fully or partially.",
 	},
 	MESSAGE_TEXT_YOU_HAVE_RETURNED: map[string]string{
-		"ru-RU": "Вы вернули %v",
-		"en-US": "You've returned %v",
+		"ru-RU": "Вы вернули %v (%v)",
+		"en-US": "You've returned %v to %v",
 	},
 	MESSAGE_TEXT_YOU_HAVE_GOT_BACK: map[string]string{
-		"ru-RU": "Вам вернули %v",
-		"en-US": "You've got back %v",
+		"ru-RU": "Вам вернули %v (%v)",
+		"en-US": "You've got back %v from %v",
 	},
 	MESSAGE_TEXT_PLEASE_ACKNOWLEDGE_TRANSFER: map[string]string{
 		"ru-RU": "Пожалуйста подтвердите или отклоните эту транзакцию.",
