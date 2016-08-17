@@ -103,6 +103,14 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Воскресенье",
 		"en-US": "Sunday",
 	},
+	COMMAND_TEXT_DO_NOT_SEND_RECEIPT: map[string]string{
+		"ru-RU": "Не отправлять квитанцию",
+		"en-US": "Do not send the receipt",
+	},
+	MESSAGE_TEXT_RECEIPT_WILL_NOT_BE_SENT: map[string]string{
+		"ru-RU": "Вы решили не отправлять квитанцию.",
+		"en-US": "You've decided not to send the receipt.",
+	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 		"en-US": "Send by Telegram",
@@ -135,9 +143,21 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Был ли этот долг возвращён?",
 		"en-US": "Have this debt been returned?",
 	},
+	MESSAGE_TEXT_ASK_WHEN_TO_REMIND_AGAIN: map[string]string{
+		"ru-RU": "Когда вам напомнить об этом долге ещё раз?",
+		"en-US": "When should we remind you about this debt again?",
+	},
+	MESSAGE_TEXT_REPLIED_DEBT_RETURNED_FULLY: map[string]string{
+		"ru-RU": "Вы ответили что долг возвращён полностью.",
+		"en-US": "You've replied that debt has been returned fully.",
+	},
 	MESSAGE_TEXT_REMINDER: map[string]string{
 		"ru-RU": "Напоминание",
 		"en-US": "Reminder",
+	},
+	MESSAGE_TEXT_REMINDER_SET: map[string]string{
+		"ru-RU": "Напоминание установлено",
+		"en-US": "Reminder set",
 	},
 	MESSAGE_TEXT_REMINDER_DISABLED: map[string]string{
 		"ru-RU": "Напоминания об этом долге отключены.",
@@ -470,8 +490,12 @@ Do you want to get an invite when it gets released?
 		"en-US": "Unknown language. Please choose 1 from the options:",
 	},
 	MESSAGE_TEXT_HI: map[string]string{ // This is the same for all languages.
-		"en-US": `¡Hola! Hi! Привет! سلام!`,
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
+		"en-US": `¡Hola! Hi! Привет! سلام!`,
+	},
+	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: map[string]string{ // This is the same for all languages.
+		"ru-RU": `Выбранный язык программы: %v`,
+		"en-US": `Preferred app language: %v`,
 	},
 	MESSAGE_TEXT_ONBOARDING_ASK_TO_CHOOSE_LANGUAGE: map[string]string{
 		"ru-RU": `<b>%v</b>, на каком языке вы хотели бы общаться?
