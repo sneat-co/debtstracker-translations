@@ -135,6 +135,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Был ли этот долг возвращён?",
 		"en-US": "Have this debt been returned?",
 	},
+	MESSAGE_TEXT_REMINDER: map[string]string{
+		"ru-RU": "Напоминание",
+		"en-US": "Reminder",
+	},
 	MESSAGE_TEXT_REMINDER_DISABLED: map[string]string{
 		"ru-RU": "Напоминания об этом долге отключены.",
 		"en-US": "You've disabled reminders for this debt.",
