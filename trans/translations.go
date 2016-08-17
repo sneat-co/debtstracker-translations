@@ -27,6 +27,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Когда дата возврата?",
 		"en-US": "When is the due date?",
 	},
+	COMMAND_TEXT_DISABLE_REMINDER: map[string]string{
+		"ru-RU": "Не напоминать",
+		"en-US": "No reminder",
+	},
 	COMMAND_TEXT_ON_SPECIFIC_DATE: map[string]string{
 		"ru-RU": "Задать дату",
 		"en-US": "On a specific date",
@@ -131,6 +135,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Был ли этот долг возвращён?",
 		"en-US": "Have this debt been returned?",
 	},
+	MESSAGE_TEXT_REMINDER_DISABLED: map[string]string{
+		"ru-RU": "Напоминания об этом долге отключены.",
+		"en-US": "You've disabled reminders for this debt.",
+	},
 	COMMAND_TEXT_REMINDER_RETURNED_IN_FULL: map[string]string{
 		"ru-RU": "Да, возвращено полностью",
 		"en-US": "Yes, returne in full",
@@ -142,6 +150,10 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_REMINDER_NOT_RETURNED: map[string]string{
 		"ru-RU": "Не возвращено",
 		"en-US": "Not returned",
+	},
+	MESSAGE_TEXT_YOU_REPLIED: map[string]string{
+		"ru-RU": "Вы ответили: %v",
+		"en-US": "You've replied: %v",
 	},
 	"book": map[string]string{
 		"ru-RU": "книгу",
