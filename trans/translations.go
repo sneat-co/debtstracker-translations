@@ -866,18 +866,26 @@ We send 10 invites per day to those in the head of the queue and 1 randomly.`,
 	EMAIL_INVITE_TEXT: map[string]string{
 		"ru-RU": `Привет {{.ToName}},
 
-
-{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/#invite={{.InviteCode}}
+{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/ru/#invite={{.InviteCode}}
 
 Ваш код приглашения: {{.InviteCode}}`,
 		"en-US": `Hi{{.ToName}},
-{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/#invite={{.InviteCode}}
+
+{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/en/#invite={{.InviteCode}}
 
 You invitation code is: {{.InviteCode}}`,
 	},
 	EMAIL_INVITE_HTML: map[string]string{
-		"ru-RU": "",
-		"en-US": "",
+		"ru-RU": `<p>Привет {{.ToName}},</P
+
+<p>{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/ru/#invite={{.InviteCode}}</p>
+
+<p>Ваш код приглашения: <b>{{.InviteCode}}</b></p>`,
+		"en-US": `<p>Hi{{.ToName}},</p>
+
+<p>{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/en/#invite={{.InviteCode}}</p>
+
+<p>You invitation code is: <b>{{.InviteCode}}</b></p>`,
 	},
 	EMAIL_RECEIPT_SUBJ: map[string]string{
 		"ru-RU": "Запись о долге - {{.FromName}}",
