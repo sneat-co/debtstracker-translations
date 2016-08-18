@@ -48,7 +48,7 @@ var SupportedLocales []strongo.Locale = []strongo.Locale{
 var ChooseLocaleIcon = strings.Join([]string{
 	strongo.LocaleEnUS.FlagIcon,
 	strongo.LocaleRuRu.FlagIcon,
-	strongo.LocaleIdId.FlagIcon,
-	strongo.LocaleItIt.FlagIcon,
-	strongo.LocaleFaIr.FlagIcon,
+	//strongo.LocaleIdId.FlagIcon,
+	//strongo.LocaleItIt.FlagIcon,
+	//strongo.LocaleFaIr.FlagIcon,
 }, " ")
