@@ -839,6 +839,10 @@ What would you like to do?`,
 		"ru-RU": "У меня есть код приглашения",
 		"en-US": "I have the invitation code",
 	},
+	COMMAND_TEXT_I_HAVE_NOT_GOT_EMAIL: map[string]string{
+		"ru-RU": "Я не получил письма на email",
+		"en-US": "I have not got any emails",
+	},
 	MESSAGE_TEXT_ONBOARDING_TELL_ABOUT_INVITES: map[string]string{
 		"ru-RU": `<b>%v</b>,
 
