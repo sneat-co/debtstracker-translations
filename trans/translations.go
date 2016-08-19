@@ -867,27 +867,35 @@ We send 10 invites per day to those in the head of the queue and 1 randomly.`,
 		"ru-RU": "Приглашение от {{.FromName}}",
 		"en-US": "An invite from {{.FromName}}",
 	},
+	SMS_INVITE_TEXT: map[string]string{
+		"ru-RU": `Привет {{.ToName}}, {{.FromName}} рекомендует приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+
+Код приглашения: {{.InviteCode}}`,
+		"en-US": `Hi{{.ToName}}, {{.FromName}} is inviting you to try debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+
+You invitation code is: {{.InviteCode}}`,
+	},
 	EMAIL_INVITE_TEXT: map[string]string{
 		"ru-RU": `Привет {{.ToName}},
 
-{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}
+{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Ваш код приглашения: {{.InviteCode}}`,
 		"en-US": `Hi{{.ToName}},
 
-{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}
+{{.FromName}} is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 You invitation code is: {{.InviteCode}}`,
 	},
 	EMAIL_INVITE_HTML: map[string]string{
 		"ru-RU": `<p>Привет {{.ToName}},</P
 
-<p>{{.FromName}} приглашает тебя <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}">попробовать приложение для учёта долгов</a>.</p>
+<p>{{.FromName}} приглашает тебя <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">попробовать приложение для учёта долгов</a>.</p>
 
 <p>Ваш код приглашения: <b>{{.InviteCode}}</b></p>`,
 		"en-US": `<p>Hi{{.ToName}},</p>
 
-<p>{{.FromName}} п is inviting you to <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}">try debts tracking app</a>.</p>
+<p>{{.FromName}} п is inviting you to <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">try debts tracking app</a>.</p>
 
 <p>You invitation code is: <b>{{.InviteCode}}</b></p>`,
 	},
