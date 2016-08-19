@@ -643,6 +643,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Хорошая попытка пригласить самого себя ;)",
 		"en-US": "You should not use your own invite ;)",
 	},
+	MESSAGE_TEXT_WELCOME_ONBOARDING_INVITE_ACCEPTED: map[string]string{
+		"ru-RU": "Спасибо за то что вопспользовались приглашением!",
+		"en-US": "Welcome and thanks for accepting the invite!",
+	},
 	MESSAGE_TEXT_FOR_COUNTERPARTY_ONLY:  map[string]string{
 		"ru-RU": "Это действие доступно только для %v",
 		"en-US": "This action for %v only.",
@@ -866,24 +870,24 @@ We send 10 invites per day to those in the head of the queue and 1 randomly.`,
 	EMAIL_INVITE_TEXT: map[string]string{
 		"ru-RU": `Привет {{.ToName}},
 
-{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/ru/#invite={{.InviteCode}}
+{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}
 
 Ваш код приглашения: {{.InviteCode}}`,
 		"en-US": `Hi{{.ToName}},
 
-{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/en/#invite={{.InviteCode}}
+{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}
 
 You invitation code is: {{.InviteCode}}`,
 	},
 	EMAIL_INVITE_HTML: map[string]string{
 		"ru-RU": `<p>Привет {{.ToName}},</P
 
-<p>{{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/ru/#invite={{.InviteCode}}</p>
+<p>{{.FromName}} приглашает тебя <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}">попробовать приложение для учёта долгов</a>.</p>
 
 <p>Ваш код приглашения: <b>{{.InviteCode}}</b></p>`,
 		"en-US": `<p>Hi{{.ToName}},</p>
 
-<p>{{.FromName}} п is inviting you to use debts tracking app - https://debtstracker.io/en/#invite={{.InviteCode}}</p>
+<p>{{.FromName}} п is inviting you to <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}">try debts tracking app</a>.</p>
 
 <p>You invitation code is: <b>{{.InviteCode}}</b></p>`,
 	},
