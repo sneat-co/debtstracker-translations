@@ -428,6 +428,10 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Мы отправили письмо на %v.\n\nПожалуйста откройте его и кликните на ссылку для подтверждения адреса.",
 		"en-US": "We've sent a message to %v.\n\nPlease open the email and click a link to confirm your email address.",
 	},
+	MESSAGE_TEXT_USER_EMAIL_FOR_INVITE_SENT_TELEGRAM: map[string]string{
+		"ru-RU": "После того как откроется Telegram нажмите кнопку <b>Start</b>.",
+		"en-US": "Once Telegram pop ups click the <b>Start</b> button.",
+	},
 	MESSAGE_TEXT_USER_CONTACT_FOR_INVITE_RECEIVED: map[string]string{
 		"ru-RU": "Спасибо, вы записаны в очередь на получение приглашения.\n\nТекущее время ожидания 2-3 дня.\n\nВы можете получить приглашение сегодня если расскажите о нашем боте на Facebook.",
 		"en-US": "Thanks, you've been queued for an invite.\n\nCurrent awaiting time is 2-3 days.\n\nYou can get an invite code today by sharing a link to the bot on Facebook.",
@@ -644,7 +648,7 @@ Do you want to get an invite when it gets released?
 		"en-US": "You should not use your own invite ;)",
 	},
 	MESSAGE_TEXT_WELCOME_ONBOARDING_INVITE_ACCEPTED: map[string]string{
-		"ru-RU": "Спасибо за то что вопспользовались приглашением!",
+		"ru-RU": "Спасибо за то что воспользовались приглашением!",
 		"en-US": "Welcome and thanks for accepting the invite!",
 	},
 	MESSAGE_TEXT_FOR_COUNTERPARTY_ONLY:  map[string]string{
@@ -864,8 +868,8 @@ If you have no code you can leave you contact details and we'll send you an invi
 We send 10 invites per day to those in the head of the queue and 1 randomly.`,
 	},
 	EMAIL_INVITE_SUBJ: map[string]string{
-		"ru-RU": "Приглашение от {{.FromName}}",
-		"en-US": "An invite from {{.FromName}}",
+		"ru-RU": "Приглашение от {{.FromName}} - код: {{.InviteCode}}",
+		"en-US": "An invite from {{.FromName}} - code: {{.InviteCode}}",
 	},
 	SMS_INVITE_TEXT: map[string]string{
 		"ru-RU": `Привет {{.ToName}}, {{.FromName}} рекомендует приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
