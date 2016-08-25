@@ -35,9 +35,9 @@ var SupportedLocalesByCode5 = map[string]strongo.Locale{
 var SupportedLocales []strongo.Locale = []strongo.Locale{
 	strongo.LocaleEnUS,
 	strongo.LocaleRuRu,
-	strongo.LocaleIdId,
-	strongo.LocaleFaIr,
-	strongo.LocaleItIt,
+	//strongo.LocaleIdId,
+	//strongo.LocaleFaIr,
+	//strongo.LocaleItIt,
 	//LocaleDeDe,
 	//LocaleEsEs,
 	//LocaleFrFr,
