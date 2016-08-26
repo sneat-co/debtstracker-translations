@@ -185,7 +185,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": "book",
 	},
 	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: map[string]string{
-		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /меню",
+		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand yoru order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 	},
 	"COMMAND_TEXT_LANGUAGE": map[string]string{
@@ -398,12 +398,12 @@ Do you want to get an invite when it gets released?
 		"en-US": "Not bad but can be better.",
 	},
 	COMMAND_TEXT_FEEDBACK_NEGATIVE: map[string]string{
-		"ru-RU": "Ненавижу, просто бесит!",
-		"en-US": "Hate it, drives me crazy!",
+		"ru-RU": "Не нравится",
+		"en-US": "Don't like it",
 	},
 	COMMAND_TEXT_FEEDBACK_NOT_READY: map[string]string{
-		"ru-RU": "Пока не понятно.",
-		"en-US": "I have no judgement yet.",
+		"ru-RU": "Пока не понятно",
+		"en-US": "Not decided yet",
 	},
 	MESSAGE_TEXT_SETTINGS: map[string]string{
 		"ru-RU": "Что будем настраивать?",
@@ -741,19 +741,19 @@ How do you want to pass the invite code?`,
 		"en-US": "Please share a contact of your friend you wish to send an invite code:",
 	},
 	MESSAGE_TEXT_INVALID_EMAIL: map[string]string{
-		"ru-RU": "Неверный email. Проверьте и попробуйте ещё раз? /меню",
+		"ru-RU": "Неверный email. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid email. Check and try it again? /menu",
 	},
 	MESSAGE_TEXT_INVALID_PHONE_NUMBER: map[string]string{
-		"ru-RU": "Неверный номер. Проверьте и попробуйте ещё раз? /меню",
+		"ru-RU": "Неверный номер. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid phone number. Check and try it again? /menu",
 	},
 	MESSAGE_TEXT_PHONE_NUMBER_IS_NOT_SMS_CAPABLE: map[string]string{
-		"ru-RU": "Данный номер не принимает SMS. Попробуйте другой номер? /меню",
+		"ru-RU": "Данный номер не принимает SMS. Попробуйте другой номер? /menu",
 		"en-US": "This phone number not able to receive SMS. Try another number? /menu",
 	},
 	MESSAGE_TEXT_NO_CONTACT_RECEIVED: map[string]string{
-		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /меню",
+		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /menu",
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
 	},
 	MESSAGE_TEXT_HISTORY_ROW_FROM_USER_WITH_NAME: map[string]string{
