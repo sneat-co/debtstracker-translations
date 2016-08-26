@@ -2,6 +2,7 @@ package trans
 
 import (
 	"github.com/strongo/bots-framework/core"
+	"bitbucket.com/debtstracker/gae_app/debtstracker/emoji"
 )
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
@@ -195,10 +196,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/старт",
 		"en-US": "/start",
 	},
-	COMMAND_TEXT_DUE_RETURNS: map[string]string{
-		"ru-RU": "/К_возврату",
-		"en-US": "/Due returns",
-	},
+	//COMMAND_TEXT_DUE_RETURNS: map[string]string{
+	//	"ru-RU": "/К_возврату",
+	//	"en-US": "/Due returns",
+	//},
 	MESSAGE_TEXT_DUE_RETURNS_HEADER: map[string]string{
 		"ru-RU": "<b>Ближайшие долги к возрату:</b>",
 		"en-US": "<b>Closest debts to return:</b>",
@@ -289,14 +290,10 @@ var TRANS = map[string]map[string]string{
 		"en-US": "You can <a href>advertise here</a>",
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: map[string]string{
-		"ru-RU": `У нас можно <a href="https://debtstracker.io/ru/ads">разместить рекламу</a>.
-
-🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href="https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
+		"ru-RU": emoji.ROBOT_ICON + `: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href="https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
 
 Хотите получить оповещение когда оно выйдет?`,
-		"en-US": `You can <a href="https://debtstracker.io/ru/ads">advertise in our app</a>.
-
-🤖: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href="https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
+		"en-US": emoji.ROBOT_ICON + `: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href="https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 Do you want to get an invite when it gets released?
 `,
@@ -405,7 +402,7 @@ Do you want to get an invite when it gets released?
 		"en-US": "Hate it, drives me crazy!",
 	},
 	COMMAND_TEXT_FEEDBACK_NOT_READY: map[string]string{
-		"ru-RU": "Пока не понятяно.",
+		"ru-RU": "Пока не понятно.",
 		"en-US": "I have no judgement yet.",
 	},
 	MESSAGE_TEXT_SETTINGS: map[string]string{
@@ -519,15 +516,19 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Что будем делать дальше?",
 		"en-US": "What's next?",
 	},
-	"History": map[string]string{
+	MESSAGE_TEXT_HISTORY_HEADER: map[string]string{
 		"ru-RU": "История",
 		"en-US": "History",
 	},
-	MESSAGE_TEXT_HISTORY: map[string]string{
-		"ru-RU": `<b>История</b> <i>(%d последних)</i>
+	MESSAGE_TEXT_HISTORY_NO_RECORDS: map[string]string{
+		"ru-RU": "У вас пока нет ни одной записи.",
+		"en-US": "You don't have any records yet.",
+	},
+	MESSAGE_TEXT_HISTORY_LIST: map[string]string{
+		"ru-RU": `<b>%v</b> <i>(%d последних)</i>
 ─────────────
 %v`,
-		"en-US": `<b>History</b> <i>(last %d):</i>
+		"en-US": `<b>%v</b> <i>(last %d):</i>
 ─────────────
 %v`,
 	},
