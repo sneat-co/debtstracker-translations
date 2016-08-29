@@ -112,6 +112,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы решили не отправлять квитанцию.",
 		"en-US": "You've decided not to send the receipt.",
 	},
+	COMMAND_TEXT_SEND_RECEIPT: map[string]string{
+		"ru-RU": "Отправить подтверждение",
+		"en-US": "Send receipt",
+	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 		"en-US": "Send by Telegram",
