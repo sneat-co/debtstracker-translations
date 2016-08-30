@@ -57,11 +57,11 @@ var TRANS = map[string]map[string]string{
 		"en-US": "No, whenever is fine.",
 	},
 	COMMAND_TEXT_IT_CAN_BE_RETURNED_ANYTIME: map[string]string{
-		"ru-RU": "Срок возврата не важен.",
-		"en-US": "Whenever is fine.",
+		"ru-RU": "Когда нибудь",
+		"en-US": "Whenever is fine",
 	},
 	COMMAND_TEXT_IN_FEW_MINUTES: map[string]string{
-		"ru-RU": "Через несколько минут",
+		"ru-RU": "Через минуту",
 		"en-US": "In few minutes",
 	},
 	COMMAND_TEXT_IN_1_WEEK: map[string]string{
@@ -74,7 +74,7 @@ var TRANS = map[string]map[string]string{
 	},
 	COMMAND_TEXT_SET_DATE: map[string]string{
 		"ru-RU": "Задать дату",
-		"en-US": "Set dte",
+		"en-US": "Set date",
 	},
 	COMMAND_TEXT_MONDAY: map[string]string{
 		"ru-RU": "Понедельник",
@@ -268,6 +268,14 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_TRANSFER_IS_CREATING: map[string]string{
 		"ru-RU": "Создаю запись...",
 		"en-US": "Creating transfer...",
+	},
+	COMMAND_TEXT_PLEASE_WAIT: map[string]string{
+		"ru-RU": "Пожалуйста подождите",
+		"en-US": "Please wait",
+	},
+	MESSAGE_TEXT_PLEASE_WAIT: map[string]string{
+		"ru-RU": "Пожалуйста подождите...",
+		"en-US": "Please wait...",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: map[string]string{
 		"ru-RU": "Подтверждение ожидается от %v",
