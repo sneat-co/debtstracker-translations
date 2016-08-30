@@ -1135,4 +1135,13 @@ You invitation code is: {{.InviteCode}}`,
 		"ja-JP": "DebtsTrackerは、あなたの借金＆クレジットを追跡するのに役立ちますモバイルアプリ＆リマインダーサービスです。あなたの債務者に自動メール＆SMS通知を送信します。",
 		"zh-CN": "DebtsTracker是一个移动应用和提醒服务，帮助跟踪你的债务和信用。发送自动电子邮件和短信通知到您的债务人。",
 	},
+
+	WS_ADS_TITLE: map[string]string{
+		"en-US": "Ads @ DebtsTracker.IO",
+		"ru-RU": "Реклама на DebtsTracker.IO",
+	},
+	WS_ADS_CONTENT: map[string]string{
+		"en-US": `To place ads in our app please send us an email to <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
+		"ru-RU": `Чтобы разместить рекламу в нашем приложении пишите нам на <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
+	},
 }
