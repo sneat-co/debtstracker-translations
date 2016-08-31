@@ -664,13 +664,21 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Спасибо за то что воспользовались приглашением!",
 		"en-US": "Welcome and thanks for accepting the invite!",
 	},
-	MESSAGE_TEXT_FOR_COUNTERPARTY_ONLY:  map[string]string{
+	MESSAGE_TEXT_FOR_COUNTERPARTY_ONLY: map[string]string{
 		"ru-RU": "Это действие доступно только для %v",
 		"en-US": "This action for %v only.",
 	},
-	BUTTON_TEXT_SEE_RECEIPT_DETAILS:  map[string]string{
+	BUTTON_TEXT_SEE_RECEIPT_DETAILS: map[string]string{
 		"ru-RU": "Показать детали",
-		"en-US": "Show receipt details ",
+		"en-US": "Show receipt details",
+	},
+	MESSAGE_TEXT_YOU_SELECTED_INVITE_BY_EMAIL: map[string]string{
+		"ru-RU": "Вы решили пригласить друга через email.",
+		"en-US": "You've selected to invite friend by email.",
+	},
+	MESSAGE_TEXT_YOU_SELECTED_INVITE_BY_SMS: map[string]string{
+		"ru-RU": "Вы решили пригласить друга через SMS.",
+		"en-US": "You've selected to invite friend by SMS.",
 	},
 	MESSAGE_TEXT_ABOUT_INVITES: map[string]string{
 		"ru-RU": `На данный момент доступ к нашему боту ограничен, но вы можете пригласить друга.
@@ -733,8 +741,13 @@ How do you want to pass the invite code?`,
 		"en-US": "InviteBy Telegram",
 	},
 	MESSAGE_TEXT_INVITE_CREATED: map[string]string{
-		"ru-RU": "Код приглашения: %v",
-		"en-US": "Invite code: %v",
+		"ru-RU": `Мы отправили код приглашения на указынный вами адрес. (#%v)
+
+Когда ваш друг потдвердит приглашение у вас будут общий баланс и транзакции (только между вами). Это поможет вам минимизировать усилия по ведению учёта.`,
+
+		"en-US": `We've sent an invite code to your friend. (#%v)
+
+Once your friend accepts invitation you'll share balance & transfers between you to make sure you both are on the same page with minimum efforts.`,
 	},
 	MESSAGE_TEXT_INVITE_BY_EMAIL: map[string]string{
 		"ru-RU": "Введите email вашего друга на который мы отправим код приглашения.",
@@ -789,8 +802,16 @@ How do you want to pass the invite code?`,
 		"en-US": "Balance",
 	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_TELEGRAM: map[string]string{
-		"ru-RU": "Квитанция отправлена через телеграм",
-		"en-US": "Receipt sent through Telegram",
+		"ru-RU": "Квитанция отправлена через телеграм.",
+		"en-US": "Receipt sent through Telegram.",
+	},
+	MESSAGE_TEXT_RECEIPT_SENT_THROW_EMAIL: map[string]string{
+		"ru-RU": "Квитанция отправлена через email. (id: %v)",
+		"en-US": "Receipt sent through email. (id: %v)",
+	},
+	MESSAGE_TEXT_RECEIPT_SENT_THROW_SMS: map[string]string{
+		"ru-RU": "Квитанция отправлена через SMS.",
+		"en-US": "Receipt sent through SMS.",
 	},
 	MESSAGE_TEXT_RECEIPT_VIEWED_BY_COUNTERPARTY: map[string]string{
 		"ru-RU": "Квитанция просмотрена",
@@ -921,7 +942,11 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "Debt record - {{.FromName}}",
 	},
 	EMAIL_RECEIPT_BODY_TEXT: map[string]string{
-		"ru-RU": "{{.FromName}} создал запись о долге: {{.ReceiptURL}}",
+		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
+		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
+	},
+	EMAIL_RECEIPT_BODY_HTML: map[string]string{
+		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
 	},
 	INLINE_RECEIPT_TITLE: map[string]string{
