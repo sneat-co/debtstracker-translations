@@ -281,6 +281,22 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Подтверждение ожидается от %v",
 		"en-US": "Acknowledgement is expected from %v",
 	},
+	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_YOU: map[string]string{
+		"ru-RU": "Вы подтвердили эту транзакцию.",
+		"en-US": "You've acepted this transaction.",
+	},
+	MESSAGE_TEXT_TRANSFER_DECLINED_BY_YOU: map[string]string{
+		"ru-RU": "Вы НЕ подтвердили эту транзакцию.",
+		"en-US": "You've declined this transaction.",
+	},
+	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_COUNTERPARTY: map[string]string{
+		"ru-RU": "%v подтвердил(a) вашу транзакцию:",
+		"en-US": "%v accepted your transaction:",
+	},
+	MESSAGE_TEXT_TRANSFER_DECLINED_BY_COUNTERPARTY: map[string]string{
+		"ru-RU": "%v НЕ подтвердил(a) вашу транзакцию.",
+		"en-US": "%v declined your transaction.",
+	},
 	COMMAND_TEXT_SUBSCRIBE_TO_APP: map[string]string{
 		"ru-RU": "Хочу приложение!",
 		"en-US": "I want the app!",
