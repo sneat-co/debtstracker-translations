@@ -712,18 +712,22 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Секундочку...",
 		"en-US": "Wait a second...",
 	},
+	HTML_USING_TELEGRAM: map[string]string{
+		"ru-RU": "используя Telegram мессенджер",
+		"en-US": "using Telegram messenger",
+	},
 	COMMAND_TEXT_ACCEPT: map[string]string{
 		"ru-RU": "Согласиться",
 		"en-US": "Accept",
 	},
-	BUTTON_TEXT_ACCEPT_TRANSFER_USING_TELEGRAM: map[string]string{
-		"ru-RU": "Подтвердить (используя Telegram)",
-		"en-US": "Accept (using Telegram messenger)",
-	},
-	BUTTON_TEXT_DECLINE_TRANSFER_USING_TELEGRAM: map[string]string{
-		"ru-RU": "Отказаться (используя Telegram)",
-		"en-US": "Decline (using Telegram messenger)",
-	},
+	//BUTTON_TEXT_ACCEPT_TRANSFER_USING_TELEGRAM: map[string]string{
+	//	"ru-RU": "Подтвердить ",
+	//	"en-US": "Accept ",
+	//},
+	//BUTTON_TEXT_DECLINE_TRANSFER_USING_TELEGRAM: map[string]string{
+	//	"ru-RU": "Отказаться (используя Telegram)",
+	//	"en-US": "Decline (using Telegram messenger)",
+	//},
 	COMMAND_TEXT_DECLINE: map[string]string{
 		"ru-RU": "Отклонить",
 		"en-US": "Decline",
