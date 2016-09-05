@@ -3,8 +3,8 @@ package trans
 import (
 	"errors"
 	"fmt"
-	"strings"
 	"github.com/strongo/app"
+	"strings"
 )
 
 type DebtsTrackerLocales struct {

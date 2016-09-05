@@ -1,8 +1,8 @@
 package trans
 
 import (
-	"github.com/strongo/bots-framework/core"
 	"bitbucket.com/debtstracker/gae_app/debtstracker/emoji"
+	"github.com/strongo/bots-framework/core"
 )
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
@@ -200,10 +200,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/старт",
 		"en-US": "/start",
 	},
-	//COMMAND_TEXT_DUE_RETURNS: map[string]string{
-	//	"ru-RU": "/К_возврату",
-	//	"en-US": "/Due returns",
-	//},
+	COMMAND_TEXT_DUE_RETURNS: map[string]string{
+		"ru-RU": "Предстоящие платежи",
+		"en-US": "Due returns",
+	},
 	MESSAGE_TEXT_DUE_RETURNS_HEADER: map[string]string{
 		"ru-RU": "<b>Ближайшие долги к возрату:</b>",
 		"en-US": "<b>Closest debts to return:</b>",
@@ -240,6 +240,10 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_SETTING: map[string]string{
 		"ru-RU": "/Настройки",
 		"en-US": "/Settings",
+	},
+	COMMAND_TEXT_CHANGE_LANG: map[string]string{
+		"ru-RU": "/Язык",
+		"en-US": "/Language",
 	},
 	COMMAND_TEXT_HELP: map[string]string{
 		"ru-RU": "/Помощь",
@@ -407,16 +411,23 @@ Do you want to get an invite when it gets released?
 		`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_NEUTRAL: map[string]string{
-		"ru-RU": `Чтож, мы очень старались. Может быть вы подскажите что можно улучшить?`,
+		"ru-RU": `Чтож, мы очень старались. Ваша оценка будет передана разработчикам.
+
+Может быть вы сообщите нам что не работает или подскажите как можно улучшить?`,
 		/*------------------------------------------------------------*/
-		"en-US": `Well, we worked hard. Maybe you can suggest what can be improved?`,
+		"en-US": `Well, we worked hard. You feedback will be passed to developers.
+
+Maybe you can report your issue or suggest how we can improve?`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_NEGATIVE: map[string]string{
-		"ru-RU": `Нам очень стыдно. Может быть вы подскажите что не так или предложите какие-либо усовершенствования?`,
+		"ru-RU": `Нам очень стыдно. Может быть вы подскажите что именно не так или предложите какие-либо усовершенствования?`,
 		/*------------------------------------------------------------*/
-		"en-US": `We are very sorry. Maybe you can suggest what's wrong or some improvemnts we can do to make it better?`,
+		"en-US": `We are very sorry. Maybe you can let us know what is wrong or suggest how we can improve?`,
 	},
-
+	COMMAND_TEXT_ASK_FOR_FEEDBACK: map[string]string{
+		"ru-RU": "Оцените наше приложение?",
+		"en-US": "Please rate our app",
+	},
 	COMMAND_TEXT_FEEDBACK_POSITIVE: map[string]string{
 		"ru-RU": "Да, отличное приложение!",
 		"en-US": "Yes, it's a great app!",
@@ -449,7 +460,7 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "Пожалуйста введите код приглашения:",
 		"en-US": "Please enter an invite code:",
 	},
-	MESSAGE_TEXT_USER_EMAIL_FOR_INVITE_RECEIVED:  map[string]string{
+	MESSAGE_TEXT_USER_EMAIL_FOR_INVITE_RECEIVED: map[string]string{
 		"ru-RU": "Мы отправили письмо на %v.\n\nПожалуйста откройте его и кликните на ссылку для подтверждения адреса.",
 		"en-US": "We've sent a message to %v.\n\nPlease open the email and click a link to confirm your email address.",
 	},
@@ -588,7 +599,7 @@ Do you want to get an invite when it gets released?
 		"ru-RU": "У <b>%v</b> больше не осталось долгов перед вами.",
 		"en-US": "<b>%v</b> does not owe anything more to you.",
 	},
-	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_BY_USER:map[string]string{
+	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_BY_USER: map[string]string{
 		"ru-RU": "Вы должны %v",
 		"en-US": "You owe %v",
 	},
@@ -801,9 +812,13 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /menu",
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
 	},
+	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
+		"ru-RU": "%v. %s: %s ⇒ Вам",
+		"en-US": "%v. %s: %s ⇒ to you",
+	},
 	MESSAGE_TEXT_HISTORY_ROW_FROM_USER_WITH_NAME: map[string]string{
-		"ru-RU": "Вы ⇒ %s ⇒ %s",
-		"en-US": "You ⇒ %s ⇒ %s",
+		"ru-RU": "%v. %s: Вы ⇒ %s",
+		"en-US": "%v. %s: You ⇒ %s",
 	},
 	MESSAGE_TEXT_LETS_SEND_SMS: map[string]string{
 		"ru-RU": "Давайте отправим SMS",
@@ -860,10 +875,6 @@ Once your friend accepts invitation you'll share balance & transfers between you
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: map[string]string{
 		"ru-RU": "Сколько было возвращено?",
 		"en-US": "How much have been returned?",
-	},
-	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
-		"ru-RU": "%s ⇒ %s ⇒ Вам",
-		"en-US": "%s ⇒ %s ⇒ to you",
 	},
 	MESSAGE_TEXT_HELP: map[string]string{
 		"ru-RU": "Вы можете сообщить о проблеме или сделать предложения по улучшению программы на нашем сайте.",
@@ -1032,6 +1043,14 @@ You invitation code is: {{.InviteCode}}`,
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: map[string]string{
 		"ru-RU": "Напишите заметку:",
 		"en-US": "Please write a note:",
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT_ONLY:  map[string]string{
+		"ru-RU": `Если хотите добавить комментарий просто отправьте текст.`,
+		"en-US": `If you want to add a comment just send a text now.`,
+	},
+	MESSAGE_TEXT_VISIBLE_TO_YOU_AND_COUNTERPARTY: map[string]string{
+		"ru-RU": "виден вам и %v",
+		"en-US": "visible to you & %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: map[string]string{
 		"ru-RU": "Напишите комментарий:",
