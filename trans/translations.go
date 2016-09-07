@@ -12,6 +12,43 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "ПРИМЕР",
 		"en-US": "SAMPLE",
 	},
+	"Jan": map[string]string{
+		"ru-RU": "Янв.",
+	},
+	"Feb": map[string]string{
+		"ru-RU": "Фев.",
+	},
+	"Mar": map[string]string{
+		"ru-RU": "Мрт.",
+	},
+	"Apr": map[string]string{
+		"ru-RU": "Апр.",
+	},
+	"May": map[string]string{
+		"ru-RU": "Май ",
+	},
+	"Jun": map[string]string{
+		"ru-RU": "Июнь",
+	},
+	"Jul": map[string]string{
+		"ru-RU": "Июль",
+	},
+	"Aug": map[string]string{
+		"ru-RU": "Авг.",
+	},
+	"Sep": map[string]string{
+		"ru-RU": "Сен.",
+	},
+	"Oct": map[string]string{
+		"ru-RU": "Окт.",
+	},
+	"Nov": map[string]string{
+		"ru-RU": "Нбр.",
+	},
+	"Dec": map[string]string{
+		"ru-RU": "Дек.",
+	},
+
 	adsCommandTitle: map[string]string{
 		"ru-RU": adsCommandTitle,
 		"en-US": adsCommandTitle,
@@ -230,8 +267,8 @@ var TRANS = map[string]map[string]string{
 		"en-US": "/Got",
 	},
 	COMMAND_TEXT_RETURN: map[string]string{
-		"ru-RU": "/Возврат",
-		"en-US": "/Return",
+		"ru-RU": "/Вернул",
+		"en-US": "/Returned",
 	},
 	COMMAND_TEXT_BALANCE: map[string]string{
 		"ru-RU": "/Баланс",
@@ -813,12 +850,12 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
 	},
 	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
-		"ru-RU": "%v. %s: %s ⇒ Вам",
-		"en-US": "%v. %s: %s ⇒ to you",
+		"ru-RU": "%v - %s ⇒ Вам : %s",
+		"en-US": "%v - %s ⇒ to you: %s",
 	},
 	MESSAGE_TEXT_HISTORY_ROW_FROM_USER_WITH_NAME: map[string]string{
-		"ru-RU": "%v. %s: Вы ⇒ %s",
-		"en-US": "%v. %s: You ⇒ %s",
+		"ru-RU": "%v - Вы ⇒ %s : %s",
+		"en-US": "%v - You ⇒ %s : %s",
 	},
 	MESSAGE_TEXT_LETS_SEND_SMS: map[string]string{
 		"ru-RU": "Давайте отправим SMS",
@@ -989,8 +1026,27 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "Click here to send the receipt",
 	},
 	INLINE_RECEIPT_MESSAGE: map[string]string{
-		"ru-RU": "%v создал(а) запись о долге.\n\n<i>Выберите язык чтобы посмотреть подробности.</i>",
-		"en-US": "%v recorded a debt associated with you.\n\n<i>Choose language to see details.</i>",
+		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
+
+{{.SiteLink}} — программа для учёта долгов поможет:
+
+  - Всегда знать кто кому сколько должен
+
+  - Незабыть вовремя отдать или востребовать долг
+    <i>(напоминания вам и вашим должникам)</i>
+
+<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.`,
+		//-------------------------------------------------------
+		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
+
+{{.SiteLink}} — an app for debts tacking will help you to:
+
+  - Always know your bottom line
+
+  - Return debts on time
+    <i>(reminders to you & your debtors)</i>
+
+<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.`,
 	},
 	INLINE_INVITE_TITLE: map[string]string{
 		"ru-RU": "Приглашение в %v",
@@ -1011,6 +1067,10 @@ You invitation code is: {{.InviteCode}}`,
 	SMS_RECEIPT_YOU_GAVE: map[string]string{
 		"ru-RU": "Вы дали %v - взял %v. Подробнее тут: %v",
 		"en-US": "You've given %v to %v. Details here: %v",
+	},
+	HTML_DATE: map[string]string{
+		"ru-RU": "Дата",
+		"en-US": "Date",
 	},
 	HTML_RECEIPT: map[string]string{
 		"ru-RU": "Квитанция",
