@@ -1104,7 +1104,7 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "Напишите заметку:",
 		"en-US": "Please write a note:",
 	},
-	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT_ONLY:  map[string]string{
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT_ONLY: map[string]string{
 		"ru-RU": `Если хотите добавить комментарий просто отправьте текст.`,
 		"en-US": `If you want to add a comment just send a text now.`,
 	},
