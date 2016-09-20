@@ -61,9 +61,22 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Упс, что-то пошло не так... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 	},
-	MESSAGE_TEXT_ASK_DUE_DATE: map[string]string{
+	MESSAGE_TEXT_ASK_DUE: map[string]string{
 		"ru-RU": "Когда дата возврата?",
 		"en-US": "When is the due date?",
+	},
+	MESSAGE_TEXT_ASK_DUE_DATE: map[string]string{
+		"ru-RU": `Чтобы задать дату возврата напишите её в формате <i>ДД.MM.ГОД</i>.
+<b>Например</b> для 20 января 2017 г. отправьте:
+    <i>20.01.2017</i>`,
+
+		"en-US": `To set due date please send it as a text in format of <i>DD.MM.YEAR</i>.
+<b>For example</b> for 20th of January 2017 submit:
+    <i>20.01.2017</i>`,
+	},
+	MESSAGE_TEXT_WRONG_DATE: map[string]string{
+		"ru-RU": "Извините, что-то не так с датой которую вы отправили.",
+		"en-US": "Sorry, there is something wrong with the date you've provided.",
 	},
 	COMMAND_TEXT_DISABLE_REMINDER: map[string]string{
 		"ru-RU": "Не напоминать",
@@ -245,6 +258,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Предстоящие платежи",
 		"en-US": "Due returns",
 	},
+	MESSAGE_TEXT_OVERDUE_RETURNS_HEADER: map[string]string{
+		"ru-RU": "<b>Просроченные долги:</b>",
+		"en-US": "<b>Overdue debts:</b>",
+	},
 	MESSAGE_TEXT_DUE_RETURNS_HEADER: map[string]string{
 		"ru-RU": "<b>Ближайшие долги к возрату:</b>",
 		"en-US": "<b>Closest debts to return:</b>",
@@ -376,8 +393,13 @@ Do you want to get an invite when it gets released?
 		"en-US": "Sorry, at the moment I can <b>store</b> just integer numbers (<i>1, 2, 3, ...</>) в качестве суммы/количества.",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
-		"ru-RU": "Что вы дали в долг?",
-		"en-US": "What did you lend to someone?",
+		"ru-RU": `Что вы дали в долг?
+
+Если ни один из стандартных вариантов не подходит просто напишите текстом. Например: "<i>яблоко</i>".`,
+
+		"en-US": `What did you lend to someone?
+
+If standard options are not enough simply send a text. For example: "<i>apple</i>".`,
 	},
 	MESSAGE_TEXT_ASK_LENDING_AMOUNT: map[string]string{
 		"ru-RU": "Сколько <b>%v</b> вы дали в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
@@ -1235,7 +1257,7 @@ You invitation code is: {{.InviteCode}}`,
 		"ja-JP": "現時点では私たちのプログラムは、ちょうど上の<a href='https://telegram.org/'><B>電報</ b>のメッセンジャー</a>で提供されています",
 		"zh-CN": "目前我们的计划是只提供在<a href='https://telegram.org/'><B>电报</ b>的使者</A>",
 	},
-	WS_MOTO: map[string]string{
+	WS_MOTTO: map[string]string{
 		"ru-RU": "Платежи по долгам целиком и вовремя!",
 		"en-US": "Know your bottom line & never miss a debt payment!",
 		"es-ES": "Conozca a su línea de fondo y nunca se pierda un pago de la deuda!",
