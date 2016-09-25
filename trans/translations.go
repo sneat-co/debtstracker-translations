@@ -299,6 +299,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Настройки",
 		"en-US": "/Settings",
 	},
+	COMMAND_TEXT_HIGH_FIVE: map[string]string{
+		"ru-RU": "Дать пять!",
+		"en-US": "High five!",
+	},
 	COMMAND_TEXT_CHANGE_LANG: map[string]string{
 		"ru-RU": "/Язык",
 		"en-US": "/Language",
@@ -324,8 +328,14 @@ var TRANS = map[string]map[string]string{
 		"en-US": "Add new",
 	},
 	MESSAGE_TEXT_ASK_NEW_COUNTERPARTY_NAME: map[string]string{
-		"ru-RU": "Имя для нового контакта:\n<i>(отправьте '.' для отмены)</i>",
-		"en-US": "Please enter a name for the new contact:\n<i>(send '.' to cancel)</i>",
+		"ru-RU": `<b>Имя для нового контакта</b>
+Напишите сами или выберите из своей адресной книги (<i>через иконку "скрепка"</i>).
+
+<i>Отправьте '.' для отмены</i>`,
+		"en-US": `Please enter a name for the new contact:
+You can type manually or choose from your address book (<i>throw "clip" icon</i>).
+
+<i>Send '.' to cancel</i>`,
 	},
 	MESSAGE_TEXT_TRANSFER_IS_CREATING: map[string]string{
 		"ru-RU": "Создаю запись...",
@@ -455,8 +465,8 @@ If standard options are not enough simply send a text. For example: "<i>apple</i
 	},
 
 	COMMAND_TEXT_OPEN_STOREBOT_FOR_FEEDBACK: map[string]string{
-		"ru-RU": "Оценить на сайте Srotebot.me",
-		"en-US": "Leave rating at Storebot.me",
+		"ru-RU": "Оценить на  @Storebot",
+		"en-US": "Leave rating at @Storebot",
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_POSITIVE: map[string]string{
 		"ru-RU": `Спасибо, мы очень старались!
@@ -596,6 +606,10 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
 		"en-US": `¡Hola! Hi! Привет! سلام!`,
 	},
+	MESSAGE_TEXT_BACK_TO_MAIN_MENU: map[string]string{
+		"ru-RU": `Можно вернуться назад в главно /меню`,
+		"en-US": `You can go back to main /menu`,
+	},
 	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: map[string]string{ // This is the same for all languages.
 		"ru-RU": `Выбранный язык программы: %v`,
 		"en-US": `Preferred app language: %v`,
@@ -615,8 +629,16 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"en-US": "You've switched language to %v",
 	},
 	MESSAGE_TEXT_WHATS_NEXT: map[string]string{
-		"ru-RU": "Что будем делать дальше?",
-		"en-US": "What's next?",
+		"ru-RU": `Что будем делать дальше?
+
+Если вы дали в долг воспользуйтесь командой /дал.
+Если вы одолжили что-то - командой /взял.
+`,
+		"en-US": `What's next?
+
+If you borrowed from someone to record it use /got.
+If you lent to someone to record it use /gave.
+`,
 	},
 	MESSAGE_TEXT_HISTORY_HEADER: map[string]string{
 		"ru-RU": "История",
@@ -1051,6 +1073,10 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "Нажмите здесь чтобы отправить квитанцию",
 		"en-US": "Click here to send the receipt",
 	},
+	INLINE_RECEIPT_CHOOSE_LANGUAGE: map[string]string{
+		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
+		"en-US": "<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.",
+	},
 	INLINE_RECEIPT_MESSAGE: map[string]string{
 		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
 
@@ -1059,9 +1085,7 @@ You invitation code is: {{.InviteCode}}`,
   - Всегда знать кто кому сколько должен
 
   - Незабыть вовремя отдать или востребовать долг
-    <i>(напоминания вам и вашим должникам)</i>
-
-<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.`,
+    <i>(напоминания вам и вашим должникам)</i>`,
 		//-------------------------------------------------------
 		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
 
@@ -1070,9 +1094,7 @@ You invitation code is: {{.InviteCode}}`,
   - Always know your bottom line
 
   - Return debts on time
-    <i>(reminders to you & your debtors)</i>
-
-<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.`,
+    <i>(reminders to you & your debtors)</i>`,
 	},
 	INLINE_INVITE_TITLE: map[string]string{
 		"ru-RU": "Приглашение в %v",
