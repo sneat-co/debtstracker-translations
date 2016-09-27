@@ -885,6 +885,14 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"ru-RU": "Неверный email. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid email. Check and try it again? /menu",
 	},
+	MESSAGE_TEXT_INVALID_YEAR: map[string]string{
+		"ru-RU": "Неверный год. Год должен быть 2 или 4 цифры (<i>например 2016 или 16)</i>).",
+		"en-US": "Invalid year. The year part should be 2 or 4 numbers (<i>e.g. 2016 or 16</i>).",
+	},
+	MESSAGE_TEXT_INVALID_DATE: map[string]string{
+		"ru-RU": "Неверный формат даты. Например для 20 февраля 2019 года надо ввести: 20.02.2019 или 20.02.19",
+		"en-US": "Invalid date format. For exampel for 20 February 2019 please submit: 20.02.2019 or 20.02.19",
+	},
 	MESSAGE_TEXT_INVALID_PHONE_NUMBER: map[string]string{
 		"ru-RU": "Неверный номер. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid phone number. Check and try it again? /menu",
