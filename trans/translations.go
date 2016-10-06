@@ -65,6 +65,15 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Когда дата возврата?",
 		"en-US": "When is the due date?",
 	},
+	MESSAGE_TEXT_ASK_DATE_TO_REMIND: map[string]string{
+		"ru-RU": `Чтобы задать дату напопинания напишите её в формате <i>ДД.MM.ГОД</i>.
+<b>Например</b> для 20 января 2017 г. отправьте:
+    <i>20.01.2017</i>`,
+
+		"en-US": `To set date for next reminder please send it as a text in format of <i>DD.MM.YEAR</i>.
+<b>For example</b> for 20th of January 2017 submit:
+    <i>20.01.2017</i>`,
+	},
 	MESSAGE_TEXT_ASK_DUE_DATE: map[string]string{
 		"ru-RU": `Чтобы задать дату возврата напишите её в формате <i>ДД.MM.ГОД</i>.
 <b>Например</b> для 20 января 2017 г. отправьте:
@@ -81,10 +90,6 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_DISABLE_REMINDER: map[string]string{
 		"ru-RU": "Не напоминать",
 		"en-US": "No reminder",
-	},
-	COMMAND_TEXT_ON_SPECIFIC_DATE: map[string]string{
-		"ru-RU": "Задать дату",
-		"en-US": "On a specific date",
 	},
 	COMMAND_TEXT_TOMORROW: map[string]string{
 		"ru-RU": "Завтра",
@@ -107,7 +112,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": "No, whenever is fine.",
 	},
 	COMMAND_TEXT_IT_CAN_BE_RETURNED_ANYTIME: map[string]string{
-		"ru-RU": "Когда нибудь",
+		"ru-RU": "Когда-нибудь",
 		"en-US": "Whenever is fine",
 	},
 	COMMAND_TEXT_IN_FEW_MINUTES: map[string]string{
@@ -162,13 +167,37 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы решили не отправлять квитанцию.",
 		"en-US": "You've decided not to send the receipt.",
 	},
-	COMMAND_TEXT_SEND_RECEIPT: map[string]string{
-		"ru-RU": "Отправить подтверждение",
-		"en-US": "Send receipt",
+	COMMAND_TEXT_I_HAVE_CHANGED_MY_MIND: map[string]string{
+		"ru-RU": "Я передумал(а)",
+		"en-US": "I've changed my mind",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 		"en-US": "Send by Telegram",
+	},
+	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: map[string]string{
+		"ru-RU": "Отправить через SMS, FB, VK, etc.",
+		"en-US": "Send by SMS, FB, VK, etc.",
+	},
+	COMMAND_TEXT_SEND_RECEIPT_BY_SMS: map[string]string{
+		"ru-RU": "Отправить через SMS",
+		"en-US": "Send by SMS",
+	},
+	COMMAND_TEXT_SEND_RECEIPT_BY_VK: map[string]string{
+		"ru-RU": "Отправить через ВКонтакте",
+		"en-US": "Send throw VK.com",
+	},
+	COMMAND_TEXT_SEND_RECEIPT_BY_OK: map[string]string{
+		"ru-RU": "Отправить через Одноклассники",
+		"en-US": "Send throw OK",
+	},
+	COMMAND_TEXT_SEND_RECEIPT_BY_FB: map[string]string{
+		"ru-RU": "Отправить через Facebook",
+		"en-US": "Send throw Facebook",
+	},
+	COMMAND_TEXT_SEND_RECEIPT_BY_TWT: map[string]string{
+		"ru-RU": "Отправить через Twitter",
+		"en-US": "Send throw Twiter",
 	},
 	COMMAND_TEXT_CANCEL_SENDING_RECEIPT_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отменить отправку через Telelgram",
@@ -207,20 +236,28 @@ var TRANS = map[string]map[string]string{
 		"en-US": "You've replied that debt has been returned fully.",
 	},
 	MESSAGE_TEXT_DEBT_IS_RETURNED: map[string]string{
-		"ru-RU": "Долг возвращён полностью. Подробности тут: ",
-		"en-US": "The debt has been returned fully. Details here: ",
+		"ru-RU": "Долг возвращён полностью.",
+		"en-US": "The debt has been returned fully.",
+	},
+	MESSAGE_TEXT_DETAILS_ARE_HERE: map[string]string{
+		"ru-RU": "Подробности тут: %v",
+		"en-US": "Details here: %v",
 	},
 	MESSAGE_TEXT_REMINDER: map[string]string{
 		"ru-RU": "Напоминание",
 		"en-US": "Reminder",
 	},
 	MESSAGE_TEXT_REMINDER_SET: map[string]string{
-		"ru-RU": "Напоминание установлено",
-		"en-US": "Reminder set",
+		"ru-RU": "Напоминание установлено на: %v",
+		"en-US": "Reminder set for: %v",
 	},
 	MESSAGE_TEXT_REMINDER_DISABLED: map[string]string{
 		"ru-RU": "Напоминания об этом долге отключены.",
 		"en-US": "You've disabled reminders for this debt.",
+	},
+	MESSAGE_TEXT_REMINDER_ALREADY_RESCHEDULED: map[string]string{
+		"ru-RU": "Напоминание об этом долге уже перенесено.",
+		"en-US": "You've already rescheduled this reminder.",
 	},
 	COMMAND_TEXT_REMINDER_RETURNED_IN_FULL: map[string]string{
 		"ru-RU": "Да, возвращено полностью",
@@ -440,8 +477,8 @@ If standard options are not enough simply send a text. For example: "<i>apple</i
 		"en-US": "We are sending receipt to %v by Telegram...",
 	},
 	MESSAGE_TEXT_TRANSFER_FROM_USER_COMPLETED: map[string]string{
-		"ru-RU": "%v взял(а) в долг %v.",
-		"en-US": "%v borrowed from you %v.",
+		"ru-RU": "<b>%v</b> взял(а) в долг %v.",
+		"en-US": "<b>%v</b> borrowed from you %v.",
 	},
 	MESSAGE_TEXT_TRANSFER_TO_USER_COMPLETED: map[string]string{
 		"ru-RU": "%v дал(а) вам в долг %v.",
@@ -629,13 +666,15 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"en-US": "You've switched language to %v",
 	},
 	MESSAGE_TEXT_WHATS_NEXT: map[string]string{
-		"ru-RU": `Что будем делать дальше?
-
+		"ru-RU": "Что будем делать дальше?",
+		"en-US": "What's next?",
+	},
+	MESSAGE_TEXT_WHATS_NEXT_HINT: map[string]string{
+		"ru-RU": `
 Если вы дали в долг воспользуйтесь командой /дал.
 Если вы одолжили что-то - командой /взял.
 `,
-		"en-US": `What's next?
-
+		"en-US": `
 If you borrowed from someone to record it use /got.
 If you lent to someone to record it use /gave.
 `,
@@ -733,8 +772,12 @@ If you lent to someone to record it use /gave.
 		"en-US": "Details here: %v",
 	},
 	MESSAGE_TEXT_ASK_PHONE_NUMBER_OF_COUNTERPARTY: map[string]string{
-		"ru-RU": "Пожалуйста напишите номер для <b>%v</b>",
+		"ru-RU": "Пожалуйста напишите номер телефона <b>%v</b>.",
 		"en-US": "Plese provide phone number for <b>%v</b>",
+	},
+	MESSAGE_TEXT_USE_CONTACT_TO_SEND_PHONE_NUMBER: map[string]string{
+		"ru-RU": "Если номер телефона есть в записной книжке <b>воспользуйтесь кнопкой %v</b> (скрепка) чтобы отправить контакт.",
+		"en-US": "If phone number is in your address book you can <b>use %v button</b> to send the contact.",
 	},
 	MESSAGE_TEXT_ABOUT_PHONE_NUMBER_FORMAT: map[string]string{
 		"ru-RU": "Номер должен быть в международном формате:\n\t* Начинаться со знака '+' и кода страны\n\t* Состоять только из цифр\nПример: <pre>+</pre><b>7</b><code>999012345678</code>",
@@ -928,6 +971,10 @@ Once your friend accepts invitation you'll share balance & transfers between you
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
 		"en-US": "Balance",
+	},
+	MESSAGE_TEXT_RECEIPT_AVAILABLE_CHANNELS: map[string]string{
+		"ru-RU": "Извините, в данный момент доступны только эти каналы для отправки квитанции:",
+		"en-US": "Sorry, at the moment just this channels are available for sending a receipt:",
 	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_TELEGRAM: map[string]string{
 		"ru-RU": "Квитанция отправлена через телеграм.",
