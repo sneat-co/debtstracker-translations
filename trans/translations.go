@@ -1116,6 +1116,10 @@ You invitation code is: {{.InviteCode}}`,
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
 	},
+	MESSENGER_RECEIPT_TEXT: map[string]string{
+		"ru-RU": "Я создал(а) запись о долге, подробности тут - {{.ReceiptURL}}",
+		"en-US": "I've created a debt record regards you, see details at {{.ReceiptURL}}",
+	},
 	EMAIL_RECEIPT_BODY_HTML: map[string]string{
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
