@@ -176,8 +176,8 @@ var TRANS = map[string]map[string]string{
 		"en-US": "Send by Telegram",
 	},
 	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: map[string]string{
-		"ru-RU": "Отправить через SMS, FB, VK, etc.",
-		"en-US": "Send by SMS, FB, VK, etc.",
+		"ru-RU": "Отправить через Viber, VK, FB, ...",
+		"en-US": "Send by FB, WhatsApp, Viber, etc.",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_SMS: map[string]string{
 		"ru-RU": "Отправить через SMS",
