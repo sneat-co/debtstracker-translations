@@ -440,11 +440,15 @@ Do you want to get an invite when it gets released?
 		"en-US": "Sorry, at the moment I can <b>store</b> just integer numbers (<i>1, 2, 3, ...</>) в качестве суммы/количества.",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
-		"ru-RU": `Что вы дали в долг?
+		"ru-RU": `<b>Что вы дали в долг?</b>
+
+Выберите из меню внизу экрана.
 
 Если ни один из стандартных вариантов не подходит просто напишите текстом. Например: "<i>яблоко</i>".`,
 
-		"en-US": `What did you lend to someone?
+		"en-US": `<b>What did you lend to someone?</b>
+
+Please choose from the options below.
 
 If standard options are not enough simply send a text. For example: "<i>apple</i>".`,
 	},
@@ -673,10 +677,14 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"ru-RU": `
 Если вы дали в долг воспользуйтесь командой /дал.
 Если вы одолжили что-то - командой /взял.
+
+Или воспользуйтесь меню внизу экрана.
 `,
 		"en-US": `
 If you borrowed from someone to record it use /got.
 If you lent to someone to record it use /gave.
+
+Or use menu at the bottom.
 `,
 	},
 	MESSAGE_TEXT_HISTORY_HEADER: map[string]string{
