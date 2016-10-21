@@ -883,7 +883,7 @@ How do you want to pass the invite code?`,
 		"ru-RU": "Принять приглашение",
 		"en-US": "Accept invite",
 	},
-	COMMAND_TEXT_SEE_RECEIPT_DETAILS: map[string]string{
+	COMMAND_TEXT_VIEW_RECEIPT_DETAILS: map[string]string{
 		"ru-RU": "Посмотреть квитанцию",
 		"en-US": "See receipt details",
 	},
