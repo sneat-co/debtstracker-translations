@@ -969,12 +969,12 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"en-US": "Let's send SMS",
 	},
 	MESSAGE_TEXT_SMS_QUEUING_FOR_SENDING: map[string]string{
-		"ru-RU": "SMS ставится в очередь на отправку...",
-		"en-US": "Queuing SMS for sending...",
+		"ru-RU": "SMS ставится в очередь на отправку на номер %v...",
+		"en-US": "Queuing SMS for sending to number %v...",
 	},
 	MESSAGE_TEXT_SMS_QUEUED_FOR_SENDING: map[string]string{
-		"ru-RU": "SMS поставлена в очередь на отправку",
-		"en-US": "SMS is queued for sending",
+		"ru-RU": "SMS поставлена в очередь на отправку на номер %v",
+		"en-US": "SMS is queued for sending to number %v",
 	},
 	MESSAGE_TEXT_BALANCE_HEADER: map[string]string{
 		"ru-RU": "Баланс",
@@ -1176,12 +1176,16 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": "%v invited you to try %v",
 	},
 	SMS_RECEIPT_YOU_GOT: map[string]string{
-		"ru-RU": "Вы получили %v от %v. Подробнее тут: %v",
-		"en-US": "You've got %v from %v. Details here: %v",
+		"ru-RU": "Вы получили %v от %v.",
+		"en-US": "You've got %v from %v.",
 	},
 	SMS_RECEIPT_YOU_GAVE: map[string]string{
-		"ru-RU": "Вы дали %v - взял %v. Подробнее тут: %v",
-		"en-US": "You've given %v to %v. Details here: %v",
+		"ru-RU": "Вы дали %v - взял(а) %v.",
+		"en-US": "You've given %v to %v.",
+	},
+	SMS_CLICK_TO_CONFIRM_OR_DECLINE: map[string]string{
+		"ru-RU": "Нажмите %v чтобы подтвердить или отвергнуть.",
+		"en-US": "Click %v to confirm or decline.",
 	},
 	HTML_DATE: map[string]string{
 		"ru-RU": "Дата",
