@@ -996,6 +996,10 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"ru-RU": "Квитанция отправлена через SMS.",
 		"en-US": "Receipt sent through SMS.",
 	},
+	MESSAGE_TEXT_SWITCH_TO_PM_TO_VIEW_RECEIPT: map[string]string{
+		"ru-RU": "Переключитьсь на чат с ботом чтобы посмотреть квитанцию",
+		"en-US": "Switch to private mode to see receipt details.",
+	},
 	MESSAGE_TEXT_RECEIPT_VIEWED_BY_COUNTERPARTY: map[string]string{
 		"ru-RU": "Квитанция просмотрена",
 		"en-US": "Receipt viewed",
