@@ -775,6 +775,14 @@ Or use menu at the bottom.
 		"ru-RU": "Пожалуйста подтвердите или отклоните эту транзакцию.",
 		"en-US": "Please confirm or decline this transfer.",
 	},
+	MESSAGE_TEXT_ALREADY_ACCEPTED_TRANSFER: map[string]string{
+		"ru-RU": "Эта транзакция уже подтверждена.",
+		"en-US": "This transfer has been accepted already.",
+	},
+	MESSAGE_TEXT_ALREADY_DECLINED_TRANSFER: map[string]string{
+		"ru-RU": "Эта транзакция уже отклонена.",
+		"en-US": "This transfer has been declined already.",
+	},
 	MESSAGE_TEXT_RECEIPT_LINK: map[string]string{
 		"ru-RU": "Подробнее тут: %v",
 		"en-US": "Details here: %v",
