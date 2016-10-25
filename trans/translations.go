@@ -643,6 +643,10 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"ru-RU": "Незнакомый язык. Пожалуйста выберете один из предоставленных:",
 		"en-US": "Unknown language. Please choose 1 from the options:",
 	},
+	MESSAGE_TEXT_UNKNOWN_COUNTERPARTY: map[string]string{
+		"ru-RU": "Неизвестный контакт. Пожалуйста выберите <b>Добавить</b> если это новый контакт.",
+		"en-US": "Unknown counterparty. Please choose <b>Add new</b> if it's a new contact.",
+	},
 	MESSAGE_TEXT_HI: map[string]string{ // This is the same for all languages.
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
 		"en-US": `¡Hola! Hi! Привет! سلام!`,
