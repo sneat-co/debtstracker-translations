@@ -1000,6 +1000,10 @@ Once your friend accepts invitation you'll share balance & transfers between you
 		"ru-RU": "Квитанция отправлена через телеграм.",
 		"en-US": "Receipt sent through Telegram.",
 	},
+	MESSAGE_TEXT_RECEIPT_NOT_SENT_AS_COUNTERPARTY_HAS_DISABLED_TG_BOT: map[string]string{
+		"ru-RU": "Квитанция НЕ отправлена через телеграм так как %v удалил чат с ботом.",
+		"en-US": "Receipt NOT sent through Telegram as %v has deleted chat with the bot.",
+	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_EMAIL: map[string]string{
 		"ru-RU": "Квитанция отправлена через email. (id: %v)",
 		"en-US": "Receipt sent through email. (id: %v)",
