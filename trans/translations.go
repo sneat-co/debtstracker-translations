@@ -476,6 +476,10 @@ If standard options are not enough simply send a text. For example: "<i>apple</i
 		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
 		"en-US": "Should we send a <a receipt>receipt</a> to <a counterparty>%v</a>?",
 	},
+	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT_TO_YOURSELF_BY_SMS: map[string]string{
+		"ru-RU": "К сожалению отправка квитанцию себе по СМС в данный момент отключена. Но вы можете отправить её для %v.",
+		"en-US": "Sorry, sending a receipt to yourself by SMS is not available at the moment. You can send it to %v though.",
+	},
 	MESSAGE_TEXT_RECEIPT_IS_SENDING_BY_TELEGRAM: map[string]string{
 		"ru-RU": "Отправляем для %v извещение через Telegram...",
 		"en-US": "We are sending receipt to %v by Telegram...",
