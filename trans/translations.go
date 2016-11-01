@@ -651,6 +651,15 @@ Maybe you can report your issue or suggest how we can improve?`,
 		"ru-RU": "Неизвестный контакт. Пожалуйста выберите <b>Добавить</b> если это новый контакт.",
 		"en-US": "Unknown counterparty. Please choose <b>Add new</b> if it's a new contact.",
 	},
+	MESSAGE_TEXT_UNKNOWN_COUNTERPARTY_ON_RETURN: map[string]string{
+		"ru-RU": "Неизвестный контакт. Пожалуйста выберите из списка.",
+		"en-US": "Unknown counterparty. Please choose from the list.",
+	},
+	MESSAGE_TEXT_UNKNOWN_DEBT: map[string]string{
+		"ru-RU": "Неизвестный долг. Пожалуйста выберите из списка.",
+		"en-US": "Unknown debt. Please choose from the list.",
+	},
+
 	MESSAGE_TEXT_HI: map[string]string{ // This is the same for all languages.
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
 		"en-US": `¡Hola! Hi! Привет! سلام!`,
