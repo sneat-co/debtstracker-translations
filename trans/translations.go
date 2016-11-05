@@ -442,13 +442,13 @@ Do you want to get an invite when it gets released?
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
 		"ru-RU": `<b>Что вы дали в долг?</b>
 
-Выберите из меню внизу экрана.
+Выберите из меню внизу экрана или <a>выберите валюту из списка</a>.
 
 Если ни один из стандартных вариантов не подходит просто напишите текстом. Например: "<i>яблоко</i>".`,
 
 		"en-US": `<b>What did you lend to someone?</b>
 
-Please choose from the options below.
+Please choose from the options below or <a>select a currency from the list</a>.
 
 If standard options are not enough simply send a text. For example: "<i>apple</i>".`,
 	},
