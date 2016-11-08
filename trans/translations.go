@@ -440,15 +440,15 @@ Do you want to get an invite when it gets released?
 		"en-US": "Sorry, at the moment I can <b>store</b> just integer numbers (<i>1, 2, 3, ...</>) в качестве суммы/количества.",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
-		"ru-RU": `<b>Что вы дали в долг?</b>
-
-Выберите из меню внизу экрана или <a>выберите валюту из списка</a>.
+		"ru-RU": "<b>Что вы дали в долг?</b>",
+		"en-US": "<b>What did you lend to someone?</b>",
+	},
+	MESSAGE_TEXT_CHOOSE_CURRENCY: map[string]string{
+		"ru-RU": `Выберите из меню внизу экрана или <a>выберите валюту из списка</a>.
 
 Если ни один из стандартных вариантов не подходит просто напишите текстом. Например: "<i>яблоко</i>".`,
 
-		"en-US": `<b>What did you lend to someone?</b>
-
-Please choose from the options below or <a>select a currency from the list</a>.
+		"en-US": `Please choose from the options below or <a>select a currency from the list</a>.
 
 If standard options are not enough simply send a text. For example: "<i>apple</i>".`,
 	},
