@@ -281,7 +281,7 @@ var TRANS = map[string]map[string]string{
 	},
 	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: map[string]string{
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
-		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand yoru order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
+		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 	},
 	"COMMAND_TEXT_LANGUAGE": map[string]string{
 		"ru-RU": "/Язык приложения",
