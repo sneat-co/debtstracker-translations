@@ -1420,4 +1420,16 @@ You invitation code is: {{.InviteCode}}`,
 		"en-US": `To place ads in our app please send us an email to <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
 		"ru-RU": `Чтобы разместить рекламу в нашем приложении пишите нам на <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
 	},
+	FB_MAKE_RECORD_HEADER: map[string]string{
+		"en-US": "Record debt",
+		"ru-RU": "Записать долг",
+	},
+	FB_MAKE_RECORD_HEADLINE: map[string]string{
+		"en-US": "Scroll left to see other options.",
+		"ru-RU": "Пролистайте карточки влево чтобы увидеть другие опции.",
+	},
+	FB_HOW_ARE_THINGS_HEADER: map[string]string{
+		"en-US": "How are you doing?",
+		"ru-RU": "Как идут дела?",
+	},
 }
