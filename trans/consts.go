@@ -396,6 +396,8 @@ const (
 
 	WS_ADS_TITLE   = "WS_ADS_TITLE"
 	WS_ADS_CONTENT = "WS_ADS_CONTENT"
+
+	WS_LIVE_DEMO = "WS_LIVE_DEMO"
 )
 
 const (
