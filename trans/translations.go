@@ -435,9 +435,9 @@ You can type manually or choose from your address book (<i>throw "clip" icon</i>
 Do you want to get an invite when it gets released?
 `,
 	},
-	MESSAGE_TEXT_INVALID_INT: map[string]string{
-		"ru-RU": "Извините, на данный момент я могу сохранять <b>только</b> целые числа (<i>1, 2, 3, ...</>) в качестве суммы/количества.",
-		"en-US": "Sorry, at the moment I can <b>store</b> just integer numbers (<i>1, 2, 3, ...</>) в качестве суммы/количества.",
+	MESSAGE_TEXT_INVALID_FLOAT: map[string]string{
+		"ru-RU": "Извините, но вы можете использовать только< числа в качестве суммы/количества (<i>до 2х знаком после запятой</i>).",
+		"en-US": "Sorry, but you can use just numbers as amount/quantity (<i>with up to 2 digits after point</>).",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
 		"ru-RU": "<b>Что вы дали в долг?</b>",
@@ -988,6 +988,14 @@ Once your friend accepts invitation you'll share balance & transfers between you
 	MESSAGE_TEXT_NO_CONTACT_RECEIVED: map[string]string{
 		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /menu",
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
+	},
+	MESSAGE_TEXT_CONTACT_NAME_IS_NUMBER: map[string]string{
+		"ru-RU": "Вы ввели только цифры в качестве имени контакта. Пожалуйста используйте текстовые символы.",
+		"en-US": "You've entered just digits for a contact name. Please use some text characters.",
+	},
+	MESSAGE_TEXT_CURRENCY_NAME_IS_NUMBER: map[string]string{
+		"ru-RU": "Вы ввели только цифры в качестве номинала. Пожалуйста используйте текстовые символы.",
+		"en-US": "You've entered just digits for currency. Please use some text characters.",
 	},
 	MESSAGE_TEXT_HISTORY_ROW_TO_USER_WITH_NAME: map[string]string{
 		"ru-RU": "%v - %s ⇒ Вам : %s",
