@@ -436,8 +436,8 @@ Do you want to get an invite when it gets released?
 `,
 	},
 	MESSAGE_TEXT_INVALID_FLOAT: map[string]string{
-		"ru-RU": "Извините, но вы можете использовать только< числа в качестве суммы/количества (<i>до 2х знаком после запятой</i>).",
-		"en-US": "Sorry, but you can use just numbers as amount/quantity (<i>with up to 2 digits after point</>).",
+		"ru-RU": "Извините, но вы можете использовать только числа в качестве суммы/количества (<i>до 2х знаком после запятой</i>).",
+		"en-US": "Sorry, but you can use just numbers as amount/quantity (<i>with up to 2 digits after point</i>).",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: map[string]string{
 		"ru-RU": "<b>Что вы дали в долг?</b>",
