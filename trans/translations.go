@@ -488,13 +488,21 @@ If standard options are not enough simply send a text. For example: "<i>apple</i
 		"ru-RU": "Отправляем для %v извещение через Telegram...",
 		"en-US": "We are sending receipt to %v by Telegram...",
 	},
-	MESSAGE_TEXT_TRANSFER_FROM_USER_COMPLETED:{
-		"ru-RU": "<a counterparty><b>%v</b></a> взял(а) в долг <a transfer>%v</a>.",
-		"en-US": "<a counterparty><b>%v</b></a> borrowed from you <a transfer>%v</a>.",
+	MESSAGE_TEXT_RECEIPT_NEW_DEBT_FROM_USER:{
+		"ru-RU": "{{.Counterparty}} взял(а) в долг {{.Amount}}.",
+		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
 	},
-	MESSAGE_TEXT_TRANSFER_TO_USER_COMPLETED:{
-		"ru-RU": "<a counterparty><b>%v</b></a> дал(а) вам в долг <a transfer>%v</a>.",
-		"en-US": "<a counterparty><b>%v</b></a> lended to you <a transfer>%v</a>.",
+	MESSAGE_TEXT_RECEIPT_NEW_DEBT_TO_USER:{
+		"ru-RU": "{{.Counterparty}} дал(а) вам в долг {{.Amount}}.",
+		"en-US": "{{.Counterparty}} lended to you {{.Amount}}.",
+	},
+	MESSAGE_TEXT_RECEIPT_RETURN_FROM_USER:{
+		"ru-RU": "{{.Counterparty}} взял(а) в долг {{.Amount}}.",
+		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
+	},
+	MESSAGE_TEXT_RECEIPT_RETURN_TO_USER:{
+		"ru-RU": "{{.Counterparty}} вернул вам {{.Amount}}.",
+		"en-US": "{{.Counterparty}} returned to you {{.Amount}}.",
 	},
 	MESSAGE_TEXT_DUE_ON:{
 		"ru-RU": "<b>Вернуть до</b>: %v",
@@ -787,14 +795,6 @@ Or use menu at the bottom.
 	MESSAGE_TEXT_CHOOSE_DEBT_THAT_HAS_BEEN_RETURNED:{
 		"ru-RU": "Выберите долг который был возвращён целиком или частично.",
 		"en-US": "Please choose a debt that has been returned fully or partially.",
-	},
-	MESSAGE_TEXT_YOU_HAVE_RETURNED:{
-		"ru-RU": "Вы вернули %v (%v)",
-		"en-US": "You've returned %v to %v",
-	},
-	MESSAGE_TEXT_YOU_HAVE_GOT_BACK:{
-		"ru-RU": "Вам вернули %v (%v)",
-		"en-US": "You've got back %v from %v",
 	},
 	MESSAGE_TEXT_PLEASE_ACKNOWLEDGE_TRANSFER:{
 		"ru-RU": "Пожалуйста подтвердите или отклоните эту транзакцию.",
