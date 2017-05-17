@@ -10,7 +10,7 @@ import (
 type DebtsTrackerLocales struct {
 }
 
-// GetLocaleByCode5() - get locale by code
+// GetLocaleByCode5 - get locale by code
 func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale, err error) {
 	var ok bool
 	if locale, ok = SupportedLocalesByCode5[code5]; !ok {

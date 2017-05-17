@@ -398,7 +398,6 @@ const (
 	HTML_TO      = "HTML_TO"
 )
 
-
 // DUE
 const (
 	DUE_IN_NOW       = "DUE_IN_NOW"
