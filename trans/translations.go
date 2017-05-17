@@ -1,8 +1,8 @@
 package trans
 
 import (
-	"bitbucket.com/debtstracker/gae_app/debtstracker/emoji"
 	"github.com/strongo/bots-framework/core"
+	"github.com/DebtsTracker/translations/emoji"
 )
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
