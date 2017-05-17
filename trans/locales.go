@@ -7,9 +7,11 @@ import (
 	"strings"
 )
 
+// Locales specific to DebtsTracker app
 type DebtsTrackerLocales struct {
 }
 
+// Get locale by code
 func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale, err error) {
 	var ok bool
 	if locale, ok = SupportedLocalesByCode5[code5]; !ok {
@@ -18,6 +20,7 @@ func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale
 	return locale, err
 }
 
+// Supported locales by code 5
 var SupportedLocalesByCode5 = map[string]strongo.Locale{
 	strongo.LOCALE_EN_US: strongo.LocaleEnUS,
 	//strongo.LOCALE_EN_UK: strongo.LocaleEnUK,
@@ -32,6 +35,7 @@ var SupportedLocalesByCode5 = map[string]strongo.Locale{
 	//strongo.LOCALE_FA_IR: strongo.LocaleFaIr,
 }
 
+// Supported locales
 var SupportedLocales []strongo.Locale = []strongo.Locale{
 	strongo.LocaleEnUS,
 	strongo.LocaleRuRu,
@@ -45,6 +49,7 @@ var SupportedLocales []strongo.Locale = []strongo.Locale{
 	//LocalePtBr,
 }
 
+// Locale icons
 var ChooseLocaleIcon = strings.Join([]string{
 	strongo.LocaleEnUS.FlagIcon,
 	strongo.LocaleRuRu.FlagIcon,

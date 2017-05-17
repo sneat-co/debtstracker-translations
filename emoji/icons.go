@@ -1,5 +1,6 @@
 package emoji
 
+// Emoji strings
 const (
 	EMO_SMILING_ICON       = "\xF0\x9F\x98\x83"
 	EMO_ANGRY_ICON         = "\xf0\x9f\x98\xa0"
@@ -7,7 +8,7 @@ const (
 	EMO_THINKING           = "\xf0\x9f\xa4\x94"
 	EMO_SMILING_RED_CHEEKS = "\xf0\x9f\x98\x8a"
 	EMO_CONFUSED           = "\xf0\x9f\x98\x95"
-	EMO_EMBARASSED         = "\xf0\x9f\x98\xb3"
+	EMO_EMBARRASSED        = "\xf0\x9f\x98\xb3"
 
 	ERROR_ICON         = "\xF0\x9F\x9A\xA8"
 	BULB_ICON          = "\xF0\x9F\x92\xA1"

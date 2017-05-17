@@ -1,12 +1,11 @@
 package trans
 
 import (
-	"testing"
 	"regexp"
+	"testing"
 )
 
-
-var supportedLocales = []string {"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
+var supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
 
 var reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
 

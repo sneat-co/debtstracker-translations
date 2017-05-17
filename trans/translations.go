@@ -657,11 +657,11 @@ Maybe you can <a submit-bug>report your issue</a> or <a suggest-idea>suggest how
 	},
 	MESSAGE_TEXT_PLEASE_PROVIDE_YOUR_EMAIL: {
 		"ru-RU": "Пожалуйста напишите ваш email адрес:",
-		"en-US": "Please provide your email adress",
+		"en-US": "Please provide your email address",
 	},
 	MESSAGE_TEXT_PLEASE_PROVIDE_YOUR_PHONE_NUMBER: {
 		"ru-RU": "Пожалуйста напишите номер вашего телефона:",
-		"en-US": "Please provide your email adress",
+		"en-US": "Please provide your email address",
 	},
 	MESSAGE_TEXT_WRONG_INVITE_CODE: {
 		"ru-RU": "Неправильный код приглашения: %v",
@@ -740,8 +740,8 @@ Maybe you can <a submit-bug>report your issue</a> or <a suggest-idea>suggest how
 	MESSAGE_TEXT_ONBOARDING_ASK_TO_CHOOSE_LANGUAGE: {
 		"ru-RU": `<b>%v</b>, на каком языке вы хотели бы общаться?
 
-(What is your prefered language?)`,
-		"en-US": `<b>%v</b>, what is your prefered language?`,
+(What is your preferred language?)`,
+		"en-US": `<b>%v</b>, what is your preferred language?`,
 	},
 	MESSAGE_TEXT_CHOOSE_UI_LANGUAGE: {
 		"ru-RU": "На каком языке вы хотели бы общаться со мной?",
@@ -871,7 +871,7 @@ Or use menu at the bottom.
 	},
 	MESSAGE_TEXT_ABOUT_PHONE_NUMBER_FORMAT: {
 		"ru-RU": "Номер должен быть в международном формате:\n\t* Начинаться со знака '+' и кода страны\n\t* Состоять только из цифр\nПример: <pre>+</pre><b>7</b><code>999012345678</code>",
-		"en-US": "The number should be in internationl standard:\n\t* Starts with '+' following by country code\n\t* Consist of numbers only\nExample: <pre>+</pre><b>1</b><code>999012345678</code>",
+		"en-US": "The number should be in international standard:\n\t* Starts with '+' following by country code\n\t* Consist of numbers only\nExample: <pre>+</pre><b>1</b><code>999012345678</code>",
 	},
 	MESSAGE_TEXT_THIS_NUMBER_WILL_BE_USED_TO_SEND_RECEIPT: {
 		"ru-RU": "На этот номер мы отправим SMS:",
