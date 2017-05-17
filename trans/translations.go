@@ -13,39 +13,51 @@ var TRANS = map[string]map[string]string{
 		"en-US": "SAMPLE",
 	},
 	"Jan": {
+		"en-US": "Jan",
 		"ru-RU": "Янв.",
 	},
 	"Feb": {
+		"en-US": "Feb",
 		"ru-RU": "Фев.",
 	},
 	"Mar": {
+		"en-US": "Mar",
 		"ru-RU": "Мрт.",
 	},
 	"Apr": {
+		"en-US": "Apr",
 		"ru-RU": "Апр.",
 	},
 	"May": {
+		"en-US": "May",
 		"ru-RU": "Май ",
 	},
 	"Jun": {
+		"en-US": "Jun",
 		"ru-RU": "Июнь",
 	},
 	"Jul": {
+		"en-US": "Jul",
 		"ru-RU": "Июль",
 	},
 	"Aug": {
+		"en-US": "Aug",
 		"ru-RU": "Авг.",
 	},
 	"Sep": {
+		"en-US": "Sep",
 		"ru-RU": "Сен.",
 	},
 	"Oct": {
+		"en-US": "Oct",
 		"ru-RU": "Окт.",
 	},
 	"Nov": {
+		"en-US": "Nov",
 		"ru-RU": "Нбр.",
 	},
 	"Dec": {
+		"en-US": "Dec",
 		"ru-RU": "Дек.",
 	},
 
