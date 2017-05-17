@@ -1,7 +1,6 @@
 package trans
 
 import (
-	"errors"
 	"fmt"
 	"github.com/strongo/app"
 	"strings"
