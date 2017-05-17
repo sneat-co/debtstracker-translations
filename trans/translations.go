@@ -1,7 +1,6 @@
 package trans
 
 import (
-	"github.com/strongo/bots-framework/core"
 	"github.com/DebtsTracker/translations/emoji"
 )
 
@@ -69,7 +68,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": " и ",
 		"en-US": " and ",
 	},
-	bots.MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG: {
+	"MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG": {
 		"ru-RU": "Упс, что-то пошло не так... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 	},
@@ -291,7 +290,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "книгу",
 		"en-US": "book",
 	},
-	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: {
+	"MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND": {
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 	},
