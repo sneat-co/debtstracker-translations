@@ -5,11 +5,14 @@ import (
 	"testing"
 )
 
-var supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
-
-var reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
+var (
+	supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
+	reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
+	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
+)
 
 func TestTRANS(t *testing.T) {
+	var wordsCount int
 	for key, vals := range TRANS {
 		countsByLang := make(map[string]map[string]int)
 		for lang, val := range vals {
@@ -29,6 +32,7 @@ func TestTRANS(t *testing.T) {
 			t.Errorf("Key %v missing en-US trnaslation", key)
 			continue
 		}
+		wordsCount += len(reWords.FindAllString(vals["en-US"], -1))
 		reported := make(map[string]int)
 		for lang, counts := range countsByLang {
 			if lang == "en-US" {
@@ -53,6 +57,7 @@ func TestTRANS(t *testing.T) {
 			t.Errorf("%v: missing translation for ru-RU", key)
 		}
 	}
+	t.Logf("English words count: %d", wordsCount)
 }
 
 func isSupportedLang(l string) bool {
