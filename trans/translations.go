@@ -1612,7 +1612,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	MESSENGER_RECEIPT_TEXT: {
 		"ru-RU": "Я создал(а) запись о долге, подробности тут - {{.ReceiptURL}}",
 		"en-US": "I've created a debt record regards you, see details at {{.ReceiptURL}}",
-		"it-IT": "Ho creato un debito a tuo nome, controlla i dettagli qui - {{.FromName}}",
+		"it-IT": "Ho creato un debito a tuo nome, controlla i dettagli qui - {{.ReceiptURL}}",
 	},
 	EMAIL_RECEIPT_BODY_HTML: {
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
