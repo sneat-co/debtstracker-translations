@@ -6,10 +6,7 @@ import (
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
-//Row 1222 TO DO
-//Row 1312 TO DO
-//Star from row 1440
-
+//Row 1704 TO DO
 // TRANS - translation string
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": {
@@ -499,7 +496,7 @@ Puoi digitarlo o sceglierlo dalla tua rubrica (<i>attraverso l'icona "clip"</i>)
 	MESSAGE_TEXT_TRANSFER_IS_CREATING: {
 		"ru-RU": "Создаю запись...",
 		"en-US": "Creating transfer...",
-		"en-US": "Sto creando la nuova voce...",
+		"it-IT": "Sto creando la nuova voce...",
 	},
 	COMMAND_TEXT_PLEASE_WAIT: {
 		"ru-RU": "Пожалуйста подождите",
@@ -762,7 +759,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_ASK_TO_TRANSLATE: {
 		"ru-RU": `Хотите чтобы наш бот разговаривал на другом языке? Вы можете <a>помочь с переводом</a>.`,
 		"en-US": `Do you want our bot to talk in other language? You can <a>help with translation</a>.`,
-		"en-US": `Vuoi che il nostro bot parli altre lingue? Puoi aiutare con la <a>traduzione</a>.`,
+		"it-IT": `Vuoi che il nostro bot parli altre lingue? Aiuta con la <a>traduzione</a>.`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_NEUTRAL: {
 		"ru-RU": `Чтож, мы очень старались. Ваша оценка будет передана разработчикам.
@@ -1258,7 +1255,7 @@ Come vuoi inviargli il codice invito?`,
 	COMMAND_TEXT_ACCEPT_INVITE: {
 		"ru-RU": "Принять приглашение",
 		"en-US": "Accept invite",
-		"it-IT": "Accetta invito",
+		"it-IT": "Accetta l'invito",
 	},
 	COMMAND_TEXT_VIEW_RECEIPT_DETAILS: {
 		"ru-RU": "Посмотреть квитанцию",
@@ -1311,7 +1308,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_INVITE_ASK_EMAIL_FOR_RECEIPT: {
 		"ru-RU": "Введите email вашего друга (%v) на который мы отправим квитанцию подтверждения.",
 		"en-US": "Please enter emaill address of your friend (%v) where we should send the receipt.",
-		"it-IT": "Inserisci l'email del tuo amico (%v) alla quale potremo inviare le ricevute", //le ricevute?
+		"it-IT": "Inserisci l'email del tuo amico (%v) alla quale potremo inviare il debito/credito",
 	},
 	MESSAGE_TEXT_INVITE_BY_SMS: {
 		"ru-RU": "Введите номер телефона вашего друга на который мы отправим код приглашения.",
@@ -1441,42 +1438,52 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: {
 		"ru-RU": "Вы можете посмотреть свой номер телефона в ожидаемоем нами формате.",
 		"en-US": "You can view your own phone number in the format we are expecting.",
+		"it-IT": "Puoi visionare il tuo numero di telefono nel formato previsto.",
 	},
 	COMMAND_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: {
 		"ru-RU": "Посмотреть мой номер в ожидаемоем формате",
 		"en-US": "View my number in the expectd format",
+		"it-IT": "Mostra il mio numero nel formato previsto",
 	},
 	INLINE_BUTTON_SHOW_FULL_HISTORY: {
 		"ru-RU": "Показать всю историю",
 		"en-US": "Show full history",
+		"it-IT": "Mostra cronologia completa",
 	},
 	MESSAGE_TEXT_INCORRECT_VALUE_NOT_A_NUMBER: {
 		"ru-RU": "Это не цифра",
 		"en-US": "it is not a number",
+		"it-IT": "Non e' un numero",
 	},
 	MESSAGE_TEXT_INCORRECT_VALUE_IS_NEGATIVE: {
 		"ru-RU": "Цифра должна быть положительной (<i>больше нуля</i>)",
 		"en-US": "The number should be positive (<i>greater than 0</i>)",
+		"it-IT": "Il numero dovrebbe essere positivo (<i>maggiore di 0<i/>)",
 	},
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: {
 		"ru-RU": "Сколько было возвращено?",
 		"en-US": "How much have been returned?",
+		"it-IT": "Quanti soldi ti son stati restituiti?",
 	},
 	MESSAGE_TEXT_HELP: {
 		"ru-RU": "Вы можете сообщить о проблеме или сделать предложения по улучшению программы на нашем сайте.",
 		"en-US": "Please report any issue or submit a feature request at our website.",
+		"it-IT": "Segnala un problema o proponi una miglioria al nostro sito web.",
 	},
 	COMMAND_TEXT_OPEN_USER_REPORT: {
 		"ru-RU": "Cтраница поддержки ",
 		"en-US": "Support page",
+		"it-IT": "Pagina d'aiuto",
 	},
 	COMMAND_TEXT_REPORT_A_BUG: {
 		"ru-RU": "Сообщить об ошибке",
 		"en-US": "Report a bug",
+		"it-IT": "Segnala un bug",
 	},
 	COMMAND_TEXT_SUBMIT_AN_IDEA: {
 		"ru-RU": "Предложить идею",
 		"en-US": "Add an idea",
+		"it-IT": "Proponi un idea",
 	},
 	MESSAGE_TEXT_WELCOME: {
 		"ru-RU": `Привет, я Коллектиус - Ваш персональный счетовод и коллектор.
@@ -1489,18 +1496,27 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 I can record who is owing to whom and remind when the return is due.
 
 What would you like to do?`,
+
+		"it-IT": `Ciao, sono Collectius - il tuo contabile ed esattore.
+
+Posso annotare chi deve soldi a chi e ricordarti la data di scadenza.
+
+Cosa vorresti fare ora?`,
 	},
 	COMMAND_TEXT_SEND_ME_NEW_INVITE: {
 		"ru-RU": "Хочу получить приглашение",
 		"en-US": "I want to get an invite",
+		"it-IT": "Voglio ottenere un invito",
 	},
 	COMMAND_TEXT_I_HAVE_INVITE: {
 		"ru-RU": "У меня есть код приглашения",
 		"en-US": "I have the invitation code",
+		"it-IT": "Ho il codice invito",
 	},
 	COMMAND_TEXT_I_HAVE_NOT_GOT_EMAIL: {
 		"ru-RU": "Я не получил письма на email",
 		"en-US": "I have not got any emails",
+		"it-IT": "Non ho ricevuto nessun email",
 	},
 	MESSAGE_TEXT_ONBOARDING_TELL_ABOUT_INVITES: {
 		"ru-RU": `<b>%v</b>,
@@ -1510,25 +1526,40 @@ What would you like to do?`,
 Если у вас нет кода можете оставить свои контакты и мы вышлем вам приглашение как только наступит ваша очередь.
 
 Мы высылаем по 10 кодов в день первоочередникам + 1 случайным образом.`,
+
 		"en-US": `<b>%v</b>,
 
-At the momnet our bot is available just by invitation from friends.
+At the moment our bot is available just by invitation from friends.
 
-If you have no code you can leave you contact details and we'll send you an invite as soon as your queue is due.
+If you have no code you can leave your contact details and we'll send you an invite as soon as your queue is due.
 
 We send 10 invites per day to those in the head of the queue and 1 randomly.`,
+
+		"it-IT": `<b>%v</b>,
+
+Al momento il nostro bot e' disponibile solo tramite invito da amici.
+
+Se non hai un codice puoi lasciarci il tuo contatto e ti manderemo un invito non appena sara' il tuo turno.
+
+Inviamo 10 inviti al giorno ai primi 10 della lista d'attesa ed 1 in modo casuale.`,
 	},
 	EMAIL_INVITE_SUBJ: {
 		"ru-RU": "Приглашение от {{.FromName}} - код: {{.InviteCode}}",
 		"en-US": "An invite from {{.FromName}} - code: {{.InviteCode}}",
+		"it-IT": "Hai ricevuto un codice invito da {{.FromName}} - codice: {{.InviteCode}}",
 	},
 	SMS_INVITE_TEXT: {
 		"ru-RU": `Привет {{.ToName}}, {{.FromName}} рекомендует приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Код приглашения: {{.InviteCode}}`,
-		"en-US": `Hi{{.ToName}}, {{.FromName}} is inviting you to try debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
-You invitation code is: {{.InviteCode}}`,
+		"en-US": `Hi {{.ToName}}, {{.FromName}} is inviting you to try debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+
+Your personal invitation code is: {{.InviteCode}}`,
+
+		"it-IT": `Ciao {{.ToName}}, {{.FromName}} ti ha invitato a provare 'debts tracking app' - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+
+Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
 	EMAIL_INVITE_TEXT: {
 		"ru-RU": `Привет {{.ToName}},
@@ -1536,11 +1567,18 @@ You invitation code is: {{.InviteCode}}`,
 {{.FromName}} приглашает тебя попробовать приложение для учёта долгов - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Ваш код приглашения: {{.InviteCode}}`,
-		"en-US": `Hi{{.ToName}},
+
+		"en-US": `Hi {{.ToName}},
 
 {{.FromName}} is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 You invitation code is: {{.InviteCode}}`,
+
+		"it-IT": `Ciao {{.ToName}},
+
+{{.FromName}} ti ha invitato a provare 'debts tracking app' - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+
+Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
 	EMAIL_INVITE_HTML: {
 		"ru-RU": `<p>Привет {{.ToName}},</P
@@ -1548,39 +1586,53 @@ You invitation code is: {{.InviteCode}}`,
 <p>{{.FromName}} приглашает тебя <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">попробовать приложение для учёта долгов</a>.</p>
 
 <p>Ваш код приглашения: <b>{{.InviteCode}}</b></p>`,
-		"en-US": `<p>Hi{{.ToName}},</p>
 
-<p>{{.FromName}} п is inviting you to <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">try debts tracking app</a>.</p>
+		"en-US": `<p>Hi {{.ToName}},</p>
 
-<p>You invitation code is: <b>{{.InviteCode}}</b></p>`,
+<p>{{.FromName}} is inviting you to <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">try debts tracking app</a>.</p>
+
+<p>Your invitation code is: <b>{{.InviteCode}}</b></p>`,
+
+		"it-IT": `<p>Ciao {{.ToName}},</p>
+
+<p>{{.FromName}} ti ha invitato a provare <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">debts tracking app</a>.</p>
+
+<p>Il tuo codice di invito personale e': <b>{{.InviteCode}}</b></p>`,
 	},
 	EMAIL_RECEIPT_SUBJ: {
 		"ru-RU": "Запись о долге - {{.FromName}}",
 		"en-US": "Debt record - {{.FromName}}",
+		"it-IT": "Debito - {{.FromName}}",
 	},
 	EMAIL_RECEIPT_BODY_TEXT: {
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
+		"it-IT": "{{.FromName}} ha creato un debito: {{.ReceiptURL}} ",
 	},
 	MESSENGER_RECEIPT_TEXT: {
 		"ru-RU": "Я создал(а) запись о долге, подробности тут - {{.ReceiptURL}}",
 		"en-US": "I've created a debt record regards you, see details at {{.ReceiptURL}}",
+		"it-IT": "Ho creato un debito a tuo nome, controlla i dettagli qui - {{.FromName}}",
 	},
 	EMAIL_RECEIPT_BODY_HTML: {
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
+		"it-IT": "{{.FromName}} ha creato un debito: {{.ReceiptURL}}",
 	},
 	INLINE_RECEIPT_TITLE: {
 		"ru-RU": "Квитанция: %v",
 		"en-US": "Receipt: %v",
+		"it-IT": "Debito/credito: %v",
 	},
 	INLINE_RECEIPT_DESCRIPTION: {
 		"ru-RU": "Нажмите здесь чтобы отправить квитанцию",
 		"en-US": "Click here to send the receipt",
+		"it-IT": "Clicca qui per inviare un debito/credito",
 	},
 	INLINE_RECEIPT_CHOOSE_LANGUAGE: {
 		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
 		"en-US": "<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.",
+		"it-IT": "<b>Scegli la lingua per vedere i dettagli del debito</b> registrato da {{.Creator}}.",
 	},
 	INLINE_RECEIPT_MESSAGE: {
 		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
@@ -1594,64 +1646,86 @@ You invitation code is: {{.InviteCode}}`,
 		//-------------------------------------------------------
 		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
 
-{{.SiteLink}} — an app for debts tacking will help you to:
+{{.SiteLink}} — an app for debts tracking will help you to:
 
   - Always know your bottom line
 
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
+		//-------------------------------------------------------
+		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
+
+{{.SiteLink}} — un app per i debiti che ti consento di:
+
+  - Sapere sempre chi deve soldi a chi
+
+  - Restituire i soldi in tempo
+    <i>(lo ricorda a te ed al tuo debitore)</i>`,
 	},
 	INLINE_INVITE_TITLE: {
 		"ru-RU": "Приглашение в %v",
 		"en-US": "Invitation to %v",
+		"it-IT": "Invito per %v",
 	},
 	INLINE_INVITE_DESCRIPTION: {
 		"ru-RU": "Нажмите здесь для отправки приглашения",
 		"en-US": "Click here to send an invite",
+		"it-IT": "Clicca qui per spedire un invito",
 	},
 	INLINE_INVITE_MESSAGE: {
 		"ru-RU": "%v пригласил вас попробовать %v",
 		"en-US": "%v invited you to try %v",
+		"it-IT": "%v ti ha invitato a provare %v",
 	},
 	SMS_RECEIPT_YOU_GOT: {
 		"ru-RU": "Вы получили %v от %v.",
 		"en-US": "You've got %v from %v.",
+		"it-IT": "Hai ricevuto %v da %v",
 	},
 	SMS_RECEIPT_YOU_GAVE: {
 		"ru-RU": "Вы дали %v - взял(а) %v.",
 		"en-US": "You've given %v to %v.",
+		"it-IT": "Hai dato %v a %v",
 	},
 	SMS_CLICK_TO_CONFIRM_OR_DECLINE: {
 		"ru-RU": "Нажмите %v чтобы подтвердить или отвергнуть.",
 		"en-US": "Click %v to confirm or decline.",
+		"it-IT": "Clicca %v per confermare o rifiutare",
 	},
 	HTML_DATE: {
 		"ru-RU": "Дата",
 		"en-US": "Date",
+		"it-IT": "Data",
 	},
 	HTML_RECEIPT: {
 		"ru-RU": "Квитанция",
 		"en-US": "Receipt",
+		"it-IT": "Scontrino", //To upgrade, not the best translation from Russian
 	},
 	HTML_AMOUNT: {
 		"ru-RU": "Сумма",
 		"en-US": "Amount",
+		"it-IT": "Totale",
 	},
 	HTML_FROM: {
 		"ru-RU": "Дал",
 		"en-US": "From",
+		"it-IT": "Da",
 	},
 	HTML_TO: {
 		"ru-RU": "Получил",
 		"en-US": "To",
+		"it-IT": "Per",
 	},
 	TELEGRAM_RECEIPT: {
 		"ru-RU": "{{.FromName}} создал запись о долге ({{.TransferCurrency}})",
 		"en-US": "{{.FromName}} created a debtrecord ({{.TransferCurrency}})",
+		"it-IT": "{{.FromName}} ha registrato un debito ({{.TransferCurrency}})",
 	},
 	MESSAGE_TEXT_PLEASE_CHOOSE_FROM_OPTIONS_PROVIDED: {
 		"ru-RU": "Пожалуйста выберете из предоставленных опций.",
 		"en-US": "Please choose from provided options.",
+		"it-IT": "Scegli tra le opzioni fornite.",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE_OR_COMMENT: {
 		"ru-RU": "<b>Хотите добавить заметку или комментарий?</b>\n%v Заметки хранятся для вашего личго пользования.\n%v Комментарий виден всем кому разрешён просмотр этой транзакции.",
@@ -1660,75 +1734,93 @@ You invitation code is: {{.InviteCode}}`,
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: {
 		"ru-RU": "Напишите заметку:",
 		"en-US": "Please write a note:",
+		"it-IT": "Per favore scrivi un appunto:",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT_ONLY: {
 		"ru-RU": `Если хотите добавить комментарий просто отправьте текст.`,
 		"en-US": `If you want to add a comment just send a text now.`,
+		"it-IT": `Se vuoi aggiungere un commento invia del testo ora.`,
 	},
 	MESSAGE_TEXT_VISIBLE_TO_YOU_AND_COUNTERPARTY: {
 		"ru-RU": "виден вам и %v",
 		"en-US": "visible to you & %v",
+		"it-IT": "visibile a te e %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: {
 		"ru-RU": "Напишите комментарий:",
 		"en-US": "Please write the comment:",
+		"it-IT": "Per favore scrivi un commento:",
 	},
 	MESSAGE_TEXT_TRANSFER_NOTE_ADDED_ASK_FOR_COMMENT: {
 		"ru-RU": "Заметка добавлена. Хотите написать комментарий?",
 		"en-US": "Memo have been added. Do you want to write a comment?",
+		"it-IT": "Promemoria aggiunto. Vuoi scrivere un commento?",
 	},
 	MESSAGE_TEXT_TRANSFER_COMMENT_ADDED_ASK_FOR_NOTE: {
 		"ru-RU": "Комментарий добавлен. Хотите написать заметку?",
 		"en-US": "Comment have been added. Do you want to write a note?",
+		"it-IT": "Commento aggiunto. Vuoi scrivere un appunto?",
 	},
 	COMMAND_TEXT_NO_COMMENT_OR_NOTE_FOR_TRANSFER: {
 		"ru-RU": "Без заметок и комментариев",
 		"en-US": "Without notes or comments",
+		"it-IT": "Senza appunti o commenti",
 	},
 	COMMAND_TEXT_NO_COMMENT_FOR_TRANSFER: {
 		"ru-RU": "Без комментариев",
 		"en-US": "No comments",
+		"it-IT": "No commenti",
 	},
 	COMMAND_TEXT_NO_NOTE_FOR_TRANSFER: {
 		"ru-RU": "Без заметок",
 		"en-US": "Without notes",
+		"it-IT": "Senza appunti/note",
 	},
 	COMMAND_TEXT_ADD_NOTE_TO_TRANSFER: {
 		"ru-RU": "Добавить заметку",
 		"en-US": "Add a note (private)",
+		"it-IT": "Aggiungi una nota (privata)",
 	},
 	COMMAND_TEXT_ADD_COMMENT_TO_TRANSFER: {
 		"ru-RU": "Добавить комментарий",
 		"en-US": "Add a comment (public)",
+		"it-IT": "Aggiungi un commento (pubblico)",
 	},
 	DUE_IN_NOW: {
 		"ru-RU": "прямо сейчас",
 		"en-US": "now",
+		"it-IT": "adesso",
 	},
 	DUE_IN_A_MINUTE: {
 		"ru-RU": "через минуту",
 		"en-US": "in a minute",
+		"it-IT": "in un minuto",
 	},
 	DUE_IN_X_MINUTES: {
 		"ru-RU": "через %v минут(ы)",
 		"en-US": "in %v minutes",
+		"it-IT": "in %v minuti/o",
 	},
 	DUE_IN_AN_HOUR: {
 		"ru-RU": "через час",
 		"en-US": "in an hour",
+		"it-IT": "in un ora",
 	},
 	DUE_IN_X_HOURS: {
 		"ru-RU": "через %v часа/часов",
 		"en-US": "in %v hours",
+		"it-IT": "in %v ore/a",
 	},
 	DUE_IN_X_DAYS: {
 		"ru-RU": "через %v дня/дней",
 		"en-US": "in %v days",
+		"it-IT": "in %v giorni/o",
 	},
 	//-------------------------------------------------------------------------------------------------------------------
 	WS_ALEX_T: {
 		"ru-RU": "Александр Трахимёнок",
 		"en-US": "Alexander Trakhimenok",
+		"it-IT": "Alexander Trakhimenok",
 	},
 
 	WS_INDEX_TITLE: {
@@ -1768,7 +1860,7 @@ You invitation code is: {{.InviteCode}}`,
 		"pt-PT": "bot de bate-papo para Telegram messenger",
 		"de-DE": "Chat-Bot für Telegrammbote",
 		"fr-FR": "bot Chat for Telegram messenger",
-		"it-IT": "Bot Chat per Telegram messenger",
+		"it-IT": "Bot Chat per Telegram",
 		"ko-KO": "전보 메신저 채팅 봇",
 		"ja-JP": "電報メッセンジャーのためのチャットボット",
 		"zh-CN": "聊天机器人的电报使者",
@@ -1782,7 +1874,7 @@ You invitation code is: {{.InviteCode}}`,
 		"pt-PT": "Open in Telegram &#x1F680;",
 		"de-DE": "Open in Telegramm &#x1F680;",
 		"fr-FR": "Open in Telegram &#x1F680;",
-		"it-IT": "Open in Telegram &#x1F680;",
+		"it-IT": "Apri su Telegram &#x1F680;",
 		"ko-KO": "전보 &#x1F680; 에서 열기;",
 		"ja-JP": "電報 &#x1F680; で開きます。",
 		"zh-CN": "打开在电报 &#x1F680;",
@@ -1797,7 +1889,7 @@ You invitation code is: {{.InviteCode}}`,
 		"pt-PT": "No momento em que o nosso programa está disponível apenas na <a href='https://telegram.org/'> <b> Telegram </b> messenger </a>",
 		"de-DE": "Im Moment ist unser Programm nur auf verfügbar <a href='https://telegram.org/'> <b> Telegramm </b> Bote </a>",
 		"fr-FR": "Au moment de notre programme est disponible seulement sur <a href='https://telegram.org/'> <b> Telegram </b> messager </a>",
-		"it-IT": "Al momento il nostro programma è disponibile solo su <a href='https://telegram.org/'> <b> Telegramma </b> messenger </a>",
+		"it-IT": "Al momento il nostro programma è disponibile solo su <a href='https://telegram.org/'> <b> Telegram </b></a>",
 		"ko-KO": "지금이 순간 우리의 프로그램은 단지에 <a href='https://telegram.org/'>의 <b> 전보 </b>을 메신저 </a>를 볼 수 있습니다",
 		"ja-JP": "現時点では私たちのプログラムは、ちょうど上の<a href='https://telegram.org/'><B>電報</b>のメッセンジャー</a>で提供されています",
 		"zh-CN": "目前我们的计划是只提供在<a href='https://telegram.org/'><B>电报</b>的使者</A>",
@@ -1811,7 +1903,7 @@ You invitation code is: {{.InviteCode}}`,
 		"pt-PT": "Conheça o seu equilíbrio e nunca perca um pagamento da dívida!",
 		"de-DE": "Ihr Kontostand wissen und nie eine Schuld Zahlung verpassen!",
 		"fr-FR": "Apprenez à connaître votre solde et ne jamais manquer un paiement de la dette!",
-		"it-IT": "Conosci il tuo equilibrio e non perdere mai un pagamento del debito!",
+		"it-IT": "Tieni sott'occhio il tuo bilancio e non dimenticarti mai di un debito!",
 		"ko-KO": "균형을 알고 및 채무 지불을 놓칠 수 없어!",
 		"ja-JP": "あなたのバランスを知っている＆債務の支払いを見逃すことはありません！",
 		"zh-CN": "了解天平＆不会错过任何一个债务付款！",
@@ -1825,7 +1917,7 @@ You invitation code is: {{.InviteCode}}`,
 		"pt-PT": "DebtsTracker.io é um serviço de aplicativos móveis e lembrete de que ajuda a controlar seus débitos e créditos. Envia e-mail e SMS notificações automáticas aos seus devedores.",
 		"de-DE": "DebtsTracker.io ist eine mobile Apps und Erinnerungs-Service, die Ihre Schulden und Kredite zu verfolgen hilft. Sendet automatisierte E-Mail und SMS-Benachrichtigungen an Ihre Schuldner.",
 		"fr-FR": "DebtsTracker.io est une des applications mobiles et rappel service qui permet de suivre vos dettes et crédits. Envoie automatisés email & SMS reminders à vos débiteurs.",
-		"it-IT": "DebtsTracker.io è un servizio di applicazioni mobili e per ricordare che aiuta a monitorare i debiti e crediti. Invia notifiche e-mail e SMS automatici per i vostri debitori.",
+		"it-IT": "DebtsTracker.io è un servizio di applicazioni mobili che ricordare e aiuta a monitorare i debiti e crediti. Invia notifiche e-mail e SMS automatici ai i vostri debitori.",
 		"ko-KO": "DebtsTracker.io 은 채무 및 크레딧을 추적하는 데 도움이 모바일 앱 및 알림 서비스입니다. 당신의 채무자에 자동화 된 이메일 및 SMS 알림을 보냅니다.",
 		"ja-JP": "DebtsTracker.io は、あなたの借金＆クレジットを追跡するのに役立ちますモバイルアプリ＆リマインダーサービスです。あなたの債務者に自動メール＆SMS通知を送信します。",
 		"zh-CN": "DebtsTracker.io 是一个移动应用和提醒服务，帮助跟踪你的债务和信用。发送自动电子邮件和短信通知到您的债务人。",
@@ -1834,21 +1926,26 @@ You invitation code is: {{.InviteCode}}`,
 	WS_ADS_TITLE: {
 		"en-US": "Ads @ DebtsTracker.IO",
 		"ru-RU": "Реклама на DebtsTracker.IO",
+		"it-IT": "Pubblicita' @ DebtsTracker.IO",
 	},
 	WS_ADS_CONTENT: {
 		"en-US": `To place ads in our app please send us an email to <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
 		"ru-RU": `Чтобы разместить рекламу в нашем приложении пишите нам на <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
+		"it-IT": `Per inserire della pubblicita nella nostra app inviaci un email a <a href="mailto:ads@debtstracker.io">ads@debtstracker.io</a>.`,
 	},
 	FB_MAKE_RECORD_HEADER: {
 		"en-US": "Record debt",
 		"ru-RU": "Записать долг",
+		"it-IT": "Registra il debito",
 	},
 	FB_MAKE_RECORD_HEADLINE: {
 		"en-US": "Scroll left to see other options.",
 		"ru-RU": "Пролистайте карточки влево чтобы увидеть другие опции.",
+		"it-IT": "Scrolla a sinistra per vedere altre opzioni",
 	},
 	FB_HOW_ARE_THINGS_HEADER: {
 		"en-US": "How are you doing?",
 		"ru-RU": "Как идут дела?",
+		"it-IT": "Come te la passi?",
 	},
 }
