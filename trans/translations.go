@@ -586,6 +586,34 @@ If standard options are not enough simply send a text. For example: "<i>apple</i
 		  * Support further development - <a href="https://goo.gl/Qhh0yL">€2 via PayPal</a> (<i>about $2.2</i>)
 		`,
 	},
+	MESSAGE_TEXT_YOU_CAN_HELP_BY_HTML: {
+		"ru-RU": `
+		<p>Вы нам очень поможете если:</>
+
+		<ul>
+		  <li>Оставите положительный <a storebot>отзыв в каталоге ботов</a>.</li>
+
+		  <li>Расскажите о боте своим друзьям.
+		    Например во <a share-vk>ВКонтакте</a>, <a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
+		  </li>
+
+		  <li>Поддержите дальнейшую разработку - <a href="https://goo.gl/Qhh0yL">€2 через PayPal</a></li>
+		</ul>
+		`,
+		/*------------------------------------------------------------*/
+		"en-US": `
+		<p>You can help us a lot if you:</p>
+
+		<ul>
+		  <li>Leave a positive feedback at <a storebot>directory of bots</a>.</li>
+
+		  <li>Tell about the app to your friends.
+		    For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.</li>
+
+		  <li>Support further development - <a href="https://goo.gl/Qhh0yL">€2 via PayPal</a> (<i>about $2.2</i>)</li>
+		</ul>
+		`,
+	},
 	MESSAGE_TEXT_COUNTERPARTY_HAS_EMPTY_BALANCE: {
 		"ru-RU": `Нулевой баланс для %v`,
 		"en-US": `Balance is empty for %v`,
@@ -896,9 +924,9 @@ Or use menu at the bottom.
 		<i>If partially you can enter amount right away.</i>`,
 	},
 	MESSAGE_TEXT_PLEASE_HELP_MAKE_IT_BETTER: {
-		"ru-RU": `Эта программа <b>бесплатна</b>. <a href="https://debtstracker.io/">Помогите</a> сделать её лучше!`,
+		"ru-RU": `Эта программа <b>бесплатна</b>. <a href="https://debtstracker.io/ru/help-us">Помогите</a> сделать её лучше!`,
 
-		"en-US": `This program is <b>free to use</b>. Please <a href="https://debtstracker.io/">help</a> to make it better!`,
+		"en-US": `This program is <b>free to use</b>. Please <a href="https://debtstracker.io/en/help-us">help</a> to make it better!`,
 	},
 	BUTTON_TEXT_YOU_OWE_AMOUNT_TO_SOMEONE: {
 		"ru-RU": "%v | вы должны: %v",
@@ -1514,6 +1542,10 @@ You invitation code is: {{.InviteCode}}`,
 		"zh-CN": "DebtsTracker.io 是一个移动应用和提醒服务，帮助跟踪你的债务和信用。发送自动电子邮件和短信通知到您的债务人。",
 	},
 
+	WS_HELP_US_TITLE: {
+		"en-US": "How you can help to DebtsTracker.io project",
+		"ru-RU": "Как вы можете помочь проекту DebtsTracker.io",
+	},
 	WS_ADS_TITLE: {
 		"en-US": "Ads @ DebtsTracker.IO",
 		"ru-RU": "Реклама на DebtsTracker.IO",
