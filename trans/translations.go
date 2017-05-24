@@ -1139,7 +1139,7 @@ Or use menu at the bottom.
 	BUTTON_TEXT_YOU_OWE_AMOUNT_TO_SOMEONE: {
 		"ru-RU": "%v | вы должны: %v",
 		"en-US": "%v | you owe: %v",
-		"en-US": "%v | شما بدهکارید: %v",
+		"fa-IR": "%v | شما بدهکارید: %v",
 	},
 	BUTTON_TEXT_SOMEONE_OWES_TO_YOU_AMOUNT: {
 		"ru-RU": "%v | долг вам: %v",
