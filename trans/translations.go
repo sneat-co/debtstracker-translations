@@ -6,7 +6,8 @@ import (
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
-//Row 1704 TO DO
+// TODO: Row 1704
+
 // TRANS - translation string
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": {
@@ -14,6 +15,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": "SAMPLE",
 		"it-IT": "ESEMPIO",
 	},
+
 	"Jan": {
 		"en-US": "Jan",
 		"ru-RU": "Янв.",
@@ -74,7 +76,60 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Дек.",
 		"it-IT": "Dic",
 	},
-
+	COMMAND_START: {
+		"en-US": "start",
+		"ru-RU": "старт",
+		"it-IT": "inizio",
+	},
+	COMMAND_MENU: {
+		"en-US": "menu",
+		"ru-RU": "меню",
+	},
+	COMMAND_GAVE: {
+		"en-US": "gave",
+		"ru-RU": "дад",
+		"it-IT": "debito",
+	},
+	COMMAND_GOT: {
+		"en-US": "got",
+		"ru-RU": "взял",
+		"it-IT": "credito",
+	},
+	COMMAND_RETURNED: {
+		"en-US": "returned",
+		"ru-RU": "вернул",
+		"it-IT": "rientra",
+	},
+	COMMAND_BALANCE: {
+		"en-US": "balance",
+		"ru-RU": "баланс",
+		"it-IT": "bilancio",
+	},
+	COMMAND_HISTORY: {
+		"en-US": "history",
+		"ru-RU": "история",
+		"it-IT": "cronologia",
+	},
+	COMMAND_SETTINGS: {
+		"en-US": "settings",
+		"ru-RU": "настройки",
+		"it-IT": "impostazioni",
+	},
+	COMMAND_HELP: {
+		"en-US": "help",
+		"ru-RU": "помощь",
+		"it-IT": "aiuto",
+	},
+	COMMAND_CANCEL: {
+		"en-US": "cancel",
+		"ru-RU": "/отменить",
+		"it-IT": "annulla",
+	},
+	COMMAND_CLEAR: {
+		"en-US": "clear",
+		"ru-RU": "очистить",
+		"it-IT": "chiaro",
+	},
 	adsCommandTitle: {
 		"ru-RU": adsCommandTitle,
 		"en-US": adsCommandTitle,
