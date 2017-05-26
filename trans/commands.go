@@ -1,5 +1,7 @@
 package trans
 
+import "strings"
+
 func Commands(command string, extra... string) (commands []string) {
 	vals := TRANS[command]
 	commands = make([]string, len(vals)+len(extra))
@@ -8,7 +10,11 @@ func Commands(command string, extra... string) (commands []string) {
 		if val == "" {
 			continue
 		}
-		commands[i] = "/" + val
+		if strings.HasPrefix(val, "/") {
+			commands[i] = strings.ToLower(val)
+		} else {
+			commands[i] = "/" + strings.ToLower(val)
+		}
 		i += 1
 	}
 	for _, val := range extra {

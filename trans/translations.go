@@ -731,9 +731,84 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 		"it-IT": `Clicca su <a>sign in</a> nella web-app.`,
 	},
 	MESSAGE_TEXT_DO_YOU_LIKE_OUR_BOT: {
-		"ru-RU": "Вам нравится наш бот?",
-		"en-US": "Do you like our bot?",
-		"it-IT": "Ti piace il bot?",
+		"ru-RU": "Вам нравится {{bot}}?",
+		"en-US": "Do you like {{bot}}?",
+		"it-IT": "Divertito con {{bot}}?",
+	},
+	COMMAND_TEXT_YES_EXCLAMATION: {
+		"ru-RU": "%v Да!",
+		"en-US": "%v Yes!",
+		"it-IT": "%v Si!",
+	},
+	COMMAND_TEXT_YES: {
+		"ru-RU": "%v Да",
+		"en-US": "%v Yes",
+		"it-IT": "%v Si",
+	},
+	COMMAND_TEXT_NO: {
+		"ru-RU": "%v Нет",
+		"en-US": "%v No",
+		"it-IT": "%v No",
+	},
+	COMMAND_TEXT_NOT_TOO_MUCH: {
+		"ru-RU": "%v Не очень",
+		"en-US": "%v Not too much",
+		"it-IT": "%v Non troppo",
+	},
+	COMMAND_TEXT_FEEDBACK: {
+		"ru-RU": "/Отзыв",
+		"en-US": "/Feedback",
+		"it-IT": "/Risposta",
+	},
+	COMMAND_TEXT_LEAVE_FEEDBACK: {
+		"ru-RU": "%v Написать отзыв",
+		"en-US": "%v Write feedback",
+		"it-IT": "%v Scrivi commenti",
+	},
+	MESSAGE_TEXT_THANKS: {
+		"ru-RU": "🙏 Спасибо!",
+		"en-US": "🙏 Thanks!",
+		"it-IT": "🙏 Grazie!",
+	},
+	MESSAGE_TEXT_PLEASE_SEND_TEXT: {
+		"ru-RU": "Пожалуйста отправьте текст.",
+		"en-US": "Please send text.",
+		"it-IT": "Si prega di inviare il testo.",
+	},
+	MESSAGE_TEXT_CAN_YOU_RATE_AT_STOREBOT: {
+		"ru-RU": `🤖 Можете поставить ему высокую оценку и хороший отзыв в каталоге ботов Store Bot?
+
+‎Это займет меньше минуты вашего времени! 😇`,
+		"en-US": `🤖 Can you rate it high and write a good review in bots catalog Store Bot?
+
+‎It will take less than a minute of your time! 😇`,
+		"it-IT": `🤖 Puoi votarlo in alto e scrivere una buona revisione nel catalogo bot Bot Store?
+
+Ci vorrà meno di un minuto del tuo tempo! 😇`,
+	},
+	MESSAGE_TEXT_ASK_TO_WRITE_FEEDBACK_WITHIN_MESSENGER: {
+		"ru-RU": "Поделитесь вашими мыслями (на русском или английском) о том, что нужно сделать, чтобы бот стал лучше:",
+		"en-US": "‎Share your thoughts (in English or Russian) about what could be done to make the bot better:",
+		"it-IT": "Condividi i tuoi pensieri (in Inglese o Russo) su come sarebbe migliore secondo te il bot:",
+	},
+	MESSAGE_TEXT_HOW_TO_RATE_AT_STOREBOT: {
+		"ru-RU": `‎1. Перейдите по ссылке, чтобы оставить оценку и отзыв:
+‎https://telegram.me/storebot?start={{bot}}
+‎2. Нажмите на кнопку "⭐️⭐️⭐️⭐️⭐️"
+‎3. Напишите сообщение или нажмите кнопку "Пропустить этот шаг"
+‎4. Спасибо вам большое! Благодаря этому о боте узнает больше людей — это служит дополнительной мотивацией для разработчиков! 😎`,
+
+		"en-US": `1. Click on this link to rate and review:
+‎https://telegram.me/storebot?start={{bot}}
+‎2. Click on the "⭐️⭐️⭐️⭐️⭐️" button
+‎3. Write your message or press "Skip this step" button
+‎4. Thank you very much! As a result of your actions, even more people will learn about the bot. All this will serve as the additional motivation for the developers! 😎`,
+
+		"it-IT": `‎1. Clicca su questo link per votare e lasciare una recensione:
+‎https://telegram.me/storebot?start={{bot}}
+‎2. Clicca sul "⭐️⭐️⭐️⭐️⭐️" bottone
+‎3. Scrivi il tuo messaggio o premi "Salta questo step"
+‎4. Grazie infinitamente! Come risultato delle tue azioni, altre persone guarderanno il bot. Dando anche un motivo in più per continuare ai developers! 😎`,
 	},
 	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
