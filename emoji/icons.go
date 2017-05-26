@@ -23,6 +23,7 @@ const (
 	CLIPBOARD_ICON        = "\xF0\x9F\x93\x8B"
 	NEWSPAPER_ICON        = "\xF0\x9F\x93\xB0"
 	MEMO_ICON             = "📝"
+	HOME_ICON = "🏠"
 	//
 	GREEN_CHECKBOX = "✅"
 	STAR_ICON              = "⭐"
@@ -82,7 +83,7 @@ const (
 
 	BEER_ICON            = "🍺"
 	ALARM_CLOCK_ICON     = "\xE2\x8F\xB0"
-	MAIN_MENU_ICON       = "\xF0\x9F\x8F\xA0"
+	MAIN_MENU_ICON       = HOME_ICON
 	CALENDAR_ICON        = "📅"
 	FLUSHED_FACE         = "😳"
 	CLOSED_LOCK_WITH_KEY = "\xF0\x9F\x94\x90"

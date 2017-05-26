@@ -731,9 +731,9 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 		"it-IT": `Clicca su <a>sign in</a> nella web-app.`,
 	},
 	MESSAGE_TEXT_DO_YOU_LIKE_OUR_BOT: {
-		"ru-RU": "Вам нравится {{bot}}?",
-		"en-US": "Do you like {{bot}}?",
-		"it-IT": "Divertito con {{bot}}?",
+		"ru-RU": "Вам нравится @{{bot}}?",
+		"en-US": "Do you like @{{bot}}?",
+		"it-IT": "Divertito con @{{bot}}?",
 	},
 	COMMAND_TEXT_YES_EXCLAMATION: {
 		"ru-RU": "%v Да!",
@@ -760,7 +760,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 		"en-US": "/Feedback",
 		"it-IT": "/Risposta",
 	},
-	COMMAND_TEXT_LEAVE_FEEDBACK: {
+	COMMAND_TEXT_WRITE_FEEDBACK: {
 		"ru-RU": "%v Написать отзыв",
 		"en-US": "%v Write feedback",
 		"it-IT": "%v Scrivi commenti",
@@ -792,23 +792,37 @@ Ci vorrà meno di un minuto del tuo tempo! 😇`,
 		"it-IT": "Condividi i tuoi pensieri (in Inglese o Russo) su come sarebbe migliore secondo te il bot:",
 	},
 	MESSAGE_TEXT_HOW_TO_RATE_AT_STOREBOT: {
-		"ru-RU": `‎1. Перейдите по ссылке, чтобы оставить оценку и отзыв:
-‎https://telegram.me/storebot?start={{bot}}
+		"ru-RU": `‎<b>Как поставить оценку в три простых шага:</b>
+
+1. Перейдите по ссылке, чтобы оставить оценку и отзыв:
+‎https://t.me/storebot?start={{bot}}
+
 ‎2. Нажмите на кнопку "⭐️⭐️⭐️⭐️⭐️"
+
 ‎3. Напишите сообщение или нажмите кнопку "Пропустить этот шаг"
-‎4. Спасибо вам большое! Благодаря этому о боте узнает больше людей — это служит дополнительной мотивацией для разработчиков! 😎`,
 
-		"en-US": `1. Click on this link to rate and review:
-‎https://telegram.me/storebot?start={{bot}}
+Спасибо вам большое! Благодаря этому о боте узнает больше людей — это служит дополнительной мотивацией для разработчиков! 😎`,
+
+		"en-US": `<b>How to rate in 3 simple steps:</b>
+
+1. Click on this link to rate and review:
+https://t.me/storebot?start={{bot}}
+
 ‎2. Click on the "⭐️⭐️⭐️⭐️⭐️" button
-‎3. Write your message or press "Skip this step" button
-‎4. Thank you very much! As a result of your actions, even more people will learn about the bot. All this will serve as the additional motivation for the developers! 😎`,
 
-		"it-IT": `‎1. Clicca su questo link per votare e lasciare una recensione:
-‎https://telegram.me/storebot?start={{bot}}
+‎3. Write your message or press "Skip this step" button
+
+Thank you very much! As a result of your actions, even more people will learn about the bot. All this will serve as the additional motivation for the developers! 😎`,
+
+		"it-IT": `<b>Come valutare in 3 semplici passaggi:</b>
+‎1. Clicca su questo link per votare e lasciare una recensione:
+‎https://t.me/storebot?start={{bot}}
+
 ‎2. Clicca sul "⭐️⭐️⭐️⭐️⭐️" bottone
+
 ‎3. Scrivi il tuo messaggio o premi "Salta questo step"
-‎4. Grazie infinitamente! Come risultato delle tue azioni, altre persone guarderanno il bot. Dando anche un motivo in più per continuare ai developers! 😎`,
+
+Grazie infinitamente! Come risultato delle tue azioni, altre persone guarderanno il bot. Dando anche un motivo in più per continuare ai developers! 😎`,
 	},
 	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
@@ -824,6 +838,21 @@ Ci vorrà meno di un minuto del tuo tempo! 😇`,
 		"ru-RU": "Оценить на  @Storebot",
 		"en-US": "Leave rating at @Storebot",
 		"it-IT": "Lascia un voto a @Storebot",
+	},
+	MESSAGE_TEXT_ON_REFUSED_TO_RATE: {
+		"ru-RU": `ОК, возможно вы смоежете поставить оценку в другой раз.
+
+		{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+		Так же будем признательны если вы предложите любые улучшения.
+		`,
+		/*------------------------------------------------------------*/
+		"en-US": `OK, maybe you can rate us another time.
+
+		{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+		We also will appreciate if you suggest any improvements.
+		`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_POSITIVE: {
 		"ru-RU": `Спасибо, мы очень старались!
