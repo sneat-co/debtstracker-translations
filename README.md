@@ -39,11 +39,9 @@ Per i file di traduzione app (*web, iOS, Android*) verranno pubblicati presto.
 
 
 ## <a id="farsi">Farsi/Persian - فارسی</a>
-در حال حاضر برنامه ما این است ترجمه به زبان انگلیسی و روسی.
-ما قدردانی اگر شما می توانید یک درخواست کشش برای هر زبان دیگر ارسال کنید.
-اگر فکر می کنید ترجمه در هر زبان موجود درست نیست لطفا به [ما اطلاع دهید](https://github.com/DebtsTracker/translations/issues/new).
-
-برای رباتها (*تلگرام*) و [وب سایت](http://debtstracker.io/) تمام رشته های ترجمه در تک فایل هستند: https://github.com/DebtsTracker/translations/blob/master/trans/translations.go
- 
-برای برنامه (*وب، IOS، آندروید*) فایل های ترجمه به زودی منتشر می شود.
-
+در حال حاضر برنامه ما به زبانهای انگلیسی و روسی ترجمه شده است.
+سپاسگزار خواهیم بود اگر شما بتوانید برای هر یک از زبانهای دیگر یک پول ریکوئست ثبت نمایید.
+اگر اعتقاد دارید ترجمه در هریک از زبانهای موجود صحیح نمی باشد لطفاً به ما اطلاع دهید (https://github.com/DebtsTracker/translations/issues/new). 
+:تمام رشته های ترجمه در یک فایل موجود می باشند (http://debtstracker.io/) برای ربات های تلگرام و برنامه وب
+https://github.com/DebtsTracker/translations/blob/master/trans/translations.go
+ .فایلهای ترجمه به زودی منتشر می شوند (*web, iOS, Android*)در خصوص برنامه 
