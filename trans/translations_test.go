@@ -3,6 +3,7 @@ package trans
 import (
 	"regexp"
 	"testing"
+	"strings"
 )
 
 var (
@@ -30,6 +31,9 @@ func TestTRANS(t *testing.T) {
 					missingLocales[i] = missingLocales[l-1]
 					missingLocales = missingLocales[:l-1]
 				}
+			}
+			if strings.Contains(val, "https: ") || strings.Contains(val, "http: ") {
+				t.Errorf("Invalid http(s): link")
 			}
 			vars := reVars.FindAllString(val, -1)
 			counts := make(map[string]int, len(vars))
