@@ -174,7 +174,7 @@ var TRANS = map[string]map[string]string{
 
 		"fa-IR": `لطفاً برای تنظیم تاریخ یادآوری بعدی این فرمت را رعایت فرمایید <i>DD.MM.YEAR</i>.
 <i>روز.ماه.سال</i>.
-<b>برای مثال</b> برای تاریخ 20 ژانویه 2017 ثبت کنید:`, // TODO:FA
+<b>برای مثال</b> برای تاریخ 20 ژانویه 2017 ثبت کنید:`, // TODO:FA - missing example at the end, like <i>20.01.2017</i> Please use Perian calendar.
 		"it-IT": `Per impostare la data per il promemoria successivo invia il messaggio con la data nel seguente formato <i>GG.MM.ANNO</i>.
 		<b>Esempio</b> per indicare la data 20 Gennaio 2017 inserisci:
 
