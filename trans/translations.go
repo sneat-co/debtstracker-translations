@@ -87,62 +87,72 @@ var TRANS = map[string]map[string]string{
 		"en-US": "start",
 		"ru-RU": "старт",
 		"it-IT": "inizio",
+		"fa-IR": "شروع",
 	},
 	COMMAND_MENU: {
 		"en-US": "menu",
 		"ru-RU": "меню",
+		"it-IT": "menu", //TODO:IT
+		"fa-IR": "منو", //TODO:FA
 	},
 	COMMAND_GAVE: {
 		"en-US": "gave",
 		"ru-RU": "дал",
 		"it-IT": "debito",
+		"fa-IR": "داد", // TODO:FA
 	},
 	COMMAND_GOT: {
 		"en-US": "got",
 		"ru-RU": "взял",
 		"it-IT": "credito",
+		"fa-IR": "بدست آورد", // TODO:FA
 	},
 	COMMAND_RETURNED: {
 		"en-US": "returned",
 		"ru-RU": "вернул",
 		"it-IT": "rientra",
+		"fa-IR": "بازگشت", // TODO:FA
 	},
 	COMMAND_BALANCE: {
 		"en-US": "balance",
 		"ru-RU": "баланс",
 		"it-IT": "bilancio",
+		"fa-IR": "تعادل", // TODO:FA
 	},
 	COMMAND_HISTORY: {
 		"en-US": "history",
 		"ru-RU": "история",
 		"it-IT": "cronologia",
+		"fa-IR": "تاریخ", // TODO:FA
 	},
 	COMMAND_SETTINGS: {
 		"en-US": "settings",
 		"ru-RU": "настройки",
 		"it-IT": "impostazioni",
+		"fa-IR": "تنظیمات", // TODO:FA
 	},
 	COMMAND_HELP: {
 		"en-US": "help",
 		"ru-RU": "помощь",
 		"it-IT": "aiuto",
+		"fa-IR": "کمک", // TODO:FA
 	},
 	COMMAND_CANCEL: {
 		"en-US": "cancel",
 		"ru-RU": "/отменить",
 		"it-IT": "annulla",
+		"fa-IR": "لغو کردن", // TODO:FA - need to be single word if possible. If not let me know
 	},
 	COMMAND_CLEAR: {
 		"en-US": "clear",
 		"ru-RU": "очистить",
 		"it-IT": "chiaro",
+		"fa-IR": "واضح", // TODO:FA
 	},
 	adsCommandTitle: {
 		"ru-RU": adsCommandTitle,
 		"en-US": adsCommandTitle,
-
 		"fa-IR": adsCommandTitle,
-
 		"it-IT": adsCommandTitle,
 	},
 	" and ": {
@@ -722,17 +732,19 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Puoi <a href>pubblicizzare qui</a>",
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: {
-		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее.Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href= "https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/ru/</a>
+		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href= "https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/ru/</a>
 
 		Хотите получить оповещение когда оно выйдет?`,
 
-		"en-US": `🤖: I'm a good robot, for sure.But sometimes it is more convinient to use a nice specialized app.It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
+		"en-US": `🤖: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
 
 	Do you want to get an invite when it gets released?`,
 
-		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata.Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href = "https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/it/</a>
+		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata. Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href = "https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/it/</a>
 
 	Vuoi essere invitato non appena viene rilasciata?`,
+
+		"fa-IR": ``, // TODO:FA
 	},
 	MESSAGE_TEXT_INVALID_FLOAT: {
 		"ru-RU": "Извините, но вы можете использовать только числа в качестве суммы/количества (<i>до 2х знаком после запятой</i>).",
@@ -858,7 +870,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_LOGIN_TO_WEB_APP: {
 		"ru-RU": `Перейдите по <a>ссылке</a> чтобы запустить web-приложение.`,
 		"en-US": `Click to <a>sign in</a> to web-app.`,
-
+		"it-IT": "Fai clic per <a>accedi</a> per app web.",
 		"fa-IR": `کلیک کنید تا <a>وارد شوید</a> برنامه وب.`,
 	},
 	MESSAGE_TEXT_DO_YOU_LIKE_OUR_BOT: {
@@ -871,41 +883,49 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "%v Да!",
 		"en-US": "%v Yes!",
 		"it-IT": "%v Si!",
+		"fa-IR": "بله! %v",
 	},
 	COMMAND_TEXT_YES: {
 		"ru-RU": "%v Да",
 		"en-US": "%v Yes",
 		"it-IT": "%v Si",
+		"fa-IR": "بله %v",
 	},
 	COMMAND_TEXT_NO: {
 		"ru-RU": "%v Нет",
 		"en-US": "%v No",
 		"it-IT": "%v No",
+		"fa-IR": "خیر %v",
 	},
 	COMMAND_TEXT_NOT_TOO_MUCH: {
 		"ru-RU": "%v Не очень",
 		"en-US": "%v Not too much",
 		"it-IT": "%v Non troppo",
+		"fa-IR": "نه خیلی زیاد %v",
 	},
 	COMMAND_TEXT_FEEDBACK: {
 		"ru-RU": "/Отзыв",
 		"en-US": "/Feedback",
 		"it-IT": "/Risposta",
+		"fa-IR": "/بازخورد",
 	},
 	COMMAND_TEXT_WRITE_FEEDBACK: {
 		"ru-RU": "%v Написать отзыв",
 		"en-US": "%v Write feedback",
 		"it-IT": "%v Scrivi commenti",
+		"fa-IR": "ارسال بازخورد %v",
 	},
 	MESSAGE_TEXT_THANKS: {
 		"ru-RU": "🙏 Спасибо!",
 		"en-US": "🙏 Thanks!",
 		"it-IT": "🙏 Grazie!",
+		"fa-IR": "🙏 تشکر!",
 	},
 	MESSAGE_TEXT_PLEASE_SEND_TEXT: {
 		"ru-RU": "Пожалуйста отправьте текст.",
 		"en-US": "Please send text.",
 		"it-IT": "Si prega di inviare il testo.",
+		"fa-IR": "لطفا متنی ارسال کنید.", // TODO:FA
 	},
 	MESSAGE_TEXT_CAN_YOU_RATE_AT_STOREBOT: {
 		"ru-RU": `🤖 Можете поставить ему высокую оценку и хороший отзыв в каталоге ботов Store Bot?
@@ -917,11 +937,15 @@ var TRANS = map[string]map[string]string{
 		"it-IT": `🤖 Puoi votarlo in alto e scrivere una buona revisione nel catalogo bot Bot Store?
 
 	Ci vorrà meno di un minuto del tuo tempo! 😇`,
+		"fa-IR": `🤖 می تواند به شما امتیاز دهی بالا و ارسال یک بررسی خوب در ربات رباتها اضافه کردن کاتولوگ فروشگاه؟
+
+کمتر از یک دقیقه از زمان شما را خواهد کشید! 😇`,
 	},
 	MESSAGE_TEXT_ASK_TO_WRITE_FEEDBACK_WITHIN_MESSENGER: {
 		"ru-RU": "Поделитесь вашими мыслями (на русском или английском) о том, что нужно сделать, чтобы бот стал лучше:",
 		"en-US": "‎Share your thoughts (in English or Russian) about what could be done to make the bot better:",
 		"it-IT": "Condividi i tuoi pensieri (in Inglese o Russo) su come sarebbe migliore secondo te il bot:",
+		"fa-IR": "به اشتراک گذاشتن افکار خود را (در زبان انگلیسی یا روسی) در مورد آنچه می تواند انجام شود به ربات بهتر:",
 	},
 	MESSAGE_TEXT_HOW_TO_RATE_AT_STOREBOT: {
 		"ru-RU": `‎<b>Как поставить оценку в три простых шага:</b>
@@ -955,6 +979,17 @@ var TRANS = map[string]map[string]string{
 	‎3. Scrivi il tuo messaggio o premi "Salta questo step"
 
 	Grazie infinitamente! Come risultato delle tue azioni, altre persone guarderanno il bot.Dando anche un motivo in più per continuare ai developers! 😎`,
+
+		"fa-IR": `<b>چگونه برای رای دادن به در 3 مرحله ساده:</b>
+
+	1. بر روی این لینک به سرعت و بررسی کلیک کنید:
+	https: //t.me/storebot?start={{bot}}
+
+	‎2. بر روی "⭐️⭐️⭐️⭐️⭐️" را فشار دهید کلیک کنید
+
+	‎3. ارسال پیام و یا مطبوعات خود را "پرش این مرحله" را فشار دهید
+
+	خیلی ممنون! به عنوان یک نتیجه از اقدامات خود را، مردم و حتی بیشتر در مورد bot.All این را به عنوان انگیزه اضافی برای توسعه دهندگان خدمت یاد بگیرند! 😎`,
 	},
 	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
@@ -988,6 +1023,22 @@ var TRANS = map[string]map[string]string{
 
 	We also will appreciate if you suggest any improvements.
 	`,
+		/*------------------------------------------------------------*/
+		// TODO: IT
+		"it-IT": `OK, forse ci puoi valutare un'altra volta.
+
+	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+	Apprezzeremo anche se suggeriamo qualche miglioramento.
+	`,
+		/*------------------------------------------------------------*/
+		// TODO: FA
+		"fa-IR": `خوب، شاید شما می توانید ما زمان دیگری رای.
+
+	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+	ما همچنین قدردانی اگر شما هر گونه پیشرفت نشان می دهد.
+	`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_POSITIVE: {
 		"ru-RU": `Спасибо, мы очень старались!
@@ -1009,6 +1060,14 @@ var TRANS = map[string]map[string]string{
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
 
 	Sarebbe ancora piu' apprezzatto se ci <a suggest-idea>suggerisci qualche miglioramento</a>.
+	`,
+		/*------------------------------------------------------------*/
+		// TODO:FA - check
+		"fa-IR": `تشکر، ما سخت کار می کرد!
+
+	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+	ما همچنین قدردانی اگر شما<a suggest-idea> بهبود نشان </a>را.
 	`,
 	},
 	MESSAGE_TEXT_YOU_CAN_HELP_BY: {
@@ -1053,35 +1112,6 @@ For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.
 		    Per esempio su <a share-fb>Facebook</a> o su <a share-twitter>Twitter</a>.
 
 		  * Supporta ulteriormente lo sviluppo del bot - <a href="https://goo.gl/Qhh0yL">2€ tramite PayPal</a> (<i>circa $2.2</i>)
-		`,
-	},
-	MESSAGE_TEXT_YOU_CAN_HELP_BY_HTML: {
-		"ru-RU": `
-		<p>Вы нам очень поможете если:</>
-
-		<ul>
-		  <li>Оставите положительный <a storebot>отзыв в каталоге ботов</a>.</li>
-
-		  <li>Расскажите о боте своим друзьям.
-		    Например во <a share-vk>ВКонтакте</a>, <a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
-		  </li>
-
-		  <li>Поддержите дальнейшую разработку - <a href="https://goo.gl/Qhh0yL">€2 через PayPal</a></li>
-		</ul>
-		`,
-		/*------------------------------------------------------------*/
-		"en-US": `
-		<p>You can help us a lot if you:</p>
-
-		<ul>
-		  <li>Leave a positive feedback at <a storebot>directory of bots</a>.</li>
-
-		  <li>Tell about the app to your friends.
-		    For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.</li>
-
-		  <li>Support further development - <a href="https://goo.gl/Qhh0yL">€2 via PayPal</a> (<i>about $2.2</i>)</li>
-		</ul>
-
 		`,
 	},
 	MESSAGE_TEXT_COUNTERPARTY_HAS_EMPTY_BALANCE: {
@@ -1315,28 +1345,23 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_BACK_TO_MAIN_MENU: {
 		"ru-RU": `Можно вернуться назад в главное /меню`,
 		"en-US": `You can go back to main /menu`,
-
 		"fa-IR": `شما میتوانید به منو /اصلی مراجعه کنید.`,
-
 		"it-IT": `Puoi tornare al menu' principale tramite /menu`,
 	},
 	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: { // This is the same for all languages.
 		"ru-RU": `Выбранный язык программы: %v`,
 		"en-US": `Preferred app language: %v`,
-
 		"fa-IR": `زبان برنامه: %v`,
-
 		"it-IT": `Lingua del bot preferita: %v`,
 	},
 	MESSAGE_TEXT_ONBOARDING_ASK_TO_CHOOSE_LANGUAGE: {
 		"ru-RU": `<b>%v</b>, на каком языке вы хотели бы общаться?
-
 (What is your preferred language?)`,
 		"en-US": `<b>%v</b>, what is your preferred language?`,
-
-		"fa-IR": `<b>%v</b>, شما چه زبانی را ترجیح می دهید؟`,
-
-		"it-IT": `<b>%v</b> qual'e' la tua lingua madre?`,
+		"fa-IR": `<b>%v</b>, شما چه زبانی را ترجیح می دهید؟
+(What is your preferred language?)`,
+		"it-IT": `<b>%v</b> qual'e' la tua lingua madre?
+(What is your preferred language?)`,
 	},
 	MESSAGE_TEXT_CHOOSE_UI_LANGUAGE: {
 		"ru-RU": "На каком языке вы хотели бы общаться со мной?",
@@ -1931,9 +1956,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"ru-RU": "Квитанция просмотрена",
 		"en-US": "Receipt viewed",
 		"fa-IR": "رسید رویت شد.",
-
-		//"it-IT": "Debiti visti",
-
+		"it-IT": "Debiti visti",
 	},
 	MESSAGE_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: {
 		"ru-RU": "Вы можете посмотреть свой номер телефона в ожидаемоем нами формате.",
@@ -2305,6 +2328,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE_OR_COMMENT: {
 		"ru-RU": "<b>Хотите добавить заметку или комментарий?</b>\n%v Заметки хранятся для вашего личго пользования.\n%v Комментарий виден всем кому разрешён просмотр этой транзакции.",
 		"en-US": "<b>Do you want to add a note or comment?</b>\n%v Memos are private records for yoru own reference.\n%v Comments are available to everyone who has permission to view this transaction.",
+		"it-IT": "<b>Vuoi aggiungere una nota o un commento?</b> \n%v I memo sono record privati per il riferimento di yoru.\n%v I commenti sono disponibili a tutti coloro che hanno l'autorizzazione a visualizzare questa transazione.",
 		"fa-IR": "<b>آیا میخواهید یادداشت یا نظری اضافه کنید؟</b>\n%v یادداشت ها نوشته های خصوصی برای مراجعه خود شما هستند.\n%v نظرات در دسترس تمام کسانی که مجاز رویت این تراکنش هستند میباشد.",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: {
@@ -2522,6 +2546,8 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	WS_HELP_US_TITLE: {
 		"en-US": "How you can help to DebtsTracker.io project",
 		"ru-RU": "Как вы можете помочь проекту DebtsTracker.io",
+		"it-IT": "Come potete aiutare il progetto DebtsTracker.io", // TODO:IT
+		"fa-IR": "چگونه شما می توانید به پروژه DebtsTracker.io کمک", //TODO:FA
 	},
 	WS_ADS_TITLE: {
 		"en-US": "Ads @ DebtsTracker.IO",

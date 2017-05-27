@@ -7,6 +7,7 @@ import (
 
 var (
 	supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
+	requiredLocales = []string{"en-US", "ru-RU", "it-IT", "fa-IR"}
 	reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
 	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
 )
@@ -15,10 +16,20 @@ func TestTRANS(t *testing.T) {
 	var wordsCount int
 	for key, vals := range TRANS {
 		countsByLang := make(map[string]map[string]int)
+		missingLocales := append([]string{}, requiredLocales...)
 		for lang, val := range vals {
 			if !isSupportedLang(lang) {
 				t.Errorf("Key %v has unsupported language: %v", key, lang)
 				continue
+			}
+			for i, ml := range missingLocales {
+				if ml == lang {
+					// Delete without preserving order
+					// https://github.com/golang/go/wiki/SliceTricks#delete-without-preserving-order
+					l := len(missingLocales)
+					missingLocales[i] = missingLocales[l-1]
+					missingLocales = missingLocales[:l-1]
+				}
 			}
 			vars := reVars.FindAllString(val, -1)
 			counts := make(map[string]int, len(vars))
@@ -31,6 +42,9 @@ func TestTRANS(t *testing.T) {
 		if !ok {
 			t.Errorf("Key %v missing en-US trnaslation", key)
 			continue
+		}
+		if len(missingLocales) > 0 {
+			t.Errorf("Key %v is missing translations for: %v", key, missingLocales)
 		}
 		wordsCount += len(reWords.FindAllString(vals["en-US"], -1))
 		reported := make(map[string]int)
