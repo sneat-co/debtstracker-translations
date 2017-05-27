@@ -93,61 +93,61 @@ var TRANS = map[string]map[string]string{
 		"en-US": "menu",
 		"ru-RU": "меню",
 		"it-IT": "menu", //TODO:IT
-		"fa-IR": "منو", //TODO:FA
+		"fa-IR": "منو",  //TODO:IT  It's OK.
 	},
 	COMMAND_GAVE: {
 		"en-US": "gave",
 		"ru-RU": "дал",
 		"it-IT": "debito",
-		"fa-IR": "داد", // TODO:FA
+		"fa-IR": "داد",
 	},
 	COMMAND_GOT: {
 		"en-US": "got",
 		"ru-RU": "взял",
 		"it-IT": "credito",
-		"fa-IR": "بدست آورد", // TODO:FA
+		"fa-IR": "گرفت",
 	},
 	COMMAND_RETURNED: {
 		"en-US": "returned",
 		"ru-RU": "вернул",
 		"it-IT": "rientra",
-		"fa-IR": "بازگشت", // TODO:FA
+		"fa-IR": "بازگردانده شده",
 	},
 	COMMAND_BALANCE: {
 		"en-US": "balance",
 		"ru-RU": "баланс",
 		"it-IT": "bilancio",
-		"fa-IR": "تعادل", // TODO:FA
+		"fa-IR": "تراز",
 	},
 	COMMAND_HISTORY: {
 		"en-US": "history",
 		"ru-RU": "история",
 		"it-IT": "cronologia",
-		"fa-IR": "تاریخ", // TODO:FA
+		"fa-IR": "سوابق",
 	},
 	COMMAND_SETTINGS: {
 		"en-US": "settings",
 		"ru-RU": "настройки",
 		"it-IT": "impostazioni",
-		"fa-IR": "تنظیمات", // TODO:FA
+		"fa-IR": "تنظیمات",
 	},
 	COMMAND_HELP: {
 		"en-US": "help",
 		"ru-RU": "помощь",
 		"it-IT": "aiuto",
-		"fa-IR": "کمک", // TODO:FA
+		"fa-IR": "کمک",
 	},
 	COMMAND_CANCEL: {
 		"en-US": "cancel",
 		"ru-RU": "/отменить",
 		"it-IT": "annulla",
-		"fa-IR": "لغو کردن", // TODO:FA - need to be single word if possible. If not let me know
+		"fa-IR": "کنسل", // TODO:FA - need to be single word if possible. If not let me know // OK
 	},
 	COMMAND_CLEAR: {
 		"en-US": "clear",
 		"ru-RU": "очистить",
 		"it-IT": "chiaro",
-		"fa-IR": "واضح", // TODO:FA
+		"fa-IR": "پاک کردن", // TODO:FA 
 	},
 	adsCommandTitle: {
 		"ru-RU": adsCommandTitle,
@@ -181,10 +181,11 @@ var TRANS = map[string]map[string]string{
 		"en-US": `To set date for next reminder please send it as a text in format of <i>DD.MM.YEAR</i>.
 <b>For example</b> for 20th of January 2017 submit:
     <i>20.01.2017</i>`,
+		
+		"fa-IR": `لطفاً برای تنظیم یادآور بعدی آنرا با متنی با این فرمت ارسال نمایید. <i>روز.ماه.سال</i>.
+<b>برای مثال</b> برای 15 خرداد 1396 ثبت کنید:
+    <i>15.03.1396</i>`,
 
-		"fa-IR": `لطفاً برای تنظیم تاریخ یادآوری بعدی این فرمت را رعایت فرمایید <i>DD.MM.YEAR</i>.
-<i>روز.ماه.سال</i>.
-<b>برای مثال</b> برای تاریخ 20 ژانویه 2017 ثبت کنید:`, // TODO:FA - missing example at the end, like <i>20.01.2017</i> Please use Perian calendar.
 		"it-IT": `Per impostare la data per il promemoria successivo invia il messaggio con la data nel seguente formato <i>GG.MM.ANNO</i>.
 		<b>Esempio</b> per indicare la data 20 Gennaio 2017 inserisci:
 
@@ -744,7 +745,9 @@ var TRANS = map[string]map[string]string{
 
 	Vuoi essere invitato non appena viene rilasciata?`,
 
-		"fa-IR": ``, // TODO:FA
+		"fa-IR": `🤖: مطمئناً من روبات خوبی هستم. اما بعضی وقت هاساده تر و مناسب تر است که از یک برنامه به خوبی تخصصی شده استفاده شود، این برنامه هنوز برای استفاده عموم آماده نیست ولی می توانید چک کنید که چگونه به نظر خواهد رسید: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
+
+	آیا می خواهید وقتی منتشر شد دعوتنامه ای دریافت کنید؟`,
 	},
 	MESSAGE_TEXT_INVALID_FLOAT: {
 		"ru-RU": "Извините, но вы можете использовать только числа в качестве суммы/количества (<i>до 2х знаком после запятой</i>).",
@@ -877,7 +880,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вам нравится @{{bot}}?",
 		"en-US": "Do you like @{{bot}}?",
 		"it-IT": "Divertito con @{{bot}}?",
-		"fa-IR": "آیا ربات ما را می پسندید؟", //TODO:FA
+		"en-US": "آیا می پسندید @{{bot}}?",
 	},
 	COMMAND_TEXT_YES_EXCLAMATION: {
 		"ru-RU": "%v Да!",
@@ -925,7 +928,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Пожалуйста отправьте текст.",
 		"en-US": "Please send text.",
 		"it-IT": "Si prega di inviare il testo.",
-		"fa-IR": "لطفا متنی ارسال کنید.", // TODO:FA
+		"fa-IR": "لطفاً متن ارسال کنید.",
 	},
 	MESSAGE_TEXT_CAN_YOU_RATE_AT_STOREBOT: {
 		"ru-RU": `🤖 Можете поставить ему высокую оценку и хороший отзыв в каталоге ботов Store Bot?
@@ -937,15 +940,15 @@ var TRANS = map[string]map[string]string{
 		"it-IT": `🤖 Puoi votarlo in alto e scrivere una buona revisione nel catalogo bot Bot Store?
 
 	Ci vorrà meno di un minuto del tuo tempo! 😇`,
-		"fa-IR": `🤖 می تواند به شما امتیاز دهی بالا و ارسال یک بررسی خوب در ربات رباتها اضافه کردن کاتولوگ فروشگاه؟
+		"fa-IR": `🤖  آیا می توانید در کاتالوگ روباتها در استور بوت امتیاز بالایی داده و اظهار نظر خوبی در مورد این روبات ثبت کنید؟  
 
-کمتر از یک دقیقه از زمان شما را خواهد کشید! 😇`,
+این کار کمتر از یک دقیقه از وقت شما را می گیرد! 😇`,
 	},
 	MESSAGE_TEXT_ASK_TO_WRITE_FEEDBACK_WITHIN_MESSENGER: {
 		"ru-RU": "Поделитесь вашими мыслями (на русском или английском) о том, что нужно сделать, чтобы бот стал лучше:",
 		"en-US": "‎Share your thoughts (in English or Russian) about what could be done to make the bot better:",
 		"it-IT": "Condividi i tuoi pensieri (in Inglese o Russo) su come sarebbe migliore secondo te il bot:",
-		"fa-IR": "به اشتراک گذاشتن افکار خود را (در زبان انگلیسی یا روسی) در مورد آنچه می تواند انجام شود به ربات بهتر:",
+		"fa-IR": "نظرات خود را (به انگلیسی و روسی ) در مورد اینکه چه کاری می توان انجام داد تا این ربات بهتر شود، با ما به اشتراک بگذارید:",
 	},
 	MESSAGE_TEXT_HOW_TO_RATE_AT_STOREBOT: {
 		"ru-RU": `‎<b>Как поставить оценку в три простых шага:</b>
@@ -980,16 +983,16 @@ var TRANS = map[string]map[string]string{
 
 	Grazie infinitamente! Come risultato delle tue azioni, altre persone guarderanno il bot.Dando anche un motivo in più per continuare ai developers! 😎`,
 
-		"fa-IR": `<b>چگونه برای رای دادن به در 3 مرحله ساده:</b>
+		"fa-IR": `<b>چگونگی امتیازدهی در سه گام ساده :</b>
 
-	1. بر روی این لینک به سرعت و بررسی کلیک کنید:
+	1. برای امتیازدهی و ثبت نظرات بر روی لینگ زیر کلیک کنید
 	https://t.me/storebot?start={{bot}}
 
-	‎2. بر روی "⭐️⭐️⭐️⭐️⭐️" را فشار دهید کلیک کنید
+	‎2. بر روی دکمه "⭐️⭐️⭐️⭐️⭐️" کلیک کنید
 
-	‎3. ارسال پیام و یا مطبوعات خود را "پرش این مرحله" را فشار دهید
+	‎3. پیام خودرا ثبت کنید یا روی دکمه "پرش از این مرحله" کلیک کنید
 
-	خیلی ممنون! به عنوان یک نتیجه از اقدامات خود را، مردم و حتی بیشتر در مورد bot.All این را به عنوان انگیزه اضافی برای توسعه دهندگان خدمت یاد بگیرند! 😎`,
+	بسیار سپاسگزاریم! عمل شما باعث می شود افراد بیشتری در مورد bot.All بیاموزند. این امر انگیزه مضاعفی به توسعه دهندگان این ربات می دهد ! 😎`,
 	},
 	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
@@ -1033,11 +1036,11 @@ var TRANS = map[string]map[string]string{
 	`,
 		/*------------------------------------------------------------*/
 		// TODO: FA
-		"fa-IR": `خوب، شاید شما می توانید ما زمان دیگری رای.
+		"fa-IR": `بسیار خوب، ممکن است شما بتوانید زمان دیگری به ما امتیاز بدهید.
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
 
-	ما همچنین قدردانی اگر شما هر گونه پیشرفت نشان می دهد.
+	همچنین سپاسگزار خواهیم بود اگر شما هرگونه امکان بهبود را با ما در میان بگذارید.
 	`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_POSITIVE: {
@@ -1063,11 +1066,11 @@ var TRANS = map[string]map[string]string{
 	`,
 		/*------------------------------------------------------------*/
 		// TODO:FA - check
-		"fa-IR": `تشکر، ما سخت کار می کرد!
+		"fa-IR": `ممنونیم، ما سخت کارکرده ایم!
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
 
-	ما همچنین قدردانی اگر شما<a suggest-idea> بهبود نشان </a>را.
+	ما همچنین سپاسگزار خواهیم بود اگر شما<a suggest-idea> هرگونه امکان بهبود را با ما در میان بگذارید </a>را.
 	`,
 	},
 	MESSAGE_TEXT_YOU_CAN_HELP_BY: {
@@ -1532,7 +1535,7 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_PLEASE_ACKNOWLEDGE_TRANSFER: {
 		"ru-RU": "Пожалуйста подтвердите или отклоните эту транзакцию.",
 		"en-US": "Please confirm or decline this transfer.",
-		"fa-IR": "لطفاً این تراکنش را تایید را رد نمایید.",
+		"fa-IR": "لطفاً این تراکنش را تایید یا رد نمایید.",
 		"it-IT": "Conferma o rifiuta questo debito/credito.",
 	},
 	MESSAGE_TEXT_ALREADY_ACCEPTED_TRANSFER: {
@@ -2205,7 +2208,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	INLINE_RECEIPT_CHOOSE_LANGUAGE: {
 		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
 		"en-US": "<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.",
-		"fa-IR": "<b>به لطفا زبان را انتخاب کنید برای دیدن جزئیات از بده </b> است که توسط ثبت شده است {{.Creator}}.", // TODO:FA - Check, especially order of words
+		"fa-IR": "<b> لطفا برای رویت جزئیات بدهی که توسط </b>  ثبت شده است زبان را انتخاب کنید. {{.Creator}}.",
 		"it-IT": "<b>Scegli la lingua per vedere i dettagli del debito</b> registrato da {{.Creator}}.",
 	},
 	INLINE_RECEIPT_MESSAGE: {
@@ -2227,7 +2230,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
-		// TODO:FA: Check words order. Especially for {{.SiteLink}}
+		// TODO:FA: Check words order. Especially for {{.SiteLink}} Checked every thing is OK!
 		"fa-IR": `<b>{{.Creator}} بدهی ثبت نموده</b> مرتبط با شما.
 
 {{.SiteLink}} — یک برنامه ردیابی بدهی به شما کمک می کند تا:
@@ -2547,7 +2550,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"en-US": "How you can help to DebtsTracker.io project",
 		"ru-RU": "Как вы можете помочь проекту DebtsTracker.io",
 		"it-IT": "Come potete aiutare il progetto DebtsTracker.io", // TODO:IT
-		"fa-IR": "چگونه شما می توانید به پروژه DebtsTracker.io کمک", //TODO:FA
+		"fa-IR": "چگونه می توانید به پروژه  DebtsTracker.io کمک کنید.",
 	},
 	WS_ADS_TITLE: {
 		"en-US": "Ads @ DebtsTracker.IO",
