@@ -87,7 +87,7 @@ var TRANS = map[string]map[string]string{
 	},
 	COMMAND_GAVE: {
 		"en-US": "gave",
-		"ru-RU": "дад",
+		"ru-RU": "дал",
 		"it-IT": "debito",
 	},
 	COMMAND_GOT: {
