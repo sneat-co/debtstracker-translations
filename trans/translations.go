@@ -732,15 +732,15 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Puoi <a href>pubblicizzare qui</a>",
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: {
-		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href= "https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/ru/</a>
+		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href= "https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
 
 		Хотите получить оповещение когда оно выйдет?`,
 
-		"en-US": `🤖: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
+		"en-US": `🤖: I'm a good robot, for sure. But sometimes it is more convinient to use a nice specialized app. It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 	Do you want to get an invite when it gets released?`,
 
-		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata. Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href = "https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/it/</a>
+		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata. Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href = "https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/it/</a>
 
 	Vuoi essere invitato non appena viene rilasciata?`,
 
@@ -951,7 +951,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": `‎<b>Как поставить оценку в три простых шага:</b>
 
 	1. Перейдите по ссылке, чтобы оставить оценку и отзыв:
-	‎https: //t.me/storebot?start={{bot}}
+	‎https://t.me/storebot?start={{bot}}
 
 	‎2. Нажмите на кнопку "⭐️⭐️⭐️⭐️⭐️"
 
@@ -962,7 +962,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": `<b>How to rate in 3 simple steps:</b>
 
 	1. Click on this link to rate and review:
-	https: //t.me/storebot?start={{bot}}
+	https://t.me/storebot?start={{bot}}
 
 	‎2. Click on the "⭐️⭐️⭐️⭐️⭐️" button
 
@@ -972,7 +972,7 @@ var TRANS = map[string]map[string]string{
 
 		"it-IT": `<b>Come valutare in 3 semplici passaggi:</b>
 	‎1. Clicca su questo link per votare e lasciare una recensione:
-	‎https: //t.me/storebot?start={{bot}}
+	‎https://t.me/storebot?start={{bot}}
 
 	‎2. Clicca sul "⭐️⭐️⭐️⭐️⭐️" bottone
 
@@ -983,7 +983,7 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": `<b>چگونه برای رای دادن به در 3 مرحله ساده:</b>
 
 	1. بر روی این لینک به سرعت و بررسی کلیک کنید:
-	https: //t.me/storebot?start={{bot}}
+	https://t.me/storebot?start={{bot}}
 
 	‎2. بر روی "⭐️⭐️⭐️⭐️⭐️" را فشار دهید کلیک کنید
 
@@ -2104,15 +2104,15 @@ Inviamo 10 inviti al giorno ai primi 10 della lista d'attesa ed 1 in modo casual
 
 Код приглашения: {{.InviteCode}}`,
 
-		"fa-IR": `سلام{{.ToName}}, {{.FromName}} شما را دعوت کرده تا برنامه ردیابی بدهی ها را امتحان کنید.- https: //debtstracker.io/invite#id={{.InviteCode}}&ربات تلگرام={{.TgBot}}&{{.Utm}}
+		"fa-IR": `سلام{{.ToName}}, {{.FromName}} شما را دعوت کرده تا برنامه ردیابی بدهی ها را امتحان کنید.- https://debtstracker.io/invite#id={{.InviteCode}}&ربات تلگرام={{.TgBot}}&{{.Utm}}
 
 کد دعوت شما: {{.InviteCode}}`,
 
-		"en-US": `Hi {{.ToName}}, {{.FromName}} is inviting you to try debts tracking app - https: //debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+		"en-US": `Hi {{.ToName}}, {{.FromName}} is inviting you to try debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Your personal invitation code is: {{.InviteCode}}`,
 
-		"it-IT": `Ciao {{.ToName}}, {{.FromName}} ti ha invitato a provare 'debts tracking app' - https: //debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+		"it-IT": `Ciao {{.ToName}}, {{.FromName}} ti ha invitato a provare 'debts tracking app' - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
@@ -2125,19 +2125,19 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 
 		"en-US": `Hi {{.ToName}},
 
-{{.FromName}} is inviting you to use debts tracking app - https: //debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+{{.FromName}} is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 You invitation code is: {{.InviteCode}}`,
 
 		"fa-IR": `سلام{{.ToName}},
 
-{{.FromName}} شما را دعوت کرده تا از برنامه ردیابی بدهی ها استفاده کنید.- https: //debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+{{.FromName}} شما را دعوت کرده تا از برنامه ردیابی بدهی ها استفاده کنید.- https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 کد دعوت شما: {{.InviteCode}}`,
 
 		"it-IT": `Ciao {{.ToName}},
 
-{{.FromName}} ti ha invitato a provare 'debts tracking app' - https: //debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
+{{.FromName}} ti ha invitato a provare 'debts tracking app' - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
