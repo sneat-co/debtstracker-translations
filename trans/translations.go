@@ -2205,7 +2205,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	INLINE_RECEIPT_CHOOSE_LANGUAGE: {
 		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
 		"en-US": "<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.",
-		"fa-IR": "<b لطفا زبان خود را انتخاب کنید تا جزئیات بدهی رویت شود </b> ثبت سوابق بدهی توسط {{.Creator}}.",
+		"fa-IR": "<b>به لطفا زبان را انتخاب کنید برای دیدن جزئیات از بده </b> است که توسط ثبت شده است {{.Creator}}.", // TODO:FA - Check, especially order of words
 		"it-IT": "<b>Scegli la lingua per vedere i dettagli del debito</b> registrato da {{.Creator}}.",
 	},
 	INLINE_RECEIPT_MESSAGE: {
@@ -2227,7 +2227,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
-
+		// TODO:FA: Check words order. Especially for {{.SiteLink}}
 		"fa-IR": `<b>{{.Creator}} بدهی ثبت نموده</b> مرتبط با شما.
 
 {{.SiteLink}} — یک برنامه ردیابی بدهی به شما کمک می کند تا:
