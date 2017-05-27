@@ -880,7 +880,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вам нравится @{{bot}}?",
 		"en-US": "Do you like @{{bot}}?",
 		"it-IT": "Divertito con @{{bot}}?",
-		"en-US": "آیا می پسندید @{{bot}}?",
+		"fa-IR": "آیا می پسندید @{{bot}}?",
 	},
 	COMMAND_TEXT_YES_EXCLAMATION: {
 		"ru-RU": "%v Да!",
