@@ -44,6 +44,7 @@ const (
 	THUMB_UP_ICON          = "\xF0\x9F\x91\x8D"
 	HELP_ICON              = "❓"
 	EARTH_ICON             = "\xF0\x9F\x8C\x8F"
+	REFRESH_ICON = "🔄"
 	CURRENCY_EXCAHNGE_ICON = "\xF0\x9F\x92\xB1"
 	NO_ENTRY_SIGN_ICON     = "\xF0\x9F\x9A\xAB"
 	FORK_AND_KNIFE_ICON    = "\xF0\x9F\x8D\xB4"

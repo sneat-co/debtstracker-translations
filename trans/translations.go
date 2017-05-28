@@ -92,8 +92,8 @@ var TRANS = map[string]map[string]string{
 	COMMAND_MENU: {
 		"en-US": "menu",
 		"ru-RU": "меню",
-		"it-IT": "menu", //TODO:IT
-		"fa-IR": "منو",  //TODO:IT  It's OK.
+		"it-IT": "menu", // TODO(IT): Google translated
+		"fa-IR": "منو",
 	},
 	COMMAND_GAVE: {
 		"en-US": "gave",
@@ -141,13 +141,13 @@ var TRANS = map[string]map[string]string{
 		"en-US": "cancel",
 		"ru-RU": "/отменить",
 		"it-IT": "annulla",
-		"fa-IR": "کنسل", // TODO:FA - need to be single word if possible. If not let me know // OK
+		"fa-IR": "کنسل",
 	},
 	COMMAND_CLEAR: {
 		"en-US": "clear",
 		"ru-RU": "очистить",
 		"it-IT": "chiaro",
-		"fa-IR": "پاک کردن", // TODO:FA 
+		"fa-IR": "پاک کردن", // TODO(FA): Should be a single word without spaces
 	},
 	adsCommandTitle: {
 		"ru-RU": adsCommandTitle,
@@ -411,6 +411,18 @@ var TRANS = map[string]map[string]string{
 		"en-US": "Show all...",
 		"fa-IR": "نمایش تمام موارد ...",
 		"it-IT": "Mostra tutto...",
+	},
+	COMMAND_TEXT_CONTACTS: {
+		"ru-RU": "Контакты",
+		"en-US": "Contacts",
+		"fa-IR": "لیست تماس",
+		"it-IT": "Сontatti",
+	},
+	COMMAND_TEXT_REFRESH: {
+		"ru-RU": "Обновить",
+		"en-US": "Refresh",
+		"fa-IR": "تازه کردن",
+		"it-IT": "Ricaricare",
 	},
 	COMMAND_TEXT_ADD_YOUR_OWN_OPTION: {
 		"ru-RU": "Что-то другое",
@@ -1027,7 +1039,7 @@ var TRANS = map[string]map[string]string{
 	We also will appreciate if you suggest any improvements.
 	`,
 		/*------------------------------------------------------------*/
-		// TODO: IT
+		// TODO(IT): Google translated
 		"it-IT": `OK, forse ci puoi valutare un'altra volta.
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
@@ -1035,7 +1047,6 @@ var TRANS = map[string]map[string]string{
 	Apprezzeremo anche se suggeriamo qualche miglioramento.
 	`,
 		/*------------------------------------------------------------*/
-		// TODO: FA
 		"fa-IR": `بسیار خوب، ممکن است شما بتوانید زمان دیگری به ما امتیاز بدهید.
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
@@ -1065,7 +1076,6 @@ var TRANS = map[string]map[string]string{
 	Sarebbe ancora piu' apprezzatto se ci <a suggest-idea>suggerisci qualche miglioramento</a>.
 	`,
 		/*------------------------------------------------------------*/
-		// TODO:FA - check
 		"fa-IR": `ممنونیم، ما سخت کارکرده ایم!
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
@@ -1461,10 +1471,10 @@ O usa il menu' qui sotto.
 		"it-IT": "OK, da ora in poi usero' '%v' come moneta principale.",
 	},
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_TO_USER: {
-		"ru-RU": "<b>%v</b> - долг вам %v",
-		"en-US": "<b>%v</b> - owes you %v",
-		"fa-IR": "<b>%v</b> - به شما بدهکار است %v",
-		"it-IT": "<b>%v</b> - ti deve %v.",
+		"ru-RU": "%v - долг вам %v",
+		"en-US": "%v - owes you %v",
+		"fa-IR": "%v - به شما بدهکار است %v",
+		"it-IT": "%v - ti deve %v.",
 	},
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER: {
 		"ru-RU": "Вам должны %v",
@@ -1491,10 +1501,10 @@ O usa il menu' qui sotto.
 		"it-IT": "Sei in debito con %v",
 	},
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_BY_USER: {
-		"ru-RU": "<b>%v</b> - вы должны %v",
-		"en-US": "<b>%v</b> - you owe %v",
-		"fa-IR": "<b>%v</b> - شما بدهکار هستید %v",
-		"it-IT": "<b>%v</b> - tu gli devi %v",
+		"ru-RU": "%v - вы должны %v",
+		"en-US": "%v - you owe %v",
+		"fa-IR": "%v - شما بدهکار هستید %v", // TODO(FA) - Check order of words - amount could be a problem
+		"it-IT": "%v - tu gli devi %v",
 	},
 	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY: {
 		"ru-RU": "Какая валюта для вас основная?",
@@ -2230,7 +2240,6 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
-		// TODO:FA: Check words order. Especially for {{.SiteLink}} Checked every thing is OK!
 		"fa-IR": `<b>{{.Creator}} بدهی ثبت نموده</b> مرتبط با شما.
 
 {{.SiteLink}} — یک برنامه ردیابی بدهی به شما کمک می کند تا:
@@ -2549,7 +2558,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	WS_HELP_US_TITLE: {
 		"en-US": "How you can help to DebtsTracker.io project",
 		"ru-RU": "Как вы можете помочь проекту DebtsTracker.io",
-		"it-IT": "Come potete aiutare il progetto DebtsTracker.io", // TODO:IT
+		"it-IT": "Come potete aiutare il progetto DebtsTracker.io", // TODO(IT): Google translated
 		"fa-IR": "چگونه می توانید به پروژه  DebtsTracker.io کمک کنید.",
 	},
 	WS_ADS_TITLE: {
