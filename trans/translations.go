@@ -99,19 +99,19 @@ var TRANS = map[string]map[string]string{
 		"en-US": "gave",
 		"ru-RU": "дал",
 		"it-IT": "debito",
-		"fa-IR": "داد",
+		"fa-IR": "قرض_دادن",
 	},
 	COMMAND_GOT: {
 		"en-US": "got",
 		"ru-RU": "взял",
 		"it-IT": "credito",
-		"fa-IR": "گرفت",
+		"fa-IR": "قرض_گرفتن",
 	},
 	COMMAND_RETURNED: {
 		"en-US": "returned",
 		"ru-RU": "вернул",
 		"it-IT": "rientra",
-		"fa-IR": "بازگردانده شده",
+		"fa-IR": "بازگردانده_شده",
 	},
 	COMMAND_BALANCE: {
 		"en-US": "balance",
@@ -147,7 +147,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": "clear",
 		"ru-RU": "очистить",
 		"it-IT": "chiaro",
-		"fa-IR": "پاک کردن", // TODO(FA): Should be a single word without spaces
+		"fa-IR": "پاک_کردن",
 	},
 	adsCommandTitle: {
 		"ru-RU": adsCommandTitle,
@@ -391,7 +391,7 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_MAIN_MENU_TITLE: {
 		"ru-RU": "Главное /меню",
 		"en-US": "Main /menu",
-		"fa-IR": "منو / اصلی ",
+		"fa-IR": "منو/ اصلی ",
 		"it-IT": "Menu' /menu",
 	},
 	MESSAGE_TEXT_NOTHING_TO_CANCEL: {
@@ -403,7 +403,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_TRANSFER_CREATION_CANCELED: {
 		"ru-RU": "Создание записи о долге отменено.",
 		"en-US": "Creation of debt record has been canceled.",
-		"fa-IR": "ایجاد سابقه بدهی کنسل شده است.",
+		"fa-IR": "ایجاد سابقه بدهی کنسل شد.",
 		"it-IT": "Creazione di un debito/credito e' stato cancellato",
 	},
 	COMMAND_TEXT_SHOW_ALL_CONTACTS: {
@@ -571,13 +571,13 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_GAVE: {
 		"ru-RU": "/Дал",
 		"en-US": "/Gave",
-		"fa-IR": "/داد",
+		"fa-IR": "/قرض_دادن",
 		"it-IT": "/Debito",
 	},
 	COMMAND_TEXT_GOT: {
 		"ru-RU": "/Взял",
 		"en-US": "/Got",
-		"fa-IR": "/گرفت",
+		"fa-IR": "/قرض_گرفتن",
 		"it-IT": "/Credito",
 	},
 	COMMAND_TEXT_RETURN: {
@@ -799,13 +799,13 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_ASK_LENDING_COUNTERPARTY: {
 		"ru-RU": "Кому вы дали в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "Who borrowed from you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
-		"fa-IR": "چه کسی از شما قرض گرفته است <b>%v</b>?\n(<i>ارسال '.' برای کنسل کردن</i>)",
+		"fa-IR": "چه کسی از شما <b>%v</b> قرض گرفته است؟\n(<i>ارسال '.' برای کنسل کردن</i>)",
 		"it-IT": "A chi hai prestato <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_TYPE: {
 		"ru-RU": "Что вы взяли в долг?",
 		"en-US": "What did you lend?",
-		"fa-IR": "چه چیزی قرض داده اید؟",
+		"fa-IR": "چه چیزی قرض گرفته اید؟",
 		"it-IT": "Cos'hai prestato?",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_AMOUNT: {
@@ -817,13 +817,13 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_ASK_BORROWING_COUNTERPARTY: {
 		"ru-RU": "У кого вы взяли в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "Who lended to you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
-		"fa-IR": "چه کسی به شما قرض داده است <b>%v</b>?\n(<i>ارسال '.' برای کنسل کردن</i>)",
+		"fa-IR": "چه کسی به شما <b>%v</b> قرض داده است؟ \n(<i>ارسال '.' برای کنسل کردن</i>)",
 		"it-IT": "Chi ti ha prestato <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: {
 		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
 		"en-US": "Should we send a <a receipt>receipt</a> to <a counterparty>%v</a>?",
-		"fa-IR": "آیا لازم است ماارسال کنیم یک <a receipt>رسید</a> به <a counterparty>%v</a>?",
+		"fa-IR": "آیا لازم است ما</a> به <a counterparty>%v</a> یک رسید <a receipt> ارسال کنیم؟ ",
 		"it-IT": "Devo inviare una <a receipt>notifica</a> a <a counterparty>%v</a>?",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT_TO_YOURSELF_BY_SMS: {
@@ -841,7 +841,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_FROM_USER: {
 		"ru-RU": "{{.Counterparty}} взял(а) в долг {{.Amount}}.",
 		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
-		"fa-IR": "{{.Counterparty}} از شما قرض گرفته است {{.Amount}}.",
+		"fa-IR": "{{.Counterparty}} از شما {{.Amount}} قرض گرفته است .",
 		"it-IT": "{{.Counterparty}} ti deve dare {{.Amount}}.",
 		//"it-IT": "{{.Counterparty}} ha preso in prestito da te {{.Amount}}.",
 
@@ -849,7 +849,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_TO_USER: {
 		"ru-RU": "{{.Counterparty}} дал(а) вам в долг {{.Amount}}.",
 		"en-US": "{{.Counterparty}} lended to you {{.Amount}}.",
-		"fa-IR": "{{.Counterparty}} به شما قرض داده است {{.Amount}}.",
+		"fa-IR": "{{.Counterparty}} به شما {{.Amount}} قرض داده است .",
 		"it-IT": "{{.Counterparty}} ti ha prestato {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_RETURN_FROM_USER: {
@@ -879,7 +879,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_COMMENT: {
 		"ru-RU": "Комментарий",
 		"en-US": "Comment",
-		"fa-IR": "نظر",
+		"fa-IR": "شرح",
 		"it-IT": "Commento",
 	},
 	MESSAGE_TEXT_LOGIN_TO_WEB_APP: {
@@ -1385,13 +1385,13 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_LOCALE_CHANGED: {
 		"ru-RU": "Вы поменяли язык на %v",
 		"en-US": "You've switched language to %v",
-		"fa-IR": "شما زبان را تغییر دادید به %v",
+		"fa-IR": "شما زبان را به %v تغییر دادید. ",
 		"it-IT": "Hai cambiato lingua in %v",
 	},
 	MESSAGE_TEXT_WHATS_NEXT: {
 		"ru-RU": "Что будем делать дальше?",
 		"en-US": "What's next?",
-		"fa-IR": "بعد چه چیزی است؟",
+		"fa-IR": "اقدام بعدی چیست؟",
 		"it-IT": "Ed ora? Che faccio?",
 	},
 	MESSAGE_TEXT_WHATS_NEXT_HINT: {
@@ -1409,8 +1409,8 @@ Or use menu at the bottom.
 `,
 
 		"fa-IR": `
-اگر از کسی قرض گرفته اید برای ثبت مصرف / گرفتن.
-اگر به کسی قرض داده اید برای ثبت مصرف / دادن.
+اگر از کسی قرض گرفته اید برای ثبت مصرف / قرض گرفتن.
+اگر به کسی قرض داده اید برای ثبت مصرف / قرض دادن.
 
 یا از منوی پایین استفاده نمایید.`,
 
@@ -1485,7 +1485,7 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_ON_RETURN_USER_DOES_NOT_OWE_ANYTHING_TO_COUNTERPARTY_ANYMORE: {
 		"ru-RU": "Поздравляем! У вас не осталось долгов перед <b>%v</b>.",
 		"en-US": "Congratulations! You don't owe anything more to <b>%v</b>.",
-		"fa-IR": "تبریک! شما دیگر چیزی بدهکار نیستید به <b>%v</b>.",
+		"fa-IR": "تبریک! شما دیگر چیزی به <b>%v</b> بدهکار نیستید .",
 		"it-IT": "Bravo! Hai saldato il tuo debito con <b>%v</b>.",
 	},
 	MESSAGE_TEXT_ON_RETURN_COUNTERPARTY_DOES_NOT_OWE_ANYTHING_TO_USER_ANYMORE: {
@@ -1497,13 +1497,13 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_BY_USER: {
 		"ru-RU": "Вы должны %v",
 		"en-US": "You owe %v",
-		"fa-IR": "شما بدهکار هستید %v",
+		"fa-IR": "شما %v بدهکار هستید ",
 		"it-IT": "Sei in debito con %v",
 	},
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_BY_USER: {
 		"ru-RU": "%v - вы должны %v",
 		"en-US": "%v - you owe %v",
-		"fa-IR": "%v - شما بدهکار هستید %v", // TODO(FA) - Check order of words - amount could be a problem
+		"fa-IR": "%v - شما %v بدهکار هستید ",
 		"it-IT": "%v - tu gli devi %v",
 	},
 	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY: {
@@ -2218,7 +2218,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	INLINE_RECEIPT_CHOOSE_LANGUAGE: {
 		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
 		"en-US": "<b>Please choose language to see details of the debt</b> that has been recorded by {{.Creator}}.",
-		"fa-IR": "<b> لطفا برای رویت جزئیات بدهی که توسط </b>  ثبت شده است زبان را انتخاب کنید. {{.Creator}}.",
+		"fa-IR": "<b> لطفا برای رویت جزئیات بدهی که توسط </b>  {{.Creator}} ثبت شده است زبان را انتخاب کنید.",
 		"it-IT": "<b>Scegli la lingua per vedere i dettagli del debito</b> registrato da {{.Creator}}.",
 	},
 	INLINE_RECEIPT_MESSAGE: {
@@ -2240,14 +2240,14 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
-		"fa-IR": `<b>{{.Creator}} بدهی ثبت نموده</b> مرتبط با شما.
+		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
 
-{{.SiteLink}} — یک برنامه ردیابی بدهی به شما کمک می کند تا:
+{{.SiteLink}} — یک برنامه پیگیری بدهی است که به شما کمک می کند تا:
 
   - همیشه از سود و زیان خود مطلع باشید.
 
-  - بدهی های خود را به موقع پرداخت کنید
-    <i>(یادآوری به  شما و بدهکاران به شما)</i>`,
+  - بدهی ها به موقع پرداخت شوند.
+    <i>(با ارسال یادآوری به  شما و بدهکاران )</i>`,
 
 		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
 
@@ -2341,7 +2341,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "<b>Хотите добавить заметку или комментарий?</b>\n%v Заметки хранятся для вашего личго пользования.\n%v Комментарий виден всем кому разрешён просмотр этой транзакции.",
 		"en-US": "<b>Do you want to add a note or comment?</b>\n%v Memos are private records for yoru own reference.\n%v Comments are available to everyone who has permission to view this transaction.",
 		"it-IT": "<b>Vuoi aggiungere una nota o un commento?</b> \n%v I memo sono record privati per il riferimento di yoru.\n%v I commenti sono disponibili a tutti coloro che hanno l'autorizzazione a visualizzare questa transazione.",
-		"fa-IR": "<b>آیا میخواهید یادداشت یا نظری اضافه کنید؟</b>\n%v یادداشت ها نوشته های خصوصی برای مراجعه خود شما هستند.\n%v نظرات در دسترس تمام کسانی که مجاز رویت این تراکنش هستند میباشد.",
+		"fa-IR": "<b>آیا میخواهید یادداشت یا شرحی اضافه کنید؟</b>\n%v یادداشت ها نوشته های خصوصی برای مراجعه خود شما هستند.\n%v شرح در دسترس تمام کسانی که مجاز رویت این تراکنش هستند میباشد.",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: {
 		"ru-RU": "Напишите заметку:",
@@ -2353,7 +2353,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": `Если хотите добавить комментарий просто отправьте текст.`,
 		"en-US": `If you want to add a comment just send a text now.`,
 
-		"fa-IR": `اگر شما می خواهید یک نظر اضافه کنید فقط الان یک متن ارسال کنید`,
+		"fa-IR": `شما می توانید یک شرح اضافه کنید. تنها کافیست یک متن ارسال کنید.`,
 
 		"it-IT": `Se vuoi aggiungere un commento invia del testo ora.`,
 	},
@@ -2366,31 +2366,31 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: {
 		"ru-RU": "Напишите комментарий:",
 		"en-US": "Please write the comment:",
-		"fa-IR": "لطفاً نظرتان را ثبت کنید:",
+		"fa-IR": "لطفاً شرح را ثبت کنید:",
 		"it-IT": "Per favore scrivi un commento:",
 	},
 	MESSAGE_TEXT_TRANSFER_NOTE_ADDED_ASK_FOR_COMMENT: {
 		"ru-RU": "Заметка добавлена. Хотите написать комментарий?",
 		"en-US": "Memo have been added. Do you want to write a comment?",
-		"fa-IR": "یادداشت اضافه شد. آیا میخواهید یک نظر ثبت کنید؟",
+		"fa-IR": "یادداشت اضافه شد. آیا میخواهید یک شرح ثبت کنید؟",
 		"it-IT": "Promemoria aggiunto. Vuoi scrivere un commento?",
 	},
 	MESSAGE_TEXT_TRANSFER_COMMENT_ADDED_ASK_FOR_NOTE: {
 		"ru-RU": "Комментарий добавлен. Хотите написать заметку?",
 		"en-US": "Comment have been added. Do you want to write a note?",
-		"fa-IR": "نظر شما ثبت شد. آیا می خواهید یک یادداشت بنویسید؟",
+		"fa-IR": "شرح موردنظر شما ثبت شد. آیا می خواهید یک یادداشت بنویسید؟",
 		"it-IT": "Commento aggiunto. Vuoi scrivere un appunto?",
 	},
 	COMMAND_TEXT_NO_COMMENT_OR_NOTE_FOR_TRANSFER: {
 		"ru-RU": "Без заметок и комментариев",
 		"en-US": "Without notes or comments",
-		"fa-IR": "بدون یادداشت یا نظر",
+		"fa-IR": "بدون یادداشت یا شرح",
 		"it-IT": "Senza appunti o commenti",
 	},
 	COMMAND_TEXT_NO_COMMENT_FOR_TRANSFER: {
 		"ru-RU": "Без комментариев",
 		"en-US": "No comments",
-		"fa-IR": "بدون نظر",
+		"fa-IR": "بدون شرح",
 		"it-IT": "No commenti",
 	},
 	COMMAND_TEXT_NO_NOTE_FOR_TRANSFER: {
@@ -2408,7 +2408,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	COMMAND_TEXT_ADD_COMMENT_TO_TRANSFER: {
 		"ru-RU": "Добавить комментарий",
 		"en-US": "Add a comment (public)",
-		"fa-IR": "یک نظر اضافه کنید (عمومی)",
+		"fa-IR": "یک شرح اضافه کنید (عمومی)",
 		"it-IT": "Aggiungi un commento (pubblico)",
 	},
 	DUE_IN_NOW: {
