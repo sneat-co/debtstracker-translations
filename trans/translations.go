@@ -391,7 +391,7 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_MAIN_MENU_TITLE: {
 		"ru-RU": "Главное /меню",
 		"en-US": "Main /menu",
-		"fa-IR": "منو/ اصلی ",
+		"fa-IR": "/منو ی اصلی ",
 		"it-IT": "Menu' /menu",
 	},
 	MESSAGE_TEXT_NOTHING_TO_CANCEL: {
@@ -1358,7 +1358,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_BACK_TO_MAIN_MENU: {
 		"ru-RU": `Можно вернуться назад в главное /меню`,
 		"en-US": `You can go back to main /menu`,
-		"fa-IR": `شما میتوانید به منو /اصلی مراجعه کنید.`,
+		"fa-IR": `شما میتوانید به /منو ی اصلی مراجعه کنید.`,
 		"it-IT": `Puoi tornare al menu' principale tramite /menu`,
 	},
 	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: { // This is the same for all languages.
@@ -1409,8 +1409,8 @@ Or use menu at the bottom.
 `,
 
 		"fa-IR": `
-اگر از کسی قرض گرفته اید برای ثبت مصرف / قرض گرفتن.
-اگر به کسی قرض داده اید برای ثبت مصرف / قرض دادن.
+اگر از کسی قرض گرفته اید برای ثبت آن از /قرض_گرفتن استفاده کنید.
+اگر به کسی قرض داده اید برای ثبت آن از /قرض_دادن استفاده کنید.
 
 یا از منوی پایین استفاده نمایید.`,
 
@@ -1473,13 +1473,13 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_TO_USER: {
 		"ru-RU": "%v - долг вам %v",
 		"en-US": "%v - owes you %v",
-		"fa-IR": "%v - به شما بدهکار است %v",
+		"fa-IR": "%v - %v به شما بدهکار است ",
 		"it-IT": "%v - ti deve %v.",
 	},
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER: {
 		"ru-RU": "Вам должны %v",
 		"en-US": "Owes to you %v",
-		"fa-IR": "به شما بدهکار است %v",
+		"fa-IR": "%v به شما بدهکار است ",
 		"it-IT": "%v e' in debito con te",
 	},
 	MESSAGE_TEXT_ON_RETURN_USER_DOES_NOT_OWE_ANYTHING_TO_COUNTERPARTY_ANYMORE: {
@@ -1836,7 +1836,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_INVALID_EMAIL: {
 		"ru-RU": "Неверный email. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid email. Check and try it again? /menu",
-		"fa-IR": "ایمیل غیر معتبر می باشد. آیا بررسی نموده، دوباره سعی می کنید؟/منو",
+		"fa-IR": "ایمیل غیر معتبر می باشد. آیا بررسی نموده، دوباره سعی می کنید؟ /منو",
 		"it-IT": "Email scorretta. COntrolla e riprova. /menu",
 	},
 	MESSAGE_TEXT_INVALID_YEAR: {
@@ -1866,19 +1866,19 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_INVALID_PHONE_NUMBER: {
 		"ru-RU": "Неверный номер. Проверьте и попробуйте ещё раз? /menu",
 		"en-US": "Invalid phone number. Check and try it again? /menu",
-		"fa-IR": "شماره تلفن غیر معتبر می باشد. آیا بررسی نموده، مجدداً سعی می کنید؟/منو",
+		"fa-IR": "شماره تلفن غیر معتبر می باشد. آیا بررسی نموده، مجدداً سعی می کنید؟ /منو",
 		"it-IT": "Numero di telefono invalido. Controlla e riprova. /menu",
 	},
 	MESSAGE_TEXT_PHONE_NUMBER_IS_NOT_SMS_CAPABLE: {
 		"ru-RU": "Данный номер не принимает SMS. Попробуйте другой номер? /menu",
 		"en-US": "This phone number not able to receive SMS. Try another number? /menu",
-		"fa-IR": "این شماره تلفن قادر به دریافت پیام کوتاه نمی باشد. آیا شماره دیگری را امتحان میکنید؟/منو",
+		"fa-IR": "این شماره تلفن قادر به دریافت پیام کوتاه نمی باشد. آیا شماره دیگری را امتحان میکنید؟ /منو",
 		"it-IT": "Questo numero di telefono non e' abilitato a ricevere SMS. Vuoi provare un altro numero? /menu",
 	},
 	MESSAGE_TEXT_NO_CONTACT_RECEIVED: {
 		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /menu",
 		"en-US": "We have not received any contacts. INSTRUCTION HOW TO DO IT. /menu",
-		"fa-IR": "ما هیچ اطلاعات تماسی دریافت نکردیم. دستورالعمل چگونگی انجام این کار./منو",
+		"fa-IR": "ما هیچ اطلاعات تماسی دریافت نکردیم. دستورالعمل چگونگی انجام این کار. /منو",
 		"it-IT": "Non abbiamo ricevuto nesusn contatto. ISTRUZIONI SU COME FARE. /menu",
 	},
 	MESSAGE_TEXT_CONTACT_NAME_IS_NUMBER: {
