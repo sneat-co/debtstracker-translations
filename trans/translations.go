@@ -517,7 +517,7 @@ var TRANS = map[string]map[string]string{
 	"MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND": {
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
-		"fa-IR": "\xF0\x9F\x98\xB3 ببخشید، من دستور شما را نفهمیدم. احتمالا کمی کند ذهن هستم...\n\nشما میتوانید به منو /اصلی بازگردید",
+		"fa-IR": "\xF0\x9F\x98\xB3 ببخشید، من دستور شما را نفهمیدم. احتمالا کمی کند ذهن هستم...\n\nشما میتوانید به /منو ی اصلی بازگردید",
 		"it-IT": "\xF0\x9F\x98\xB3 Scusami ma non ho capito cosa vuoi. Sono ancora un po' sciocco...\n\nPuoi ritornare al Menu con /menu",
 	},
 	"COMMAND_TEXT_LANGUAGE": {
@@ -823,7 +823,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: {
 		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
 		"en-US": "Should we send a <a receipt>receipt</a> to <a counterparty>%v</a>?",
-		"fa-IR": "آیا لازم است ما</a> به <a counterparty>%v</a> یک رسید <a receipt> ارسال کنیم؟ ",
+		"fa-IR": "آیا لازم است ماارسال کنیم یک <a receipt>رسید</a> به <a counterparty>%v</a>?",
 		"it-IT": "Devo inviare una <a receipt>notifica</a> a <a counterparty>%v</a>?",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT_TO_YOURSELF_BY_SMS: {
