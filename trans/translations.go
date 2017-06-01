@@ -1502,7 +1502,7 @@ O usa il menu' qui sotto.
 		"ru-RU": "%v - вы должны %v",
 		"en-US": "%v - you owe %v",
 		"fa-IR": "%v - شما %v بدهکار هستید ",
-		"it-IT": "<b>%v</b> - tu gli/le devi %v",
+		"it-IT": "%v - tu gli/le devi %v",
 	},
 	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY: {
 		"ru-RU": "Какая валюта для вас основная?",
