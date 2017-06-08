@@ -1,5 +1,7 @@
 package trans
 
+import "github.com/strongo/bots-framework/core"
+
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
 // TRANS - translation string
@@ -161,7 +163,7 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": " و ",
 		"it-IT": " e ",
 	},
-	"MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG": {
+	bots.MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG: {
 		"ru-RU": "Упс, что-то пошло не так... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 		"fa-IR": "اوه، یک جای کار مشکل دارد ...  \xF0\x9F\x98\xB3",
@@ -514,7 +516,7 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": "کتاب",
 		"it-IT": "Libro",
 	},
-	"MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND": {
+	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: {
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 		"fa-IR": "\xF0\x9F\x98\xB3 ببخشید، من دستور شما را نفهمیدم. احتمالا کمی کند ذهن هستم...\n\nشما میتوانید به /منو ی اصلی بازگردید",
@@ -697,10 +699,17 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Hai accettato il debito/credito.",
 	},
 	MESSAGE_TEXT_TRANSFER_DECLINED_BY_YOU: {
-		"ru-RU": "Вы НЕ подтвердили эту транзакцию.",
-		"en-US": "You've declined this transaction.",
-		"fa-IR": ".شما این تراکنش را رد کردید",
-		"it-IT": "Hai rifiutato il debito/credito",
+		"ru-RU": `Вы НЕ согласны с этой транзакцией.
+
+Сама транзакция НЕ будет отменена, но создатель будет оповещён.`,
+		"en-US": `You do not agree with this transaction.
+
+The transaction will not be deleted but the creator will be notified.`,
+		"fa-IR": ".شما این تراکنش را رد کردید", //TODO(FA)
+		"it-IT": `Hai rifiutato il debito/credito.
+
+The transaction will NOT be deleted but the creator will be notified.
+		`, //TODO(IT)
 	},
 	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_COUNTERPARTY: {
 		"ru-RU": "%v подтвердил(a) вашу транзакцию:",
@@ -709,10 +718,10 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "%v ha accettato il tuo credito/debito:",
 	},
 	MESSAGE_TEXT_TRANSFER_DECLINED_BY_COUNTERPARTY: {
-		"ru-RU": "%v НЕ подтвердил(a) вашу транзакцию.",
-		"en-US": "%v declined your transaction.",
+		"ru-RU": "%v <b>НЕ</b> подтвердил(a) вашу транзакцию. Транзакция не отменена, но возможно вам стоит это обсудить.",
+		"en-US": "%v did not agree with your transaction. The transaction is not canceled but you may want to discuss it.", //TODO(FA)
 		"fa-IR": "تراکنش شما را رد کرد  %v declined your transaction.",
-		"it-IT": "%v ha rifiutato il tuo credito/debito.",
+		"it-IT": "%v ha rifiutato il tuo credito/debito.  The transaction is not canceled but you may want to discuss it.", //TODO(IT)
 	},
 	COMMAND_TEXT_SUBSCRIBE_TO_APP: {
 		"ru-RU": "Хочу приложение!",
@@ -1344,7 +1353,67 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"fa-IR": "بدهی ناشناخته است. لطفا از فهرست انتخاب کنید.",
 		"it-IT": "Debito sconosciuto. Scegli dalla lista qui sotto.",
 	},
+	MESSAGE_TEXT_BILL_CARD_HEADER: {
+		"ru-RU": "Счёт: %v",
+		"en-US": "Bill: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	COMMAND_TEXT_I_PAID: {
+		"ru-RU": "Я заплатил",
+		"en-US": "I paid",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	COMMAND_TEXT_I_OWE: {
+		"ru-RU": "Я должен",
+		"en-US": "I owe",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	COMMAND_TEXT_OWED_TO_ME: {
+		"ru-RU": "Должны мне",
+		"en-US": "Owed to me",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_BILL_HEADER: {
+		"ru-RU": "Cчёт: %v",
+		"en-US": "Bill: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_NEW_DEBT_HEADER: {
+		"ru-RU": "Cчёт: %v",
+		"en-US": "Bill: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	ARTICLE_TITLE_SPLIT_BILL: {
+		"ru-RU": "Разделить счёт/покупку",
+		"en-US": "Split bill/purchase",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	ARTICLE_SUBTITLE_SPLIT_BILL: {
+		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты.",
+		"en-US": "Amount: %v\nShare expenses between friends and track paybacks.",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
 
+	ARTICLE_NEW_DEBT_TITLE: {
+		"ru-RU": "Новый долг",
+		"en-US": "New debt",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	ARTICLE_NEW_DEBT_SUBTITLE: {
+		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
+		"en-US": "Amount: %v\nRecord debt and get/send notifications on due date.",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
 	MESSAGE_TEXT_HI: { // This is the same for all languages.
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
 		"en-US": `¡Hola! Hi! Привет! سلام!`,
