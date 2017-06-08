@@ -1359,6 +1359,42 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(FA)
 	},
+	BUTTON_TEXT_ADD_MEMBER: {
+		"en-US": "Add members",
+		"ru-RU": "Добавить участника",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	BUTTON_TEXT_SPLIT_MODE: {
+		"en-US": "Split: %v",
+		"ru-RU": "Делить: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	SPLIT_MODE_EQUALLY: {
+		"en-US": "Equally",
+		"ru-RU": "Попровну",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	SPLIT_MODE_PERCENTAGE: {
+		"en-US": "Percentage",
+		"ru-RU": "В процентах",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	SPLIT_MODE_EXACT_AMOUNT: {
+		"en-US": "Exact amounts",
+		"ru-RU": "Точные суммы",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
+	SPLIT_MODE_SHARES: {
+		"en-US": "Shares",
+		"ru-RU": "В долях",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(FA)
+	},
 	COMMAND_TEXT_I_PAID: {
 		"ru-RU": "Я заплатил",
 		"en-US": "I paid",
