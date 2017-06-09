@@ -1300,155 +1300,225 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "Ulteriori informazioni riguardo il codice invito.",
 	},
 	COMMAND_TEXT_INVITE_ME_BY_EMAIL: {
-		"ru-RU": "Хочу код приглашения на email",
 		"en-US": "Send me invite code by email",
+		"ru-RU": "Хочу код приглашения на email",
 		"fa-IR": "کد دعوت را برای من از طریق ایمیل ارسال کنید.",
 		"it-IT": "Inviami il codice invito tramite email",
 	},
 	COMMAND_TEXT_INVITE_ME_BY_SMS: {
-		"ru-RU": "Хочу код приглашения по SMS",
 		"en-US": "Send me invite code by SMS",
+		"ru-RU": "Хочу код приглашения по SMS",
 		"fa-IR": "کد دعوت را برای من از طریق پیام کوتاه ارسال کنید.",
 		"it-IT": "Inviami il codice invito tramite SMS",
 	},
 	COMMAND_TEXT_SEND_ME_NEW_INVITE_BY_EMAIL: {
-		"ru-RU": "Новый код приглашения на email",
 		"en-US": "Send me new invite code by email",
+		"ru-RU": "Новый код приглашения на email",
 		"fa-IR": "یک کد دعوت جدیداز طریق ایمیل برای من  ارسال کنید.",
 		"it-IT": "Inviami il nuovo codice invito tramite email",
 	},
 	COMMAND_TEXT_SEND_ME_NEW_INVITE_BY_SMS: {
-		"ru-RU": "Новый код приглашения по SMS",
 		"en-US": "Send me new invite code by SMS",
+		"ru-RU": "Новый код приглашения по SMS",
 		"fa-IR": "یک کد دعوت جدید از طریق پیام کوتاه برای من ارسال کنید.",
 		"it-IT": "Inviami il nuovo codice invito tramite SMS",
 	},
 	COMMAND_TEXT_SEND_ME_NEW_INVITE_BY_TELEGRAM: {
-		"ru-RU": "Получить приграшение в Telegram",
 		"en-US": "Send me new invite by Telegram",
+		"ru-RU": "Получить приграшение в Telegram",
 		"fa-IR": "یک کد دعوت جدید از طریق تلگرام برای من ارسال کنید.",
 		"it-IT": "Inviami il nuovo codice invito tramite Telegram",
 	},
 	MESSAGE_TEXT_UNKNOWN_LANGUAGE: {
-		"ru-RU": "Незнакомый язык. Пожалуйста выберете один из предоставленных:",
 		"en-US": "Unknown language. Please choose 1 from the options:",
+		"ru-RU": "Незнакомый язык. Пожалуйста выберете один из предоставленных:",
 		"fa-IR": "زبان ناشناخته. لطفاً یکی از گزینه ها را انتخاب کنید:",
 		"it-IT": "Lingua socnosciuta. Per favore scegline una tra le opzioni:",
 	},
 	MESSAGE_TEXT_UNKNOWN_COUNTERPARTY: {
-		"ru-RU": "Неизвестный контакт. Пожалуйста выберите <b>Добавить</b> если это новый контакт.",
 		"en-US": "Unknown counterparty. Please choose <b>Add new</b> if it's a new contact.",
+		"ru-RU": "Неизвестный контакт. Пожалуйста выберите <b>Добавить</b> если это новый контакт.",
 		"fa-IR": "مخاطب تراکنش شناسایی نشد. <b>یک مورد جدید اضافه کنید</b> اگر این ایشان یک مخاطب جدید هستند.",
 		"it-IT": "Destinatario sconosciuto. Scegli <b>Aggiugni nuovo</b> se e' un nuovo contatto.",
 	},
 	MESSAGE_TEXT_UNKNOWN_COUNTERPARTY_ON_RETURN: {
-		"ru-RU": "Неизвестный контакт. Пожалуйста выберите из списка.",
 		"en-US": "Unknown counterparty. Please choose from the list.",
+		"ru-RU": "Неизвестный контакт. Пожалуйста выберите из списка.",
 		"fa-IR": "مخاطب تراکنش شناسایی نشد. لطفاً از فهرست انتخاب کنید.",
 		"it-IT": "Destinatario sconosciuto. Scegli dalla lista qui sotto.",
 	},
 	MESSAGE_TEXT_UNKNOWN_DEBT: {
-		"ru-RU": "Неизвестный долг. Пожалуйста выберите из списка.",
 		"en-US": "Unknown debt. Please choose from the list.",
+		"ru-RU": "Неизвестный долг. Пожалуйста выберите из списка.",
 		"fa-IR": "بدهی ناشناخته است. لطفا از فهرست انتخاب کنید.",
 		"it-IT": "Debito sconosciuto. Scegli dalla lista qui sotto.",
 	},
 	MESSAGE_TEXT_BILL_CARD_HEADER: {
-		"ru-RU": "Счёт: %v",
-		"en-US": "Bill: %v",
+		"en-US": "Split bill: %v",
+		"ru-RU": "Разделить счёт: %v",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_COUNT: {
+		"en-US": "%v members:",
+		"ru-RU": "%v участников:",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
+		"en-US": "{.N}. {.MemberName}", // Non need to change for LTR
+		//"fa-IR": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_STATUS: {
+		"en-US": "Status: %v",
+		"ru-RU": "Статус: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_ADD_MEMBER: {
-		"en-US": "Add members",
+		"en-US": "Add participant",
 		"ru-RU": "Добавить участника",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_FINALIZE_BILL: {
+		"en-US": "✔️ Lock the bill",
+		"ru-RU": "✔️ Закрыть счёт",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_EDIT_BILL: {
+		"en-US": "✏️ Edit split amounts",
+		"ru-RU": "✏️ Редактировать суммы",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_SPLIT_MODE: {
 		"en-US": "Split: %v",
 		"ru-RU": "Делить: %v",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	SPLIT_MODE_EQUALLY: {
 		"en-US": "Equally",
-		"ru-RU": "Попровну",
+		"ru-RU": "Поровну",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	SPLIT_MODE_PERCENTAGE: {
 		"en-US": "Percentage",
 		"ru-RU": "В процентах",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	SPLIT_MODE_EXACT_AMOUNT: {
 		"en-US": "Exact amounts",
 		"ru-RU": "Точные суммы",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	SPLIT_MODE_SHARES: {
 		"en-US": "Shares",
 		"ru-RU": "В долях",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_JOIN: {
+		"ru-RU": "➕ Присоедениться",
+		"en-US": "➕ Join",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_DUE: {
+		"ru-RU": "📅 Оплатить до: %v",
+		"en-US": "📅 Due: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	NOT_SET: {
+		"en-US": "not set",
+		"ru-RU": "не задано",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_MANAGE_MEMBERS: {
+		"ru-RU": "👫 Участники",
+		"en-US": "👫 Participants",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	BUTTON_TEXT_CHANGE_BILL_PAYER: {
+		"ru-RU": "🔀 Сменить плательщика",
+		"en-US": "🔀 Change payer",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	COMMAND_TEXT_I_PAID: {
 		"ru-RU": "Я заплатил",
 		"en-US": "I paid",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	COMMAND_TEXT_I_OWE: {
 		"ru-RU": "Я должен",
 		"en-US": "I owe",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	COMMAND_TEXT_OWED_TO_ME: {
-		"ru-RU": "Должны мне",
 		"en-US": "Owed to me",
+		"ru-RU": "Должны мне",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_BILL_HEADER: {
-		"ru-RU": "Cчёт: %v",
 		"en-US": "Bill: %v",
+		"ru-RU": "Cчёт: %v",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_NEW_DEBT_HEADER: {
-		"ru-RU": "Cчёт: %v",
 		"en-US": "Bill: %v",
+		"ru-RU": "Cчёт: %v",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_ALREADY_BILL_MEMBER: {
+		"en-US": "%v, you are already sharing this bill.",
+		"ru-RU": "%v, вы уже входите в состав участников.",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_USER_JOINED_BILL: {
+		"en-US": "%v joined to bill sharing.",
+		"ru-RU": "%v присоеденился к совместной оплате.",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	ARTICLE_TITLE_SPLIT_BILL: {
 		"ru-RU": "Разделить счёт/покупку",
 		"en-US": "Split bill/purchase",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	ARTICLE_SUBTITLE_SPLIT_BILL: {
 		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты.",
 		"en-US": "Amount: %v\nShare expenses between friends and track paybacks.",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 
 	ARTICLE_NEW_DEBT_TITLE: {
 		"ru-RU": "Новый долг",
 		"en-US": "New debt",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	ARTICLE_NEW_DEBT_SUBTITLE: {
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
 		"en-US": "Amount: %v\nRecord debt and get/send notifications on due date.",
 		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_HI: { // This is the same for all languages.
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
