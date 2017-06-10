@@ -630,6 +630,12 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": "/کنسل",
 		"it-IT": "/Annulla",
 	},
+	BUTTON_TEXT_CANCEL: {
+		"ru-RU": "↩ Отменить",
+		"en-US": "↩ Cancel",
+		"fa-IR": "↪ کنسل",
+		"it-IT": "↩ Annulla",
+	},
 	COMMAND_TEXT_SETTINGS_PRIMARY_CURRENCY: {
 		"ru-RU": "Основная валюта",
 		"en-US": "Primary currency",
@@ -1354,20 +1360,42 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "Debito sconosciuto. Scegli dalla lista qui sotto.",
 	},
 	MESSAGE_TEXT_BILL_CARD_HEADER: {
-		"en-US": "Split bill: %v",
-		"ru-RU": "Разделить счёт: %v",
+		"en-US": "<b>Bill/purchase</b>: <code>%v</code>",
+		"ru-RU": "<b>Cчёт/покупка</b>: <code>%v</code>",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_BILL_CARD_HEADER_WITH_STATUS: {
+		"en-US": "<b>Bill/purchase</b>: <code>%v</code> — <i>%v</i>",
+		"ru-RU": "<b>Cчёт/покупка</b>: <code>%v</code> — <i>%v</i>",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_COUNT: {
-		"en-US": "%v members:",
-		"ru-RU": "%v участников:",
+		"en-US": "Members (%v):",
+		"ru-RU": "Участники (%v):",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
-		"en-US": "{.N}. {.MemberName}", // Non need to change for LTR
+		"en-US": "{{.N}}. {{.MemberName}}", // Non need to change for LTR
 		//"fa-IR": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_OWES: {
+		"en-US": "{{.N}}. {{.MemberName}} — owes {{.Owes}}",
+		"ru-RU": "{{.N}}. {{.MemberName}} — должен {{.Owes}}",
+		//"fa-IR": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PAID: {
+		"en-US": "{{.N}}. {{.MemberName}} — paid {{.Paid}}",
+		"ru-RU": "{{.N}}. {{.MemberName}} — заплатил {{.Paid}}",
+		//"fa-IR": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_BILL_ASK_WHO_PAID: {
+		"en-US": "Please choose who paid for the bill:",
+		"ru-RU": "Пожалуйста выберите кто заплатил по счёту:",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_STATUS: {
 		"en-US": "Status: %v",
@@ -1382,20 +1410,32 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_FINALIZE_BILL: {
-		"en-US": "✔️ Lock the bill",
-		"ru-RU": "✔️ Закрыть счёт",
+		"en-US": "🔓 Lock the bill",
+		"ru-RU": "🔓 Закрыть счёт",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_EDIT_BILL: {
-		"en-US": "✏️ Edit split amounts",
-		"ru-RU": "✏️ Редактировать суммы",
+		"en-US": "✏️ Edit",
+		"ru-RU": "✏️ Редактировать",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_SPLIT_MODE: {
+		"en-US": "➗ Split: %v",
+		"ru-RU": "➗ Делить: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_SPLIT_LABEL_WITH_VALUE: {
 		"en-US": "Split: %v",
 		"ru-RU": "Делить: %v",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	STATUS_DRAFT: {
+		"en-US": "draft",
+		"ru-RU": "черновик",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
@@ -1484,7 +1524,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"it-IT": "", // TODO(IT)
 	},
 	MESSAGE_TEXT_ALREADY_BILL_MEMBER: {
-		"en-US": "%v, you are already sharing this bill.",
+		"en-US": "%v, you are sharing this bill already.",
 		"ru-RU": "%v, вы уже входите в состав участников.",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
