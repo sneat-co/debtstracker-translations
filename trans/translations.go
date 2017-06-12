@@ -636,6 +636,12 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": "↪ کنسل",
 		"it-IT": "↩ Annulla",
 	},
+	BUTTON_TEXT_MAIN_MENU: {
+		"en-US": "↩ Main menu",
+		"ru-RU": "↩ Главное меню",
+		//"fa-IR": "↪ ", // TODO(FA)
+		//"it-IT": "↩ ", // TODO(IT)
+	},
 	COMMAND_TEXT_SETTINGS_PRIMARY_CURRENCY: {
 		"ru-RU": "Основная валюта",
 		"en-US": "Primary currency",
@@ -1417,7 +1423,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 	BUTTON_TEXT_EDIT_BILL: {
 		"en-US": "✏️ Edit",
-		"ru-RU": "✏️ Редактировать",
+		"ru-RU": "✏️ Изменить",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
@@ -1470,7 +1476,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"it-IT": "", // TODO(IT)
 	},
 	BUTTON_TEXT_DUE: {
-		"ru-RU": "📅 Оплатить до: %v",
+		"ru-RU": "📅 До: %v",
 		"en-US": "📅 Due: %v",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
@@ -1532,6 +1538,12 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_USER_JOINED_BILL: {
 		"en-US": "%v joined to bill sharing.",
 		"ru-RU": "%v присоеденился к совместной оплате.",
+		//"fa-IR": "", // TODO(FA)
+		//"it-IT": "", // TODO(IT)
+	},
+	MESSAGE_TEXT_YOU_JOINED_BILL: {
+		"en-US": "You've joined to bill sharing.",
+		"ru-RU": "Вы присоеденились к совместной оплате.",
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
 	},
