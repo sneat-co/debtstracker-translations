@@ -957,6 +957,10 @@ The transaction will NOT be deleted but the creator will be notified.
 		"it-IT": "🙏 Grazie!",
 		"fa-IR": "🙏 تشکر!",
 	},
+	MESSGE_TEXT_DEBT_ERROR_FIXED_START_OVER: {
+		"en-US": "🙏 Sorry, there was an error. It has been fixed but please re-enter your data for this debt.",
+		"ru-RU": "🙏 Извините, у нас была ошибка. Она была исправлено, но потребуется внести данные для этого долга заново.",
+	},
 	MESSAGE_TEXT_PLEASE_SEND_TEXT: {
 		"ru-RU": "Пожалуйста отправьте текст.",
 		"en-US": "Please send text.",
