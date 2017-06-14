@@ -1108,7 +1108,7 @@ The transaction will NOT be deleted but the creator will be notified.
 		"ru-RU": `
 	Вы нам очень поможете если:
 
-	* Оставите положительный <a storebot>отзыв в каталоге ботов</a>.
+	* Поставите нам 5⭐ в <a storebot>каталоге ботов</a>.
 
 	* Расскажите о боте своим друзьям.
 	Например во <a share-vk>ВКонтакте</a>, < a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
@@ -1119,7 +1119,7 @@ The transaction will NOT be deleted but the creator will be notified.
 		"en-US": `
 You can help us a lot if you:
 
-* Leave a positive feedback at <a storebot>directory of bots</a>.
+* Give us 5⭐ at <a storebot>directory of bots</a>.
 
 * Tell about the app to your friends.
 For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.
@@ -1127,7 +1127,7 @@ For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.
 * Support further development - <a href = "https://goo.gl/Qhh0yL">€2 via PayPal</a> (<i>about $2.2</i>)
 `,
 		/*------------------------------------------------------------*/
-
+		// TODO(FA)
 		"fa-IR": `:شما به ما کمک بسیاری می کنید اگر
 
 * ثبت بازخورد مثبت در <a storebot>دایرکتوری روبات ها</a>.
@@ -1137,10 +1137,11 @@ For example at <a share-fb>Facebook</a> or <a share-twitter>Twitter</a>.
 
 * از توسعه بیشتر برنامه پشتیبانی کنید - <a href = "https://goo.gl/Qhh0yL">€2 از طریق پی پال</a> (<i>$2.2 حدود </i>)`,
 
+		// TODO(IT)
 		"it-IT": `
 		Ci aiuteresti moltissimo se:
 
-		  * Lasci un feedback positivo alla <a storebot>pagina del bot</a>.
+		  * Lasci un feedback positivo 5⭐ alla <a storebot>pagina del bot</a>.
 
 		  * Raccontare dell'app ai tuoi amici.
 		    Per esempio su <a share-fb>Facebook</a> o su <a share-twitter>Twitter</a>.
