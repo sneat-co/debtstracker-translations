@@ -885,6 +885,24 @@ The transaction will NOT be deleted but the creator will be notified.
 		"fa-IR": "{{.Counterparty}} به شما بازپرداخت کرده است {{.Amount}}.",
 		"it-IT": "{{.Counterparty}} ti ha ridato {{.Amount}}.",
 	},
+	MESSAGE_TEXT_TRANSFER_ALREADY_FULLY_RETURNED:  {
+		"ru-RU": "Этот долг уже полностью возвращён.",
+		"en-US": "This debts is already fully returned.",
+		//"fa-IR": "", TODO(FA)
+		//"it-IT": "", TODO(IT)
+	},
+	MESSAGE_TEXT_RECEIPT_ALREADY_RETURNED_AMOUNT:  {
+		"ru-RU": "Уже возвращено: {{.Amount}}.",
+		"en-US": "Already returned: {{.Amount}}.",
+		//"fa-IR": "", TODO(FA)
+		//"it-IT": "", TODO(IT)
+	},
+	MESSAGE_TEXT_RECEIPT_OUTSTANDING_AMOUNT:  {
+		"ru-RU": "Осталось вернуть: {{.Amount}}.",
+		"en-US": "Outstanding: {{.Amount}}.",
+		//"fa-IR": "", TODO(FA)
+		//"it-IT": "", TODO(IT)
+	},
 	MESSAGE_TEXT_DUE_ON: {
 		"ru-RU": "<b>Вернуть до</b>: %v",
 		"en-US": "<b>Return till</b>: %v",
@@ -1031,7 +1049,7 @@ The transaction will NOT be deleted but the creator will be notified.
 
 	بسیار سپاسگزاریم! عمل شما باعث می شود افراد بیشتری در مورد bot.All بیاموزند. این امر انگیزه مضاعفی به توسعه دهندگان این ربات می دهد ! 😎`,
 	},
-	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
+	MESSAGE_TEXT_ASK_FOR_FEEDBAСK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
 		"en-US": "We would appreciate if tell us how we doing. It takes just few seconds.",
 		"fa-IR": "سپاسگزار خواهیم بود اگر به ما بگویید کارمان چطور بوده است. این تنها چند ثانیه زمان میبرد.",
