@@ -8,13 +8,21 @@ import (
 
 var (
 	supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
-	requiredLocales = []string{"en-US", "ru-RU", "it-IT", "fa-IR"}
+	requiredLocales = []string{"en-US", "es-ES", "ru-RU", "it-IT", "fa-IR"}
+	desiredLocales = []string{"it-IT", "fa-IR", "es-ES"}
 	reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
 	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
 )
 
 func TestTRANS(t *testing.T) {
 	var wordsCount int
+
+	requiredMissCount := make(map[string]int, len(requiredLocales))
+
+	for _, requiredLocale := range requiredLocales {
+		requiredMissCount[requiredLocale] = 0
+	}
+
 	for key, vals := range TRANS {
 		countsByLang := make(map[string]map[string]int)
 		missingLocales := append([]string{}, requiredLocales...)
@@ -33,7 +41,7 @@ func TestTRANS(t *testing.T) {
 				}
 			}
 			if strings.Contains(val, "https: ") || strings.Contains(val, "http: ") {
-				t.Errorf("Invalid http(s): link")
+				t.Logf("Invalid http(s): link: %v=%v", key, val)
 			}
 			vars := reVars.FindAllString(val, -1)
 			counts := make(map[string]int, len(vars))
@@ -48,7 +56,20 @@ func TestTRANS(t *testing.T) {
 			continue
 		}
 		if len(missingLocales) > 0 {
-			t.Errorf("Key %v is missing translations for: %v", key, missingLocales)
+			desiredMisses := make([]string, 0, len(missingLocales))
+			requiredMisses := make([]string, 0, len(missingLocales))
+			if _, ok := requiredMissCount[key]; ok {
+				requiredMisses = append(requiredMisses, key)
+				requiredMissCount[key] += 1
+			} else {
+				desiredMisses = append(desiredMisses, key)
+			}
+			if len(desiredMisses) > 0 {
+				t.Logf("Key `%v` is missing optional translations for: %v", key, missingLocales)
+			}
+			if len(requiredMisses) > 0 {
+				t.Errorf("Key `%v` is missing required translations for: %v", key, requiredMisses)
+			}
 		}
 		wordsCount += len(reWords.FindAllString(vals["en-US"], -1))
 		reported := make(map[string]int)
