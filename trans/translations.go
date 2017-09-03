@@ -114,14 +114,14 @@ var TRANS = map[string]map[string]string{
 	},
 	COMMAND_GAVE: {
 		"en-US": "gave",
-		"es-ES": "débito",
+		"es-ES": "prestado_a_ti",
 		"fa-IR": "قرض_دادن",
 		"it-IT": "debito",
 		"ru-RU": "дал",
 	},
 	COMMAND_GOT: {
 		"en-US": "got",
-		"es-ES": "crédito",
+		"es-ES": "prestado_por_ti",
 		"fa-IR": "قرض_گرفتن",
 		"it-IT": "credito",
 		"ru-RU": "взял",
@@ -668,14 +668,14 @@ var TRANS = map[string]map[string]string{
 	},
 	COMMAND_TEXT_GAVE: {
 		"en-US": "/Gave",
-		"es-ES": "/Crédito",
+		"es-ES": "/Prestado_por_ti",
 		"fa-IR": "/قرض_دادن",
 		"it-IT": "/Credito",
 		"ru-RU": "/Дал",
 	},
 	COMMAND_TEXT_GOT: {
 		"en-US": "/Got",
-		"es-ES": "/Débito",
+		"es-ES": "/Prestado_a_ti",
 		"fa-IR": "/قرض_گرفتن",
 		"it-IT": "/Debito",
 		"ru-RU": "/Взял",
@@ -954,7 +954,7 @@ The transaction will not be deleted but the creator will be notified.`,
 	},
 	MESSAGE_TEXT_ASK_LENDING_AMOUNT: {
 		"en-US": "How much <b>%v</b> did you lend?\n(<i>send '.' to cancel</i>)",
-		"es-ES": "Cuanto <b>%v</b> has prestado\n(<i>enviar '.' para cancelar</i>)",
+		"es-ES": "Cuanto(s) <b>%v</b> has prestado\n(<i>enviar '.' para cancelar</i>)",
 		"fa-IR": "چه مقدار <b>%v</b> قرض داده اید؟\n(<i>ارسال '.' برای کنسل کردن</i>)",
 		"it-IT": "Quanti <b>%v</b> hai prestato?\n(<i>Digita '.' ed invia per annullare</i>)",
 		"ru-RU": "Сколько <b>%v</b> вы дали в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
@@ -968,7 +968,7 @@ The transaction will not be deleted but the creator will be notified.`,
 	},
 	MESSAGE_TEXT_ASK_BORROWING_TYPE: {
 		"en-US": "What did you lend?",
-		"es-ES": "¿Qué has prestado?",
+		"es-ES": "¿Qué te han prestado?",
 		"fa-IR": "چه چیزی قرض گرفته اید؟",
 		"it-IT": "Cosa ti hanno prestato?",
 		"ru-RU": "Что вы взяли в долг?",
@@ -2028,14 +2028,14 @@ O usa il menu' qui sotto.`,
 	},
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_TO_USER: {
 		"en-US": "%v - owes you %v",
-		"es-ES": "%v - te deben %v",
+		"es-ES": "%v - te debe %v",
 		"fa-IR": "%v - %v به شما بدهکار است ",
 		"it-IT": "%v - ti deve %v.",
 		"ru-RU": "%v - долг вам %v",
 	},
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER: {
 		"en-US": "Owes to you %v",
-		"es-ES": "Te deben %v",
+		"es-ES": "Te debe %v",
 		"fa-IR": "%v به شما بدهکار است ",
 		"it-IT": "Hai un credito di %v",
 		"ru-RU": "Вам должны %v",
@@ -2175,7 +2175,7 @@ O usa il menu' qui sotto.`,
 	},
 	MESSAGE_TEXT_YOU_OWE_TO_COUNTERPARTY_SINGLE_DEBT: {
 		"en-US": "You owe to <b>%v</b> <b>%v</b>.",
-		"es-ES": "Te han prestado <b>%v</b> <b>%v</b>.",
+		"es-ES": "Te ha prestado <b>%v</b> <b>%v</b>.",
 		"fa-IR": "شما بدهکار هستید به <b>%v</b> <b>%v</b>.",
 		"it-IT": `Tu devi dare a <b>%v</b> <b>%v</b>.`,
 		"ru-RU": `<b>%v</b> одалживал(а) вам <b>%v</b>.`,
@@ -2218,7 +2218,7 @@ O usa il menu' qui sotto.`,
 	},
 	BUTTON_TEXT_SOMEONE_OWES_TO_YOU_AMOUNT: {
 		"en-US": "%v | owes to you: %v",
-		"es-ES": "%v | te deben: %v",
+		"es-ES": "%v | te debe: %v",
 		"fa-IR": "%v | به شما بدهکار است: %v",
 		"it-IT": "%v | ti deve: %v",
 		"ru-RU": "%v | долг вам: %v",
@@ -2304,7 +2304,7 @@ Come vuoi inviargli il codice invito?`,
 	},
 	MESSAGE_TEXT_USER_BLOCKED_TRANSFER_NOTIFICATIONS_BY: {
 		"en-US": "%v blocked reminders about transactions by: %v",
-		"es-ES": "%v han bloqueado las notificaciones de las transacciones por: %v",
+		"es-ES": "%v ha bloqueado las notificaciones de las transacciones por: %v",
 		"fa-IR": "%v یادآور تراکنش مسدود شده است بوسیله ی: %v",
 		"it-IT": "%v bloccato promemoria riguardo la transazione da: %v.",
 		"ru-RU": "%v заблокировал получение оповешений о транзакиях через: %v.",
@@ -2653,7 +2653,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	},
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: {
 		"en-US": "How much have been returned?",
-		"es-ES": "¿Cuánto te han devuelto?",
+		"es-ES": "¿Cuánto/s te han devuelto?",
 		"fa-IR": "چه مقدار بازپرداخت شده است؟",
 		"it-IT": "Quanto ti e' stato restituito?",
 		"ru-RU": "Сколько было возвращено?",
@@ -2695,7 +2695,7 @@ What would you like to do?`,
 
 		"es-ES": `Hola, me llamo Collectius, soy tu contable y asesor personal.
 
-Puedo apuntar quien debe a quien y recordarte la fecha de devolución.
+Puedo apuntar quién debe a quién y recordarte la fecha de devolución.
 
 ¿Qué te apetecería hacer?`,
 
@@ -2888,7 +2888,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
 	EMAIL_RECEIPT_BODY_TEXT: {
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
-		"es-ES": "{{.FromName}} ha creado una notoficación de la deuda: {{.ReceiptURL}}",
+		"es-ES": "{{.FromName}} ha creado una notificación de la deuda: {{.ReceiptURL}}",
 		"fa-IR": "{{.FromName}} یک سابقه بدهی ایجاد کرده است: {{.ReceiptURL}}",
 		"it-IT": "{{.FromName}} ha creato un debito: {{.ReceiptURL}} ",
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
@@ -2902,7 +2902,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
 	EMAIL_RECEIPT_BODY_HTML: {
 		"en-US": "{{.FromName}} created a debt record: {{.ReceiptURL}}",
-		"es-ES": "{{.FromName}} ha creado una notoficación de la deuda: {{.ReceiptURL}}",
+		"es-ES": "{{.FromName}} ha creado una notificación de la deuda: {{.ReceiptURL}}",
 		"fa-IR": "{{.FromName}} یک سابقه بدهی ایجاد کرده است: {{.ReceiptURL}}",
 		"it-IT": "{{.FromName}} ha creato un debito: {{.ReceiptURL}}",
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
@@ -2939,13 +2939,13 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
 
-		"es-ES": `<b>{{.Creator}} ha creado la deuda</b> asociada a ti.
+		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
 
 {{.SiteLink}} — la app para controlar tus deudas te ayuda a:
 
-  - Saber siempre quien debe a quien
+  - Saber siempre quién debe a quién
 
-  - Devolver la deuda al tiempo
+  - Devolver la deuda a tiempo
     <i>(recordatorio a ti y a tus deudores)</i>`,
 		//-------------------------------------------------------
 
@@ -3056,7 +3056,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	},
 	TELEGRAM_RECEIPT: {
 		"en-US": "{{.FromName}} created a debtrecord ({{.TransferCurrency}})",
-		"es-ES": "{{.FromName}} ha creado la deuda ({{.TransferCurrency}})",
+		"es-ES": "{{.FromName}} ha creado una deuda ({{.TransferCurrency}})",
 		"fa-IR": "{{.FromName}} ایجاد یک سابقه بدهی ({{.TransferCurrency}})",
 		"it-IT": "{{.FromName}} ha registrato un debito ({{.TransferCurrency}})",
 		"ru-RU": "{{.FromName}} создал запись о долге ({{.TransferCurrency}})",

@@ -23,6 +23,7 @@ func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale
 var SupportedLocales []strongo.Locale = []strongo.Locale{
 	strongo.LocaleEnUS,
 	strongo.LocaleRuRu,
+	strongo.LocaleEsEs,
 	//strongo.LocaleIdId,
 	strongo.LocaleFaIr,
 	strongo.LocaleItIt,
