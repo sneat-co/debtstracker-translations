@@ -36,7 +36,7 @@ const (
 	GIVE_ICON              = "📤" // outbox tray
 	TAKE_ICON              = "📥" // inbox tray
 	DIVIDE_ICON            = "➗"
-	RETURN_ICON            = "🔙"
+	RETURN_BACK_ICON       = "🔙"
 	ROCKET_ICON            = "🚀"
 	PHONE_ICON             = "📱"
 	PHONE_WITH_IN_ARROW    = "📲"

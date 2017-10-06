@@ -44,7 +44,7 @@ func init() {
 }
 
 // ChooseLocaleIcon - locale icons
-var ChooseLocaleIcon = strings.Join([]string{
+var ChooseLocaleIcon string = strings.Join([]string{
 	strongo.LocaleEnUS.FlagIcon,
 	strongo.LocaleRuRu.FlagIcon,
 	strongo.LocaleItIt.FlagIcon,

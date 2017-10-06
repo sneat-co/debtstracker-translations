@@ -561,6 +561,13 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Hai disabilitato il promemoria per questo debito.",
 		"ru-RU": "Напоминания об этом долге отключены.",
 	},
+	COMMAND_TEXT_REMINDER_ENABLE: {
+		"en-US": "Turn-on reminder",
+		//"es-ES": "",
+		//"fa-IR": "",
+		//"it-IT": "",
+		"ru-RU": "Включить напоминание",
+	},
 	MESSAGE_TEXT_REMINDER_ALREADY_RESCHEDULED: {
 		"en-US": "You've already rescheduled this reminder.",
 		"es-ES": "Recordatorio para esta deuda se ha reprogramado ya.",
@@ -757,6 +764,34 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Valuta principale",
 		"ru-RU": "Основная валюта",
 	},
+	COMMAND_TEXT_NEW_GROUP: {
+		"en-US": "New group",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Новая группа",
+	},
+	COMMAND_TEXT_INVITE_FIREND: {
+		"en-US": "Invite friend",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Пригласить друга",
+	},
+	COMMAND_TEXT_INVITE_MEMBER: {
+		"en-US": "Invite member",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Пригласить участника",
+	},
+	COMMAND_TEXT_NEW_BILL: {
+		"en-US": "New bill",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Новый счёт",
+	},
 	COMMAND_TEXT_NEW_COUNTERPARTY: {
 		"en-US": "Add new",
 		"es-ES": "Añadir",
@@ -817,6 +852,27 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Aspetta per favore...",
 		"fa-IR": "لطفا صبر کنید ...",
 		"ru-RU": "Пожалуйста подождите...",
+	},
+	MESAGE_TEXT_CREATING_BILL: {
+		"en-US": "Creating bill",
+		"es-ES": "",
+		"it-IT": "",
+		"fa-IR": "",
+		"ru-RU": "Создаётся счёт",
+	},
+	MESSAGE_TEXT_ASK_BILL_CURRENCY: {
+		"en-US": "What currency this bill in?",
+		"es-ES": "",
+		"it-IT": "",
+		"fa-IR": "",
+		"ru-RU": "В какой валюте этот счёт?",
+	},
+	MESSAGE_TEXT_ASK_BILL_PAYER: {
+		"en-US": "Who pays for the bill?",
+		"es-ES": "",
+		"it-IT": "",
+		"fa-IR": "",
+		"ru-RU": "Кто платит по счёту?",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: {
 		"en-US": "Acknowledgement is expected from %v",
@@ -1339,7 +1395,7 @@ The transaction will not be deleted but the creator will be notified.`,
 	* Поставите нам 5⭐ в <a storebot>каталоге ботов</a>.
 
 	* Расскажите о боте своим друзьям.
-	Например в <a share-vk>ВКонтакте</a>, < a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
+	Например в <a share-vk>ВКонтакте</a>, <a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
 
 * Поддержите дальнейшую разработку - <a href ="https://goo.gl/Qhh0yL">€2 через PayPal</a>
 `,
@@ -1644,43 +1700,102 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Неизвестный долг. Пожалуйста выберите из списка.",
 	},
 	MESSAGE_TEXT_BILL_CARD_HEADER: {
-		"en-US": "<b>Bill/purchase</b>: <code>%v</code>",
-		"es-ES": "<b>Cuenta/compra</b>: <code>%v</code>",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
-		"ru-RU": "<b>Cчёт/покупка</b>: <code>%v</code>",
+		"en-US": `<b>Bill</b>: <code>%v</code> — %v`,
+		"es-ES": `<b>Cuenta</b>: <code>%v</code> — %v`,
+		"fa-IR": "<b>Bill</b>: <code>%v</code> — %v", // TODO(FA)
+		"it-IT": "<b>Bill</b>: <code>%v</code> — %v", // TODO(IT)
+		"ru-RU": `<b>Cчёт</b>: <code>%v</code> — %v`,
 	},
-	MESSAGE_TEXT_BILL_CARD_HEADER_WITH_STATUS: {
-		"en-US": "<b>Bill/purchase</b>: <code>%v</code> — <i>%v</i>",
-		"es-ES": "<b>Cuenta/compra</b>: <code>%v</code> — <i>%v</i>",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
-		"ru-RU": "<b>Cчёт/покупка</b>: <code>%v</code> — <i>%v</i>",
+	MESSAGE_TEXT_MEMBERS_TITLE: {
+		"en-US": "Members",
+		"es-ES": "Miembros",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Участники",
 	},
-	MESSAGE_TEXT_BILL_CARD_MEMBERS_COUNT: {
-		"en-US": "Members (%v):",
-		"es-ES": "Miembros (%v):",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
-		"ru-RU": "Участники (%v):",
+	ALERT_TEXT_NOTHING_CHANGED: {
+		"en-US": "Nothing changed",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Ничего не изменилось",
+	},
+	ALERT_TEXT_YOU_ARE_ALREADY_MEMBER_OF_THE_GROUP: {
+		"en-US": "You are already a member of this bill splitting group.",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Вы уже участник этой группы по совместной оплате счетов.",
+	},
+	MESSAGE_TEXT_YOUR_BILL_SPLITTING_GROUPS: {
+		"en-US": "Your bills splitting groups",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Ваши группы совметсной оплаты",
+	},
+	MESSAGE_TEXT_NO_GROUPS: {
+		"en-US": "You are not a participant of any bill splitting group.",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Вы не состоите в группах совместной оплаты.",
+	},
+	MESSAGE_TEXT_USER_JOINED_GROUP: {
+		"en-US": `Hi %v, you joined this bill splitting group.
+
+		Please
+		`,
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": `Привет %v, вы присоеденились к этой группе по совместной оплате счетов.
+		`,
+	},
+	MESSAGE_TEXT_MEMBERS_CARD_TITLE: {
+		"en-US": "<b>Bills splitting members</b> (%d)",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "<b>Участники совместных оплат</b> (%d)",
+	},
+	MESSAGE_TEXT_SPLIT_MODE: {
+		"en-US": "<b>Split</b>: %v",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "<b>Делить</b>: %v",
+	},
+	MESSAGE_TEXT_ASK_HOW_TO_SPLIT_IN_GROP: {
+		"en-US": "In what proportion do you split bills in this group?",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "В какой пропорции вы делите счета в этой группе?",
+	},
+	MESSAGE_TEXT_MEMBERS_CARD_FOOTER: {
+		"en-US": "Click <code>Join</code> to participate in bills splitting.",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Жмите <code>Присоедениться</code> чтобы учавствовать.",
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
-		"en-US": "{{.N}}. {{.MemberName}}", // Non need to change for LTR
-		"es-ES": "{{.N}}. {{.MemberName}}", // Non need to change for LTR
-		"ru-RU": "{{.N}}. {{.MemberName}}", // Non need to change for LTR
-		//"fa-IR": "", // TODO(FA)
+		"en-US": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
+		"es-ES": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_OWES: {
-		"en-US": "{{.N}}. {{.MemberName}} — owes {{.Owes}}",
-		"es-ES": "{{.N}}. {{.MemberName}} — debo {{.Owes}}",
-		"ru-RU": "{{.N}}. {{.MemberName}} — должен {{.Owes}}",
+		"en-US": "{{.N}}. {{.MemberName}}\n   <i>owes {{.Owes}}</i>",
+		"es-ES": "{{.N}}. {{.MemberName}}\n   <i>debo {{.Owes}}</i>",
+		"ru-RU": "{{.N}}. {{.MemberName}}\n   <i>должен {{.Owes}}</i>",
 		//"fa-IR": "", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PAID: {
-		"en-US": "{{.N}}. {{.MemberName}} — paid {{.Paid}}",
-		"es-ES": "{{.N}}. {{.MemberName}} — he pagado {{.Paid}}",
-		"ru-RU": "{{.N}}. {{.MemberName}} — заплатил {{.Paid}}",
+		"en-US": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>paid {{.Paid}}</i>",
+		"es-ES": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>he pagado {{.Paid}}</i>",
+		"ru-RU": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>заплатил {{.Paid}}</i>",
 		//"fa-IR": "", // TODO(FA)
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PART_PAID: {
+		"en-US": "{{.N}}. {{.MemberName}}\n<i>paid {{.Paid}}, owes {{.Owes}}</i>",
+		"es-ES": "{{.N}}. {{.MemberName}}\n<i>he pagado {{.Paid}}, debo {{.Owes}}</i>",
+		"ru-RU": "{{.N}}. {{.MemberName}}\n<i>заплатил {{.Paid}}, должен {{.Owes}}</i>",
+		"fa-IR": "", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_ASK_WHO_PAID: {
 		"en-US": "Please choose who paid for the bill:",
@@ -1773,6 +1888,13 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"it-IT": "", // TODO(IT)
 		"ru-RU": "➕ Присоедениться",
 	},
+	BUTTON_TEXT_LEAVE: {
+		"en-US": "Leave",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Покинуть",
+	},
 	BUTTON_TEXT_DUE: {
 		"en-US": "📅 Due: %v",
 		"es-ES": "📅 Hasta: %v",
@@ -1850,6 +1972,27 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		//"it-IT": "", // TODO(IT)
 		"ru-RU": "%v присоеденился к совместной оплате.",
 	},
+	BUTTON_TEXT_I_PAID_FOR_THE_BILL: {
+		"en-US": "The bill was paid by me",
+		"es-ES": "",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Этот счёт оплатил я",
+	},
+	BUTTON_TEXT_I_OWE_FOR_THE_BILL: {
+		"en-US": "I owe for this bill",
+		"es-ES": "",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Я должен по этому счёту",
+	},
+	BUTTON_TEXT_I_DO_NOT_SHARE_THIS_BILL: {
+		"en-US": "I don't share this bill",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Я не учавствую в этой покупке",
+	},
 	MESSAGE_TEXT_YOU_JOINED_BILL: {
 		"en-US": "You've joined to bill sharing.",
 		"es-ES": "Te has agregado para pagar conjuntamente .",
@@ -1865,26 +2008,110 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Разделить счёт/покупку",
 	},
 	ARTICLE_SUBTITLE_SPLIT_BILL: {
-		"en-US": "Amount: %v\nShare expenses between friends and track paybacks.",
-		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones",
+		"en-US": "Amount: %v\nShares expenses with friends & track paybacks",
+		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones", // TODO(ES): Have to be shorter
 		//"fa-IR": "", // TODO(FA)
 		//"it-IT": "", // TODO(IT)
-		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты.",
+		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты",
 	},
 
 	ARTICLE_NEW_DEBT_TITLE: {
 		"en-US": "New debt",
 		"es-ES": "Nueva deuda",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "بدهی جدید",    // TODO(FA): Verify
+		"it-IT": "Nuovo debito", // TODO(IT): Verify
 		"ru-RU": "Новый долг",
 	},
 	ARTICLE_NEW_DEBT_SUBTITLE: {
-		"en-US": "Amount: %v\nRecord debt and get/send notifications on due date.",
-		"es-ES": "Importe: %v\nGrabar la deuda y recibir/enviar las notificaciones el día de vencimiento.",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"en-US": "Amount: %v\nSends notifications on due date if set",
+		"es-ES": "Importe: %v\nEnviar las notificaciones el día de vencimiento",
+		"fa-IR": "در صورتی که تنظیم شود، اعلان ها را در زمان مقرر ارسال می کند", // TODO(FA): Verify
+		"it-IT": "Invia le notifiche alla data di scadenza se impostato",        // TODO(IT): Verify
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
+	},
+	SPLITUS_PLEASE_JOIN_IF_NOT_ON_THE_LIST: {
+		"en-US": `Please join if your name is not on the list above.`,
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": ``, // TODO(RU)
+	},
+	SPLITUS_TEXT_HI_IN_GROUP: {
+		"en-US": `I'm <b>Splitus.</b> Thanks for adding me!`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Меня зовут <b>Сплитус.</b> Спасибо что добавили!`,
+	},
+	MESSAGE_TEXT_ASK_LANG: {
+		"en-US": `What language should I use in this group?`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Какой язык я должен использовать в этой группе?`,
+	},
+	SPLITUS_TEXT_HI_IN_GROUP_LANG_SET: {
+		"en-US": `Great, I'll be using English.`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Отлично, я буду использовать русский`,
+	},
+	SPLITUS_TEXT_ABOUT_ME_AND_CO: {
+		"en-US": `I help to <b>split bills</b>. My friend @DebtsTrackerBot is tracking paybacks & debts.`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Я помогаю делить счета. Мой друг @DebtsTrackerRuBot отслеживает платежи и долги.`,
+	},
+	COLLECTUS_TEXT_ABOUT_ME_AND_CO: {
+		"en-US": `I help to <b>collect money</b> for a good cause. For example for a birthday present. 🎉
+
+My buddy @DebtsTrackerBot is tracking debts & paybacks.
+
+And if you do collective purchases and want to split bills @SplitusBot is here to help.`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Я помогаю <b>собирать деньги</b> на что нибудь. Например для подарка на день рождение. 🎉
+
+Мой друг @DebtsTrackerRuBot отслеживает долги и платежи.
+
+А если хотите вести учёт совместных покупок и удобно делить счета вам поможет @SplitusBot.`,
+	},
+	SPLITUS_TEXT_HI: {
+		"en-US": `I'm <b>Splitus.</b>`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Меня зовут <b>Сплитус</b>.`,
+	},
+	COLLECTUS_TEXT_HI: {
+		"en-US": `I'm <b>Collectus</b>.`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Меня зовут <b>Коллектус</b>.`,
+	},
+	SPLITUS_TG_COMMANDS: {
+		"en-US": `<b>Bot commands:</b>
+
+	/groups - List of groups
+	/bills - List of outstanding bills
+	/help - Learn how to use bot, report issues, ask questions`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `<b>Команды для бота:</b>
+	/groups - Список групп
+	/bills - Список незакрытых платежей
+	/help - Узнать как использовать, сообщить о проблеме, задать вопрос`,
+	},
+	MESSAGE_TEXT_SEND_HELP_COMMAND_FOR_HELP: {// This is the same for all languages.
+		"en-US": `Send /help for details on how to use this bot.`,
+		"es-ES": ``,
+		"fa-IR": ``,
+		"it-IT": ``,
+		"ru-RU": `Отправьте /help для справки по использованию бота.`,
 	},
 	MESSAGE_TEXT_HI: {// This is the same for all languages.
 		"en-US": `¡Hola! Hi! Привет! سلام!`,
@@ -1892,6 +2119,13 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"fa-IR": `¡Hola! Hi! Привет! سلام!`,
 		"it-IT": `¡Hola! Hi! Привет! سلام!`,
 		"ru-RU": `¡Hola! Hi! Привет! سلام!`,
+	},
+	MESSAGE_TEXT_HI_USERNAME: {// This is the same for all languages.
+		"en-US": `Hi %v!`,
+		"es-ES": `¡Hola %v!`,
+		"fa-IR": ``,
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Привет %v!`,
 	},
 	MESSAGE_TEXT_BACK_TO_MAIN_MENU: {
 		"en-US": `You can go back to main /menu`,
@@ -2281,26 +2515,15 @@ O usa il menu' qui sotto.`,
 	},
 	MESSAGE_TEXT_ABOUT_INVITES: {
 
-		"en-US": `At the moment access to our bot is limited but you can invite your friend.
+		"en-US": `How do you want to pass the invite code?`,
 
-How do you want to pass the invite code?`,
+		"es-ES": `¿Cómo quieres enviarle el código?`,
 
-		"es-ES": `De momento el acceso a nuestro bot es limitado pero puedes invitar a tu amigo.
+		"fa-IR": `آیا میخواهید کد دعوت را ارسال کنید؟`,
 
-¿Cómo quieres enviarle el código?`,
+		"it-IT": `Come vuoi inviargli il codice invito?`,
 
-
-		"fa-IR": `در حال حاضر دسترسی به ربات محدود می باشد ولی شما می توانید دوست خود را دعوت کنید.
-
-How do آیا میخواهید کد دعوت را ارسال کنید؟`,
-
-		"it-IT": `AL momento l'accesso al nostro bot e' limitato ma puoi comunque invitare gli amici.
-
-Come vuoi inviargli il codice invito?`,
-
-		"ru-RU": `На данный момент доступ к нашему боту ограничен, но вы можете пригласить друга.
-
-Как вы хотите передать код приглашение?`,
+		"ru-RU": `Как вы хотите передать код приглашение?`,
 	},
 	MESSAGE_TEXT_USER_BLOCKED_TRANSFER_NOTIFICATIONS_BY: {
 		"en-US": "%v blocked reminders about transactions by: %v",
@@ -2511,6 +2734,13 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"it-IT": "Non abbiamo ricevuto nesusn contatto. ISTRUZIONI SU COME FARE. /menu",
 		"ru-RU": "Мы не получили контакта. Тут инструкция как это сделать. /menu",
 	},
+	MESSAGE_TEXT_YOU_HAVE_NO_CONTACTS: {
+		"en-US": "You have not created any contacts yet.",
+		"es-ES": "Todavía no has creado ningún contacto.", //TODO:es - verify
+		"fa-IR": "هنوز هیچ مخاطبی را ایجاد نکرده اید",     //TODO:fa - verify
+		"it-IT": "Non hai ancora creato alcun contatto.",  //TODO:it - verify
+		"ru-RU": "Вы ещё не создали контактов",
+	},
 	MESSAGE_TEXT_CONTACT_NAME_IS_NUMBER: {
 		"en-US": "You've entered just digits for a contact name. Please use some text characters.",
 		"es-ES": "Has introducido solo números para el nombre del contacto. Por favor usa algunas letras.",
@@ -2657,6 +2887,58 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"fa-IR": "چه مقدار بازپرداخت شده است؟",
 		"it-IT": "Quanto ti e' stato restituito?",
 		"ru-RU": "Сколько было возвращено?",
+	},
+	MESSAGE_TEXT_HELP_ROOT: {
+		"en-US": "What is your question? If anything is missed here, feel free to ask in our @%v",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Какой у вас вопрос? Если здесь нет ответа пожалуйста спросите в нашей группе @%v",
+	},
+	MESSAGE_TEXT_HELP_BACK_TO_ROOT: {
+		"en-US": "Back to FAQ list",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Назад к списку вопросов",
+	},
+	HELP_HOW_TO_CREATE_BILL_Q: {
+		"en-US": "How to create new bill?",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Как создать новый счёт?",
+	},
+	HELP_HOW_TO_CREATE_BILL_A: {
+		"en-US": `<b>How to create a new bill</b>
+<pre>Bill — shared expense between two or more people.</pre>
+
+That is why the best is to <b>create bill in Telegram chat just in 2 steps</b>:
+<i>use "Split bill with Telegram user(s)" to do it quickly</i>
+
+	1. <a href="https://t.me/{{.BotCode}}?startgroup=from-help">Add me to Telegram group</a> or open chat with a friend.
+
+	2. Type <code>@splitusbot {amount} {bill_name}</code> and select result from menu. For example:
+<pre>		@splitusbot 45.5 pizza</pre>
+	   Than any member of the group can share the bill by pressing <code>Join</code> button.
+
+<b>Alternatively</b> you can create a bill right in the @{{.BotCode}}. But then you would need manually to add participants.`,
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": `<b>How to create a new bill</b>
+<pre>Bill — shared expense between two or more people.</pre>
+
+That is why the best is to <b>create bill in Telegram chat just in 2 steps</b>:
+<i>use "Split bill with Telegram user(s)" to do it quickly</i>
+
+	1. <a href="https://t.me/{{.BotCode}}?startgroup=from-help">Add me to Telegram group</a> or open chat with a friend.
+
+	2. Type <code>@splitusbot {amount} {bill_name}</code> and select result from menu. For example:
+<pre>		@splitusbot 45.5 pizza</pre>
+	   Than any member of the group can share the bill by pressing <code>Join</code> button.
+
+<b>Alternatively</b> you can create a bill right in the @{{.BotCode}}. But then you would need manually to add participants.`,
 	},
 	MESSAGE_TEXT_HELP: {
 		"en-US": "Please report any issue or submit a feature request at our website.",
@@ -3053,6 +3335,13 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"fa-IR": "به",
 		"it-IT": "Per",
 		"ru-RU": "Получил",
+	},
+	NO_NAME: {
+		"en-US": "no name",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "без имени",
 	},
 	TELEGRAM_RECEIPT: {
 		"en-US": "{{.FromName}} created a debtrecord ({{.TransferCurrency}})",
