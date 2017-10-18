@@ -7,6 +7,7 @@ const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 // TRANS - translation string
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": {
+		"de-DE": "BEISPIEL",
 		"en-US": "SAMPLE",
 		"es-ES": "EJEMPLO",
 		"fa-IR": "نمونه",
@@ -15,6 +16,7 @@ var TRANS = map[string]map[string]string{
 	},
 
 	"Jan": {
+		"de-DE": "Jan",
 		"en-US": "Jan",
 		"es-ES": "Enero",
 		"fa-IR": "ژانویه",
@@ -22,6 +24,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Янв.",
 	},
 	"Feb": {
+		"de-DE": "Feb",
 		"en-US": "Feb",
 		"es-ES": "Feb",
 		"fa-IR": "فوریه",
@@ -29,6 +32,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Фев.",
 	},
 	"Mar": {
+		"de-DE": "Mär",
 		"en-US": "Mar",
 		"es-ES": "Mar",
 		"fa-IR": "مارس",
@@ -36,6 +40,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Мрт.",
 	},
 	"Apr": {
+		"de-DE": "Apr",
 		"en-US": "Apr",
 		"es-ES": "Abr",
 		"fa-IR": "آوریل",
@@ -43,6 +48,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Апр.",
 	},
 	"May": {
+		"de-DE": "Mai",
 		"en-US": "May",
 		"es-ES": "May",
 		"fa-IR": "مه",
@@ -50,6 +56,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Май ",
 	},
 	"Jun": {
+		"de-DE": "Jun",
 		"en-US": "Jun",
 		"es-ES": "Jun",
 		"fa-IR": "ژوئن",
@@ -57,6 +64,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Июнь",
 	},
 	"Jul": {
+		"de-DE": "Jul",
 		"en-US": "Jul",
 		"es-ES": "Jul",
 		"fa-IR": "ژوئیه",
@@ -64,6 +72,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Июль",
 	},
 	"Aug": {
+		"de-DE": "Aug",
 		"en-US": "Aug",
 		"es-ES": "Ago",
 		"fa-IR": "اوت",
@@ -71,6 +80,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Авг.",
 	},
 	"Sep": {
+		"de-DE": "Sep",
 		"en-US": "Sep",
 		"es-ES": "Sep",
 		"fa-IR": "سپتامبر",
@@ -78,6 +88,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Сен.",
 	},
 	"Oct": {
+		"de-DE": "Okt",
 		"en-US": "Oct",
 		"es-ES": "Oct",
 		"fa-IR": "اکتبر",
@@ -85,6 +96,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Окт.",
 	},
 	"Nov": {
+		"de-DE": "Nov",
 		"en-US": "Nov",
 		"es-ES": "Nov",
 		"fa-IR": "نوامبر",
@@ -92,6 +104,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Нбр.",
 	},
 	"Dec": {
+		"de-DE": "Dez",
 		"en-US": "Dec",
 		"es-ES": "Dic",
 		"fa-IR": "دسامبر",
@@ -99,6 +112,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Дек.",
 	},
 	COMMAND_START: {
+		"de-DE": "start",
 		"en-US": "start",
 		"es-ES": "inicio",
 		"fa-IR": "شروع",
@@ -106,6 +120,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "старт",
 	},
 	COMMAND_MENU: {
+		"de-DE": "menu",
 		"en-US": "menu",
 		"es-ES": "menú",
 		"fa-IR": "منو",
@@ -113,6 +128,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "меню",
 	},
 	COMMAND_GAVE: {
+		"de-DE": "verleihen",
 		"en-US": "gave",
 		"es-ES": "prestado_a_ti",
 		"fa-IR": "قرض_دادن",
@@ -120,6 +136,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "дал",
 	},
 	COMMAND_GOT: {
+		"de-DE": "anleihen",
 		"en-US": "got",
 		"es-ES": "prestado_por_ti",
 		"fa-IR": "قرض_گرفتن",
@@ -127,6 +144,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "взял",
 	},
 	COMMAND_RETURNED: {
+		"de-DE": "beglichen",
 		"en-US": "returned",
 		"es-ES": "devuelto",
 		"fa-IR": "بازگردانده_شده",
@@ -134,6 +152,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "вернул",
 	},
 	COMMAND_BALANCE: {
+		"de-DE": "ausstehend",
 		"en-US": "balance",
 		"es-ES": "balance",
 		"fa-IR": "تراز",
@@ -141,6 +160,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "баланс",
 	},
 	COMMAND_HISTORY: {
+		"de-DE": "verlauf",
 		"en-US": "history",
 		"es-ES": "cronología",
 		"fa-IR": "سوابق",
@@ -148,6 +168,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "история",
 	},
 	COMMAND_SETTINGS: {
+		"de-DE": "einstellungen",
 		"en-US": "settings",
 		"es-ES": "ajustes",
 		"fa-IR": "تنظیمات",
@@ -155,6 +176,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "настройки",
 	},
 	COMMAND_HELP: {
+		"de-DE": "hilfe",
 		"en-US": "help",
 		"es-ES": "ayuda",
 		"fa-IR": "کمک",
@@ -162,6 +184,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "помощь",
 	},
 	COMMAND_CANCEL: {
+		"de-DE": "abbrechen",
 		"en-US": "cancel",
 		"es-ES": "cancelar",
 		"fa-IR": "کنسل",
@@ -169,6 +192,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/отменить",
 	},
 	COMMAND_CLEAR: {
+		"de-DE": "leeren",
 		"en-US": "clear",
 		"es-ES": "borrar",
 		"fa-IR": "پاک_کردن",
@@ -176,6 +200,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "очистить",
 	},
 	adsCommandTitle: {
+		"de-DE": adsCommandTitle,
 		"en-US": adsCommandTitle,
 		"es-ES": adsCommandTitle,
 		"fa-IR": adsCommandTitle,
@@ -183,6 +208,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": adsCommandTitle,
 	},
 	" and ": {
+		"de-DE": " und ",
 		"en-US": " and ",
 		"es-ES": " y ",
 		"fa-IR": " و ",
@@ -190,6 +216,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": " и ",
 	},
 	bots.MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG: {
+		"de-DE": "Ups, etwas ist schiefgelaufen... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 		"es-ES": "Ops,  algo ha salido mal... \xF0\x9F\x98\xB3",
 		"fa-IR": "اوه، یک جای کار مشکل دارد ...  \xF0\x9F\x98\xB3",
@@ -197,6 +224,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Упс, что-то пошло не так... \xF0\x9F\x98\xB3",
 	},
 	MESSAGE_TEXT_ASK_DUE: {
+		"de-DE": "Wann ist die Schuld fällig?",
 		"en-US": "When is the due date?",
 		"es-ES": "¿Cuándo es la fecha de devolución?",
 		"fa-IR": "سررسید چه زمانی است؟",
@@ -204,6 +232,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Когда дата возврата?",
 	},
 	MESSAGE_TEXT_ASK_DATE_TO_REMIND: {
+		"de-DE": `Sende mir das Datum, an welches du <b>erneut</b> erinnert werden möchtest, in der Form <i>DD.MM.YEAR</i>.
+<b>Zum Beispiel</b> für den 20. Januar 2017, schreibe:
+    <i>20.01.2017</i>`,
+		
 		"en-US": `To set date for next reminder please send it as a text in format of <i>DD.MM.YEAR</i>.
 <b>For example</b> for 20th of January 2017 submit:
     <i>20.01.2017</i>`,
@@ -226,6 +258,10 @@ var TRANS = map[string]map[string]string{
     <i>20.01.2017</i>`,
 	},
 	MESSAGE_TEXT_ASK_DUE_DATE: {
+		"de-DE": `Sende mir das Datum, an welches du erinnert werden möchtest, in der Form <i>DD.MM.YEAR</i>.
+<b>Zum Beispiel</b> für den 20. Januar 2017, schreibe:
+    <i>20.01.2017</i>`,
+		
 		"en-US": `To set due date please send it as a text in format of <i>DD.MM.YEAR</i>.
 		<b>For example</b> for 20th of January 2017 submit:
 		<i>20.01.2017</i>`,
@@ -247,6 +283,7 @@ var TRANS = map[string]map[string]string{
 		<i>20.01.2017</i>`,
 	},
 	MESSAGE_TEXT_WRONG_DATE: {
+		"de-DE": "Entschuldigung, aber mit diesem Datum stimmt etwas nicht.",
 		"en-US": "Sorry, there is something wrong with the date you've provided.",
 		"es-ES": "Lo siento, algo no es correcto con la fecha que has puesto",
 		"fa-IR": "متاسفم، در تاریخی که وارد نمودید مشکلی وجود دارد.",
@@ -254,6 +291,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Извините, что-то не так с датой которую вы отправили.",
 	},
 	COMMAND_TEXT_DISABLE_REMINDER: {
+		"de-DE": "Nicht erinnern",
 		"en-US": "No reminder",
 		"es-ES": "No recordar",
 		"fa-IR": "بدون یادآور",
@@ -261,6 +299,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Не напоминать",
 	},
 	COMMAND_TEXT_TOMORROW: {
+		"de-DE": "Morgen",
 		"en-US": "Tomorrow",
 		"es-ES": "Mañana",
 		"fa-IR": "فردا",
@@ -268,6 +307,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Завтра",
 	},
 	COMMAND_TEXT_DAY_AFTER_TOMORROW: {
+		"de-DE": "Übermorgen",
 		"en-US": "Day after tomorrow",
 		"es-ES": "Pasada mañana",
 		"fa-IR": "پس فردا",
@@ -275,6 +315,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Послезавтра",
 	},
 	COMMAND_TEXT_THIS_WEEK: {
+		"de-DE": "Diese Woche",
 		"en-US": "This week",
 		"es-ES": "Esta semana",
 		"fa-IR": "این هفته",
@@ -282,6 +323,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "На этой неделе",
 	},
 	COMMAND_TEXT_YES_IT_HAS_RETURN_DEADLINE: {
+		"de-DE": "Ja, es hat eine Frist!",		
 		"en-US": "Yes, it has a deadline!",
 		"es-ES": "Sí, hay una fecha de devolución!",
 		"fa-IR": "بله، دارای آخرین فرصت می باشد!",
@@ -289,6 +331,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Да, есть срок возврата!",
 	},
 	COMMAND_TEXT_NO_IT_CAN_BE_RETURNED_ANYTIME: {
+		"de-DE": "Nein, sobald möglich.",
 		"en-US": "No, whenever is fine.",
 		"es-ES": "No, sin fecha límite.",
 		"fa-IR": "خیر، هر زمانی مناسب است.",
@@ -296,6 +339,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Нет, срок возврата не важен.",
 	},
 	COMMAND_TEXT_IT_CAN_BE_RETURNED_ANYTIME: {
+		"de-DE": "Unbefristet",
 		"en-US": "Whenever is fine",
 		"es-ES": "Cualquier día",
 		"fa-IR": "هر زمانی مناسب است.",
@@ -303,6 +347,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Когда-нибудь",
 	},
 	COMMAND_TEXT_IN_FEW_MINUTES: {
+		"de-DE": "In wenigen Minuten",
 		"en-US": "In few minutes",
 		"es-ES": "En unos minutos",
 		"fa-IR": "در چند دقیقه",
@@ -310,6 +355,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Через минуту",
 	},
 	COMMAND_TEXT_IN_1_WEEK: {
+		"de-DE": "In einer Woche",
 		"en-US": "In 1 week",
 		"es-ES": "En una semana",
 		"fa-IR": "ظرف یک هفته",
@@ -317,6 +363,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Через неделю",
 	},
 	COMMAND_TEXT_IN_1_MONTH: {
+		"de-DE": "In einem Monat",
 		"en-US": "In 1 month",
 		"es-ES": "En un mes",
 		"fa-IR": "ظرف یک ماه",
@@ -324,6 +371,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Через месяц",
 	},
 	COMMAND_TEXT_SET_DATE: {
+		"de-DE": "Datum setzen",
 		"en-US": "Set date",
 		"es-ES": "Establecer la fecha",
 		"fa-IR": "تاریخ را تنظیم کنید",
@@ -331,6 +379,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Задать дату",
 	},
 	COMMAND_TEXT_MONDAY: {
+		"de-DE": "Montag",
 		"en-US": "Monday",
 		"es-ES": "Lunes",
 		"fa-IR": "دوشنبه",
@@ -338,6 +387,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Понедельник",
 	},
 	COMMAND_TEXT_TUESDAY: {
+		"de-DE": "Dienstag",
 		"en-US": "Tuesday",
 		"es-ES": "Martes",
 		"fa-IR": "سه شنبه",
@@ -345,6 +395,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вторник",
 	},
 	COMMAND_TEXT_WEDNESDAY: {
+		"de-DE": "Mittwoch",
 		"en-US": "Wednesday",
 		"es-ES": "Miercoles",
 		"fa-IR": "چهارشنبه",
@@ -352,6 +403,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Среда",
 	},
 	COMMAND_TEXT_THURSDAY: {
+		"de-DE": "Donnerstag",
 		"en-US": "Thursday",
 		"es-ES": "Jueves",
 		"fa-IR": "پنج شنبه",
@@ -359,6 +411,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Четверг",
 	},
 	COMMAND_TEXT_FRIDAY: {
+		"de-DE": "Freitag",
 		"en-US": "Friday",
 		"es-ES": "Viernes",
 		"fa-IR": "جمعه",
@@ -366,6 +419,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Пятница",
 	},
 	COMMAND_TEXT_SATURDAY: {
+		"de-DE": "Samstag",
 		"en-US": "Saturday",
 		"es-ES": "Sabado",
 		"fa-IR": "شنبه",
@@ -373,6 +427,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Суббота",
 	},
 	COMMAND_TEXT_SUNDAY: {
+		"de-DE": "Sonntag",
 		"en-US": "Sunday",
 		"es-ES": "Domingo",
 		"fa-IR": "یکشنبه",
@@ -380,6 +435,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Воскресенье",
 	},
 	COMMAND_TEXT_DO_NOT_SEND_RECEIPT: {
+		"de-DE": "Keine Quittung schicken",
 		"en-US": "Do not send the receipt",
 		"es-ES": "No enviar el recibo",
 		"fa-IR": "رسید را ارسال نکنید",
@@ -387,6 +443,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Не отправлять квитанцию",
 	},
 	MESSAGE_TEXT_RECEIPT_WILL_NOT_BE_SENT: {
+		"de-DE": "Du hast dich gegen eine Quittung entschieden.",
 		"en-US": "You've decided not to send the receipt.",
 		"es-ES": "Has decidido no enviar el recibo",
 		"fa-IR": "شما تصمیم گرفتید که رسید را ارسال نکنید.",
@@ -394,6 +451,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы решили не отправлять квитанцию.",
 	},
 	COMMAND_TEXT_I_HAVE_CHANGED_MY_MIND: {
+		"de-DE": "Ich habe meine Meinung geändert",
 		"en-US": "I've changed my mind",
 		"es-ES": "He cambiado de opinion",
 		"fa-IR": "نظرم را عوض کردم.",
@@ -401,6 +459,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Я передумал(а)",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TELEGRAM: {
+		"de-DE": "Senden über Telegram",
 		"en-US": "Send by Telegram",
 		"es-ES": "Enviar a través de Telegram",
 		"fa-IR": "با تلگرام ارسال شود",
@@ -408,6 +467,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 	},
 	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: {
+		"de-DE": "Senden über FB, WhatsApp, Viber, etc.",
 		"en-US": "Send by FB, WhatsApp, Viber, etc.",
 		"es-ES": "Enviar a través de FB, WhatsApp, Viber, etc.",
 		"fa-IR": "با فیسبوک، واتس آپ، وایبر و ... ارسال شود.",
@@ -415,6 +475,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Viber, VK, FB, ...",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_SMS: {
+		"de-DE": "Senden über SMS",
 		"en-US": "Send by SMS",
 		"es-ES": "Enviar a través de SMS",
 		"fa-IR": "با پیام کوتاه ارسال شود",
@@ -422,6 +483,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через SMS",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_VK: {
+		"de-DE": "Senden über VK.com",
 		"en-US": "Send throw VK.com",
 		"es-ES": "Enviar vía VK.com",
 		"fa-IR": "ارسال شود VK.com از طریق ",
@@ -429,6 +491,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через ВКонтакте",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_OK: {
+		"de-DE": "Senden über OK",
 		"en-US": "Send throw OK",
 		"es-ES": "Enviar a través de OK",
 		"fa-IR": "ارسال شود OK از طریق ",
@@ -436,6 +499,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Одноклассники",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_FB: {
+		"de-DE": "Senden über Facebook",
 		"en-US": "Send throw Facebook",
 		"es-ES": "Enviar a través de Facebook",
 		"fa-IR": "از طریق فیسبوک ارسال شود.",
@@ -443,13 +507,15 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Facebook",
 	},
 	COMMAND_TEXT_SEND_RECEIPT_BY_TWT: {
-		"en-US": "Send throw Twiter",
+		"de-DE": "Senden über Twitter",
+		"en-US": "Send throw Twitter",
 		"es-ES": "Enviar a través de Twitter",
 		"fa-IR": "از طریق توئیتر ارسال شود.",
 		"it-IT": "Invia tramite Twitter",
 		"ru-RU": "Отправить через Twitter",
 	},
 	COMMAND_TEXT_CANCEL_SENDING_RECEIPT_BY_TELEGRAM: {
+		"de-DE": "Sendung der Quittung über Telegram abbrechen",
 		"en-US": "Cancel sending receipt by Telegram",
 		"es-ES": "Cancelar el envío a través de Telegram",
 		"fa-IR": "ارسال رسید با تلگرام کنسل شود",
@@ -457,6 +523,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отменить отправку через Telegram",
 	},
 	COMMAND_TEXT_MAIN_MENU_TITLE: {
+		"de-DE": "Menü /menu",
 		"en-US": "Main /menu",
 		"es-ES": "Inicio /menú",
 		"fa-IR": "/منو ی اصلی ",
@@ -464,6 +531,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Главное /меню",
 	},
 	MESSAGE_TEXT_NOTHING_TO_CANCEL: {
+		"de-DE": "Nichts zum abbrechen.",
 		"en-US": "Nothing to cancel.",
 		"es-ES": "No hay nada que anular.",
 		"fa-IR": "چیزی برای کنسل شدن وجود ندارد",
@@ -471,6 +539,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Нечего отменять.",
 	},
 	MESSAGE_TEXT_TRANSFER_CREATION_CANCELED: {
+		"de-DE": "Erstellung des Schuldscheins abgebrochen.",
 		"en-US": "Creation of debt record has been canceled.",
 		"es-ES": "La creación del recordatorio se ha cancelado.",
 		"fa-IR": "ایجاد سابقه بدهی کنسل شد.",
@@ -478,6 +547,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Создание записи о долге отменено.",
 	},
 	COMMAND_TEXT_SHOW_ALL_CONTACTS: {
+		"de-DE": "Zeige alle...",
 		"en-US": "Show all...",
 		"es-ES": "Mostrar todo...",
 		"fa-IR": "نمایش تمام موارد ...",
@@ -485,6 +555,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Показать все...",
 	},
 	COMMAND_TEXT_CONTACTS: {
+		"de-DE": "Kontakte",
 		"en-US": "Contacts",
 		"es-ES": "Contactos",
 		"fa-IR": "لیست تماس",
@@ -492,6 +563,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Контакты",
 	},
 	COMMAND_TEXT_REFRESH: {
+		"de-DE": "Aktualisieren",
 		"en-US": "Refresh",
 		"es-ES": "Recargar",
 		"fa-IR": "تازه کردن",
