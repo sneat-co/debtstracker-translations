@@ -64,9 +64,9 @@ func TestTRANS(t *testing.T) {
 			} else {
 				desiredMisses = append(desiredMisses, key)
 			}
-			if len(desiredMisses) > 0 {
-				t.Logf("Key `%v` is missing optional translations for: %v", key, missingLocales)
-			}
+			//if len(desiredMisses) > 0 {
+			//	t.Logf("Key `%v` is missing optional translations for: %v", key, missingLocales)
+			//}
 			if len(requiredMisses) > 0 {
 				t.Errorf("Key `%v` is missing required translations for: %v", key, requiredMisses)
 			}
@@ -78,9 +78,11 @@ func TestTRANS(t *testing.T) {
 				continue
 			}
 			for enV, enCount := range enCounts {
-				if counts[enV] != enCount {
-					t.Errorf("%v:%v has %d of '%v' while en-US has %d", key, lang, counts[enV], enV, enCount)
-					reported[enV] = enCount
+				if c := counts[enV]; c != enCount {
+					if !(c == 0 && vals[lang] == "") {
+						t.Errorf("%v:%v has %d of '%v' while en-US has %d", key, lang, counts[enV], enV, enCount)
+						reported[enV] = enCount
+					}
 				}
 			}
 

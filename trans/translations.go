@@ -965,24 +965,24 @@ The transaction will not be deleted but the creator will be notified.`,
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: {
 
-		"en-US": `🤖: I'm a good robot, for sure.But sometimes it is more convinient to use a nice specialized app.It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
+		"en-US": `🤖: I'm a good robot, for sure.But sometimes it is more convinient to use a nice specialized app.It's not ready for public use yet but you can check how it is going to looks: <a href="https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 	Do you want to get an invite when it gets released?`,
 
-		"es-ES": `🤖: Claro que soy un robot encantador, pero más comodo usar una aplicación especial.No esta disponible ya pero se puede ver como será: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
+		"es-ES": `🤖: Claro que soy un robot encantador, pero más comodo usar una aplicación especial.No esta disponible ya pero se puede ver como será: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 	¿Quieres que te avisemos cuando esté lista?`,
 
 
-		"fa-IR": `🤖: مطمئناً من روبات خوبی هستم. اما بعضی وقت هاساده تر و مناسب تر است که از یک برنامه به خوبی تخصصی شده استفاده شود، این برنامه هنوز برای استفاده عموم آماده نیست ولی می توانید چک کنید که چگونه به نظر خواهد رسید: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
+		"fa-IR": `🤖: مطمئناً من روبات خوبی هستم. اما بعضی وقت هاساده تر و مناسب تر است که از یک برنامه به خوبی تخصصی شده استفاده شود، این برنامه هنوز برای استفاده عموم آماده نیست ولی می توانید چک کنید که چگونه به نظر خواهد رسید: <a href="https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 	آیا می خواهید وقتی منتشر شد دعوتنامه ای دریافت کنید؟`,
 
-		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata. Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href = "https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/it/</a>
+		"it-IT": `🤖: Di sicuro son un bravo bot, ma alcune volte e' piu' conveniente usare un'applicazione specializzata. Non e' ancora pronta per la pubblicazione ma puoi controllare l'avanzamento a questo indirizzo: <a href="https://debtstracker.io/it/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/it/</a>
 
 	Vuoi essere invitato non appena viene rilasciata?`,
 
-		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href= "https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
+		"ru-RU": `🤖: Я конечно обоятельный робот, но пользоваться специализированным приложением бывает удобнее. Оно ещё не готово для общего доступа, но уже сейчас можно посмотреть как будет выглядеть: <a href="https://debtstracker.io/ru/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/ru/</a>
 
 		Хотите получить оповещение когда оно выйдет?`,
 	},
@@ -1786,18 +1786,21 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 	MESSAGE_TEXT_SPLIT_MODE: {
 		"en-US": "<b>Split</b>: %v",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "<b>Split</b>: %v", // TODO(ES)
+		"fa-IR": "<b>Split</b>: %v", // TODO(FA)
+		"it-IT": "<b>Split</b>: %v", // TODO(IT)
 		"ru-RU": "<b>Делить</b>: %v",
 	},
 	MESSAGE_TEXT_ASK_HOW_TO_SPLIT_IN_GROP: {
 		"en-US": "In what proportion do you split bills in this group?",
+		"es-ES": "", // TODO(ES)
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "В какой пропорции вы делите счета в этой группе?",
 	},
 	MESSAGE_TEXT_MEMBERS_CARD_FOOTER: {
 		"en-US": "Click <code>Join</code> to participate in bills splitting.",
+		"es-ES": "", // TODO(ES)
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "Жмите <code>Присоедениться</code> чтобы учавствовать.",
@@ -1819,6 +1822,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_OWES: {
 		"en-US": "\n   <i>share {{.Owes}}</i>",
 		"es-ES": "\n   <i>debo {{.Owes}}</i>", // TODO(ES)
+		"fa-IR": "\n   <i>share {{.Owes}}</i>", // TODO(FA)
+		"it-IT": "\n   <i>share {{.Owes}}</i>", // TODO(IT)
 		"ru-RU": "\n   <i>доля {{.Owes}}</i>",
 		//"fa-IR": "", // TODO(FA)
 	},
@@ -1826,7 +1831,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"en-US": "\n   <i>paid {{.Paid}}</i>",
 		"es-ES": "\n   <i>he pagado {{.Paid}}</i>",
 		"ru-RU": "\n   <i>заплатил {{.Paid}}</i>",
-		//"fa-IR": "", // TODO(FA)
+		"fa-IR": "\n   <i>paid {{.Paid}}</i>", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PART_PAID: {
 		"en-US": "\n<i>paid {{.Paid}}, share {{.Owes}}</i>",
@@ -1970,8 +1975,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	COMMAND_TEXT_I_OWE: {
 		"en-US": "I owe",
 		"es-ES": "Yo debo",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
 		"ru-RU": "Я должен",
 	},
 	COMMAND_TEXT_OWED_TO_ME: {
@@ -2062,8 +2067,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	ARTICLE_NEW_DEBT_SUBTITLE: {
 		"en-US": "Amount: %v\nSends notifications on due date if set",
 		"es-ES": "Importe: %v\nEnviar las notificaciones el día de vencimiento",
-		"fa-IR": "در صورتی که تنظیم شود، اعلان ها را در زمان مقرر ارسال می کند", // TODO(FA): Verify
-		"it-IT": "Invia le notifiche alla data di scadenza se impostato",        // TODO(IT): Verify
+		"fa-IR": "", // TODO(FA):  "در صورتی که تنظیم شود، اعلان ها را در زمان مقرر ارسال می کند",
+		"it-IT": "", // TODO(IT):  "Invia le notifiche alla data di scadenza se impostato",
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
 	},
 	SPLITUS_PLEASE_JOIN_IF_NOT_ON_THE_LIST: {
@@ -2088,9 +2093,9 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 	MT_GROUP_LABEL: {
 		"en-US": `<b>Group</b>: %v`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `<b>Group</b>: %v`, // TODO(ES)
+		"fa-IR": `<b>Group</b>: %v`, // TODO(FA)
+		"it-IT": `<b>Group</b>: %v`, // TODO(IT)
 		"ru-RU": `<b>Группа</b>: %v`,
 	},
 	MT_SPONSORS_HEADER: {
