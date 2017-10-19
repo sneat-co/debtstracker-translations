@@ -795,7 +795,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Вернул",
 	},
 	COMMAND_TEXT_BALANCE: {
-		"en-US": "/Ausstehend",
+		"de-DE": "/Ausstehend",
 		"en-US": "/Balance",
 		"es-ES": "/Balance",
 		"fa-IR": "/تراز",
@@ -1055,7 +1055,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Хочу приложение!",
 	},
 	COMMAND_TEXT_I_AM_FINE_WITH_BOT: {
-		"en-US": "Mir reicht der Bot!",
+		"de-DE": "Mir reicht der Bot!",
 		"en-US": "I'm fine with just the bot!",
 		"es-ES": "¡Estoy satisfecho con este bot!",
 		"fa-IR": "! ربات به تنهایی برای من کافی است",
@@ -1865,7 +1865,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 
 	COMMAND_TEXT_MISTYPE_WILL_TRY_AGAIN: {
-		"en-US": "Ich habe mich vertippt.",
+		"de-DE": "Ich habe mich vertippt.",
 		"en-US": "I've mistyped, will try again.",
 		"es-ES": "Me he equivocado, lo intentaré otra vez",
 		"fa-IR": "اشتباه تایپ کردم، دوباره امتحان می کنم.",
