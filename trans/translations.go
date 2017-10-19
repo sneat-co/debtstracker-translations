@@ -1808,7 +1808,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "После того как откроется Telegram нажмите кнопку <b>Start</b>.",
 	},
 	MESSAGE_TEXT_USER_CONTACT_FOR_INVITE_RECEIVED: {
-		"de-DE": "Danke, du bist in der Warteschlange für eine Einladung.\n\Es dauert etwa zwei bis drei Tage.\n\nAber du könntest den Code noch heute bekommen, wenn du einen Link auf Facebook teilst.",
+		"de-DE": "Danke, du bist in der Warteschlange für eine Einladung.\n\nEs dauert etwa zwei bis drei Tage.\n\nAber du könntest den Code noch heute bekommen, wenn du einen Link auf Facebook teilst.",
 		"en-US": "Thanks, you've been queued for an invite.\n\nCurrent awaiting time is 2-3 days.\n\nYou can get an invite code today by sharing a link to the bot on Facebook.",
 		"es-ES": "Gracias, ya estás inscrito en la cola para conseguir la invitación.\n\nTiempo de espera 2-3 días.\n\nPuedes conseguirlo hoy si compartes el link de nuestro bot en Facebook.",
 		"fa-IR": "سپاسگزاریم، شما در نوبت دعوت قرار گرفتید\n\nزمان انتظار شما در حال حاضر 2-3 روز می باشد.\n\n شما می توانید با به اشتراک گذاری لینک روبات در فیسبوک امروز یک کد دعوت دریافت کنید. ",
@@ -2312,7 +2312,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 
 	ARTICLE_NEW_DEBT_TITLE: {
-		"de-DE": "Neuer Schuldschein"
+		"de-DE": "Neuer Schuldschein",
 		"en-US": "New debt",
 		"es-ES": "Nueva deuda",
 		"fa-IR": "بدهی جدید",    // TODO(FA): Verify
@@ -3675,7 +3675,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"it-IT": "Debito/credito: %v",
 		"ru-RU": "Квитанция: %v",
 	},
-	INLINE_RECEIPT_DESCRIPTION: 
+	INLINE_RECEIPT_DESCRIPTION: {
 		"de-DE": "Klicken sie hier, um die Quittung zu sehen",
 		"en-US": "Click here to send the receipt",
 		"es-ES": "Haz click aquí para enviar el recibo",
