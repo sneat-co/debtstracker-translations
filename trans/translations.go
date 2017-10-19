@@ -887,7 +887,7 @@ var TRANS = map[string]map[string]string{
 		"en-US": "Invite friend",
 	//	"es-ES": "",
 	//	"fa-IR": "",
-	//	"it-IT": "",
+	//	"it-IT": "", 
 		"ru-RU": "Пригласить друга",
 	},
 	COMMAND_TEXT_INVITE_MEMBER: {
