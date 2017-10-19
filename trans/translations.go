@@ -407,6 +407,13 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Invia tramite Telegram",
 		"ru-RU": "Отправить через Telelgram",
 	},
+	COMMAND_TEXT_GET_LINK_FOR_RECEIPT_IN_TELEGRAM: {
+		"en-US": "Get link for receipt in Telegram",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Ссылка для квитанции в Телеграмме",
+	},
 	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: {
 		"en-US": "Send by FB, WhatsApp, Viber, etc.",
 		"es-ES": "Enviar a través de FB, WhatsApp, Viber, etc.",
@@ -764,12 +771,12 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Valuta principale",
 		"ru-RU": "Основная валюта",
 	},
-	COMMAND_TEXT_NEW_GROUP: {
-		"en-US": "New group",
+	COMMAND_TEXT_ADD_GROUP: {
+		"en-US": "Add group",
 		"es-ES": "",
 		"fa-IR": "",
 		"it-IT": "",
-		"ru-RU": "Новая группа",
+		"ru-RU": "Добавить группу",
 	},
 	COMMAND_TEXT_INVITE_FIREND: {
 		"en-US": "Invite friend",
@@ -791,6 +798,13 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": "",
 		"it-IT": "",
 		"ru-RU": "Новый счёт",
+	},
+	COMMAND_TEXT_NEW_FUNDRAISING: {
+		"en-US": "New fundraising",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Новый сбор средств",
 	},
 	COMMAND_TEXT_NEW_COUNTERPARTY: {
 		"en-US": "Add new",
@@ -1713,6 +1727,13 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "Участники",
 	},
+	MT_TEXT_MEMBERS_COUNT: {
+		"en-US": "<b>Members</b>: %d",
+		"es-ES": "<b>Miembros</b>: %d",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "<b>Участников</b>: %d",
+	},
 	ALERT_TEXT_NOTHING_CHANGED: {
 		"en-US": "Nothing changed",
 		"es-ES": "", // TODO(ES)
@@ -1722,15 +1743,24 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 	ALERT_TEXT_YOU_ARE_ALREADY_MEMBER_OF_THE_GROUP: {
 		"en-US": "You are already a member of this bill splitting group.",
+		"es-ES": "", // TODO(ES)
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "Вы уже участник этой группы по совместной оплате счетов.",
 	},
 	MESSAGE_TEXT_YOUR_BILL_SPLITTING_GROUPS: {
 		"en-US": "Your bills splitting groups",
+		"es-ES": "", // TODO(ES)
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "Ваши группы совметсной оплаты",
+	},
+	MESSAGE_TEXT_USE_ARROWS_TO_SELECT_GROUP: {
+		"en-US": "Use ⬅️ & ➡️ to select group",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Используйте ⬅️ и ➡️ чтобы выбрать группу.",
 	},
 	MESSAGE_TEXT_NO_GROUPS: {
 		"en-US": "You are not a participant of any bill splitting group.",
@@ -1772,29 +1802,36 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "", // TODO(IT)
 		"ru-RU": "Жмите <code>Присоедениться</code> чтобы учавствовать.",
 	},
-	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
-		"en-US": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
-		"es-ES": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
+	MESSAGE_TEXT_BILL_CARD_MEMBER_TITLE: {
+		"en-US": "{{.N}}. {{.MemberName}}",
+		"es-ES": "{{.N}}. {{.MemberName}}",
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
-		"ru-RU": "{{.N}}. {{.MemberName}} <i>{{.Percent}}%</i>",
+		"ru-RU": "{{.N}}. {{.MemberName}}",
+	},
+	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
+		"en-US": "<i>{{.Percent}}%</i>",
+		"es-ES": "<i>{{.Percent}}%</i>",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "<i>{{.Percent}}%</i>",
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_OWES: {
-		"en-US": "{{.N}}. {{.MemberName}}\n   <i>owes {{.Owes}}</i>",
-		"es-ES": "{{.N}}. {{.MemberName}}\n   <i>debo {{.Owes}}</i>",
-		"ru-RU": "{{.N}}. {{.MemberName}}\n   <i>должен {{.Owes}}</i>",
+		"en-US": "\n   <i>share {{.Owes}}</i>",
+		"es-ES": "\n   <i>debo {{.Owes}}</i>", // TODO(ES)
+		"ru-RU": "\n   <i>доля {{.Owes}}</i>",
 		//"fa-IR": "", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PAID: {
-		"en-US": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>paid {{.Paid}}</i>",
-		"es-ES": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>he pagado {{.Paid}}</i>",
-		"ru-RU": "{{.N}}. <b>{{.MemberName}}</b>\n   <i>заплатил {{.Paid}}</i>",
+		"en-US": "\n   <i>paid {{.Paid}}</i>",
+		"es-ES": "\n   <i>he pagado {{.Paid}}</i>",
+		"ru-RU": "\n   <i>заплатил {{.Paid}}</i>",
 		//"fa-IR": "", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PART_PAID: {
-		"en-US": "{{.N}}. {{.MemberName}}\n<i>paid {{.Paid}}, owes {{.Owes}}</i>",
-		"es-ES": "{{.N}}. {{.MemberName}}\n<i>he pagado {{.Paid}}, debo {{.Owes}}</i>",
-		"ru-RU": "{{.N}}. {{.MemberName}}\n<i>заплатил {{.Paid}}, должен {{.Owes}}</i>",
+		"en-US": "\n<i>paid {{.Paid}}, share {{.Owes}}</i>",
+		"es-ES": "\n<i>he pagado {{.Paid}}, debo {{.Owes}}</i>", // TODO(ES)
+		"ru-RU": "\n<i>заплатил {{.Paid}}, доля {{.Owes}}</i>",
 		"fa-IR": "", // TODO(FA)
 	},
 	MESSAGE_TEXT_BILL_ASK_WHO_PAID: {
@@ -1977,7 +2014,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"es-ES": "",
 		"fa-IR": "", // TODO(FA)
 		"it-IT": "", // TODO(IT)
-		"ru-RU": "Этот счёт оплатил я",
+		"ru-RU": "Этот счёт оплатил(а) я",
 	},
 	BUTTON_TEXT_I_OWE_FOR_THE_BILL: {
 		"en-US": "I owe for this bill",
@@ -2042,6 +2079,41 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": ``, // TODO(IT)
 		"ru-RU": `Меня зовут <b>Сплитус.</b> Спасибо что добавили!`,
 	},
+	COLLECTUS_TEXT_HI_IN_GROUP: {
+		"en-US": `I'm <b>Collectus.</b> Thanks for adding me!`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Меня зовут <b>Коллектус.</b> Спасибо что добавили!`,
+	},
+	MT_GROUP_LABEL: {
+		"en-US": `<b>Group</b>: %v`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `<b>Группа</b>: %v`,
+	},
+	MT_SPONSORS_HEADER: {
+		"en-US": `<b>Sponsors</b>:`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `<b>Спонсоры</b>:`,
+	},
+	MT_DEBTORS_HEADER: {
+		"en-US": `<b>Debtors</b>:`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `<b>Должники</b>:`,
+	},
+	BT_DEFAULT_CURRENCY: {
+		"en-US": `Currency: %v`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `Валюта: %v`,
+	},
 	MESSAGE_TEXT_ASK_LANG: {
 		"en-US": `What language should I use in this group?`,
 		"es-ES": ``, // TODO(ES)
@@ -2049,7 +2121,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": ``, // TODO(IT)
 		"ru-RU": `Какой язык я должен использовать в этой группе?`,
 	},
-	SPLITUS_TEXT_HI_IN_GROUP_LANG_SET: {
+	MESSAGE_TEXT_HI_IN_GROUP_LANG_SET: {
 		"en-US": `Great, I'll be using English.`,
 		"es-ES": ``, // TODO(ES)
 		"fa-IR": ``, // TODO(FA)
@@ -2104,6 +2176,20 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"ru-RU": `<b>Команды для бота:</b>
 	/groups - Список групп
 	/bills - Список незакрытых платежей
+	/help - Узнать как использовать, сообщить о проблеме, задать вопрос`,
+	},
+	COLLECTUS_TG_COMMANDS: {
+		"en-US": `<b>Bot commands:</b>
+
+	/groups - List of groups
+	/fundraisings - List of active fundraisings
+	/help - Learn how to use bot, report issues, ask questions`,
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT)
+		"ru-RU": `<b>Команды для бота:</b>
+	/groups - Список групп
+	/fundraisings - Список активных сборов
 	/help - Узнать как использовать, сообщить о проблеме, задать вопрос`,
 	},
 	MESSAGE_TEXT_SEND_HELP_COMMAND_FOR_HELP: {// This is the same for all languages.
@@ -2253,6 +2339,13 @@ O usa il menu' qui sotto.`,
 		"it-IT": "Totale",
 		"ru-RU": "Всего",
 	},
+	BT_OTHER_CURRENCY: {
+		"en-US": "Another currency",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "Другая валюта",
+	},
 	MESSAGE_TEXT_PRIMARY_CURRENCY_IS_SET_TO: {
 		"en-US": "OK, from now on I will use '%v' as a primary currency.",
 		"es-ES": "OK, ahora voy a usar '%v' como moneda principal. ",
@@ -2308,6 +2401,13 @@ O usa il menu' qui sotto.`,
 		"fa-IR": "واحد پولی اولیه شما چیست؟",
 		"it-IT": "Qual'e' la tua valuta principale?",
 		"ru-RU": "Какая валюта для вас основная?",
+	},
+	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY_FOR_GROUP: {
+		"en-US": "What is a primary currency for this group?",
+		"es-ES": "¿Cuál es tu moneda principal?", //TODO(ES)
+		"fa-IR": "واحد پولی اولیه شما چیست؟",  //TODO(FA)
+		"it-IT": "Qual'e' la tua valuta principale?",  //TODO(IT)
+		"ru-RU": "Какая валюта основная для этой группы?",
 	},
 	MESSAGE_TEXT_FAILED_TO_DELETE_USER: {
 		"en-US": "Failed to delete user: %v",
@@ -2387,11 +2487,11 @@ O usa il menu' qui sotto.`,
 		"ru-RU": "Если номер телефона есть в записной книжке <b>воспользуйтесь кнопкой %v</b> (скрепка) чтобы отправить контакт.",
 	},
 	MESSAGE_TEXT_ABOUT_PHONE_NUMBER_FORMAT: {
-		"en-US": "The number should be in international standard:\n\t* Starts with '+' following by country code\n\t* Consist of numbers only\nExample: <pre>+</pre><b>1</b><code>999012345678</code>",
-		"es-ES": "El número debe tener formato internacional estándar:\n\t* Empezar con '+' seguido del código del país\n\t* formado solo por números\nEjemplo: <pre>+</pre><b>1</b><code>999012345678</code>",
-		"fa-IR": "شماره باید به صورت استاندارد بین المللی باشد\n\t* با '+' شروع شده و بدنبال آن کد کشور وارد شود\n\t* تنها شامل اعداد باشد\nمثال: <pre>+</pre><b>1</b><code>999012345678</code>",
-		"it-IT": "Il numero deve essere in formato internazionale:\n\t* Inizia con '+' seguito dal codice del paese (Italia +39)\n\t* \nEsempio: <pre>+</pre><b>39</b><code>34612345678</code>",
-		"ru-RU": "Номер должен быть в международном формате:\n\t* Начинаться со знака '+' и кода страны\n\t* Состоять только из цифр\nПример: <pre>+</pre><b>7</b><code>999012345678</code>",
+		"en-US": "The number should be in international standard:\n\t* Starts with '+' following by country code\n\t* Consist of numbers only\nExample: <b>+1</b><code>999012345678</code>",
+		"es-ES": "El número debe tener formato internacional estándar:\n\t* Empezar con '+' seguido del código del país\n\t* formado solo por números\nEjemplo: <b>+1</b><code>999012345678</code>",
+		"fa-IR": "شماره باید به صورت استاندارد بین المللی باشد\n\t* با '+' شروع شده و بدنبال آن کد کشور وارد شود\n\t* تنها شامل اعداد باشد\nمثال: <b>+1</b><code>999012345678</code>",
+		"it-IT": "Il numero deve essere in formato internazionale:\n\t* Inizia con '+' seguito dal codice del paese (Italia +39)\n\t* \nEsempio: <b>+39</b><code>34612345678</code>",
+		"ru-RU": "Номер должен быть в международном формате:\n\t* Начинаться со знака '+' и кода страны\n\t* Состоять только из цифр\nПример: <b>+7</b><code>999012345678</code>",
 	},
 	MESSAGE_TEXT_THIS_NUMBER_WILL_BE_USED_TO_SEND_RECEIPT: {
 		"en-US": "Will send an SMS to this number:",
@@ -3210,53 +3310,88 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"it-IT": "<b>Scegli la lingua per vedere i dettagli del debito</b> registrato da {{.Creator}}.",
 		"ru-RU": "<b>Выберите язык чтобы посмотреть подробности записи о долге</b> которую создал(а) {{.Creator}}.",
 	},
-	INLINE_RECEIPT_MESSAGE: {
-		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
-
-{{.SiteLink}} — an app for debts tracking will help you to:
+	INLINE_RECEIPT_FOOTER: {
+		//-------------------------------------------------------
+		"en-US": `{{.SiteLink}} — an app for debts tracking will help you to:
 
   - Always know your bottom line
 
   - Return debts on time
     <i>(reminders to you & your debtors)</i>`,
 		//-------------------------------------------------------
-
-		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
-
-{{.SiteLink}} — la app para controlar tus deudas te ayuda a:
+		"es-ES": `{{.SiteLink}} — la app para controlar tus deudas te ayuda a:
 
   - Saber siempre quién debe a quién
 
   - Devolver la deuda a tiempo
     <i>(recordatorio a ti y a tus deudores)</i>`,
 		//-------------------------------------------------------
-
-		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
-
-{{.SiteLink}} — یک برنامه پیگیری بدهی است که به شما کمک می کند تا:
+		"fa-IR": `{{.SiteLink}} — یک برنامه پیگیری بدهی است که به شما کمک می کند تا:
 
   - همیشه از سود و زیان خود مطلع باشید.
 
   - بدهی ها به موقع پرداخت شوند.
     <i>(با ارسال یادآوری به  شما و بدهکاران )</i>`,
-
-		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
-
-{{.SiteLink}} — un app per i debiti che ti consento di:
+		//-------------------------------------------------------
+		"it-IT": `{{.SiteLink}} — un app per i debiti che ti consento di:
 
   - Sapere sempre chi deve soldi a chi
 
   - Restituire i soldi in tempo
     <i>(lo ricorda a te ed al tuo debitore)</i>`,
-
-		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
-
-	{{.SiteLink}} — программа для учёта долгов поможет:
+		//-------------------------------------------------------
+		"ru-RU": `{{.SiteLink}} — программа для учёта долгов поможет:
 
 	  - Всегда знать кто кому сколько должен
 
 	  - Незабыть вовремя отдать или востребовать долг
 	    <i>(напоминания вам и вашим должникам)</i>`,
+		//-------------------------------------------------------
+	},
+	INLINE_RECEIPT_GENERATING_MESSAGE: {
+		//-------------------------------------------------------
+		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
+
+  >> <i>Generating receipt...</i>`,
+		//-------------------------------------------------------
+		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
+
+  >> <i>Generating receipt...</i>`,  // TODO(ES)
+		//-------------------------------------------------------
+		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
+
+  >> <i>Generating receipt...</i>`,  // TODO(FA)
+		//-------------------------------------------------------
+		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
+
+  >> <i>Generating receipt...</i>`, // TODO(IT)
+		//-------------------------------------------------------
+		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
+
+  >> <i>Generating receipt...</i>`,
+		//-------------------------------------------------------
+	},
+	INLINE_RECEIPT_MESSAGE: {
+		//-------------------------------------------------------
+		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
+
+  >> <a href="{{.ReceiptUrl}}">Click here to view receipt</a>`,
+		//-------------------------------------------------------
+		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
+
+  >> <a href="{{.ReceiptUrl}}">Click here to view receipt</a>`,
+		//-------------------------------------------------------
+		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
+
+  >> <a href="{{.ReceiptUrl}}">Click here to view receipt</a>`,
+		//-------------------------------------------------------
+		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
+
+  >> <a href="{{.ReceiptUrl}}">Click here to view receipt</a>`,
+		//-------------------------------------------------------
+		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
+
+  >> <a href="{{.ReceiptUrl}}">Посмотреть квитанцию</a>`,
 		//-------------------------------------------------------
 	},
 	INLINE_INVITE_TITLE: {
