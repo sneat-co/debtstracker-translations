@@ -571,6 +571,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Обновить",
 	},
 	COMMAND_TEXT_ADD_YOUR_OWN_OPTION: {
+		"de-DE": "Etwas anderes",
 		"en-US": "Something else",
 		"es-ES": "Otra cosa",
 		"fa-IR": "چیزی دیگر",
@@ -578,6 +579,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Что-то другое",
 	},
 	MESSAGE_TEXT_REMINDER_ASK_IF_RETURNED: {
+		"de-DE": "Wurde diese Schuld beglichen?",
 		"en-US": "Have this debt been returned?",
 		"es-ES": "¿Se ha devuelto esta deuda?",
 		"fa-IR": "آیا این بدهی بازپرداخت شده است؟",
@@ -585,6 +587,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Был ли этот долг возвращён?",
 	},
 	MESSAGE_TEXT_ASK_WHEN_TO_REMIND_AGAIN: {
+		"de-DE": "Wann willst du wieder an diese Schuld erinnert werden?",
 		"en-US": "When should we remind you about this debt again?",
 		"es-ES": "¿Cuándo recordarte de esta deuda otra vez?",
 		"it-IT": "Quando devo ricordarti di questo debito?",
@@ -592,6 +595,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Когда вам напомнить об этом долге ещё раз?",
 	},
 	MESSAGE_TEXT_REPLIED_DEBT_RETURNED_FULLY: {
+		"de-DE": "Du hast angegeben, dass diese Schuld vollständig beglichen ist.",
 		"en-US": "You've replied back that debt has been returned fully.",
 		"es-ES": "Has confirmado que la deuda se ha saldado totalmente",
 		"fa-IR": "شما پاسخ داده اید که بدهی به صورت کامل بازپرداخت شده است.",
@@ -599,6 +603,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы ответили что долг возвращён полностью.",
 	},
 	MESSAGE_TEXT_DEBT_IS_RETURNED: {
+		"de-DE": "Die Schuld ist vollständig beglichen.",
 		"en-US": "The debt has been returned fully.",
 		"es-ES": "La deuda se ha saldado totalmente",
 		"fa-IR": "بدهی به صورت کامل بازپرداخت شده است",
@@ -606,6 +611,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Долг возвращён полностью.",
 	},
 	MESSAGE_TEXT_DETAILS_ARE_HERE: {
+		"de-DE": "Details hier: %v",
 		"en-US": "Details here: %v",
 		"es-ES": "Detalles aquí: %v",
 		"fa-IR": "جزئیات در اینجا: %v",
@@ -613,6 +619,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Подробности тут: %v",
 	},
 	MESSAGE_TEXT_REMINDER: {
+		"de-DE": "Erinnerung",
 		"en-US": "Reminder",
 		"es-ES": "Recordatorio",
 		"fa-IR": "یادآور",
@@ -620,6 +627,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Напоминание",
 	},
 	MESSAGE_TEXT_REMINDER_SET: {
+		"de-DE": "Erinnerung am: %v",
 		"en-US": "Reminder set for: %v",
 		"es-ES": "Recordatorio establecito para: %v",
 		"fa-IR": "یادآور تنظیم شده است برای: %v",
@@ -627,6 +635,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Напоминание установлено на: %v",
 	},
 	MESSAGE_TEXT_REMINDER_DISABLED: {
+		"de-DE": "Du hast die Erinnerung an diese Schuld deaktiviert.",
 		"en-US": "You've disabled reminders for this debt.",
 		"es-ES": "Recordatorio para esta deuda se ha deshabilitado.",
 		"fa-IR": "شما یادآور را برای این بدهی غیرفعال نموده اید.",
@@ -634,6 +643,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Напоминания об этом долге отключены.",
 	},
 	COMMAND_TEXT_REMINDER_ENABLE: {
+		"de-DE": "Erinnerung aktivieren",
 		"en-US": "Turn-on reminder",
 		//"es-ES": "",
 		//"fa-IR": "",
@@ -641,6 +651,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Включить напоминание",
 	},
 	MESSAGE_TEXT_REMINDER_ALREADY_RESCHEDULED: {
+		"de-DE": "Du wirst bereits erneut erinnert.",
 		"en-US": "You've already rescheduled this reminder.",
 		"es-ES": "Recordatorio para esta deuda se ha reprogramado ya.",
 		"it-IT": "Hai gia' impostato questo promemoria",
@@ -648,6 +659,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Напоминание об этом долге уже перенесено.",
 	},
 	COMMAND_TEXT_REMINDER_RETURNED_IN_FULL: {
+		"de-DE": "Ja, vollständig beglichen",
 		"en-US": "Yes, returne in full",
 		"es-ES": "Sí, devuelto totalmente",
 		"fa-IR": "بله، بازپرداخت به صورت کامل",
@@ -655,6 +667,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Да, возвращено полностью",
 	},
 	COMMAND_TEXT_REMINDER_RETURNED_PARTIALLY: {
+		"de-DE": "Teilweise beglichen",
 		"en-US": "Returned partially",
 		"es-ES": "Devuelto parcialmente",
 		"fa-IR": "تا اندازه ای بازپرداخت شده است",
@@ -662,6 +675,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Возврашено частично",
 	},
 	COMMAND_TEXT_REMINDER_NOT_RETURNED: {
+		"de-DE": "Nicht beglichen",
 		"en-US": "Not returned",
 		"es-ES": "No devuelto",
 		"fa-IR": "بازپرداخت نشده است",
@@ -669,6 +683,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Не возвращено",
 	},
 	MESSAGE_TEXT_YOU_REPLIED: {
+		"de-DE": "Beantwortet: %v",
 		"en-US": "You've replied: %v",
 		"es-ES": "Has respondido: %v",
 		"fa-IR": "شما پاسخ داده اید: %v",
@@ -676,6 +691,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы ответили: %v",
 	},
 	"book": {
+		"de-DE": "buchen",
 		"en-US": "book",
 		"es-ES": "libro",
 		"fa-IR": "کتاب",
@@ -683,6 +699,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "книгу",
 	},
 	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: {
+		"de-DE": "\xF0\x9F\x98\xB3 Entschuldigung, aber ich habe deinen Befehl nicht verstanden. Vielleicht bin ich ein bisschen dumm...\n\nDu kannst zurück ins /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 		"es-ES": "\xF0\x9F\x98\xB3 Disculpa, no he entendido tu orden. Tal vez soy un poco tonto...\n\nPuedes volver al Menu principal /menu",
 		"fa-IR": "\xF0\x9F\x98\xB3 ببخشید، من دستور شما را نفهمیدم. احتمالا کمی کند ذهن هستم...\n\nشما میتوانید به /منو ی اصلی بازگردید",
@@ -690,6 +707,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 	},
 	"COMMAND_TEXT_LANGUAGE": {
+		"de-DE": "/Sprache",
 		"en-US": "App /language",
 		"es-ES": "App /Idioma",
 		"fa-IR": "App /زبان",
@@ -697,6 +715,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Язык приложения",
 	},
 	"/start": {
+		"de-DE": "/start",
 		"en-US": "/start",
 		"es-ES": "/comienzo",
 		"fa-IR": "/شروع",
@@ -704,6 +723,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/старт",
 	},
 	COMMAND_TEXT_DUE_RETURNS: {
+		"de-DE": "Fällige Schulden",
 		"en-US": "Due returns",
 		"es-ES": "Devoluciones",
 		"fa-IR": "بازپرداخت بدهی",
@@ -711,20 +731,23 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Предстоящие платежи",
 	},
 	MESSAGE_TEXT_OVERDUE_RETURNS_HEADER: {
+		"de-DE": "<b>Überfällige Schulden:</b>",
 		"en-US": "<b>Overdue debts:</b>",
-		"es-ES": "</b>Deudas atrasadas:</b>",
+		"es-ES": "<b>Deudas atrasadas:</b>",
 		"fa-IR": "<b>بدهی های معوق:</b>",
 		"it-IT": "<b>Debiti in ritardo:</b>",
 		"ru-RU": "<b>Просроченные долги:</b>",
 	},
 	MESSAGE_TEXT_DUE_RETURNS_HEADER: {
+		"de-DE": "<b>Bald fällige Schulden:</b>",
 		"en-US": "<b>Closest debts to return:</b>",
-		"es-ES": "</b>Deudas más cercanos que pagar:</b>",
+		"es-ES": "<b>Deudas más cercanos que pagar:</b>",
 		"fa-IR": "<b>نزدیک ترین بدهی برای بازپرداخت:</b>",
 		"it-IT": "<b>Debiti in scadenza:</b>",
 		"ru-RU": "<b>Ближайшие долги к возрату:</b>",
 	},
 	MESSAGE_TEXT_DUE_RETURNS_ROW_BY_USER: {
+		"de-DE": "%v bekommt %v von dir, spätestens in %v",
 		"en-US": "%v expects %v from you in %v",
 		"es-ES": "%v espera %v que devuelvas en %v",
 		"it-IT": "%v aspetta %v da te entro il %v",
@@ -732,13 +755,15 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "%v ожидает от вас возврата %v через %v",
 	},
 	MESSAGE_TEXT_DUE_RETURNS_ROW_BY_COUNTERPARTY: {
-		"en-US": "You expect %v to retun %v to you in %v",
+		"de-DE": "%v gibt dir %v, spätestens in %v",
+		"en-US": "You expect %v to return %v to you in %v",
 		"es-ES": "Estas esperando de %v que devuelva %v a ti en %v",
 		"fa-IR": "شما انتظار دارید %v بازگرداند %v به شما در %v",
 		"it-IT": "Stai aspettando %v che ti dia %v entro il %v",
 		"ru-RU": "Вы ожидаете от %v возврата %v через %v",
 	},
 	MESSAGE_TEXT_DUE_RETURNS_EMPTY: {
+		"de-DE": "Du hast keine Schulden mit Fälligkeitsdatum.",
 		"en-US": "You have no debts with set due date.",
 		"es-ES": "No tienes deudas con la fecha señalada para devolver. ",
 		"fa-IR": "شما بدهی ای با ثبت سررسید ندارید.",
@@ -746,6 +771,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "У вас нет долгов с назначеным сроком к возврату.",
 	},
 	COMMAND_TEXT_GAVE: {
+		"de-DE": "/Verleihen",
 		"en-US": "/Gave",
 		"es-ES": "/Prestado_por_ti",
 		"fa-IR": "/قرض_دادن",
@@ -753,6 +779,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Дал",
 	},
 	COMMAND_TEXT_GOT: {
+		"de-DE": "/Anleihen",
 		"en-US": "/Got",
 		"es-ES": "/Prestado_a_ti",
 		"fa-IR": "/قرض_گرفتن",
@@ -760,6 +787,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Взял",
 	},
 	COMMAND_TEXT_RETURN: {
+		"de-DE": "/Beglichen",
 		"en-US": "/Returned",
 		"es-ES": "/Devuelto",
 		"fa-IR": "/بازگشت",
@@ -767,6 +795,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Вернул",
 	},
 	COMMAND_TEXT_BALANCE: {
+		"en-US": "/Ausstehend",
 		"en-US": "/Balance",
 		"es-ES": "/Balance",
 		"fa-IR": "/تراز",
@@ -774,6 +803,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Баланс",
 	},
 	COMMAND_TEXT_SETTING: {
+		"de-DE": "/Einstellungen",
 		"en-US": "/Settings",
 		"es-ES": "/Ajustes",
 		"fa-IR": "/تنظیمات",
@@ -781,6 +811,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Настройки",
 	},
 	COMMAND_TEXT_HIGH_FIVE: {
+		"de-DE": "Gib mir Fünf!",
 		"en-US": "High five!",
 		"es-ES": "¡Choca esos cinco!",
 		"fa-IR": "بزن قدش!",
@@ -788,6 +819,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Дать пять!",
 	},
 	COMMAND_TEXT_CHANGE_LANG: {
+		"de-DE": "/Sprache",
 		"en-US": "/Language",
 		"es-ES": "/Idioma",
 		"fa-IR": "/زبان",
@@ -795,6 +827,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Язык",
 	},
 	COMMAND_TEXT_HELP: {
+		"de-DE": "/Hilfe",
 		"en-US": "/Help",
 		"es-ES": "/Ayuda",
 		"fa-IR": "/کمک",
@@ -802,6 +835,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Помощь",
 	},
 	COMMAND_TEXT_HISTORY: {
+		"de-DE": "/Verlauf",
 		"en-US": "/History",
 		"es-ES": "/Cronología",
 		"fa-IR": "/پیشینه",
@@ -809,6 +843,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/История",
 	},
 	COMMAND_TEXT_CANCEL: {
+		"de-DE": "/Abbrechen",
 		"en-US": "/Cancel",
 		"es-ES": "/Cancelar",
 		"fa-IR": "/کنسل",
@@ -816,6 +851,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "/Отменить",
 	},
 	BUTTON_TEXT_CANCEL: {
+		"de-DE": "↩ Zurück",
 		"en-US": "↩ Cancel",
 		"es-ES": "↩ Cancelar",
 		"fa-IR": "↪ کنسل",
@@ -823,6 +859,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "↩ Отменить",
 	},
 	BUTTON_TEXT_MAIN_MENU: {
+		"de-DE": "↩ Hauptmenü",
 		"en-US": "↩ Main menu",
 		"es-ES": "↩Menú principal",
 		"ru-RU": "↩ Главное меню",
@@ -830,6 +867,7 @@ var TRANS = map[string]map[string]string{
 		//"it-IT": "↩ ", // TODO(IT)
 	},
 	COMMAND_TEXT_SETTINGS_PRIMARY_CURRENCY: {
+		"de-DE": "Hauptwährung",
 		"en-US": "Primary currency",
 		"es-ES": "Moneda principal",
 		"fa-IR": "واحد پول اولیه",
@@ -837,34 +875,39 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Основная валюта",
 	},
 	COMMAND_TEXT_NEW_GROUP: {
+		"de-DE": "Neue Gruppe",
 		"en-US": "New group",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+	//	"es-ES": "",
+	//	"fa-IR": "",
+	//	"it-IT": "",
 		"ru-RU": "Новая группа",
 	},
 	COMMAND_TEXT_INVITE_FIREND: {
+		"de-DE": "Freund einladen",
 		"en-US": "Invite friend",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+	//	"es-ES": "",
+	//	"fa-IR": "",
+	//	"it-IT": "",
 		"ru-RU": "Пригласить друга",
 	},
 	COMMAND_TEXT_INVITE_MEMBER: {
+		"de-DE": "Mitglied einladen",
 		"en-US": "Invite member",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+	//	"es-ES": "",
+	//	"fa-IR": "",
+	//	"it-IT": "",
 		"ru-RU": "Пригласить участника",
 	},
 	COMMAND_TEXT_NEW_BILL: {
+		"de-DE": "Neue Rechnung",
 		"en-US": "New bill",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+	//	"es-ES": "",
+	//	"fa-IR": "",
+	//	"it-IT": "",
 		"ru-RU": "Новый счёт",
 	},
 	COMMAND_TEXT_NEW_COUNTERPARTY: {
+		"de-DE": "neuer Kontakt",
 		"en-US": "Add new",
 		"es-ES": "Añadir",
 		"fa-IR": "اضافه کردن مورد جدید",
@@ -872,6 +915,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Добавить",
 	},
 	MESSAGE_TEXT_LOGIN_CODE: {
+		"de-DE": "Dein Code um dich an der App anzumelden: <b>%v</b>",
 		"en-US": "Your code for signing in to app: <b>%v</b>",
 		"es-ES": "Tu código para entrar en la app: <b>%v</b>",
 		"fa-IR": "کد شما برای ورود به برنامه: <b>%v</b>",
@@ -879,6 +923,11 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Ваш код для входа в приложение: <b>%v</b>",
 	},
 	MESSAGE_TEXT_ASK_NEW_COUNTERPARTY_NAME: {
+		"de-DE": `Bitte gib einen Namen für den neuen Kontakt ein:
+		Du kannst in eintippen oder aus deinem Adressbuch wählen (<i>mit dem "Büroklammer"-Symbol und dann Kontakt</i>).
+
+		<i>Send '.' to cancel</i>`,
+
 		"en-US": `Please enter a name for the new contact:
 		You can type manually or choose from your address book (<i>through "clip" icon</i>).
 
@@ -905,6 +954,7 @@ var TRANS = map[string]map[string]string{
 		<i>Отправьте '.' для отмены</i>`,
 	},
 	MESSAGE_TEXT_TRANSFER_IS_CREATING: {
+		"de-DE": "Transferiere...",
 		"en-US": "Creating transfer...",
 		"es-ES": "Estoy creando la nueva nota...",
 		"fa-IR": "ایجاد انتقال ...",
@@ -912,6 +962,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Создаю запись...",
 	},
 	COMMAND_TEXT_PLEASE_WAIT: {
+		"de-DE": "Bitte warten",
 		"en-US": "Please wait",
 		"es-ES": "Espera, por favor",
 		"fa-IR": "لطفا صبر کنید",
@@ -919,6 +970,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Пожалуйста подождите",
 	},
 	MESSAGE_TEXT_PLEASE_WAIT: {
+		"de-DE": "Bitte warten...",
 		"en-US": "Please wait...",
 		"es-ES": "Espera, por favor...",
 		"it-IT": "Aspetta per favore...",
@@ -926,6 +978,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Пожалуйста подождите...",
 	},
 	MESAGE_TEXT_CREATING_BILL: {
+		"de-DE": "Rechnung erstellen",
 		"en-US": "Creating bill",
 		"es-ES": "",
 		"it-IT": "",
@@ -933,6 +986,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Создаётся счёт",
 	},
 	MESSAGE_TEXT_ASK_BILL_CURRENCY: {
+		"de-de": "In welcher Währung ist die Rechnung?",
 		"en-US": "What currency this bill in?",
 		"es-ES": "",
 		"it-IT": "",
@@ -940,6 +994,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "В какой валюте этот счёт?",
 	},
 	MESSAGE_TEXT_ASK_BILL_PAYER: {
+		"de-de": "Wer bezahlt die Rechnung?",
 		"en-US": "Who pays for the bill?",
 		"es-ES": "",
 		"it-IT": "",
@@ -947,6 +1002,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Кто платит по счёту?",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: {
+		"de-de": "%v muss dem zustimmen",
 		"en-US": "Acknowledgement is expected from %v",
 		"es-ES": "Se espera la confirmación de %v",
 		"it-IT": "Conferma in attesa da %v",
@@ -954,6 +1010,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Подтверждение ожидается от %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_YOU: {
+		"de-de": "Du hast dem zugestimmt.",
 		"en-US": "You've accepted this transaction.",
 		"es-ES": "Has confirmado esta transacción",
 		"fa-IR": ".شما این تراکنش را قبول کردید ",
@@ -961,9 +1018,10 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Вы подтвердили эту транзакцию.",
 	},
 	MESSAGE_TEXT_TRANSFER_DECLINED_BY_YOU: {
+		"de-DE": `Du hast dieser Anfrage nicht zugestimmt.
+		Der Vorgang wird zurückgestellt und die Gegenpartei benachrichtigt.`,
 		"en-US": `You do not agree with this transaction.
-
-The transaction will not be deleted but the creator will be notified.`,
+                The transaction will not be deleted but the creator will be notified.`,
 		"es-ES": `No estas de acuerdo con la transacción.
 		La transacción NO será cancelada, pero el creador será notificado.`,
 		"fa-IR": ".شما این تراکنش را رد کردید", //TODO(FA)
@@ -973,6 +1031,7 @@ The transaction will not be deleted but the creator will be notified.`,
 Сама транзакция НЕ будет отменена, но создатель будет оповещён.`,
 	},
 	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_COUNTERPARTY: {
+		"de-DE": "%v hat deiner Anfrage <b>zugestimmt</b>:",
 		"en-US": "%v accepted your transaction:",
 		"es-ES": "%v ha aceptado tu transacción",
 		"fa-IR": ": تراکنش شمارا تایید کرد %v ",
@@ -980,6 +1039,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "%v подтвердил(a) вашу транзакцию:",
 	},
 	MESSAGE_TEXT_TRANSFER_DECLINED_BY_COUNTERPARTY: {
+		"de-DE": "%v hat deine Anfrage <b>abgelehnt</b>. Wenn die Sache besprochen ist, kann die Anfrage erneut gesendet werden.", 
 		"en-US": "%v did not agree with your transaction. The transaction is not canceled but you may want to discuss it.", //TODO(FA)
 		"es-ES": "%v ha confirmado tu transacción.  La transacción no ha sido cancelada, igual mejor comentarlo.",          //TODO(ES)
 		"fa-IR": "تراکنش شما را رد کرد  %v declined your transaction.",
@@ -987,6 +1047,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "%v <b>НЕ</b> подтвердил(a) вашу транзакцию. Транзакция не отменена, но возможно вам стоит это обсудить.",
 	},
 	COMMAND_TEXT_SUBSCRIBE_TO_APP: {
+		"de-DE": "Ich will die App!",
 		"en-US": "I want the app!",
 		"es-ES": "¡Quiero la aplicación!",
 		"fa-IR": "!من برنامه را می خواهم",
@@ -994,6 +1055,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Хочу приложение!",
 	},
 	COMMAND_TEXT_I_AM_FINE_WITH_BOT: {
+		"en-US": "Mir reicht der Bot!",
 		"en-US": "I'm fine with just the bot!",
 		"es-ES": "¡Estoy satisfecho con este bot!",
 		"fa-IR": "! ربات به تنهایی برای من کافی است",
@@ -1001,6 +1063,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Меня вполне устраивает бот!",
 	},
 	MESSAGE_TEXT_SUBSCRIBED_TO_APP: {
+		"de-DE": "Du wirst darüber informiert, wenn die App zum Download zur Verfügung steht.",
 		"en-US": "We'll let you know once the app is available for download.",
 		"es-ES": "Te avisamos cuando la aplicación esté disponible para descargarla",
 		"fa-IR": ".وقتی برنامه برای دانلود دردسترس بود به شما اطلاع می دهیم",
@@ -1008,6 +1071,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Мы сообщим вам когда приложение будет доступно для загруки.",
 	},
 	MESSAGE_TEXT_NOT_INTERESTED_IN_APP: {
+		"de-DE": "Gut, wir sind froh, dass dir der Bot reicht und wir uns mit der App nicht beeilen müssen.",
 		"en-US": "Well, we are happy our bot is good enough and there is no need to download an app.",
 		"es-ES": "Bueno, estamos contentos de que te haya gustado nuestro bot y no hace falta descargar ninguna otra aplicación",
 		"fa-IR": ".خب، ما خوشحال هستیم که ربات برای شما کافی است و نیازی به دانلود برنامه نیست",
@@ -1015,6 +1079,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Что ж, мы рады что вас устраивает наш бот и нет необходимости загружать приложение.",
 	},
 	MESSAGE_TEXT_YOUR_AD_COULD_BE_HERE: {
+		"de-DE": "Hier könnte <a href>ihre Werbung</a> stehen",
 		"en-US": "You can <a href>advertise here</a>",
 		"es-ES": "Aquí se puede <a href>publicar un anuncio",
 		"fa-IR": "شما میتوانید <a href>در اینجا تبلیغ کنید</a>",
@@ -1022,6 +1087,10 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Здесь можно <a href>разместить рекламу</a>",
 	},
 	MESSAGE_TEXT_YOUR_ABOUT_ADS: {
+
+		"de-DE": `🤖: Ich hin ein guter Roboter - klar. Aber manchmal kommt es besser eine eigene App für etwas zu haben. Es ist noch nicht ganz fertig, aber falls du schonmal reinschauen willst: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
+
+	Möchtest du daran erinnert werden, wenn die App rauskommt?`,
 
 		"en-US": `🤖: I'm a good robot, for sure.But sometimes it is more convinient to use a nice specialized app.It's not ready for public use yet but you can check how it is going to looks: <a href = "https://debtstracker.io/en/#utm_source=telegram&utm_campaign=ads_screen">https: //debtstracker.io/en/</a>
 
@@ -1045,6 +1114,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		Хотите получить оповещение когда оно выйдет?`,
 	},
 	MESSAGE_TEXT_INVALID_FLOAT: {
+		"de-DE": "Entschuldigung, aber du kannst nur Zahlen für Menge oder Wert wählen (<i>mit zwei Nachkommastellen</i>).",
 		"en-US": "Sorry, but you can use just numbers as amount/quantity (<i>with up to 2 digits after point</i>).",
 		"es-ES": "Lo siento, solo puedes utilizar numeros como importe/cantidad (<i>con un maximo de 2 dígitos despues de la coma</i>).",
 		"fa-IR": "ببخشید، اما شما تنها میتوانید از اعداد بعنوان مقادیر / اندازه ها استفاده کنید (<i>با دو رقم اعشار</i>).",
@@ -1052,6 +1122,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Извините, но вы можете использовать только числа в качестве суммы/количества (<i>до 2х знаков после запятой</i>).",
 	},
 	MESSAGE_TEXT_ASK_LENDING_TYPE: {
+		"de-DE": "<b>Was hast du jemanden geliehen?</b>",
 		"en-US": "<b>What did you lend to someone?</b>",
 		"es-ES": "<b>¿Qué has prestado?</b>",
 		"fa-IR": "<b> چه چیزی به کسی قرض داده اید؟</b>",
@@ -1060,6 +1131,10 @@ The transaction will not be deleted but the creator will be notified.`,
 	},
 	MESSAGE_TEXT_CHOOSE_CURRENCY: {
 
+		"de-DE": `Bitte wähle <a>eine Währung aus der Liste</a>.
+
+	Falls die Standardoptionen nicht reichen, sende mir einen Text. Zum Beispiel: <i>Äpfel</>".`,
+	
 		"en-US": `Please choose from the options below or <a>select a currency from the list</a>.
 
 	If standard options are not enough simply send a text.For example: "<i>apple</i>".`,
@@ -1081,6 +1156,7 @@ The transaction will not be deleted but the creator will be notified.`,
 	Если ни один из стандартных вариантов не подходит просто напишите текстом.Например: "<i>яблоко</i>".`,
 	},
 	MESSAGE_TEXT_ASK_LENDING_AMOUNT: {
+		"de-DE": "Wie viel <b>%v</b> hast du verliehen?\n(<i>Sende '.' zum Abbrechen</i>)",
 		"en-US": "How much <b>%v</b> did you lend?\n(<i>send '.' to cancel</i>)",
 		"es-ES": "Cuanto(s) <b>%v</b> has prestado\n(<i>enviar '.' para cancelar</i>)",
 		"fa-IR": "چه مقدار <b>%v</b> قرض داده اید؟\n(<i>ارسال '.' برای کنسل کردن</i>)",
@@ -1088,6 +1164,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Сколько <b>%v</b> вы дали в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
 	},
 	MESSAGE_TEXT_ASK_LENDING_COUNTERPARTY: {
+		"de-DE": "Wer hat sich <b>%v</b> von dir geliehen?\n(<i>Sende '.' zum Abbrechen</i>)",
 		"en-US": "Who borrowed from you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
 		"es-ES": "A quién has prestado <b>%v</b>?\n(<i>enviar '.' para cancelar</i>)",
 		"fa-IR": "چه کسی از شما <b>%v</b> قرض گرفته است؟\n(<i>ارسال '.' برای کنسل کردن</i>)",
@@ -1095,6 +1172,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Кому вы дали в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_TYPE: {
+		"de-DE": "Was hast du dir geliehen?",
 		"en-US": "What did you lend?",
 		"es-ES": "¿Qué te han prestado?",
 		"fa-IR": "چه چیزی قرض گرفته اید؟",
@@ -1102,6 +1180,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Что вы взяли в долг?",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_AMOUNT: {
+		"de-DE": "Wie viel <b>%v</b> hast du geliehen?\n(<i>Sende '.' zum Abbrechen</i>)",
 		"ru-RU": "Сколько <b>%v</b> вы взяли в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"es-ES": "¿Cuánto <b>%v</b> has prestado?\n(<i>enviar '.' para cancelar</i>)",
 		"en-US": "How much <b>%v</b> did you borrow?\n(<i>send '.' to cancel</i>)",
@@ -1109,6 +1188,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"it-IT": "Quanti <b>%v</b> ti hanno prestato?\n(<i>Digita '.' ed invia per annullare</i>)",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_COUNTERPARTY: {
+		"de-DE": "Wer hat dir <b>%v</b> geliehen?\n(<i>Sende '.' zum Abbrechen</i>)",
 		"en-US": "Who lended to you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
 		"es-ES": "¿Quién te ha prestado <b>%v</b>?\n(<i>enviar '.' para cancelar</i>)",
 		"fa-IR": "چه کسی به شما <b>%v</b> قرض داده است؟ \n(<i>ارسال '.' برای کنسل کردن</i>)",
@@ -1116,6 +1196,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "У кого вы взяли в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: {
+		"de-DE": "Soll eine <a receipt>Quittung</a> an <a counterparty>%v</a> gesendet werden?",
 		"en-US": "Should we send a <a receipt>receipt</a> to <a counterparty>%v</a>?",
 		"es-ES": "¿Debo enviar <a receipt> el recibo</a> a <a counterparty>%v</a>?",
 		"fa-IR": "آیا لازم است ماارسال کنیم یک <a receipt>رسید</a> به <a counterparty>%v</a>?",
@@ -1123,6 +1204,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT_TO_YOURSELF_BY_SMS: {
+		"de-DE": "Entschuldigung, aber eine Quittung selber per SMS zu schicken ist im Moment noch nicht möglich. Aber dafür geht es mit %v.",
 		"en-US": "Sorry, sending a receipt to yourself by SMS is not available at the moment. You can send it to %v though.",
 		"es-ES": "Lo siento, el envio del recibo a ti mismo a través de SMS en este momento está desactivado. Pero lo puedes enviar a %v.",
 		"fa-IR": "متاسفم، درحال حاضرارسال یک رسید به خودتان بوسیله پیام کوتاه امکان پذیر نیست. شما میتوانید آنرا ارسال کنید به  %v از طریق.",
@@ -1130,6 +1212,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "К сожалению отправка квитанцию себе по СМС в данный момент отключена. Но вы можете отправить её для %v.",
 	},
 	MESSAGE_TEXT_RECEIPT_IS_SENDING_BY_TELEGRAM: {
+		"de-DE": "Die Quittung wird %v per Telegram geschickt...",
 		"en-US": "We are sending receipt to %v by Telegram...",
 		"es-ES": "El recibo está enviando a%v a través de Telegram…",
 		"fa-IR": "مادرحال ارسال رسید به %v از طریق تلگرام هستیم...",
@@ -1137,6 +1220,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Отправляем для %v извещение через Telegram...",
 	},
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_FROM_USER: {
+		"de-DE": "{{.Counterparty}} schuldet dir {{.Amount}} .",
 		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
 		"es-ES": "{{.Counterparty}} prestado por tí {{.Amount}}.",
 		"fa-IR": "{{.Counterparty}} از شما {{.Amount}} قرض گرفته است .",
@@ -1145,6 +1229,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "{{.Counterparty}} взял(а) в долг {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_TO_USER: {
+		"de-DE": "{{.Counterparty}} hat dir {{.Amount}} geliehen.",
 		"en-US": "{{.Counterparty}} lended to you {{.Amount}}.",
 		"es-ES": "{{.Counterparty}} prestado a mí {{.Amount}}.",
 		"fa-IR": "{{.Counterparty}} به شما {{.Amount}} قرض داده است .",
@@ -1152,6 +1237,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "{{.Counterparty}} дал(а) вам в долг {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_RETURN_FROM_USER: {
+		"de-DE": "Du hast {{.Amount}} an {{.Counterparty}} beglichen.",
 		"en-US": "You returned {{.Amount}} to {{.Counterparty}}.",
 		"es-ES": "Has devuelto {{.Amount}} a {{.Counterparty}}.",
 		"fa-IR": "شما بازگردانده اید {{.Amount}} به {{.Counterparty}}.",
@@ -1159,6 +1245,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Вы вернули долг - {{.Counterparty}} получил(а) {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_RETURN_TO_USER: {
+		"de-DE": "{{.Counterparty}} hat dir {{.Amount}} beglichen.",
 		"en-US": "{{.Counterparty}} returned to you {{.Amount}}.",
 		"es-ES": "{{.Counterparty}} te ha devuelto {{.Amount}}.",
 		"fa-IR": "{{.Counterparty}} به شما بازپرداخت کرده است {{.Amount}}.",
@@ -1166,6 +1253,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "{{.Counterparty}} вернул вам {{.Amount}}.",
 	},
 	MESSAGE_TEXT_TRANSFER_ALREADY_FULLY_RETURNED: {
+		"de-DE": "Diese Schuld ist bereits vollständig beglichen.",
 		"en-US": "This debts is already fully returned.",
 		"es-ES": "Esta deuda se ha devuelta totalmente.",
 		//"it-IT": "", TODO(IT)
@@ -1173,6 +1261,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Этот долг уже полностью возвращён.",
 	},
 	MESSAGE_TEXT_RECEIPT_ALREADY_RETURNED_AMOUNT: {
+		"de-DE": "Bereits beglichen: {{.Amount}}.",
 		"en-US": "Already returned: {{.Amount}}.",
 		"es-ES": "Se ha devuelto ya: {{.Amount}}.",
 		//"fa-IR": "", TODO(FA)
@@ -1180,6 +1269,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Уже возвращено: {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_OUTSTANDING_AMOUNT: {
+		"de-DE": "Ausstehend: {{.Amount}}.",
 		"en-US": "Outstanding: {{.Amount}}.",
 		"es-ES": "Falta devolver: {{.Amount}}.",
 		//"fa-IR": "", TODO(FA)
@@ -1187,6 +1277,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Осталось вернуть: {{.Amount}}.",
 	},
 	MESSAGE_TEXT_DUE_ON: {
+		"en-US": "<b>Fällig am</b>: %v",
 		"en-US": "<b>Return till</b>: %v",
 		"es-ES": "<b>Devolver hasta</b>: %v",
 		"fa-IR": "<b>بازگردانده شود تا</b>: %v",
@@ -1194,6 +1285,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "<b>Вернуть до</b>: %v",
 	},
 	MESSAGE_TEXT_NOTE: {
+		"de-DE": "Notiz",
 		"en-US": "Note",
 		"es-ES": "Nota",
 		"fa-IR": "نکته",
@@ -1201,6 +1293,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Заметка",
 	},
 	MESSAGE_TEXT_COMMENT: {
+		"de-DE": "Bemerkung",
 		"en-US": "Comment",
 		"es-ES": "Comentario",
 		"fa-IR": "شرح",
@@ -1208,6 +1301,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Комментарий",
 	},
 	MESSAGE_TEXT_LOGIN_TO_WEB_APP: {
+		"de-DE": `<a>Hier klicken</a>, um sich an der Wep-App anzumelden.`,
 		"en-US": `Click to <a>sign in</a> to web-app.`,
 		"es-ES": `Haz click para <a>acceder</a>la web-app.`,
 		"it-IT": "Fai clic per <a>accedi</a> per app web.",
@@ -1215,6 +1309,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": `Перейдите по <a>ссылке</a> чтобы запустить web-приложение.`,
 	},
 	MESSAGE_TEXT_DO_YOU_LIKE_OUR_BOT: {
+		"de-DE": "Magst du @{{bot}}?",
 		"en-US": "Do you like @{{bot}}?",
 		"es-ES": "¿Te gusta @{{bot}}?",
 		"fa-IR": "آیا می پسندید @{{bot}}?",
@@ -1222,6 +1317,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Вам нравится @{{bot}}?",
 	},
 	COMMAND_TEXT_YES_EXCLAMATION: {
+		"de-DE": "%v Ja!",
 		"en-US": "%v Yes!",
 		"es-ES": "%v ¡Sí!",
 		"fa-IR": "بله! %v",
@@ -1229,20 +1325,23 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "%v Да!",
 	},
 	COMMAND_TEXT_YES: {
+		"de-DE": "%v Ja",
 		"en-US": "%v Yes",
-		"es-ES": "%v ¡Sí!",
+		"es-ES": "%v Sí",
 		"it-IT": "%v Si",
 		"fa-IR": "بله %v",
 		"ru-RU": "%v Да",
 	},
 	COMMAND_TEXT_NO: {
+		"de-DE": "%v Nein",
 		"en-US": "%v No",
-		"es-ES": "%v ¡No!",
+		"es-ES": "%v No",
 		"it-IT": "%v No",
 		"fa-IR": "خیر %v",
 		"ru-RU": "%v Нет",
 	},
 	COMMAND_TEXT_NOT_TOO_MUCH: {
+		"de-DE": "%v Nicht so sehr",
 		"en-US": "%v Not too much",
 		"es-ES": "%vNo mucho",
 		"it-IT": "%v Non troppo",
@@ -1250,6 +1349,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "%v Не очень",
 	},
 	COMMAND_TEXT_FEEDBACK: {
+		"de-DE": "/Bewertung",
 		"en-US": "/Feedback",
 		"es-ES": "/Respuesta",
 		"it-IT": "/Risposta",
@@ -1257,6 +1357,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "/Отзыв",
 	},
 	COMMAND_TEXT_WRITE_FEEDBACK: {
+		"de-DE": "%v Bewertung schreiben",
 		"en-US": "%v Write feedback",
 		"es-ES": "%v Escribir un comentario",
 		"it-IT": "%v Scrivi commenti",
@@ -1264,6 +1365,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "%v Написать отзыв",
 	},
 	MESSAGE_TEXT_THANKS: {
+		"de-DE": "🙏 Danke!",
 		"en-US": "🙏 Thanks!",
 		"es-ES": "🙏 ¡Gracias!",
 		"fa-IR": "🙏 تشکر!",
@@ -1271,11 +1373,13 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "🙏 Спасибо!",
 	},
 	MESSGE_TEXT_DEBT_ERROR_FIXED_START_OVER: {
+		"de-DE": "🙏 Entschuldigung, da gab es einen Fehler. Er wird bald behoben, aber du musst nochmal neu anfangen.",
 		"en-US": "🙏 Sorry, there was an error. It has been fixed but please re-enter your data for this debt.",
 		"es-ES": "🙏 Lo siento, ha salido un error. Lo ha arreglado, pero para esta deuda hay que introducir los datos de nuevo. ",
 		"ru-RU": "🙏 Извините, у нас была ошибка. Она была исправлено, но потребуется внести данные для этого долга заново.",
 	},
 	MESSAGE_TEXT_PLEASE_SEND_TEXT: {
+		"de-DE": "Bitte senden sie einen Text.",
 		"en-US": "Please send text.",
 		"es-ES": "Por favor, envia el texto.",
 		"fa-IR": "لطفاً متن ارسال کنید.",
@@ -1284,6 +1388,8 @@ The transaction will not be deleted but the creator will be notified.`,
 	},
 	MESSAGE_TEXT_CAN_YOU_RATE_AT_STOREBOT: {
 
+		"de-DE": `🤖 Kannst du mich im Store Bot hoch bewerten und eine gute Bewertung schreiben?
+		‎Es wird dich weniger als eine Minute kosten! 😇`,
 		"en-US": `🤖 Can you rate it high and write a good review in bots catalog Store Bot?
 		‎It will take less than a minute of your time! 😇`,
 
@@ -1301,6 +1407,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		‎Это займет меньше минуты вашего времени! 😇`,
 	},
 	MESSAGE_TEXT_ASK_TO_WRITE_FEEDBACK_WITHIN_MESSENGER: {
+		"de-DE": "‎Schreibe (auf Englisch oder Russisch) uns, was man am Bot besser machen kann:",
 		"en-US": "‎Share your thoughts (in English or Russian) about what could be done to make the bot better:",
 		"es-ES": "‎Comparte tus pensamientos (en Inglés o Ruso) sobre qué podemos hacer para que el bot sea mejor:",
 		"fa-IR": "نظرات خود را (به انگلیسی و روسی ) در مورد اینکه چه کاری می توان انجام داد تا این ربات بهتر شود، با ما به اشتراک بگذارید:",
@@ -1308,6 +1415,17 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Поделитесь вашими мыслями (на русском или английском) о том, что нужно сделать, чтобы бот стал лучше:",
 	},
 	MESSAGE_TEXT_HOW_TO_RATE_AT_STOREBOT: {
+
+		"de-DE": `<b>Wie man bewertet - in 3 einfachen Schritten:</b>
+
+	1. Klick auf diesen Link, um eine Bewertung abzugeben:
+	https://t.me/storebot?start={{bot}}
+
+	‎2. Wähle "⭐️⭐️⭐️⭐️⭐️" 
+
+	‎3. Schreib etwas Nettes auf Englisch oder wähle "Skip this step"
+
+	Wirklich vielen Dank! Dank deiner Bewertung werden vielleicht mehr Leute auf diesen Bot aufmerksam. Das ist gut für die Motivation der Entwickler dieses Bots! 😎`,
 
 		"en-US": `<b>How to rate in 3 simple steps:</b>
 
@@ -1365,6 +1483,7 @@ The transaction will not be deleted but the creator will be notified.`,
 	Спасибо вам большое! Благодаря этому о боте узнает больше людей — это служит дополнительной мотивацией для разработчиков! 😎`,
 	},
 	MESSAGE_TEXT_ASK_FOR_FEEDBAСK: {
+		"de-DE": "Über ein kleines Feedback wie der Bot so ist, würden wir uns freuen. Es dauert nur ein paar Sekunden.",
 		"en-US": "We would appreciate if tell us how we doing. It takes just few seconds.",
 		"es-ES": "Te agredecemos si valoras el funccionamiento de nuestro applicación. Te costará solo unos segundos.",
 		"fa-IR": "سپاسگزار خواهیم بود اگر به ما بگویید کارمان چطور بوده است. این تنها چند ثانیه زمان میبرد.",
@@ -1372,6 +1491,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
 	},
 	COMMAND_TEXT_GIVE_FEEDBACK: {
+		"de-DE": "Bewerte diesen Bot",
 		"en-US": "Rate this bot",
 		"es-ES": "Valora a bot",
 		"fa-IR": "به این ربات امتیاز بدهید",
@@ -1379,6 +1499,7 @@ The transaction will not be deleted but the creator will be notified.`,
 		"ru-RU": "Оценить приложение",
 	},
 	COMMAND_TEXT_OPEN_STOREBOT_FOR_FEEDBACK: {
+		"en-US": "Mache eine Bewertung auf @Storebot",
 		"en-US": "Leave rating at @Storebot",
 		"es-ES": "Valorar en @Storebot",
 		"fa-IR": "امتیاز خود را اینجا وارد کنید @Storebot",
@@ -1393,6 +1514,13 @@ The transaction will not be deleted but the creator will be notified.`,
 	Так же будем признательны если вы предложите любые улучшения.
 	`,
 		/*------------------------------------------------------------*/
+		"de-DE": `Okay, vielleicht werden wir wann anders bewertet.
+
+	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+	Ansonsten freuen wir uns immer zu hören, was man besser machen kann.
+	`,
+
 		"en-US": `OK, maybe you can rate us another time.
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
@@ -1431,6 +1559,12 @@ The transaction will not be deleted but the creator will be notified.`,
 	Так же будем признательны если вы <a suggest-idea>предложите улучшения</a>.
 	`,
 		/*------------------------------------------------------------*/
+		"de-DE": `Danke, wir arbeiten hart dran!
+
+	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
+
+	Wir freuen uns auch immer über <a suggest-idea>neue Ideen</a>.
+	`,
 		"en-US": `Thanks, we worked hard!
 
 	{{MESSAGE_TEXT_YOU_CAN_HELP_BY}}
@@ -1470,6 +1604,17 @@ The transaction will not be deleted but the creator will be notified.`,
 	Например в <a share-vk>ВКонтакте</a>, <a share-fb>Facebook</a> или <a share-twitter>Twitter</a>.
 
 * Поддержите дальнейшую разработку - <a href ="https://goo.gl/Qhh0yL">€2 через PayPal</a>
+`,
+		/*------------------------------------------------------------*/
+		"de-DE": `
+Es gibt viele Wege uns zu helfen:
+
+* Gib uns 5⭐ im <a storebot>Verzeichnis der Bots</a>.
+
+* Erzähl am besten all deinen Freunde davon.
+Du könntest es auf <a share-fb>Facebook</a> posten oder auf <a share-twitter>Twitter</a> twittern.
+
+* Ansonsten auch gerne eine kleine Spende - <a href = "https://goo.gl/Qhh0yL">€2 via PayPal</a> (<i>about $2.2</i>)
 `,
 		/*------------------------------------------------------------*/
 		"en-US": `
@@ -1518,6 +1663,7 @@ Por ejemplo <a share-fb>Facebook</a> o <a share-twitter>Twitter</a>.
 		`,
 	},
 	MESSAGE_TEXT_COUNTERPARTY_HAS_EMPTY_BALANCE: {
+		"de-DE": `Du bist quitt mit %v`,
 		"en-US": `Balance is empty for %v`,
 		"es-ES": `El balance es cero para %v`,
 		"fa-IR": `تراز خالی است برای %v`,
@@ -1526,6 +1672,7 @@ Por ejemplo <a share-fb>Facebook</a> o <a share-twitter>Twitter</a>.
 	},
 	MESSAGE_TEXT_ASK_TO_TRANSLATE: {
 		"ru-RU": `Хотите чтобы наш бот разговаривал на другом языке? Вы можете <a>помочь с переводом</a>.`,
+		"de-DE": `Möchtest du den Bot in einer anderen Sprache? Du kannst beim <a>Übersetzen helfen</a>.`,
 		"en-US": `Do you want our bot to talk in other language? You can <a>help with translation</a>.`,
 		"es-ES": `¿Te gustaría que nuestro bot hablara en otro idioma? Puedes <a>ayudar con traducción</a>.`,
 
@@ -1537,6 +1684,10 @@ Por ejemplo <a share-fb>Facebook</a> o <a share-twitter>Twitter</a>.
 		"ru-RU": `Чтож, мы очень старались. Ваша оценка будет передана разработчикам.
 
 Может быть вы <a submit-bug>сообщите нам что не работает</a> или подскажите <a suggest-idea>как можно улучшить</a>?`,
+		/*------------------------------------------------------------*/
+		"de-DE": `Gut, wir geben uns Mühe. Deine Rückmeldung wird an die Entwickler weitergeleitet.
+
+Vielleicht willst du <a submit-bug>einen Fehler melden</a> oder <a suggest-idea>eine Verbesserung vorschlagen</a>?`,
 		/*------------------------------------------------------------*/
 		"en-US": `Well, we worked hard. You feedback will be passed to developers.
 
@@ -1556,6 +1707,7 @@ Quizás puedas <a submit-bug>informarnos de algún problema</a> o <a suggest-ide
 Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-idea>suggerire come possiamo migliorare</a>?`,
 	},
 	MESSAGE_TEXT_ON_FEEDBACK_NEGATIVE: {
+		"de-DE": `Das tut uns sehr leid. Vielleicht willst du uns <a submit-bug>einen Fehler melden</a> oder <a suggest-idea>eine Verbesserung vorschlagen</a>?`,
 		"en-US": `We are very sorry. Maybe you can <a submit-bug>let us know what is wrong</a> or <a suggest-idea>suggest how we can improve</a>?`,
 		/*------------------------------------------------------------*/
 		"es-ES": `Lo sentimos mucho. Igual podrías <a submit-bug>decirnos qué no funcciona bien</a> o <a suggest-idea>proponernos cómo podemos mejorarlo</a>?`,
@@ -1568,6 +1720,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		/*------------------------------------------------------------*/
 	},
 	COMMAND_TEXT_ASK_FOR_FEEDBACK: {
+		"de-DE": "Bitte bewerte unsere App",
 		"en-US": "Please rate our app",
 		"es-ES": "Por favor valora nuestro app",
 		"fa-IR": "لطفاً به برنامه ما امتیاز دهید",
@@ -1575,6 +1728,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Оцените наше приложение?",
 	},
 	COMMAND_TEXT_FEEDBACK_POSITIVE: {
+		"de-DE": "Ja, es ist eine tolle App!",
 		"en-US": "Yes, it's a great app!",
 		"es-ES": "¡Sí, es una app fantástica!",
 		"fa-IR": "بله، این برنامه عالی است",
@@ -1582,6 +1736,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Да, отличное приложение!",
 	},
 	COMMAND_TEXT_FEEDBACK_NEUTRAL: {
+		"de-DE": "Nicht schlecht, aber könnte besser sein",
 		"en-US": "Not bad but can be better.",
 		"es-ES": "No está mal, pero podría ser mejor.",
 		"fa-IR": "بد نیست ولی می تواند بهتر باشد.",
@@ -1589,6 +1744,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Неплохо, но можно лучше.",
 	},
 	COMMAND_TEXT_FEEDBACK_NEGATIVE: {
+		"de-DE": "Ich mag sie nicht",
 		"en-US": "Don't like it",
 		"es-ES": "No me gusta",
 		"fa-IR": "از این برنامه را نمی پسندم",
@@ -1596,6 +1752,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Не нравится",
 	},
 	COMMAND_TEXT_FEEDBACK_NOT_READY: {
+		"de-DE": "Ich bin mir noch unsicher",
 		"en-US": "Not decided yet",
 		"es-ES": "Estoy aún indeciso",
 		"fa-IR": "هنوز تصمیم نگرفته ام.",
@@ -1603,6 +1760,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Пока не понятно",
 	},
 	MESSAGE_TEXT_SETTINGS: {
+		"de-DE": "Was willst du ändern?",
 		"en-US": "What do you want to adjust?",
 		"es-ES": "¿Qué te gustaría modificar?",
 		"fa-IR": "می خواهید چه چیزی را تنظیم کنید؟",
@@ -1610,6 +1768,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Что будем настраивать?",
 	},
 	MESSAGE_TEXT_NOT_IMPLEMENTED_YET: {
+		"de-DE": "Entschuldigung, diese Funktion ist noch nicht fertig programmiert.",
 		"en-US": "Sorry, this functionality is not implemented yet.",
 		"es-ES": "Lo sentimos, esta función no está activa aún.",
 		"fa-IR": "متاسفم، این عملکرد هنوز پیاده سازی نشده است.",
@@ -1617,6 +1776,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Извините, данный функционал ещё не реализован.",
 	},
 	MESSAGE_TEXT_ASK_INVITE_CHANNEL: {
+		"de-DE": "Worüber möchtest du eingeladen werden?",
 		"en-US": "How do you want to get an invite?",
 		"es-ES": "¿Comó prefieres recibir la invitación?",
 		"fa-IR": "می خواهید چگونه دعوت شوید؟",
@@ -1624,6 +1784,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Как вы хотите получить код приглашения?",
 	},
 	MESSAGE_TEXT_PLEASE_ENTER_INVITE_CODE: {
+		"de-DE": "Bitte gib den Bestätigungs-Code ein:",
 		"en-US": "Please enter an invite code:",
 		"es-ES": "Introduce el código de la invitación",
 		"fa-IR": "لطفاً یک کد دعوت وارد کنید:",
@@ -1631,6 +1792,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Пожалуйста введите код приглашения:",
 	},
 	MESSAGE_TEXT_USER_EMAIL_FOR_INVITE_RECEIVED: {
+		"de-DE": "Wir haben eine Nachricht an %v gesendet.\n\nBitte öffne die Nachricht und klick auf den Link, um deine Mail-Adresse zu bestätigen.",
 		"en-US": "We've sent a message to %v.\n\nPlease open the email and click a link to confirm your email address.",
 		"es-ES": "Hemos enviado un mensage a %v.\n\nPor favor, abre tu e-mail y haz click en el link para confirmar tu e-mail.",
 		"fa-IR": "ما یک پیام ارسال کردیم به %v.\n\nلطفاً ایمیل خود را باز کرده و روی لینک کلیک کنید تا آدرس ایمیل شما تایید شود.",
@@ -1638,6 +1800,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"ru-RU": "Мы отправили письмо на %v.\n\nПожалуйста откройте его и кликните на ссылку для подтверждения адреса.",
 	},
 	MESSAGE_TEXT_USER_EMAIL_FOR_INVITE_SENT_TELEGRAM: {
+		"de-DE": "Wenn Telegram öffnet, drücke auf <b>Start</b>.",
 		"en-US": "Once Telegram pop ups click the <b>Start</b> button.",
 		"es-ES": "Después de abrir Telegram aprieta el <b>Start</b> botón.",
 		"fa-IR": "وقتی تلگرام اجرا شد برروی دکمه  <b>شروع</b> کلیک کنید.",
