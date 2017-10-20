@@ -3160,7 +3160,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	},
 	MESSAGE_TEXT_INVITE_BY_SMS: {
 		"de-DE": "Bitte gib die Telefonnummer deines Freundes an oder teile einen Kontakt, wohin wir den Code schicken:",
-		"en-US": "Please enter number of yoru friend where we'll send an invite."
+		"en-US": "Please enter number of yoru friend where we'll send an invite.",
 		"es-ES": "Por favor, introduce el número del teléfono de tu amigo al cual enviaremos el código de la invitación.",
 		"fa-IR": "لطفا شماره دوستان را که می خواهید برای او کد دعوت بفرستیم از لیست مخاطبین به اشتراک گذاشته یا آن را وارد کنید.",
 		"it-IT": "Condividi il contatto o inserisci il numero di telefono del tuo amico al quale invieremo il codice invito.",
