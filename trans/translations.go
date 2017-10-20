@@ -2944,6 +2944,10 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"it-IT": "Passa alla modalita' privata per vedere i dettagli dei tuoi crediti/debiti.",
 		"ru-RU": "Переключитьсь на чат с ботом чтобы посмотреть квитанцию",
 	},
+	MESSAGE_TEXT_RECEIPT_ATTEMPT_TO_VIEW_OWN: {
+		"en-US": "An attempt to view own receipt.",
+		"ru-RU": "Попытка посмотреть свою собственную квитанцию.",
+	},
 	MESSAGE_TEXT_RECEIPT_VIEWED_BY_COUNTERPARTY: {
 		"en-US": "Receipt viewed",
 		"es-ES": "El recibo ha sido visto",
