@@ -1000,7 +1000,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Создаётся счёт",
 	},
 	MESSAGE_TEXT_ASK_BILL_CURRENCY: {
-		"de-de": "In welcher Währung ist die Rechnung?",
+		"de-DE": "In welcher Währung ist die Rechnung?",
 		"en-US": "What currency this bill in?",
 		"es-ES": "",
 		"it-IT": "",
@@ -1008,7 +1008,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "В какой валюте этот счёт?",
 	},
 	MESSAGE_TEXT_ASK_BILL_PAYER: {
-		"de-de": "Wer bezahlt die Rechnung?",
+		"de-DE": "Wer bezahlt die Rechnung?",
 		"en-US": "Who pays for the bill?",
 		"es-ES": "",
 		"it-IT": "",
@@ -1016,7 +1016,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Кто платит по счёту?",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: {
-		"de-de": "%v muss dem zustimmen",
+		"de-DE": "%v muss dem zustimmen",
 		"en-US": "Acknowledgement is expected from %v",
 		"es-ES": "Se espera la confirmación de %v",
 		"it-IT": "Conferma in attesa da %v",
@@ -1024,7 +1024,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Подтверждение ожидается от %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ACCEPTED_BY_YOU: {
-		"de-de": "Du hast dem zugestimmt.",
+		"de-DE": "Du hast dem zugestimmt.",
 		"en-US": "You've accepted this transaction.",
 		"es-ES": "Has confirmado esta transacción",
 		"fa-IR": ".شما این تراکنش را قبول کردید ",
@@ -3151,7 +3151,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"ru-RU": "Введите email вашего друга на который мы отправим код приглашения.",
 	},
 	MESSAGE_TEXT_INVITE_ASK_EMAIL_FOR_RECEIPT: {
-		"de-DE": "Bitte gib die eMail Adresse deines Freundes an, wohin wir die Quittung schicken:",
+		"de-DE": "Bitte gib die eMail Adresse deines Freundes (%v), wohin wir die Quittung schicken:", // TODO(DE) - verify
 		"en-US": "Please enter emaill address of your friend (%v) where we should send the receipt.",
 		"es-ES": "Introduce el e-maill de tu amigo (%v) al cual enviaremos el recibo.",
 		"fa-IR": "لطفا آدرس ایمیل دوست خود را وارد کنید (%v) تا ما از آن طریق کد دعوت را ارسال نماییم.",
@@ -3160,6 +3160,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	},
 	MESSAGE_TEXT_INVITE_BY_SMS: {
 		"de-DE": "Bitte gib die Telefonnummer deines Freundes an oder teile einen Kontakt, wohin wir den Code schicken:",
+		"en-US": "Please enter number of yoru friend where we'll send an invite."
 		"es-ES": "Por favor, introduce el número del teléfono de tu amigo al cual enviaremos el código de la invitación.",
 		"fa-IR": "لطفا شماره دوستان را که می خواهید برای او کد دعوت بفرستیم از لیست مخاطبین به اشتراک گذاشته یا آن را وارد کنید.",
 		"it-IT": "Condividi il contatto o inserisci il numero di telefono del tuo amico al quale invieremo il codice invito.",
@@ -3702,18 +3703,18 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	EMAIL_INVITE_HTML: {
 		"de-DE": `<p>Hey {{.ToName}}, </p>
 		
-<p>{{.FromName}} lädt dich ein <a href = "https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">die neue Schuldentracker App auszuprobieren</a>.</p>
+<p>{{.FromName}} lädt dich ein <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">die neue Schuldentracker App auszuprobieren</a>.</p>
 
 <p>Dein persönlicher Code lautet: <b>{{.InviteCode}}</b></p>`,
 		"en-US": `<p>Hi {{.ToName}}, </p>
 
-<p>{{.FromName}} is inviting you to try debts tracking app</a>.</p>
+<p>{{.FromName}} is inviting you to try <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">debts tracking app</a>.</p>
 
 <p>Your invitation code is: <b>{{.InviteCode}}</b></p>`,
 
 		"es-ES": `<p>Hola {{.ToName}}, </p>
 
-<p>{{.FromName}} te ha invitado a <a href = "https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">probar la app para controlar tus deudas</a>.</p>
+<p>{{.FromName}} te ha invitado a <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">probar la app para controlar tus deudas</a>.</p>
 
 <p>El código de tu invitación es: <b>{{.InviteCode}}</b></p>`,
 
