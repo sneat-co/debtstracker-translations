@@ -235,7 +235,7 @@ var TRANS = map[string]map[string]string{
 		"de-DE": `Sende mir das Datum, an welches du <b>erneut</b> erinnert werden möchtest, in der Form <i>DD.MM.YEAR</i>.
 <b>Zum Beispiel</b> für den 20. Januar 2017, schreibe:
     <i>20.01.2017</i>`,
-		
+
 		"en-US": `To set date for next reminder please send it as a text in format of <i>DD.MM.YEAR</i>.
 <b>For example</b> for 20th of January 2017 submit:
     <i>20.01.2017</i>`,
@@ -261,7 +261,7 @@ var TRANS = map[string]map[string]string{
 		"de-DE": `Sende mir das Datum, an welches du erinnert werden möchtest, in der Form <i>DD.MM.YEAR</i>.
 <b>Zum Beispiel</b> für den 20. Januar 2017, schreibe:
     <i>20.01.2017</i>`,
-		
+
 		"en-US": `To set due date please send it as a text in format of <i>DD.MM.YEAR</i>.
 		<b>For example</b> for 20th of January 2017 submit:
 		<i>20.01.2017</i>`,
@@ -323,7 +323,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "На этой неделе",
 	},
 	COMMAND_TEXT_YES_IT_HAS_RETURN_DEADLINE: {
-		"de-DE": "Ja, es hat eine Frist!",		
+		"de-DE": "Ja, es hat eine Frist!",
 		"en-US": "Yes, it has a deadline!",
 		"es-ES": "Sí, hay una fecha de devolución!",
 		"fa-IR": "بله، دارای آخرین فرصت می باشد!",
@@ -468,9 +468,9 @@ var TRANS = map[string]map[string]string{
 	},
 	COMMAND_TEXT_GET_LINK_FOR_RECEIPT_IN_TELEGRAM: {
 		"en-US": "Get link for receipt in Telegram",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Obtener enlace para recibirlo en Telegram", // TODO(ES) verify
+		"fa-IR": "دریافت پیوند برای دریافت در Telegram",      // TODO(FA) verify
+		"it-IT": "Link per la ricevuta nel Telegram",         // TODO(IT)
 		"ru-RU": "Ссылка для квитанции в Телеграмме",
 	},
 	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: {
@@ -652,9 +652,9 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_REMINDER_ENABLE: {
 		"de-DE": "Erinnerung aktivieren",
 		"en-US": "Turn-on reminder",
-		//"es-ES": "",
-		//"fa-IR": "",
-		//"it-IT": "",
+		"es-ES": "Recordatorio de encendido", // TODO(es) verify
+		"fa-IR": "یادآوری روشن", // TODO(fa) verify
+		"it-IT": "Ricordo promozionale", // TODO(it) verify
 		"ru-RU": "Включить напоминание",
 	},
 	MESSAGE_TEXT_REMINDER_ALREADY_RESCHEDULED: {
@@ -870,8 +870,8 @@ var TRANS = map[string]map[string]string{
 		"en-US": "↩ Main menu",
 		"es-ES": "↩Menú principal",
 		"ru-RU": "↩ Главное меню",
-		//"fa-IR": "↪ ", // TODO(FA)
-		//"it-IT": "↩ ", // TODO(IT)
+		"fa-IR": "↪ منوی اصلی",       // TODO(FA) verify
+		"it-IT": "↩ Menu principale", // TODO(IT) verify
 	},
 	COMMAND_TEXT_SETTINGS_PRIMARY_CURRENCY: {
 		"de-DE": "Hauptwährung",
@@ -882,42 +882,42 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Основная валюта",
 	},
 	COMMAND_TEXT_ADD_GROUP: {
-    "de-DE": "Neue Gruppe", // TODO(DE) - change grom "New group" to "Add group"
+		"de-DE": "Neue Gruppe", // TODO(DE) - change grom "New group" to "Add group"
 		"en-US": "Add group",
-// 		"es-ES": "",
-// 		"fa-IR": "",
-// 		"it-IT": "",
+		"es-ES": "Añadir grupo",      // TODO(ES) verify
+		"fa-IR": "اضافه کردن گروه",   // TODO(FA) verify
+		"it-IT": "Aggiungere gruppo", // TODO(IT) verify
 		"ru-RU": "Добавить группу",
 	},
 	COMMAND_TEXT_INVITE_FIREND: {
 		"de-DE": "Freund einladen",
 		"en-US": "Invite friend",
-	//	"es-ES": "",
-	//	"fa-IR": "",
-	//	"it-IT": "", 
+		"es-ES": "Invitar a un amigo",
+		"fa-IR": "دوستی دعوت کن",   // TODO(FA) verify
+		"it-IT": "Invita un amico", // TODO(IT) verify
 		"ru-RU": "Пригласить друга",
 	},
 	COMMAND_TEXT_INVITE_MEMBER: {
 		"de-DE": "Mitglied einladen",
 		"en-US": "Invite member",
-	//	"es-ES": "",
-	//	"fa-IR": "",
-	//	"it-IT": "",
+		"es-ES": "Invitar miembro", // TODO(ES) verify
+		"fa-IR": "دعوت از اعضا",    // TODO(FA) verify
+		"it-IT": "Invita membro",   // TODO(IT) verify
 		"ru-RU": "Пригласить участника",
 	},
 	COMMAND_TEXT_NEW_BILL: {
 		"de-DE": "Neue Rechnung",
 		"en-US": "New bill",
-	//	"es-ES": "",
-	//	"fa-IR": "",
-	//	"it-IT": "",
+		"es-ES": "Nuevo proyecto de ley",  // TODO(ES) verify
+		"fa-IR": "لایحه جدید",             // TODO(FA) verify
+		"it-IT": "Nuovo disegno di legge", // TODO(IT) verify
 		"ru-RU": "Новый счёт",
 	},
 	COMMAND_TEXT_NEW_FUNDRAISING: {
 		"en-US": "New fundraising",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "Nueva recaudación de fondos", // TODO(ES) verify
+		"fa-IR": "جمع آوری پول جدید", // TODO(FA) verify
+		"it-IT": "Nueva recaudación de fondos", // TODO(IT) verify
 		"ru-RU": "Новый сбор средств",
 	},
 	COMMAND_TEXT_NEW_COUNTERPARTY: {
@@ -994,25 +994,25 @@ var TRANS = map[string]map[string]string{
 	MESAGE_TEXT_CREATING_BILL: {
 		"de-DE": "Rechnung erstellen",
 		"en-US": "Creating bill",
-		"es-ES": "",
-		"it-IT": "",
-		"fa-IR": "",
+		"es-ES": "Crear factura", // TODO(ES) verify
+		"fa-IR": "ایجاد لایحه", // TODO(FA) verify
+		"it-IT": "Creazione di fattura", // TODO(IT) verify
 		"ru-RU": "Создаётся счёт",
 	},
 	MESSAGE_TEXT_ASK_BILL_CURRENCY: {
 		"de-DE": "In welcher Währung ist die Rechnung?",
 		"en-US": "What currency this bill in?",
-		"es-ES": "",
-		"it-IT": "",
-		"fa-IR": "",
+		"es-ES": "¿Qué moneda esta factura?", // TODO(es) verify
+		"it-IT": "Quale moneta ha questa fattura?", // TODO(it) verify
+		"fa-IR": "این لایحه چه ارزشی دارد؟", // TODO(fa) verify
 		"ru-RU": "В какой валюте этот счёт?",
 	},
 	MESSAGE_TEXT_ASK_BILL_PAYER: {
 		"de-DE": "Wer bezahlt die Rechnung?",
 		"en-US": "Who pays for the bill?",
-		"es-ES": "",
-		"it-IT": "",
-		"fa-IR": "",
+		"es-ES": "¿Quién paga la cuenta?", // TODO(es) verify
+		"it-IT": "Chi paga il conto?", // TODO(it) verify
+		"fa-IR": "چه کسی برای این لایحه می پردازد؟", // TODO(fa) verify
 		"ru-RU": "Кто платит по счёту?",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: {
@@ -1053,7 +1053,7 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "%v подтвердил(a) вашу транзакцию:",
 	},
 	MESSAGE_TEXT_TRANSFER_DECLINED_BY_COUNTERPARTY: {
-		"de-DE": "%v hat deine Anfrage <b>abgelehnt</b>. Wenn die Sache besprochen ist, kann die Anfrage erneut gesendet werden.", 
+		"de-DE": "%v hat deine Anfrage <b>abgelehnt</b>. Wenn die Sache besprochen ist, kann die Anfrage erneut gesendet werden.",
 		"en-US": "%v did not agree with your transaction. The transaction is not canceled but you may want to discuss it.", //TODO(FA)
 		"es-ES": "%v ha confirmado tu transacción.  La transacción no ha sido cancelada, igual mejor comentarlo.",          //TODO(ES)
 		"fa-IR": "تراکنش شما را رد کرد  %v declined your transaction.",
@@ -1146,7 +1146,7 @@ var TRANS = map[string]map[string]string{
 		"de-DE": `Bitte wähle <a>eine Währung aus der Liste</a>.
 
 	Falls die Standardoptionen nicht reichen, sende mir einen Text. Zum Beispiel: <i>Äpfel</>".`,
-	
+
 		"en-US": `Please choose from the options below or <a>select a currency from the list</a>.
 
 	If standard options are not enough simply send a text.For example: "<i>apple</i>".`,
@@ -1268,24 +1268,24 @@ var TRANS = map[string]map[string]string{
 		"de-DE": "Diese Schuld ist bereits vollständig beglichen.",
 		"en-US": "This debts is already fully returned.",
 		"es-ES": "Esta deuda se ha devuelta totalmente.",
-		//"it-IT": "", TODO(IT)
-		//"fa-IR": "", TODO(FA)
+		"it-IT": "Questi debiti sono già completamente restituiti.", // TODO(IT) verify
+		"fa-IR": "این بدهی ها در حال حاضر به طور کامل بازگشته است.", // TODO(FA) verify
 		"ru-RU": "Этот долг уже полностью возвращён.",
 	},
 	MESSAGE_TEXT_RECEIPT_ALREADY_RETURNED_AMOUNT: {
 		"de-DE": "Bereits beglichen: {{.Amount}}.",
 		"en-US": "Already returned: {{.Amount}}.",
 		"es-ES": "Se ha devuelto ya: {{.Amount}}.",
-		//"fa-IR": "", TODO(FA)
-		//"it-IT": "", TODO(IT)
+		"fa-IR": "قبلا برگشت: {{.Amount}}.",     // TODO(FA) - verify
+		"it-IT": "Già restituito: {{.Amount}}.", // TODO(IT) - verify
 		"ru-RU": "Уже возвращено: {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_OUTSTANDING_AMOUNT: {
 		"de-DE": "Ausstehend: {{.Amount}}.",
 		"en-US": "Outstanding: {{.Amount}}.",
 		"es-ES": "Falta devolver: {{.Amount}}.",
-		//"fa-IR": "", TODO(FA)
-		//"it-IT": "", TODO(IT)
+		"fa-IR": "برجسته: {{.Amount}}",  // TODO(FA) verify
+		"it-IT": "Inevaso: {{.Amount}}", // TODO(IT) verify
 		"ru-RU": "Осталось вернуть: {{.Amount}}.",
 	},
 	MESSAGE_TEXT_DUE_ON: {
@@ -1976,106 +1976,107 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Mitglieder",
 		"en-US": "Members",
 		"es-ES": "Miembros",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "اعضا",   // TODO(FA) verify
+		"it-IT": "Membri", // TODO(IT)
 		"ru-RU": "Участники",
 	},
 	MT_TEXT_MEMBERS_COUNT: {
 		"en-US": "<b>Members</b>: %d",
 		"es-ES": "<b>Miembros</b>: %d",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "اعضا %d",           // TODO(FA) verify - missin <b></b>
+		"it-IT": "<b>Membri</b>: %d", // TODO(IT)
 		"ru-RU": "<b>Участников</b>: %d",
 	},
 	ALERT_TEXT_NOTHING_CHANGED: {
 		"de-DE": "Nichts geändert",
 		"en-US": "Nothing changed",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Nada ha cambiado",     // TODO(ES)
+		"fa-IR": "چیزی تغییر نکرده است", // TODO(FA) verify
+		"it-IT": "Niente è cambiato",    // TODO(IT) verify
 		"ru-RU": "Ничего не изменилось",
 	},
 	ALERT_TEXT_YOU_ARE_ALREADY_MEMBER_OF_THE_GROUP: {
 		"de-DE": "Du bist schon Mitglied beim Teilen dieser Rechnung.",
 		"en-US": "You are already a member of this bill splitting group.",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Ya es miembro de este grupo de división de facturas.", // TODO(ES)
+		"fa-IR": "شما قبلا عضو این گروه تقسیم لایحه هستید.", // TODO(FA)
+		"it-IT": "Sei già membro di questo gruppo di divisione fatture.", // TODO(IT)
 		"ru-RU": "Вы уже участник этой группы по совместной оплате счетов.",
 	},
 	MESSAGE_TEXT_YOUR_BILL_SPLITTING_GROUPS: {
 		"de-DE": "Gruppen, mit denen du Rechnungen teilst",
 		"en-US": "Your bills splitting groups",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Ya es miembro de este grupo de división de facturas.",  // TODO(ES) verify
+		"fa-IR": "شما قبلا عضو این گروه تقسیم لایحه هستید.",              // TODO(FA) verify
+		"it-IT": "Sei già membro di questo gruppo di divisione fatture.", // TODO(IT) verify
 		"ru-RU": "Ваши группы совметсной оплаты",
 	},
 	MESSAGE_TEXT_USE_ARROWS_TO_SELECT_GROUP: {
 		"en-US": "Use ⬅️ & ➡️ to select group",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Usa ⬅️ y ➡️ para seleccionar el grupo",    // TODO(ES) verify
+		"fa-IR": "برای انتخاب گروه از ⬅️ & ❢️ استفاده کنید", // TODO(FA) verify
+		"it-IT": "Usare ⬅️ & ➡️ per selezionare il gruppo",  // TODO(IT) verify
 		"ru-RU": "Используйте ⬅️ и ➡️ чтобы выбрать группу.",
 	},
 	MESSAGE_TEXT_NO_GROUPS: {
 		"de-DE": "Du gehörst zu keiner Gruppe, die sich Rechnungen teilt.",
 		"en-US": "You are not a participant of any bill splitting group.",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Usted no es participante de ningún grupo de división de facturas.",  // TODO(ES) verify
+		"fa-IR": "شما شرکت کننده در هر گروه تقسیم لایحه نیستید.", // TODO(FA) verify
+		"it-IT": "Non sei un partecipante a qualsiasi gruppo di divisione fatture.", // TODO(IT) verify
 		"ru-RU": "Вы не состоите в группах совместной оплаты.",
 	},
 	MESSAGE_TEXT_USER_JOINED_GROUP: {
 		"de-DE": `Hi %v, du bist der Gruppe, die sich Rechnungen teilt, beigetreten.`,
 		"en-US": `Hi %v, you joined this bill splitting group.`,
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "شما شرکت کننده در هر گروه تقسیم لایحه نیستید.",                    // TODO(FA) verify
+		"it-IT": "Non sei un partecipante a qualsiasi gruppo di divisione fatture.", // TODO(IT) verify
 		"ru-RU": `Привет %v, вы присоеденились к этой группе по совместной оплате счетов.
 		`,
 	},
 	MESSAGE_TEXT_MEMBERS_CARD_TITLE: {
 		"de-DE": "<b>Wer sich die Rechnung teilt</b> (%d)",
 		"en-US": "<b>Bills splitting members</b> (%d)",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "<b>نقض تقسیم اعضا</b> (٪d)",                     // TODO(FA) verify
+		"it-IT": "<b>Membri di divisione delle bollette</b> (%d)", // TODO(IT) verify
 		"ru-RU": "<b>Участники совместных оплат</b> (%d)",
 	},
 	MESSAGE_TEXT_SPLIT_MODE: {
 		"de-DE": "<b>Teilen</b>: %v",
 		"en-US": "<b>Split</b>: %v",
-		"es-ES": "<b>Split</b>: %v", // TODO(ES)
-		"fa-IR": "<b>Split</b>: %v", // TODO(FA)
-		"it-IT": "<b>Split</b>: %v", // TODO(IT)
+		"es-ES": "<b>División</b>: %v", // TODO(ES) verify
+		"fa-IR": "<b>شکاف</b>: %v",     // TODO(FA) verify
+		"it-IT": "<b>Diviso</b>: %v",   // TODO(IT) verify
 		"ru-RU": "<b>Делить</b>: %v",
 	},
 	MESSAGE_TEXT_ASK_HOW_TO_SPLIT_IN_GROP: {
 		"de-DE": "In welchem Verhältnis teilt ihr in dieser Gruppe eure Rechnungen?",
 		"en-US": "In what proportion do you split bills in this group?",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "¿En qué proporción divide las facturas en este grupo?", // TODO(ES) verify
+		"fa-IR": "در این سهم، آیا شما در این گروه حساب ها را تقسیم می کنید؟", // TODO(FA) verify
+		"it-IT": "In quale percentuale dividi le fatture in questo gruppo?", // TODO(IT) verify
 		"ru-RU": "В какой пропорции вы делите счета в этой группе?",
 	},
 	MESSAGE_TEXT_MEMBERS_CARD_FOOTER: {
 		"de-DE": "Klick <code>Join</code>, um auch Rechnungen zu teilen.",
 		"en-US": "Click <code>Join</code> to participate in bills splitting.",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "¿En qué proporción divide las facturas en este grupo?",     // TODO(ES) verify
+		"fa-IR": "در این سهم، آیا شما در این گروه حساب ها را تقسیم می کنید؟", // TODO(FA) verify
+		"it-IT": "In quale percentuale dividi le fatture in questo gruppo?",  // TODO(IT) verify
 		"ru-RU": "Жмите <code>Присоедениться</code> чтобы учавствовать.",
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBER_TITLE: {
 		"en-US": "{{.N}}. {{.MemberName}}",
 		"es-ES": "{{.N}}. {{.MemberName}}",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "{{.N}}. {{.MemberName}}", // TODO(FA) verify
+		"it-IT": "{{.N}}. {{.MemberName}}",
 		"ru-RU": "{{.N}}. {{.MemberName}}",
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW: {
 		"de-DE": "<i>{{.Percent}}%</i>",
 		"en-US": "<i>{{.Percent}}%</i>",
 		"es-ES": "<i>{{.Percent}}%</i>",
-		"fa-IR": "", // TODO(FA)
+		"fa-IR": "<i>{{.Percent}}%</i>", // TODO(FA) verify
 		"it-IT": "<i>{{.Percent}}%</i>",
 		"ru-RU": "<i>{{.Percent}}%</i>",
 	},
@@ -2084,84 +2085,84 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"en-US": "\n   <i>owes {{.Owes}}</i>",
 		"es-ES": "\n   <i>debo {{.Owes}}</i>",
 		"ru-RU": "\n   <i>должен {{.Owes}}</i>",
-		//"fa-IR": "", // TODO(FA)
+		"fa-IR": "\n   <i>بدهکار است {{.Owes}}</i>", // TODO(FA) verify
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PAID: {
 		"de-DE": "\n   <i>bezahlte {{.Paid}}</i>",
 		"en-US": "\n   <i>paid {{.Paid}}</i>",
 		"es-ES": "\n   <i>he pagado {{.Paid}}</i>",
 		"ru-RU": "\n   <i>заплатил {{.Paid}}</i>",
-		"fa-IR": "", // TODO(FA)
+		"fa-IR": "\n   <i>پرداخت شده {{.Paid}}</i>", // TODO(FA) verify
 	},
 	MESSAGE_TEXT_BILL_CARD_MEMBERS_ROW_PART_PAID: {
 		"de-DE": "\n<i>bezahlte {{.Paid}}, schuldet noch {{.Owes}}</i>",
 		"en-US": "\n<i>paid {{.Paid}}, owes {{.Owes}}</i>",
 		"es-ES": "\n<i>he pagado {{.Paid}}, debo {{.Owes}}</i>",
 		"ru-RU": "\n<i>заплатил {{.Paid}}, должен {{.Owes}}</i>",
-		"fa-IR": "", // TODO(FA)
+		"fa-IR": "\n<i>پرداخت شده {{.Paid}}, بدهکار است {{.Owes}}</i>", // TODO(FA) verify
 	},
 	MESSAGE_TEXT_BILL_ASK_WHO_PAID: {
 		"de-DE": "Bitte wähle, wer die Rechnung gezahlt hat:",
 		"en-US": "Please choose who paid for the bill:",
 		"es-ES": "Por favor, elige quien ha pagado la cuenta:",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "لطفا انتخاب کنید که چه کسانی برای این لایحه پرداخت کرده اند:", // TODO(FA) verify
+		"it-IT": "Scegliere chi ha pagato la fattura:",                          // TODO(IT) verify
 		"ru-RU": "Пожалуйста выберите кто заплатил по счёту:",
 	},
 	MESSAGE_TEXT_STATUS: {
 		"de-DE": "Status: %v",
 		"en-US": "Status: %v",
 		"es-ES": "Estado: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "وضعیت:", // TODO(FA) verify
+		"it-IT": "Stato:", // TODO(IT) verify
 		"ru-RU": "Статус: %v",
 	},
 	BUTTON_TEXT_ADD_MEMBER: {
 		"de-DE": "Partei hinzufügen",
 		"en-US": "Add participant",
 		"es-ES": "Añadir participante",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "افزودن مشارکت کننده",   // TODO(FA) verify
+		"it-IT": "Aggiungi partecipante", // TODO(IT) verify
 		"ru-RU": "Добавить участника",
 	},
 	BUTTON_TEXT_FINALIZE_BILL: {
 		"de-DE": "🔓 Rechnung abschließen",
 		"en-US": "🔓 Lock the bill",
 		"es-ES": "🔓 Cerrar la cuenta",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "🔓 لایحه را قفل کنید", // TODO(FA) verify
+		"it-IT": "🔓 Bloccare il conto", // TODO(IT) verify
 		"ru-RU": "🔓 Закрыть счёт",
 	},
 	BUTTON_TEXT_EDIT_BILL: {
 		"de-DE": "✏️ Bearbeiten",
 		"en-US": "✏️ Edit",
 		"es-ES": "✏️ Editar",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "✏️ ویرایش",   // TODO(FA) verify
+		"it-IT": "✏️ Modifica", // TODO(IT) verify
 		"ru-RU": "✏️ Изменить",
 	},
 	BUTTON_TEXT_SPLIT_MODE: {
 		"de-DE": "➗ Teilen: %v",
 		"en-US": "➗ Split: %v",
 		"es-ES": "➗ Dividir: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "➗ تقسیم:٪v",  // TODO(FA) verify
+		"it-IT": "➗ Split:% v", // TODO(IT) verify
 		"ru-RU": "➗ Делить: %v",
 	},
 	MESSAGE_TEXT_SPLIT_LABEL_WITH_VALUE: {
 		"de-DE": "Teilen: %v",
 		"en-US": "Split: %v",
 		"es-ES": "Dividir: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "تقسیم:٪v",  // TODO(FA) verify
+		"it-IT": "Split: %v", // TODO(IT) verify
 		"ru-RU": "Делить: %v",
 	},
 	STATUS_DRAFT: {
 		"de-DE": "Entwurf",
 		"en-US": "draft",
 		"es-ES": "borrador",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "پیش نویس", // TODO(FA) verify
+		"it-IT": "bozza",    // TODO(IT) verify
 		"ru-RU": "черновик",
 	},
 	SPLIT_MODE_EQUALLY: {
@@ -2169,183 +2170,183 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"en-US": "Equally",
 		"es-ES": "A partes iguales",
 		"ru-RU": "Поровну",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "به همان اندازه", // TODO(FA) verify
+		"it-IT": "Ugualmente",     // TODO(IT) verify
 	},
 	SPLIT_MODE_PERCENTAGE: {
 		"de-DE": "Prozentual",
 		"en-US": "Percentage",
 		"es-ES": "Porcentaje",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "درصد",        // TODO(FA)
+		"it-IT": "Percentuale", // TODO(IT) verify
 		"ru-RU": "В процентах",
 	},
 	SPLIT_MODE_EXACT_AMOUNT: {
 		"de-DE": "Exakte Summen",
 		"en-US": "Exact amounts",
 		"es-ES": "Importes exactos",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "مقادیر دقیق",     // TODO(FA) verify
+		"it-IT": "Quantità esatte", // TODO(IT) verify
 		"ru-RU": "Точные суммы",
 	},
 	SPLIT_MODE_SHARES: {
 		"de-DE": "Teilen",
 		"en-US": "Shares",
 		"es-ES": "Proporciones",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "سهام",   // TODO(FA) verify
+		"it-IT": "Azioni", // TODO(IT) verify
 		"ru-RU": "В долях",
 	},
 	BUTTON_TEXT_JOIN: {
 		"de-DE": "➕ Beitreten",
 		"en-US": "➕ Join",
 		"es-ES": "➕ Adherirse",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "➕ عضویت", // TODO(FA) verify
+		"it-IT": "➕ Join",  // TODO(IT) verify
 		"ru-RU": "➕ Присоедениться",
 	},
 	BUTTON_TEXT_LEAVE: {
 		"de-DE": "Verlassen",
 		"en-US": "Leave",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Salir",    // TODO(ES) verify
+		"fa-IR": "ترک کردن", // TODO(FA) verify
+		"it-IT": "Partire",  // TODO(IT) verify
 		"ru-RU": "Покинуть",
 	},
 	BUTTON_TEXT_DUE: {
 		"de-DE": "📅 Fällig: %v",
 		"en-US": "📅 Due: %v",
 		"es-ES": "📅 Hasta: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "📅 مورد:٪v",    // TODO(FA) verify
+		"it-IT": "📅 Dovuto: %v", // TODO(IT) verify
 		"ru-RU": "📅 До: %v",
 	},
 	NOT_SET: {
 		"de-DE": "nicht gesetzt",
 		"en-US": "not set",
 		"es-ES": "no establecido",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "تنظیم نشده",    // TODO(FA) verify
+		"it-IT": "non impostato", // TODO(IT) verify
 		"ru-RU": "не задано",
 	},
 	BUTTON_TEXT_MANAGE_MEMBERS: {
 		"de-DE": "👫 Parteien",
 		"en-US": "👫 Participants",
 		"es-ES": "👫 Participantes",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "👫 شرکت کنندگان", // TODO(FA) verify
+		"it-IT": "👫 Partecipanti", // TODO(IT) verify
 		"ru-RU": "👫 Участники",
 	},
 	BUTTON_TEXT_CHANGE_BILL_PAYER: {
 		"de-DE": "🔀 Bezahler ändern",
 		"en-US": "🔀 Change payer",
 		"es-ES": "🔀 Cambiar el pagador",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "🔀 تغییر پرداخت کننده", // TODO(FA) verify
+		"it-IT": "🔀 Cambia il pagatore", // TODO(IT) verify
 		"ru-RU": "🔀 Сменить плательщика",
 	},
 	COMMAND_TEXT_I_PAID: {
 		"de-DE": "Ich habe bezahlt",
 		"en-US": "I paid",
 		"es-ES": "he pagado",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "پرداخت کردم", // TODO(FA) verify
+		"it-IT": "Ho pagato",   // TODO(IT) verify
 		"ru-RU": "Я заплатил",
 	},
 	COMMAND_TEXT_I_OWE: {
 		"de-DE": "Ich schulde",
 		"en-US": "I owe",
 		"es-ES": "Yo debo",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"fa-IR": "من بدهکارم",     // TODO(FA) verify
+		"it-IT": "Sono in debito", // TODO(IT) verify
 		"ru-RU": "Я должен",
 	},
 	COMMAND_TEXT_OWED_TO_ME: {
 		"de-DE": "schuldet mir",
 		"en-US": "Owed to me",
 		"es-ES": "Me deben",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "به من تعلق دارد", // TODO(FA) verify
+		"it-IT": "È dovuto a me",   // TODO(IT) verify
 		"ru-RU": "Должны мне",
 	},
 	MESSAGE_TEXT_BILL_HEADER: {
 		"de-DE": "Rechnung: %v",
 		"en-US": "Bill: %v",
 		"es-ES": "Cuenta: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "بیل :٪v",  // TODO(FA) verify
+		"it-IT": "Bill: %v", // TODO(IT) verify
 		"ru-RU": "Cчёт: %v",
 	},
 	MESSAGE_TEXT_NEW_DEBT_HEADER: {
 		"de-DE": "Rechnung: %v",
 		"en-US": "Bill: %v",
 		"es-ES": "Cuenta: %v",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "بیل :٪v",  // TODO(FA) verify
+		"it-IT": "Bill: %v", // TODO(IT) verify
 		"ru-RU": "Cчёт: %v",
 	},
 	MESSAGE_TEXT_ALREADY_BILL_MEMBER: {
 		"de-DE": "%v, du teilst diese Rechnung bereits.",
 		"en-US": "%v, you are sharing this bill already.",
 		"es-ES": "%v, estás compartiendo esta cuenta ya.",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "٪v، شما قبلا این لایحه را به اشتراک می گذارید",      // TODO(FA) verify
+		"it-IT": "%v, stai già condividendo questo disegno di legge.", // TODO(IT) verify
 		"ru-RU": "%v, вы уже входите в состав участников.",
 	},
 	MESSAGE_TEXT_USER_JOINED_BILL: {
 		"de-DE": "%v ist dem Teilen der Rechnung beigetreten.",
 		"en-US": "%v joined to bill sharing.",
 		"es-ES": "%v pagar conjuntamente.",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "٪v به اشتراک گذاری لایحه پیوست.",        // TODO(FA) verify
+		"it-IT": "%v unito alla condivisione di fatture.", // TODO(IT) verify
 		"ru-RU": "%v присоеденился к совместной оплате.",
 	},
 	BUTTON_TEXT_I_PAID_FOR_THE_BILL: {
-		"de-DE": "Die Rechnung wurde von mir bezahlt",
-		"en-US": "The bill was paid by me",
-		"es-ES": "",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
-		"ru-RU": "Этот счёт оплатил(а) я",
+		"de-DE": "Die Rechnung wurde von mir bezahlt.",
+		"en-US": "The bill was paid by me.",
+		"es-ES": "La factura fue pagada por mí.",  // TODO(ES) verify
+		"fa-IR": "این لایحه توسط من پرداخت شد",    // TODO(FA) verify
+		"it-IT": "Il conto è stato pagato da me.", // TODO(IT) verify
+		"ru-RU": "Этот счёт оплатил(а) я.",
 	},
 	BUTTON_TEXT_I_OWE_FOR_THE_BILL: {
 		"de-DE": "Ich muss noch was dabeigeben",
 		"en-US": "I owe for this bill",
-		"es-ES": "",
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "Debo esta factura",                // TODO(ES) verify
+		"fa-IR": "من برای این لایحه بدهکار هستم",    // TODO(FA) verify
+		"it-IT": "Devo per questo disegno di legge", // TODO(IT) verify
 		"ru-RU": "Я должен по этому счёту",
 	},
 	BUTTON_TEXT_I_DO_NOT_SHARE_THIS_BILL: {
 		"de-DE": "Ich habe damit nichts zutun",
 		"en-US": "I don't share this bill",
-		"es-ES": "", // TODO(ES)
-		"fa-IR": "", // TODO(FA)
-		"it-IT": "", // TODO(IT)
+		"es-ES": "No comparto esta cuenta",               // TODO(ES) verify
+		"fa-IR": "من این لایحه را به اشتراک نمی گذارم",   // TODO(FA) verify
+		"it-IT": "Non condivido questo disegno di legge", // TODO(IT) verify
 		"ru-RU": "Я не учавствую в этой покупке",
 	},
 	MESSAGE_TEXT_YOU_JOINED_BILL: {
 		"de-DE": "Du bist dem Teilen der Rechnung beigetreten.",
 		"en-US": "You've joined to bill sharing.",
 		"es-ES": "Te has agregado para pagar conjuntamente .",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "شما به اشتراک گذاشتن لایحه پیوستید",          // TODO(FA) verify
+		"it-IT": "Sei entrato a far parte della fatturazione.", // TODO(IT) verify
 		"ru-RU": "Вы присоеденились к совместной оплате.",
 	},
 	ARTICLE_TITLE_SPLIT_BILL: {
 		"de-DE": "eine Rechnung teilen",
 		"en-US": "Split bill/purchase",
 		"es-ES": "Compartir la cuenta/compra",
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"fa-IR": "لایحه / خرید تقسیم شده",    // TODO(FA) verify
+		"it-IT": "Bolletta Split / acquisto", // TODO(IT) verify
 		"ru-RU": "Разделить счёт/покупку",
 	},
 	ARTICLE_SUBTITLE_SPLIT_BILL: {
 		"de-DE": "Wert: %v\nTeile deine Kosten mit Freunden und verfolge deren Rückzahlungen.",
 		"en-US": "Amount: %v\nShares expenses with friends & track paybacks",
-		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones", // TODO(ES): Have to be shorter
-		//"fa-IR": "", // TODO(FA)
-		//"it-IT": "", // TODO(IT)
+		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones",  // TODO(ES): Have to be shorter
+		"fa-IR": "مقدار :٪v \n هزینه ها را با دوستان و بازپرداخت پیگیری می کند",              // TODO(FA) verify
+		"it-IT": "Importo: %v\nDisponi i costi con gli amici e le retribuzioni delle tracce", // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты",
 	},
 
@@ -2361,30 +2362,30 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Wert: %v\nZur Fälligkeit wird eine Benachrichtigung geschickt, falls so eingestellt",
 		"en-US": "Amount: %v\nSends notifications on due date if set",
 		"es-ES": "Importe: %v\nEnviar las notificaciones el día de vencimiento",
-		"fa-IR": "", // TODO(FA):  "در صورتی که تنظیم شود، اعلان ها را در زمان مقرر ارسال می کند",
-		"it-IT": "", // TODO(IT):  "Invia le notifiche alla data di scadenza se impostato",
+		"fa-IR": "مقدار:%v \n اگر تنظیم شود، اطلاعیه ها را در تاریخ تعیین شده ارسال می کند", // TODO(FA):  verify
+		"it-IT": "Importo:% v\nSend le notifiche alla data di scadenza se impostato", // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
 	},
 	SPLITUS_PLEASE_JOIN_IF_NOT_ON_THE_LIST: {
 		"de-DE": `Bitte tritt zuerst bei, falls dein Name nicht auf der Liste ist.`,
 		"en-US": `Please join if your name is not on the list above.`,
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
-		"ru-RU": ``, // TODO(RU)
+		"fa-IR": `اگر نام شما در لیست بالا نیست، لطفا پیوست شوید.`,                   // TODO(FA) verify
+		"it-IT": `Si prega di unirti se il tuo nome non è nell'elenco di cui sopra.`, // TODO(IT) verify
+		"ru-RU": `Пожалуйста присоеденяйтесь если ваше не в списке.`,                 // TODO(RU)
 	},
 	SPLITUS_TEXT_HI_IN_GROUP: {
-		"de-DE": `Ich bin <b>Splitus.</b> Danke fürs hinzufügen!`,
-		"en-US": `I'm <b>Splitus.</b> Thanks for adding me!`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
-		"ru-RU": `Меня зовут <b>Сплитус.</b> Спасибо что добавили!`,
+		"de-DE": `Ich bin <b>Splitus</b>. Danke fürs hinzufügen!`,
+		"en-US": `I'm <b>Splitus</b>. Thanks for adding me!`,
+		"es-ES": `Soy <b>Splitus</b>. ¡Gracias por agregarme!`,      // TODO(ES) verify
+		"fa-IR": `من <b>Splitus</b> با تشکر برای اضافه کردن من!`,    // TODO(FA) verify
+		"it-IT": `Sono <b>Splitus</b>. Grazie per averci aggiunto!`, // TODO(IT) verify
+		"ru-RU": `Меня зовут <b>Сплитус</b>. Спасибо что добавили!`,
 	},
 	COLLECTUS_TEXT_HI_IN_GROUP: {
 		"en-US": `I'm <b>Collectus.</b> Thanks for adding me!`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `Soy <b>Collectus.</b> ¡Gracias por agregarme!`,      // TODO(ES) verify
+		"fa-IR": `من <b>Collectus</b> با تشکر برای اضافه کردن من!`,    // TODO(FA) verify
+		"it-IT": `Sono <b>Collectus.</b> Grazie per averci aggiunto!`, // TODO(IT) verify
 		"ru-RU": `Меня зовут <b>Коллектус.</b> Спасибо что добавили!`,
 	},
 	MT_GROUP_LABEL: {
@@ -2396,47 +2397,47 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	},
 	MT_SPONSORS_HEADER: {
 		"en-US": `<b>Sponsors</b>:`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `<b>Patrocinadores</b>:`, // TODO(ES)
+		"fa-IR": `<b>حامیان</b>:`,         // TODO(FA) verify
+		"it-IT": `<b>Sponsors</b>:`,       // TODO(IT)
 		"ru-RU": `<b>Спонсоры</b>:`,
 	},
 	MT_DEBTORS_HEADER: {
 		"en-US": `<b>Debtors</b>:`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `<b>Deudores</b>:`, // TODO(ES) verify
+		"fa-IR": `<b>Debtors</b>:`,  // TODO(FA) verify
+		"it-IT": `<b>بدهکار</b>:`,   // TODO(IT) verify
 		"ru-RU": `<b>Должники</b>:`,
 	},
 	BT_DEFAULT_CURRENCY: {
 		"en-US": `Currency: %v`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `Moneda: %v`,   // TODO(ES) verify
+		"fa-IR": `واحد پول: %v`, // TODO(FA) verify
+		"it-IT": `Moneta: %v`,   // TODO(IT) verify
 		"ru-RU": `Валюта: %v`,
 	},
 	MESSAGE_TEXT_ASK_LANG: {
 		"de-DE": `Welche Sprache wird hier gesprochen?`,
 		"en-US": `What language should I use in this group?`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `¿Qué idioma debería usar en este grupo?`,      // TODO(ES) verify
+		"fa-IR": `کدام زبان باید در این گروه استفاده کنم؟`,      // TODO(FA) verify
+		"it-IT": `Che lingua devo utilizzare in questo gruppo?`, // TODO(IT) verify
 		"ru-RU": `Какой язык я должен использовать в этой группе?`,
 	},
 	MESSAGE_TEXT_HI_IN_GROUP_LANG_SET: {
 		"en-US": `Great, I'll be using English.`,
-		"es-ES": ``, // TODO(ES)
+		"es-ES": `Genial, usaré español.`, // TODO(ES) verify
 		"de-DE": `Kein Problem, dann schreibe ich auf Deutsch.`,
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"fa-IR": `عالی، من از فارسی استفاده خواهم کرد.`, // TODO(FA) verify
+		"it-IT": `Ottimo, userò l'italiano.`,            // TODO(IT) verify
 		"ru-RU": `Отлично, я буду использовать русский`,
 	},
 	SPLITUS_TEXT_ABOUT_ME_AND_CO: {
 		"de-DE": `Ich kann helfen, <b>Rechnungen zu teilen</b>. Mein Freund @DebtsTrackerBot passt darauf auf, dass alle Schulden zurückgezahlt werden.`,
 		"en-US": `I help to <b>split bills</b>. My friend @DebtsTrackerBot is tracking paybacks & debts.`,
-		"es-ES": ``, // TODO(ES)
-		"fa-IR": ``, // TODO(FA)
-		"it-IT": ``, // TODO(IT)
+		"es-ES": `Ayudo a <b>dividir billetes</b>. Mi amigo @DebtsTrackerBot está rastreando pagos y deudas.`,                 // TODO(ES) verify
+		"fa-IR": `من به <b>تقسیم صورتحساب </b> کمک میکنم دوست منDebtsTrackerBot ردیابی بازپرداخت و بدهی است.`,                 // TODO(FA) verify
+		"it-IT": `Aiuto a <b>dividere le bollette</b>. Il mio amico @DebtsTrackerBot sta monitorando i pagamenti e i debiti.`, // TODO(IT) verify
 		"ru-RU": `Я помогаю делить счета. Мой друг @DebtsTrackerRuBot отслеживает платежи и долги.`,
 	},
 	COLLECTUS_TEXT_ABOUT_ME_AND_CO: {
@@ -2445,7 +2446,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 Mein Freund @DebtsTrackerBot überwacht Schulden und deren Rückzahlungen.
 
 Wenn du Geld für irgendwas sammeln willst, kann @SplitusBot dir dabei helfen.`,
-		
+
 		"en-US": `I help to <b>collect money</b> for a good cause. For example for a birthday present. 🎉
 
 My buddy @DebtsTrackerBot is tracking debts & paybacks.
@@ -2590,7 +2591,7 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 Wenn du dir was von jemanden geliehen hast, wähle /anleihen.
 Wenn du was an jemanden verliehen hast, wähle /verleihen.
 
-Oder benutzt das Menü unten.`,	
+Oder benutzt das Menü unten.`,
 		"en-US": `
 If you borrowed from someone to record it use /got.
 If you lent to someone to record it use /gave.
@@ -2679,9 +2680,9 @@ O usa il menu' qui sotto.`,
 	},
 	BT_OTHER_CURRENCY: {
 		"en-US": "Another currency",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "Otra moneda", // TODO(es) verify
+		"fa-IR": "ارز دیگر", // TODO(fa) verify
+		"it-IT": "Un'altra valuta", // TODO(it) verify
 		"ru-RU": "Другая валюта",
 	},
 	MESSAGE_TEXT_PRIMARY_CURRENCY_IS_SET_TO: {
@@ -2750,9 +2751,9 @@ O usa il menu' qui sotto.`,
 	},
 	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY_FOR_GROUP: {
 		"en-US": "What is a primary currency for this group?",
-		"es-ES": "¿Cuál es tu moneda principal?", //TODO(ES)
-		"fa-IR": "واحد پولی اولیه شما چیست؟",  //TODO(FA)
-		"it-IT": "Qual'e' la tua valuta principale?",  //TODO(IT)
+		"es-ES": "¿Cuál es tu moneda principal?",     //TODO(ES)
+		"fa-IR": "واحد پولی اولیه شما چیست؟",         //TODO(FA)
+		"it-IT": "Qual'e' la tua valuta principale?", //TODO(IT)
 		"ru-RU": "Какая валюта основная для этой группы?",
 	},
 	MESSAGE_TEXT_FAILED_TO_DELETE_USER: {
@@ -3418,28 +3419,36 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"it-IT": "Quanto ti e' stato restituito?",
 		"ru-RU": "Сколько было возвращено?",
 	},
+	MESSAGE_TEXT_RETURN_IS_TOO_BIG: {
+		"de-DE": "Sie haben entschieden, %v zurückzugeben, aber der ausstehende Betrag ist nur %v.\n\nBitte geben Sie Werte gleich %v oder weniger ein.", // TODO(DE) verify
+		"en-US": "You decided to return %v but outstanding amount is just %v.\n\nPlease enter values equal to %v or less.",
+		"es-ES": "Decidiste devolver %v pero la cantidad pendiente es solo %v.\n\nPor favor ingrese valores iguales a %v o menos.", // TODO(ES) verify
+		"fa-IR": "شما تصمیم گرفتید %v را بازگردانید اما مقدار قابل توجهی فقط %v است.\n\nلطفا مقادیر برابر %v یا کمتر را وارد کنید", // TODO(FA) verify
+		"it-IT": "Hai deciso di restituire% v ma la quantità in sospeso è solo %v.\n\nInserisci valori pari o uguali a %v o meno.", // TODO(IT) verify
+		"ru-RU": "Вы решили вернуть %v, но непогашенная сумма равна %v. \n\n Пожалуйста, введите значение равное %v или меньше.",
+	},
 	MESSAGE_TEXT_HELP_ROOT: {
 		"de-DE": "Was hast du für eine Frage? Wenn irgendwas unklar ist, frag ruhig hier @%v",
 		"en-US": "What is your question? If anything is missed here, feel free to ask in our @%v",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "¿Cuál es tu pregunta? Si algo se pierde aquí, siéntase libre de preguntar en nuestro @%v", // TODO(es) verify
+		"fa-IR": "سوالت چیست؟ اگر چیزی در اینجا از دست رفته است، لطفا در @%v ما بپرسید", // TODO(fa) verify
+		"it-IT": "Qual è la tua domanda? Se qualche cosa è mancato qui, non esitate a chiedere al nostro @%v", // TODO(it) verify
 		"ru-RU": "Какой у вас вопрос? Если здесь нет ответа пожалуйста спросите в нашей группе @%v",
 	},
 	MESSAGE_TEXT_HELP_BACK_TO_ROOT: {
 		"de-DE": "Zurück zur FAQ Liste",
 		"en-US": "Back to FAQ list",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "Volver a la lista de preguntas frecuentes", // TODO(es) verify
+		"fa-IR": "بازگشت به لیست سوالات متداول", // TODO(fa) verify
+		"it-IT": "Torna all'elenco delle FAQ", // TODO(it) verify
 		"ru-RU": "Назад к списку вопросов",
 	},
 	HELP_HOW_TO_CREATE_BILL_Q: {
 		"de-DE": "Wie erstellt man Rechnungen?",
 		"en-US": "How to create new bill?",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "¿Cómo crear una nueva factura?", // TODO(es) verify
+		"fa-IR": "چگونه برای ایجاد لایحه جدید؟", // TODO(fa) verify
+		"it-IT": "Come creare un nuovo conto?", // TODO(it) verify
 		"ru-RU": "Как создать новый счёт?",
 	},
 	HELP_HOW_TO_CREATE_BILL_A: {
@@ -3469,9 +3478,9 @@ That is why the best is to <b>create bill in Telegram chat just in 2 steps</b>:
 	   Than any member of the group can share the bill by pressing <code>Join</code> button.
 
 <b>Alternatively</b> you can create a bill right in the @{{.BotCode}}. But then you would need manually to add participants.`,
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
 		"ru-RU": `<b>How to create a new bill</b>
 <pre>Bill — shared expense between two or more people.</pre>
 
@@ -3503,7 +3512,7 @@ That is why the best is to <b>create bill in Telegram chat just in 2 steps</b>:
 		"ru-RU": "Cтраница поддержки ",
 	},
 	COMMAND_TEXT_REPORT_A_BUG: {
-	        "de-DE": "einen Fehler melden",
+		"de-DE": "einen Fehler melden",
 		"en-US": "Report a bug",
 		"es-ES": "Informar de un error",
 		"fa-IR": "گزارش یک باگ",
@@ -3511,7 +3520,7 @@ That is why the best is to <b>create bill in Telegram chat just in 2 steps</b>:
 		"ru-RU": "Сообщить об ошибке",
 	},
 	COMMAND_TEXT_SUBMIT_AN_IDEA: {
-	        "de-DE": "eine Idee äußern",
+		"de-DE": "eine Idee äußern",
 		"en-US": "Add an idea",
 		"es-ES": "Proponer una idea",
 		"fa-IR": "یک ایده اضافه کنید.",
@@ -3672,7 +3681,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 {{.FromName}} lädt dich ein die neue Schuldentracker App auszuprobieren - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 Dein persönlicher Code lautet: {{.InviteCode}}`,
-		
+
 		"en-US": `Hi {{.ToName}},
 
 {{.FromName}} is inviting you to use debts tracking app - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
@@ -3758,7 +3767,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "{{.FromName}} создал(а) запись о долге: {{.ReceiptURL}}",
 	},
 	MESSENGER_RECEIPT_TEXT: {
-		"de-DE": "Ich habe online einen Schuldschein erstellt, für mehr Details siehe {{.ReceiptURL}}",		
+		"de-DE": "Ich habe online einen Schuldschein erstellt, für mehr Details siehe {{.ReceiptURL}}",
 		"en-US": "I've created a debt record regards you, see details at {{.ReceiptURL}}",
 		"es-ES": "He creado una notificación de la deuda, las detalles están aquí {{.ReceiptURL}}",
 		"fa-IR": "من یک سابقه بدهی برای شما ایجاد کرده ام، لطفا جزئیات را ملاحظه فرمایید در {{.ReceiptURL}}",
@@ -3843,7 +3852,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		//-------------------------------------------------------
 	},
 	INLINE_RECEIPT_GENERATING_MESSAGE: {
-    "de-DE": `<b>{{.Creator}} erstellte online einen Schuldschein</b> der dich betrifft.
+		"de-DE": `<b>{{.Creator}} erstellte online einen Schuldschein</b> der dich betrifft.
 
 >> Generating receipt`, // TODO(DE)
 		//-------------------------------------------------------
@@ -3853,11 +3862,11 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		//-------------------------------------------------------
 		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
 
-  >> <i>Generating receipt...</i>`,  // TODO(ES)
+  >> <i>Generating receipt...</i>`, // TODO(ES)
 		//-------------------------------------------------------
 		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
 
-  >> <i>Generating receipt...</i>`,  // TODO(FA)
+  >> <i>Generating receipt...</i>`, // TODO(FA)
 		//-------------------------------------------------------
 		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
 
@@ -3982,9 +3991,9 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	NO_NAME: {
 		"de-DE": "unbekannt",
 		"en-US": "no name",
-		"es-ES": "",
-		"fa-IR": "",
-		"it-IT": "",
+		"es-ES": "sin nombre", // TODO(es) verify
+		"fa-IR": "بدون نام", // TODO(fa) verify
+		"it-IT": "senza nome", // TODO(it) verify
 		"ru-RU": "без имени",
 	},
 	TELEGRAM_RECEIPT: {
@@ -4012,7 +4021,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "<b>Хотите добавить заметку или комментарий?</b>\n%v Заметки хранятся для вашего личного пользования.\n%v Комментарий виден всем кому разрешён просмотр этой транзакции.",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_NOTE: {
-		"de-DE": "Bitte schreibe eine Notiz:",		
+		"de-DE": "Bitte schreibe eine Notiz:",
 		"en-US": "Please write a note:",
 		"es-ES": "Por favor, escribe una nota:",
 		"fa-IR": "لطفاً یک یادداشت بنویسید:",
@@ -4036,7 +4045,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "виден вам и %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: {
-		"de-DE": "Schreibe nun eine Bemerkung auf den Schuldschein:",		
+		"de-DE": "Schreibe nun eine Bemerkung auf den Schuldschein:",
 		"en-US": "Please write the comment:",
 		"es-ES": "Por favor, escribe un comentario:",
 		"fa-IR": "لطفاً شرح را ثبت کنید:",
@@ -4044,7 +4053,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "Напишите комментарий:",
 	},
 	MESSAGE_TEXT_TRANSFER_NOTE_ADDED_ASK_FOR_COMMENT: {
-		"de-DE": "Deine Notiz wurde hinzugefügt, möchtest du noch eine Bemerkung auf den Schuldschein schreiben?",		
+		"de-DE": "Deine Notiz wurde hinzugefügt, möchtest du noch eine Bemerkung auf den Schuldschein schreiben?",
 		"en-US": "Memo have been added. Do you want to write a comment?",
 		"es-ES": "La nota está añadida. ¿Quieres escribir un comentario?",
 		"fa-IR": "یادداشت اضافه شد. آیا میخواهید یک شرح ثبت کنید؟",
@@ -4076,7 +4085,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"ru-RU": "Без комментариев",
 	},
 	COMMAND_TEXT_NO_NOTE_FOR_TRANSFER: {
-		"de-DE": "Keine Notizen",		
+		"de-DE": "Keine Notizen",
 		"en-US": "Without notes",
 		"es-ES": "Sin notas",
 		"fa-IR": "بدون یادداشت",
