@@ -1095,7 +1095,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_YOUR_AD_COULD_BE_HERE: {
 		"de-DE": "Hier könnte <a href>ihre Werbung</a> stehen",
 		"en-US": "You can <a href>advertise here</a>",
-		"es-ES": "Aquí se puede <a href>publicar un anuncio",
+		"es-ES": "Aquí se puede <a href>publicar un anuncio</a>",
 		"fa-IR": "شما میتوانید <a href>در اینجا تبلیغ کنید</a>",
 		"it-IT": "Puoi <a href>pubblicizzare qui</a>",
 		"ru-RU": "Здесь можно <a href>разместить рекламу</a>",
@@ -2029,15 +2029,15 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_USER_JOINED_GROUP: {
 		"de-DE": `Hi %v, du bist der Gruppe, die sich Rechnungen teilt, beigetreten.`,
 		"en-US": `Hi %v, you joined this bill splitting group.`,
-		"fa-IR": "شما شرکت کننده در هر گروه تقسیم لایحه نیستید.",                    // TODO(FA) verify
-		"it-IT": "Non sei un partecipante a qualsiasi gruppo di divisione fatture.", // TODO(IT) verify
+		"fa-IR": "سلام %v، شما به گروه تقسیم این لایحه پیوستید",                    // TODO(FA) verify
+		"it-IT": "Hi %v, sei entrato in questo gruppo di divisione fatture.", // TODO(IT) verify
 		"ru-RU": `Привет %v, вы присоеденились к этой группе по совместной оплате счетов.
 		`,
 	},
 	MESSAGE_TEXT_MEMBERS_CARD_TITLE: {
 		"de-DE": "<b>Wer sich die Rechnung teilt</b> (%d)",
 		"en-US": "<b>Bills splitting members</b> (%d)",
-		"fa-IR": "<b>نقض تقسیم اعضا</b> (٪d)",                     // TODO(FA) verify
+		"fa-IR": "(%d) <b>نقض تقسیم اعضا</b>",                     // TODO(FA) verify
 		"it-IT": "<b>Membri di divisione delle bollette</b> (%d)", // TODO(IT) verify
 		"ru-RU": "<b>Участники совместных оплат</b> (%d)",
 	},
@@ -2113,8 +2113,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Status: %v",
 		"en-US": "Status: %v",
 		"es-ES": "Estado: %v",
-		"fa-IR": "وضعیت:", // TODO(FA) verify
-		"it-IT": "Stato:", // TODO(IT) verify
+		"fa-IR": "وضعیت: %v", // TODO(FA) verify
+		"it-IT": "Stato: %v", // TODO(IT) verify
 		"ru-RU": "Статус: %v",
 	},
 	BUTTON_TEXT_ADD_MEMBER: {
@@ -2145,15 +2145,15 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "➗ Teilen: %v",
 		"en-US": "➗ Split: %v",
 		"es-ES": "➗ Dividir: %v",
-		"fa-IR": "➗ تقسیم:٪v",  // TODO(FA) verify
-		"it-IT": "➗ Split:% v", // TODO(IT) verify
+		"fa-IR": "➗ تقسیم: %v",  // TODO(FA) verify
+		"it-IT": "➗ Split: %v", // TODO(IT) verify
 		"ru-RU": "➗ Делить: %v",
 	},
 	MESSAGE_TEXT_SPLIT_LABEL_WITH_VALUE: {
 		"de-DE": "Teilen: %v",
 		"en-US": "Split: %v",
 		"es-ES": "Dividir: %v",
-		"fa-IR": "تقسیم:٪v",  // TODO(FA) verify
+		"fa-IR": "تقسیم: %v",  // TODO(FA) verify
 		"it-IT": "Split: %v", // TODO(IT) verify
 		"ru-RU": "Делить: %v",
 	},
@@ -2217,7 +2217,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "📅 Fällig: %v",
 		"en-US": "📅 Due: %v",
 		"es-ES": "📅 Hasta: %v",
-		"fa-IR": "📅 مورد:٪v",    // TODO(FA) verify
+		"fa-IR": "📅 مورد: %v",    // TODO(FA) verify
 		"it-IT": "📅 Dovuto: %v", // TODO(IT) verify
 		"ru-RU": "📅 До: %v",
 	},
@@ -2273,7 +2273,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Rechnung: %v",
 		"en-US": "Bill: %v",
 		"es-ES": "Cuenta: %v",
-		"fa-IR": "بیل :٪v",  // TODO(FA) verify
+		"fa-IR": "بیل :%v",  // TODO(FA) verify
 		"it-IT": "Bill: %v", // TODO(IT) verify
 		"ru-RU": "Cчёт: %v",
 	},
@@ -2281,7 +2281,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Rechnung: %v",
 		"en-US": "Bill: %v",
 		"es-ES": "Cuenta: %v",
-		"fa-IR": "بیل :٪v",  // TODO(FA) verify
+		"fa-IR": "بیل: %v",  // TODO(FA) verify
 		"it-IT": "Bill: %v", // TODO(IT) verify
 		"ru-RU": "Cчёт: %v",
 	},
@@ -2289,7 +2289,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "%v, du teilst diese Rechnung bereits.",
 		"en-US": "%v, you are sharing this bill already.",
 		"es-ES": "%v, estás compartiendo esta cuenta ya.",
-		"fa-IR": "٪v، شما قبلا این لایحه را به اشتراک می گذارید",      // TODO(FA) verify
+		"fa-IR": "%v، شما قبلا این لایحه را به اشتراک می گذارید",      // TODO(FA) verify
 		"it-IT": "%v, stai già condividendo questo disegno di legge.", // TODO(IT) verify
 		"ru-RU": "%v, вы уже входите в состав участников.",
 	},
@@ -2297,7 +2297,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "%v ist dem Teilen der Rechnung beigetreten.",
 		"en-US": "%v joined to bill sharing.",
 		"es-ES": "%v pagar conjuntamente.",
-		"fa-IR": "٪v به اشتراک گذاری لایحه پیوست.",        // TODO(FA) verify
+		"fa-IR": "%v به اشتراک گذاری لایحه پیوست.",        // TODO(FA) verify
 		"it-IT": "%v unito alla condivisione di fatture.", // TODO(IT) verify
 		"ru-RU": "%v присоеденился к совместной оплате.",
 	},
@@ -2345,7 +2345,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Wert: %v\nTeile deine Kosten mit Freunden und verfolge deren Rückzahlungen.",
 		"en-US": "Amount: %v\nShares expenses with friends & track paybacks",
 		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones",  // TODO(ES): Have to be shorter
-		"fa-IR": "مقدار :٪v \n هزینه ها را با دوستان و بازپرداخت پیگیری می کند",              // TODO(FA) verify
+		"fa-IR": "مقدار: %v" + "\n" + "هزینه ها را با دوستان و بازپرداخت پیگیری می کند",              // TODO(FA) verify
 		"it-IT": "Importo: %v\nDisponi i costi con gli amici e le retribuzioni delle tracce", // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты",
 	},
@@ -2362,8 +2362,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Wert: %v\nZur Fälligkeit wird eine Benachrichtigung geschickt, falls so eingestellt",
 		"en-US": "Amount: %v\nSends notifications on due date if set",
 		"es-ES": "Importe: %v\nEnviar las notificaciones el día de vencimiento",
-		"fa-IR": "مقدار:%v \n اگر تنظیم شود، اطلاعیه ها را در تاریخ تعیین شده ارسال می کند", // TODO(FA):  verify
-		"it-IT": "Importo:% v\nSend le notifiche alla data di scadenza se impostato", // TODO(IT) verify
+		"fa-IR": "مقدار: %v" + "\n" + "اگر تنظیم شود، اطلاعیه ها را در تاریخ تعیین شده ارسال می کند", // TODO(FA):  verify
+		"it-IT": "Importo: %v\nSend le notifiche alla data di scadenza se impostato", // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
 	},
 	SPLITUS_PLEASE_JOIN_IF_NOT_ON_THE_LIST: {
@@ -3424,7 +3424,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"en-US": "You decided to return %v but outstanding amount is just %v.\n\nPlease enter values equal to %v or less.",
 		"es-ES": "Decidiste devolver %v pero la cantidad pendiente es solo %v.\n\nPor favor ingrese valores iguales a %v o menos.", // TODO(ES) verify
 		"fa-IR": "شما تصمیم گرفتید %v را بازگردانید اما مقدار قابل توجهی فقط %v است.\n\nلطفا مقادیر برابر %v یا کمتر را وارد کنید", // TODO(FA) verify
-		"it-IT": "Hai deciso di restituire% v ma la quantità in sospeso è solo %v.\n\nInserisci valori pari o uguali a %v o meno.", // TODO(IT) verify
+		"it-IT": "Hai deciso di restituire %v ma la quantità in sospeso è solo %v.\n\nInserisci valori pari o uguali a %v o meno.", // TODO(IT) verify
 		"ru-RU": "Вы решили вернуть %v, но непогашенная сумма равна %v. \n\n Пожалуйста, введите значение равное %v или меньше.",
 	},
 	MESSAGE_TEXT_HELP_ROOT: {
