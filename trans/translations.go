@@ -1231,6 +1231,26 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "Sto inviando la notifica a %v tramite Telegram...",
 		"ru-RU": "Отправляем для %v извещение через Telegram...",
 	},
+	DAY: {
+		"en-US": "%v day",
+		"ru-RU": "%v день",
+	},
+	DAYS_234: {
+		"en-US": "%v days",
+		"ru-RU": "%v дня",
+	},
+	DAYS: {
+		"en-US": "%v days",
+		"ru-RU": "%v дней",
+	},
+	MESSAGE_TEXT_INTEREST: {
+		"en-US": "<b>Interest</b>: %v%% per %v",
+		"ru-RU": "<b>Ставка</b>: %v%% за %v",
+	},
+	MESSAGE_TEXT_INTEREST_MIN_PERIOD: {
+		"en-US": "minimum period %v",
+		"ru-RU": "минимальный период %v",
+	},
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_FROM_USER: {
 		"de-DE": "{{.Counterparty}} schuldet dir {{.Amount}} .",
 		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
