@@ -1,20 +1,22 @@
 package trans
 
 import (
-	"fmt"
 	"github.com/strongo/app"
 	"strings"
+	"github.com/pkg/errors"
 )
 
 // DebtsTrackerLocales - defines locales specific to DebtsTracker app
 type DebtsTrackerLocales struct {
 }
 
+var ErrUnsupportedLocale = errors.New("unsupported locale")
+
 // GetLocaleByCode5 - get locale by code
 func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale, err error) {
 	var ok bool
 	if locale, ok = SupportedLocalesByCode5[code5]; !ok {
-		err = fmt.Errorf("Locale not found by code5: %v", code5)
+		err = errors.WithMessage(ErrUnsupportedLocale, code5)
 	}
 	return locale, err
 }

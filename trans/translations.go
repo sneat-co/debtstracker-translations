@@ -653,8 +653,8 @@ var TRANS = map[string]map[string]string{
 		"de-DE": "Erinnerung aktivieren",
 		"en-US": "Turn-on reminder",
 		"es-ES": "Recordatorio de encendido", // TODO(es) verify
-		"fa-IR": "یادآوری روشن", // TODO(fa) verify
-		"it-IT": "Ricordo promozionale", // TODO(it) verify
+		"fa-IR": "یادآوری روشن",              // TODO(fa) verify
+		"it-IT": "Ricordo promozionale",      // TODO(it) verify
 		"ru-RU": "Включить напоминание",
 	},
 	MESSAGE_TEXT_REMINDER_ALREADY_RESCHEDULED: {
@@ -916,7 +916,7 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_NEW_FUNDRAISING: {
 		"en-US": "New fundraising",
 		"es-ES": "Nueva recaudación de fondos", // TODO(ES) verify
-		"fa-IR": "جمع آوری پول جدید", // TODO(FA) verify
+		"fa-IR": "جمع آوری پول جدید",           // TODO(FA) verify
 		"it-IT": "Nueva recaudación de fondos", // TODO(IT) verify
 		"ru-RU": "Новый сбор средств",
 	},
@@ -994,24 +994,24 @@ var TRANS = map[string]map[string]string{
 	MESAGE_TEXT_CREATING_BILL: {
 		"de-DE": "Rechnung erstellen",
 		"en-US": "Creating bill",
-		"es-ES": "Crear factura", // TODO(ES) verify
-		"fa-IR": "ایجاد لایحه", // TODO(FA) verify
+		"es-ES": "Crear factura",        // TODO(ES) verify
+		"fa-IR": "ایجاد لایحه",          // TODO(FA) verify
 		"it-IT": "Creazione di fattura", // TODO(IT) verify
 		"ru-RU": "Создаётся счёт",
 	},
 	MESSAGE_TEXT_ASK_BILL_CURRENCY: {
 		"de-DE": "In welcher Währung ist die Rechnung?",
 		"en-US": "What currency this bill in?",
-		"es-ES": "¿Qué moneda esta factura?", // TODO(es) verify
+		"es-ES": "¿Qué moneda esta factura?",       // TODO(es) verify
 		"it-IT": "Quale moneta ha questa fattura?", // TODO(it) verify
-		"fa-IR": "این لایحه چه ارزشی دارد؟", // TODO(fa) verify
+		"fa-IR": "این لایحه چه ارزشی دارد؟",        // TODO(fa) verify
 		"ru-RU": "В какой валюте этот счёт?",
 	},
 	MESSAGE_TEXT_ASK_BILL_PAYER: {
 		"de-DE": "Wer bezahlt die Rechnung?",
 		"en-US": "Who pays for the bill?",
-		"es-ES": "¿Quién paga la cuenta?", // TODO(es) verify
-		"it-IT": "Chi paga il conto?", // TODO(it) verify
+		"es-ES": "¿Quién paga la cuenta?",           // TODO(es) verify
+		"it-IT": "Chi paga il conto?",               // TODO(it) verify
 		"fa-IR": "چه کسی برای این لایحه می پردازد؟", // TODO(fa) verify
 		"ru-RU": "Кто платит по счёту?",
 	},
@@ -1145,7 +1145,7 @@ var TRANS = map[string]map[string]string{
 
 		"de-DE": `Bitte wähle <a>eine Währung aus der Liste</a>.
 
-	Falls die Standardoptionen nicht reichen, sende mir einen Text. Zum Beispiel: <i>Äpfel</>".`,
+	Falls die Standardoptionen nicht reichen, sende mir einen Text. Zum Beispiel: <i>Äpfel</i>".`,
 
 		"en-US": `Please choose from the options below or <a>select a currency from the list</a>.
 
@@ -1242,6 +1242,10 @@ var TRANS = map[string]map[string]string{
 	DAYS: {
 		"en-US": "%v days",
 		"ru-RU": "%v дней",
+	},
+	MESSAGE_TEXT_INTEREST_PLEASE_SPECIFY_PERIOD: {
+		"en-US": "Please also specify interest period, e.g. is it %v%% for per year, month, week, some number of days?",
+		"ru-RU": "Пожалуйста укажите также процентный период, т.е. уточните %%v%% это процент за какое количество дней?",
 	},
 	MESSAGE_TEXT_INTEREST: {
 		"en-US": "<b>Interest</b>: %v%% per %v",
@@ -1799,6 +1803,14 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "Cosa vuoi modificare?",
 		"ru-RU": "Что будем настраивать?",
 	},
+	MT_ATTEMPT_TO_CREATE_DEBT_WITH_INTEREST_AFFECTING_OUTSTANDING: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "You are trying to create a debt with interest that will affect outstanding transfers. Please close them first.",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Вы пытаетесь создать запись о долге с процентами которая затронет незакрытые долги. Пожалуйста закройте их сначала.",
+	},
 	MESSAGE_TEXT_NOT_IMPLEMENTED_YET: {
 		"de-DE": "Entschuldigung, diese Funktion ist noch nicht fertig programmiert.",
 		"en-US": "Sorry, this functionality is not implemented yet.",
@@ -2018,8 +2030,8 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	ALERT_TEXT_YOU_ARE_ALREADY_MEMBER_OF_THE_GROUP: {
 		"de-DE": "Du bist schon Mitglied beim Teilen dieser Rechnung.",
 		"en-US": "You are already a member of this bill splitting group.",
-		"es-ES": "Ya es miembro de este grupo de división de facturas.", // TODO(ES)
-		"fa-IR": "شما قبلا عضو این گروه تقسیم لایحه هستید.", // TODO(FA)
+		"es-ES": "Ya es miembro de este grupo de división de facturas.",  // TODO(ES)
+		"fa-IR": "شما قبلا عضو این گروه تقسیم لایحه هستید.",              // TODO(FA)
 		"it-IT": "Sei già membro di questo gruppo di divisione fatture.", // TODO(IT)
 		"ru-RU": "Вы уже участник этой группы по совместной оплате счетов.",
 	},
@@ -2041,15 +2053,15 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_NO_GROUPS: {
 		"de-DE": "Du gehörst zu keiner Gruppe, die sich Rechnungen teilt.",
 		"en-US": "You are not a participant of any bill splitting group.",
-		"es-ES": "Usted no es participante de ningún grupo de división de facturas.",  // TODO(ES) verify
-		"fa-IR": "شما شرکت کننده در هر گروه تقسیم لایحه نیستید.", // TODO(FA) verify
-		"it-IT": "Non sei un partecipante a qualsiasi gruppo di divisione fatture.", // TODO(IT) verify
+		"es-ES": "Usted no es participante de ningún grupo de división de facturas.", // TODO(ES) verify
+		"fa-IR": "شما شرکت کننده در هر گروه تقسیم لایحه نیستید.",                     // TODO(FA) verify
+		"it-IT": "Non sei un partecipante a qualsiasi gruppo di divisione fatture.",  // TODO(IT) verify
 		"ru-RU": "Вы не состоите в группах совместной оплаты.",
 	},
 	MESSAGE_TEXT_USER_JOINED_GROUP: {
 		"de-DE": `Hi %v, du bist der Gruppe, die sich Rechnungen teilt, beigetreten.`,
 		"en-US": `Hi %v, you joined this bill splitting group.`,
-		"fa-IR": "سلام %v، شما به گروه تقسیم این لایحه پیوستید",                    // TODO(FA) verify
+		"fa-IR": "سلام %v، شما به گروه تقسیم این لایحه پیوستید",              // TODO(FA) verify
 		"it-IT": "Hi %v, sei entrato in questo gruppo di divisione fatture.", // TODO(IT) verify
 		"ru-RU": `Привет %v, вы присоеденились к этой группе по совместной оплате счетов.
 		`,
@@ -2072,9 +2084,9 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_ASK_HOW_TO_SPLIT_IN_GROP: {
 		"de-DE": "In welchem Verhältnis teilt ihr in dieser Gruppe eure Rechnungen?",
 		"en-US": "In what proportion do you split bills in this group?",
-		"es-ES": "¿En qué proporción divide las facturas en este grupo?", // TODO(ES) verify
+		"es-ES": "¿En qué proporción divide las facturas en este grupo?",     // TODO(ES) verify
 		"fa-IR": "در این سهم، آیا شما در این گروه حساب ها را تقسیم می کنید؟", // TODO(FA) verify
-		"it-IT": "In quale percentuale dividi le fatture in questo gruppo?", // TODO(IT) verify
+		"it-IT": "In quale percentuale dividi le fatture in questo gruppo?",  // TODO(IT) verify
 		"ru-RU": "В какой пропорции вы делите счета в этой группе?",
 	},
 	MESSAGE_TEXT_MEMBERS_CARD_FOOTER: {
@@ -2165,7 +2177,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "➗ Teilen: %v",
 		"en-US": "➗ Split: %v",
 		"es-ES": "➗ Dividir: %v",
-		"fa-IR": "➗ تقسیم: %v",  // TODO(FA) verify
+		"fa-IR": "➗ تقسیم: %v", // TODO(FA) verify
 		"it-IT": "➗ Split: %v", // TODO(IT) verify
 		"ru-RU": "➗ Делить: %v",
 	},
@@ -2173,7 +2185,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Teilen: %v",
 		"en-US": "Split: %v",
 		"es-ES": "Dividir: %v",
-		"fa-IR": "تقسیم: %v",  // TODO(FA) verify
+		"fa-IR": "تقسیم: %v", // TODO(FA) verify
 		"it-IT": "Split: %v", // TODO(IT) verify
 		"ru-RU": "Делить: %v",
 	},
@@ -2237,7 +2249,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "📅 Fällig: %v",
 		"en-US": "📅 Due: %v",
 		"es-ES": "📅 Hasta: %v",
-		"fa-IR": "📅 مورد: %v",    // TODO(FA) verify
+		"fa-IR": "📅 مورد: %v",   // TODO(FA) verify
 		"it-IT": "📅 Dovuto: %v", // TODO(IT) verify
 		"ru-RU": "📅 До: %v",
 	},
@@ -2365,7 +2377,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"de-DE": "Wert: %v\nTeile deine Kosten mit Freunden und verfolge deren Rückzahlungen.",
 		"en-US": "Amount: %v\nShares expenses with friends & track paybacks",
 		"es-ES": "Importe: %v\nCompartir los gastos entre amigos y seguir las devoluciones",  // TODO(ES): Have to be shorter
-		"fa-IR": "مقدار: %v" + "\n" + "هزینه ها را با دوستان و بازپرداخت پیگیری می کند",              // TODO(FA) verify
+		"fa-IR": "مقدار: %v" + "\n" + "هزینه ها را با دوستان و بازپرداخت پیگیری می کند",      // TODO(FA) verify
 		"it-IT": "Importo: %v\nDisponi i costi con gli amici e le retribuzioni delle tracce", // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nПоделить траты между друзьями и отследить возвраты",
 	},
@@ -2383,7 +2395,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"en-US": "Amount: %v\nSends notifications on due date if set",
 		"es-ES": "Importe: %v\nEnviar las notificaciones el día de vencimiento",
 		"fa-IR": "مقدار: %v" + "\n" + "اگر تنظیم شود، اطلاعیه ها را در تاریخ تعیین شده ارسال می کند", // TODO(FA):  verify
-		"it-IT": "Importo: %v\nSend le notifiche alla data di scadenza se impostato", // TODO(IT) verify
+		"it-IT": "Importo: %v\nSend le notifiche alla data di scadenza se impostato",                 // TODO(IT) verify
 		"ru-RU": "Сумма: %v\nЗапись долга и рассылка оповещений в день возврата.",
 	},
 	SPLITUS_PLEASE_JOIN_IF_NOT_ON_THE_LIST: {
@@ -2700,8 +2712,8 @@ O usa il menu' qui sotto.`,
 	},
 	BT_OTHER_CURRENCY: {
 		"en-US": "Another currency",
-		"es-ES": "Otra moneda", // TODO(es) verify
-		"fa-IR": "ارز دیگر", // TODO(fa) verify
+		"es-ES": "Otra moneda",     // TODO(es) verify
+		"fa-IR": "ارز دیگر",        // TODO(fa) verify
 		"it-IT": "Un'altra valuta", // TODO(it) verify
 		"ru-RU": "Другая валюта",
 	},
@@ -2882,7 +2894,7 @@ O usa il menu' qui sotto.`,
 	},
 	MESSAGE_TEXT_COUNTERPARTY_OWES_YOU_SINGLE_DEBT: {
 		"de-DE": `<b>%v</b> schuldet dir <b>%v</b>.`,
-		"en-US": `<b>%v</b> owed to you <b>%v</b>.`,
+		"en-US": `<b>%v</b> owes to you <b>%v</b>.`,
 		"es-ES": `<b>%v</b> has prestado <b>%v</b>.`,
 		"fa-IR": `<b>%v</b> به شما بدهکار بوده <b>%v</b>.`,
 		"it-IT": `<b>%v</b> e' in debito di <b>%v</b>.`,
@@ -3340,12 +3352,12 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"ru-RU": "Извините, в данный момент доступны только эти каналы для отправки квитанции:",
 	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_TELEGRAM: {
-		"de-DE": "Quittung per Telegram verschickt.",
-		"en-US": "Receipt sent through Telegram.",
-		"es-ES": "El recibo ha sido enviado vía Telegram.",
-		"fa-IR": "رسید از طریق تلگرام ارسال شد.",
-		"it-IT": "Notifica inviata tramite Telegram.",
-		"ru-RU": "Квитанция отправлена через телеграм.",
+		"de-DE": "📤 Quittung per Telegram verschickt.",
+		"en-US": "📤 Receipt sent through Telegram.",
+		"es-ES": "📤 El recibo ha sido enviado vía Telegram.",
+		"fa-IR": "📤 رسید از طریق تلگرام ارسال شد.",
+		"it-IT": "📤 Notifica inviata tramite Telegram.",
+		"ru-RU": "📤 Квитанция отправлена через телеграм.",
 	},
 	MESSAGE_TEXT_RECEIPT_NOT_SENT_AS_COUNTERPARTY_HAS_DISABLED_TG_BOT: {
 		"de-DE": "Quittung konnte nicht per Telegram gesendet werden, da %v den Chat mit dem Bot gelöscht hat.",
@@ -3384,12 +3396,12 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"ru-RU": "Попытка посмотреть свою собственную квитанцию.",
 	},
 	MESSAGE_TEXT_RECEIPT_VIEWED_BY_COUNTERPARTY: {
-		"de-DE": "Quittung wurde von Gegenpartei gesichtet",
-		"en-US": "Receipt viewed",
-		"es-ES": "El recibo ha sido visto",
-		"fa-IR": "رسید رویت شد.",
-		"it-IT": "Debiti visti",
-		"ru-RU": "Квитанция просмотрена",
+		"de-DE": "👓 Quittung wurde von Gegenpartei gesichtet",
+		"en-US": "👓 Receipt viewed",
+		"es-ES": "👓 El recibo ha sido visto",
+		"fa-IR": "👓 رسید رویت شد.",
+		"it-IT": "👓 Debiti visti",
+		"ru-RU": "👓 Квитанция просмотрена",
 	},
 	MESSAGE_TEXT_VIEW_MY_NUMBER_IN_INTERNATIONAL_FORMAT: {
 		"de-DE": "Du kannst deine eigene Nummer in dem Format anzeigen, welches wir erwarten.",
@@ -3428,7 +3440,7 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"en-US": "The number should be positive (<i>greater than 0</i>)",
 		"es-ES": "El número tiene que ser positivo (<i>más de  0</i>)",
 		"fa-IR": "شماره باید مثبت باشد (<i>بزرگتر از 0</i>)",
-		"it-IT": "Il numero dovrebbe essere positivo (<i>maggiore di 0<i/>)",
+		"it-IT": "Il numero dovrebbe essere positivo (<i>maggiore di 0</i>)",
 		"ru-RU": "Цифра должна быть положительной (<i>больше нуля</i>)",
 	},
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: {
@@ -3450,8 +3462,8 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_HELP_ROOT: {
 		"de-DE": "Was hast du für eine Frage? Wenn irgendwas unklar ist, frag ruhig hier @%v",
 		"en-US": "What is your question? If anything is missed here, feel free to ask in our @%v",
-		"es-ES": "¿Cuál es tu pregunta? Si algo se pierde aquí, siéntase libre de preguntar en nuestro @%v", // TODO(es) verify
-		"fa-IR": "سوالت چیست؟ اگر چیزی در اینجا از دست رفته است، لطفا در @%v ما بپرسید", // TODO(fa) verify
+		"es-ES": "¿Cuál es tu pregunta? Si algo se pierde aquí, siéntase libre de preguntar en nuestro @%v",   // TODO(es) verify
+		"fa-IR": "سوالت چیست؟ اگر چیزی در اینجا از دست رفته است، لطفا در @%v ما بپرسید",                       // TODO(fa) verify
 		"it-IT": "Qual è la tua domanda? Se qualche cosa è mancato qui, non esitate a chiedere al nostro @%v", // TODO(it) verify
 		"ru-RU": "Какой у вас вопрос? Если здесь нет ответа пожалуйста спросите в нашей группе @%v",
 	},
@@ -3459,16 +3471,16 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 		"de-DE": "Zurück zur FAQ Liste",
 		"en-US": "Back to FAQ list",
 		"es-ES": "Volver a la lista de preguntas frecuentes", // TODO(es) verify
-		"fa-IR": "بازگشت به لیست سوالات متداول", // TODO(fa) verify
-		"it-IT": "Torna all'elenco delle FAQ", // TODO(it) verify
+		"fa-IR": "بازگشت به لیست سوالات متداول",              // TODO(fa) verify
+		"it-IT": "Torna all'elenco delle FAQ",                // TODO(it) verify
 		"ru-RU": "Назад к списку вопросов",
 	},
 	HELP_HOW_TO_CREATE_BILL_Q: {
 		"de-DE": "Wie erstellt man Rechnungen?",
 		"en-US": "How to create new bill?",
 		"es-ES": "¿Cómo crear una nueva factura?", // TODO(es) verify
-		"fa-IR": "چگونه برای ایجاد لایحه جدید؟", // TODO(fa) verify
-		"it-IT": "Come creare un nuovo conto?", // TODO(it) verify
+		"fa-IR": "چگونه برای ایجاد لایحه جدید؟",   // TODO(fa) verify
+		"it-IT": "Come creare un nuovo conto?",    // TODO(it) verify
 		"ru-RU": "Как создать новый счёт?",
 	},
 	HELP_HOW_TO_CREATE_BILL_A: {
@@ -3897,6 +3909,29 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   >> <i>Generating receipt...</i>`,
 		//-------------------------------------------------------
 	},
+//	INLINE_RECEIPT_MESSAGE: {
+//		//-------------------------------------------------------
+//		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
+//
+//`,
+//		//-------------------------------------------------------
+//		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
+//
+//`,
+//		//-------------------------------------------------------
+//		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
+//
+//`,
+//		//-------------------------------------------------------
+//		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
+//
+//`,
+//		//-------------------------------------------------------
+//		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
+//
+//`,
+//		//-------------------------------------------------------
+//	},
 	INLINE_RECEIPT_MESSAGE: {
 		//-------------------------------------------------------
 		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
@@ -4012,13 +4047,13 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"de-DE": "unbekannt",
 		"en-US": "no name",
 		"es-ES": "sin nombre", // TODO(es) verify
-		"fa-IR": "بدون نام", // TODO(fa) verify
+		"fa-IR": "بدون نام",   // TODO(fa) verify
 		"it-IT": "senza nome", // TODO(it) verify
 		"ru-RU": "без имени",
 	},
 	TELEGRAM_RECEIPT: {
 		"de-DE": "{{.FromName}} hat einen Schuldschein erstellt ({{.TransferCurrency}})",
-		"en-US": "{{.FromName}} created a debtrecord ({{.TransferCurrency}})",
+		"en-US": "{{.FromName}} created a debt record ({{.TransferCurrency}})",
 		"es-ES": "{{.FromName}} ha creado una deuda ({{.TransferCurrency}})",
 		"fa-IR": "{{.FromName}} ایجاد یک سابقه بدهی ({{.TransferCurrency}})",
 		"it-IT": "{{.FromName}} ha registrato un debito ({{.TransferCurrency}})",
@@ -4047,6 +4082,90 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"fa-IR": "لطفاً یک یادداشت بنویسید:",
 		"it-IT": "Per favore scrivi un appunto:",
 		"ru-RU": "Напишите заметку:",
+	},
+	COMMAND_TEXT_MORE_ABOUT_INTEREST_COMMAND: {
+		"de-DE": "Mehr über Prozentsätze", // TODO(DE)
+		"en-US": "More about interest",
+		"es-ES": "Más sobre interés", // TODO(ES)
+		"fa-IR": "بیشتر در مورد علاقه", // TODO(FA)
+		"it-IT": "Dimmi di più", // TODO(IT)
+		"ru-RU": "Подробнее о процентах",
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_INTEREST_SHORT: {
+		"de-DE": `<b>Prozent und Kommentar</b>
+
+To set interest rate & period send a message in following format:
+		<pre>percent/percent_period/min_period/grace_period:note</pre>`, // TODO(DE)
+		"en-US": `<b>Interest & notes</b>
+
+To set interest rate & period send a message in following format:
+		<pre>percent/percent_period/min_period/grace_period:note</pre>`,
+		"es-ES": `<b>Porcentaje y comentario</b>
+
+To set interest rate & period send a message in following format:
+		<pre>percent/percent_period/min_period/grace_period:note</pre>`, // TODO(ES)
+		"fa-IR": `<b>درصد و نظر</b>
+
+To set interest rate & period send a message in following format:
+		<pre>percent/percent_period/min_period/grace_period:note</pre>`, // TODO(FA)
+		"it-IT": `<b>Percentuale e commento</b>
+
+To set interest rate & period send a message in following format:
+		<pre>percent/percent_period/min_period/grace_period:note</pre>`, // TODO(IT
+		"ru-RU": `<b>Процент и комментарий</b>
+
+Чтобы задать процент по долгу отправьте сообщение в следующем формате:
+	<pre>процент/процентный_период/минимальный_период/грэйс_период:комментарий</pre>`,
+	},
+	MESSAGE_TEXT_TRANSFER_ASK_FOR_INTEREST_LONG: {
+		"de-DE": ``, // TODO(DE)
+		"en-US": `<b>Interest & notes</b>
+
+To set interest rate & period send a message in following format:
+
+		<pre>percent/percent_period/min_period/grace_period:note</pre>
+
+Where (<i>first 2 params are required</i>):
+ * <code>percent</code> - up to 2 digits after comma.
+ * <code>min_period</code> - number of days for interest period.
+ * <code>min_perdio</code> - minimum number of days for interest calculation. Is 1 by default and can't be less.'.
+ * <code>grace_period</code> - interest-less period. At the moment you can't set grace & min period at the same time'.
+ * <code>note</code> - any explanatory text that will be visible to you and your counterparty.
+
+Interest is calculated daily (<i>every 24 hours</i>) using <a href="https://www.investopedia.com/terms/s/simple_interest.asp#utm_source=DebtsTrackerBot&utm_medium=telegram_bot&utm_campaign=new_debt_wizard">simple percent</a> formula.
+
+<b>Examples</b>:
+
+		<code>2/7/5</code> - 2% per week, minimum for 5 days
+		<code>15/360</code> - 15%/year, (<i>minimum for 1 day</i>)
+		<code>3/30/0/10</code> - 3% per month with 10 days grace period
+
+❗ The % functionality is in BETA testing stage, please let us know in @DebtsTrackerGroup if anything works not as you would expect.`, // TODO - replace link!
+		"es-ES": ``, // TODO(ES)
+		"fa-IR": ``, // TODO(FA)
+		"it-IT": ``, // TODO(IT
+		"ru-RU": `<b>Процент и комментарий</b>
+
+Чтобы задать процент по долгу отправьте сообщение в следующем формате:
+
+	<pre>процент/процентный_период/минимальный_период/грэйс_период:комментарий</pre>
+
+Где (<i>первые 2 параметра обязательны</i>):
+ * <code>процент</code> - возможно до 2х знаков после запятой.
+ * <code>процентный_период</code> - количество дней за которые начисляется процент указанный предыдущим числом.
+ * <code>минимальный_период</code> - минимальное количество дней за которые сразу начисляются проценты. По умолчанию 1 и не может быть меньше.
+ * <code>грэйс_период</code> - безпроцентный период. Пока нельзя задавать и минимальный процент и безпроцентный период одновременно.
+ * <code>комментарий</code> - любой поясняющий текст видимый вам и другому участнику сделки.
+
+Начисление ежедневно (<i>каждые 24 часа</i>) по формуле <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%B5_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%BD%D1%82%D1%8B">простого процента</a>.
+
+<b>Примеры</b>:
+
+		<code>2/7/5</code> - под 2% в неделю, минимум на 5 дней
+		<code>15/360</code> - под 15% годовых
+		<code>3/30/0/10</code> - под 3% в месяц с безпроцентным периодом в 10 дней
+
+❗ Функционал % ещё тестируется, пожалуйста сообщите в @DebtsTrackerGroup если что-то пошло не так.`,
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT_ONLY: {
 		"de-DE": "Falls du eine Bemerkung auf den Schuldschein schreiben willst, schick mir jetzt den Text.",
@@ -4245,17 +4364,17 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 
 	WS_INDEX_TG_BOT_P: {
 		"ru-RU": "В настоящий момент наша программа доступна в мессенджере <a href='https://telegram.org/'>Телеграм</a>.",
-		"en-US": "At the moment our program is available just on <a href='https://telegram.org/'><b>Telegram</b> messenger</a>",
-		"es-ES": "De momento nuestro programa está disponible sólo en <a href='https://telegram.org/'> <b> Telegrama </b> mensajero </a>",
-		"fa-IR": "درحال حاضر برنامه ما فقط در دسترس است در <a href='https://telegram.org/'>تلگرام</a>",
-		"pl-PL": "W tej chwili nasz program jest dostępny tylko na <a href='https://telegram.org/'> <b> Telegram </b> messenger </a>",
-		"pt-PT": "No momento em que o nosso programa está disponível apenas na <a href='https://telegram.org/'> <b> Telegram </b> messenger </a>",
-		"de-DE": "Im Moment ist unser Programm nur auf <a href='https://telegram.org/'> <b> Telegram </b> verfügbar </a>",
-		"fr-FR": "Au moment de notre programme est disponible seulement sur <a href='https://telegram.org/'> <b> Telegram </b> messager </a>",
-		"it-IT": "Al momento il nostro programma è disponibile solo su <a href='https://telegram.org/'> <b> Telegram </b></a>",
-		"ko-KO": "지금이 순간 우리의 프로그램은 단지에 <a href='https://telegram.org/'>의 <b> 전보 </b>을 메신저 </a>를 볼 수 있습니다",
-		"ja-JP": "現時点では私たちのプログラムは、ちょうど上の<a href='https://telegram.org/'><B>電報</b>のメッセンジャー</a>で提供されています",
-		"zh-CN": "目前我们的计划是只提供在<a href='https://telegram.org/'><B>电报</b>的使者</A>",
+		"en-US": "At the moment our program is available just on <a href='https://telegram.org/'>Telegram messenger</a>",
+		"es-ES": "De momento nuestro programa está disponible sólo en <a href='https://telegram.org/'>Telegrama mensajero </a>",
+		"fa-IR": "درحال حاضر برنامه ما فقط در دسترس است در <a href='https://telegram.org/'>Телеграм</a>تلگرام",
+		"pl-PL": "W tej chwili nasz program jest dostępny tylko na <a href='https://telegram.org/'>Telegram messenger</a>",
+		"pt-PT": "No momento em que o nosso programa está disponível apenas na <a href='https://telegram.org/'>Telegram messenger</a>",
+		"de-DE": "Im Moment ist unser Programm nur auf <a href='https://telegram.org/'>Telegram verfügbar</a>",
+		"fr-FR": "Au moment de notre programme est disponible seulement sur <a href='https://telegram.org/'>Telegram messager</a>",
+		"it-IT": "Al momento il nostro programma è disponibile solo su <a href='https://telegram.org/'>Telegram</a>",
+		"ko-KO": "지금이 순간 우리의 프로그램은 단지에 <a href='https://telegram.org/'>Telegram</a> 의 <b> 전보 </b>을 메신저 를 볼 수 있습니다",
+		"ja-JP": "現時点では私たちのプログラムは、ちょうど上の<a href='https://telegram.org/'>Telegram</a>電報のメッセンジャーで提供されています",
+		"zh-CN": "目前我们的计划是只提供在<a href='https://telegram.org/'>Telegram</a>电报的使者",
 	},
 	WS_MOTTO: {
 		"ru-RU": "Платежи по долгам целиком и вовремя!",

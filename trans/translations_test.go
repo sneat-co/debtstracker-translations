@@ -4,6 +4,7 @@ import (
 	"regexp"
 	"testing"
 	"strings"
+	"fmt"
 )
 
 var (
@@ -99,6 +100,22 @@ func TestTRANS(t *testing.T) {
 		}
 	}
 	t.Logf("English words count: %d", wordsCount)
+}
+
+func TestHtmlTags(t *testing.T) {
+	for code, vals := range TRANS {
+		for lang, val := range vals {
+			for _, tag := range []string{"b", "i"} {
+				openTag, closeTag := fmt.Sprintf("<%v>", tag), fmt.Sprintf("</%v>", tag)
+				if openCount, closeCount := strings.Count(val, openTag), strings.Count(val, closeTag); openCount != closeCount {
+					t.Errorf("%v[%v]: %v != %v: %v != %v: %v", code, lang, openTag, closeTag, openCount, closeCount, val)
+				}
+			}
+			if openCount, closeCount := strings.Count(val, "<a"), strings.Count(val, "</a>"); openCount != closeCount {
+				t.Errorf("%v[%v]: %v != %v: %v != %v: %v", code, lang, "<a>", "</a>", openCount, closeCount, val)
+			}
+		}
+	}
 }
 
 func isSupportedLang(l string) bool {
