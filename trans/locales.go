@@ -1,9 +1,9 @@
 package trans
 
 import (
+	"github.com/pkg/errors"
 	"github.com/strongo/app"
 	"strings"
-	"github.com/pkg/errors"
 )
 
 // DebtsTrackerLocales - defines locales specific to DebtsTracker app

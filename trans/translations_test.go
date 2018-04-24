@@ -1,18 +1,18 @@
 package trans
 
 import (
-	"regexp"
-	"testing"
-	"strings"
 	"fmt"
+	"regexp"
+	"strings"
+	"testing"
 )
 
 var (
 	supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
-	requiredLocales = []string{"en-US", "es-ES", "ru-RU", "it-IT", "fa-IR"}
-	desiredLocales = []string{"it-IT", "fa-IR", "es-ES"}
-	reVars = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
-	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
+	requiredLocales  = []string{"en-US", "es-ES", "ru-RU", "it-IT", "fa-IR"}
+	desiredLocales   = []string{"it-IT", "fa-IR", "es-ES"}
+	reVars           = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
+	reWords          = regexp.MustCompile(`\w+|%(?:v|d)`)
 )
 
 func TestTRANS(t *testing.T) {

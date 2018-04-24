@@ -1,6 +1,8 @@
 package trans
 
-import "github.com/strongo/bots-framework/core"
+import (
+	"github.com/strongo/bots-framework/core"
+)
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
@@ -133,7 +135,7 @@ var TRANS = map[string]map[string]string{
 		"es-ES": "prestado_a_ti",
 		"fa-IR": "قرض_دادن",
 		"it-IT": "debito",
-		"ru-RU": "дал",
+		"ru-RU": "дать",
 	},
 	COMMAND_GOT: {
 		"de-DE": "anleihen",
@@ -141,15 +143,15 @@ var TRANS = map[string]map[string]string{
 		"es-ES": "prestado_por_ti",
 		"fa-IR": "قرض_گرفتن",
 		"it-IT": "credito",
-		"ru-RU": "взял",
+		"ru-RU": "взять",
 	},
 	COMMAND_RETURNED: {
 		"de-DE": "beglichen",
-		"en-US": "returned",
+		"en-US": "return",
 		"es-ES": "devuelto",
 		"fa-IR": "بازگردانده_شده",
 		"it-IT": "rientra",
-		"ru-RU": "вернул",
+		"ru-RU": "вернуть",
 	},
 	COMMAND_BALANCE: {
 		"de-DE": "ausstehend",
@@ -714,12 +716,12 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "\xF0\x9F\x98\xB3 Извините, я не понял вашу команду. Возможно я немного туповат...\n\nЧтобы начать сначала нажмите /menu",
 	},
 	"COMMAND_TEXT_LANGUAGE": {
-		"de-DE": "/Sprache",
-		"en-US": "App /language",
-		"es-ES": "App /Idioma",
-		"fa-IR": "App /زبان",
-		"it-IT": "/Lingua",
-		"ru-RU": "/Язык приложения",
+		"de-DE": "Sprache",
+		"en-US": "App language",
+		"es-ES": "App Idioma",
+		"fa-IR": "App زبان",
+		"it-IT": "Lingua",
+		"ru-RU": "Язык приложения",
 	},
 	"/start": {
 		"de-DE": "/start",
@@ -778,44 +780,44 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "У вас нет долгов с назначеным сроком к возврату.",
 	},
 	COMMAND_TEXT_GAVE: {
-		"de-DE": "/Verleihen",
-		"en-US": "/Gave",
-		"es-ES": "/Prestado_por_ti",
-		"fa-IR": "/قرض_دادن",
-		"it-IT": "/Credito",
-		"ru-RU": "/Дал",
+		"de-DE": "Verleihen",
+		"en-US": "Gave",
+		"es-ES": "Prestado por ti",
+		"fa-IR": "قرض_دادن",
+		"it-IT": "Credito",
+		"ru-RU": "Дать",
 	},
 	COMMAND_TEXT_GOT: {
-		"de-DE": "/Anleihen",
-		"en-US": "/Got",
-		"es-ES": "/Prestado_a_ti",
-		"fa-IR": "/قرض_گرفتن",
-		"it-IT": "/Debito",
-		"ru-RU": "/Взял",
+		"de-DE": "Anleihen",
+		"en-US": "Got",
+		"es-ES": "Prestado a ti",
+		"fa-IR": "قرض_گرفتن",
+		"it-IT": "Debito",
+		"ru-RU": "Взять",
 	},
 	COMMAND_TEXT_RETURN: {
-		"de-DE": "/Beglichen",
-		"en-US": "/Returned",
-		"es-ES": "/Devuelto",
-		"fa-IR": "/بازگشت",
-		"it-IT": "/Rientra",
-		"ru-RU": "/Вернул",
+		"de-DE": "Beglichen",
+		"en-US": "Return",
+		"es-ES": "Devuelto",
+		"fa-IR": "بازگشت",
+		"it-IT": "Rientra",
+		"ru-RU": "Вернуть",
 	},
 	COMMAND_TEXT_BALANCE: {
-		"de-DE": "/Ausstehend",
-		"en-US": "/Balance",
-		"es-ES": "/Balance",
-		"fa-IR": "/تراز",
-		"it-IT": "/Bilancio",
-		"ru-RU": "/Баланс",
+		"de-DE": "Ausstehend",
+		"en-US": "Balance",
+		"es-ES": "Balance",
+		"fa-IR": "تراز",
+		"it-IT": "Bilancio",
+		"ru-RU": "Баланс",
 	},
 	COMMAND_TEXT_SETTING: {
-		"de-DE": "/Einstellungen",
+		"de-DE": "Einstellungen",
 		"en-US": "/Settings",
-		"es-ES": "/Ajustes",
-		"fa-IR": "/تنظیمات",
-		"it-IT": "/Settaggi",
-		"ru-RU": "/Настройки",
+		"es-ES": "Ajustes",
+		"fa-IR": "تنظیمات",
+		"it-IT": "Settaggi",
+		"ru-RU": "Настройки",
 	},
 	COMMAND_TEXT_HIGH_FIVE: {
 		"de-DE": "Gib mir Fünf!",
@@ -826,36 +828,65 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Дать пять!",
 	},
 	COMMAND_TEXT_CHANGE_LANG: {
-		"de-DE": "/Sprache",
-		"en-US": "/Language",
-		"es-ES": "/Idioma",
-		"fa-IR": "/زبان",
-		"it-IT": "/Lingua",
-		"ru-RU": "/Язык",
+		"de-DE": "Sprache",
+		"en-US": "Language",
+		"es-ES": "Idioma",
+		"fa-IR": "زبان",
+		"it-IT": "Lingua",
+		"ru-RU": "Язык",
 	},
 	COMMAND_TEXT_HELP: {
-		"de-DE": "/Hilfe",
-		"en-US": "/Help",
-		"es-ES": "/Ayuda",
-		"fa-IR": "/کمک",
-		"it-IT": "/Aiuto",
-		"ru-RU": "/Помощь",
+		"de-DE": "Hilfe",
+		"en-US": "Help",
+		"es-ES": "Ayuda",
+		"fa-IR": "کمک",
+		"it-IT": "Aiuto",
+		"ru-RU": "Помощь",
 	},
 	COMMAND_TEXT_HISTORY: {
-		"de-DE": "/Verlauf",
-		"en-US": "/History",
-		"es-ES": "/Cronología",
-		"fa-IR": "/پیشینه",
-		"it-IT": "/Cronologia",
-		"ru-RU": "/История",
+		"de-DE": "Verlauf",
+		"en-US": "History",
+		"es-ES": "Cronología",
+		"fa-IR": "پیشینه",
+		"it-IT": "Cronologia",
+		"ru-RU": "История",
 	},
 	COMMAND_TEXT_CANCEL: {
-		"de-DE": "/Abbrechen",
-		"en-US": "/Cancel",
-		"es-ES": "/Cancelar",
-		"fa-IR": "/کنسل",
-		"it-IT": "/Annulla",
-		"ru-RU": "/Отменить",
+		"de-DE": "Abbrechen",
+		"en-US": "Cancel",
+		"es-ES": "Cancelar",
+		"fa-IR": "کنسل",
+		"it-IT": "Annulla",
+		"ru-RU": "Отменить",
+	},
+	COMMAND_TEXT_REFERRERS: {
+		//"de-DE": "Abbrechen",
+		"en-US": "Referrers",
+		//"es-ES": "Cancelar",
+		//"fa-IR": "کنسل",
+		//"it-IT": "Annulla",
+		"ru-RU": "Нас рекомендуют",
+	},
+	MESSAGE_TEXT_HOW_TO_ADD_TG_CHANNEL: {
+		"en-US": `To add your channel to the list just write about us with a link as %v <code>&lt;-</code> replace <code>YOUR_CHANNEL</code> with your own channel.
+
+It's better if you hide the link in HTML as:
+
+<pre>&lt;a href="%v"&gt;@%v&lt;/a&gt;</pre>
+
+This should be rendered by Telegram clients as: <a href="%v">@%v</a>
+
+Top 5 referrers for the last 100 new users will be shown here.`,
+
+		"ru-RU": `Чтобы добавить ваш канал в этот список просто напишите об этом боте использую ссылку вида %v <code>&lt;-</code> замените <code>YOUR_CHANNEL</code> на ваш канал.
+
+Будет лучше  если вы спрячете её в HTML как:
+
+<pre>&lt;a href="%v"&gt;@%v&lt;/a&gt;</pre>
+
+Такой код должен отобразиться в Телеграмме как: <a href="%v">@%v</a>
+
+Топ-5 источников последних 100 пользователей будут показаны здесь.`,
 	},
 	BUTTON_TEXT_CANCEL: {
 		"de-DE": "↩ Zurück",
@@ -888,6 +919,38 @@ var TRANS = map[string]map[string]string{
 		"fa-IR": "اضافه کردن گروه",   // TODO(FA) verify
 		"it-IT": "Aggiungere gruppo", // TODO(IT) verify
 		"ru-RU": "Добавить группу",
+	},
+	COMMAND_TEXT_GROUPS: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "Groups",
+		"es-ES": "", // TODO(ES) verify
+		"fa-IR": "", // TODO(FA) verify
+		"it-IT": "", // TODO(IT) verify
+		"ru-RU": "Группы",
+	},
+	COMMAND_TEXT_BILLS: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "Bills",
+		"es-ES": "", // TODO(ES) verify
+		"fa-IR": "", // TODO(FA) verify
+		"it-IT": "", // TODO(IT) verify
+		"ru-RU": "Закрыть счёт",
+	},
+	COMMAND_TEXT_SETTLE_BILL: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "Settle bill",
+		"es-ES": "", // TODO(ES) verify
+		"fa-IR": "", // TODO(FA) verify
+		"it-IT": "", // TODO(IT) verify
+		"ru-RU": "Счета",
+	},
+	COMMAND_TEXT_SETTLE_BILLS: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "Settle bills",
+		"es-ES": "", // TODO(ES) verify
+		"fa-IR": "", // TODO(FA) verify
+		"it-IT": "", // TODO(IT) verify
+		"ru-RU": "Закрыть счета",
 	},
 	COMMAND_TEXT_INVITE_FIREND: {
 		"de-DE": "Freund einladen",
@@ -952,7 +1015,6 @@ var TRANS = map[string]map[string]string{
 
 		<i>Enviar '.' para anular</i>`,
 
-
 		"fa-IR": `لطفا برای مخاطب جدید یک نام وارد کنید:
 		میتوانید به صورت دستی تایپ نموده یا از لیست مخاطبین خود انتخاب نمایید (<i>throw "clip" icon</i>).
 
@@ -1008,12 +1070,12 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "В какой валюте этот счёт?",
 	},
 	MESSAGE_TEXT_ASK_BILL_PAYER: {
-		"de-DE": "Wer bezahlt die Rechnung?",
-		"en-US": "Who pays for the bill?",
+		"de-DE": "Wer bezahlt die Rechnung?", // TODO(de) verify
+		"en-US": "Who paid for the bill?",
 		"es-ES": "¿Quién paga la cuenta?",           // TODO(es) verify
 		"it-IT": "Chi paga il conto?",               // TODO(it) verify
 		"fa-IR": "چه کسی برای این لایحه می پردازد؟", // TODO(fa) verify
-		"ru-RU": "Кто платит по счёту?",
+		"ru-RU": "Кто оплатил счёт?",
 	},
 	MESSAGE_TEXT_SELF_ACKNOWLEDGEMENT: {
 		"de-DE": "%v muss dem zustimmen",
@@ -1111,7 +1173,6 @@ var TRANS = map[string]map[string]string{
 		"es-ES": `🤖: Claro que soy un robot encantador, pero más comodo usar una aplicación especial.No esta disponible ya pero se puede ver como será: <a href = "https://debtstracker.io/es/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
 	¿Quieres que te avisemos cuando esté lista?`,
-
 
 		"fa-IR": `🤖: مطمئناً من روبات خوبی هستم. اما بعضی وقت هاساده تر و مناسب تر است که از یک برنامه به خوبی تخصصی شده استفاده شود، این برنامه هنوز برای استفاده عموم آماده نیست ولی می توانید چک کنید که چگونه به نظر خواهد رسید: <a href="https://debtstracker.io/fa/#utm_source=telegram&utm_campaign=ads_screen">https://debtstracker.io/en/</a>
 
@@ -1432,7 +1493,6 @@ var TRANS = map[string]map[string]string{
 		"es-ES": `🤖 Puedes valolarlo con una buena nota y una buena opinión en el catálogo Store Bot?
 		‎Te costará menos de un minuto! 😇`,
 
-
 		"fa-IR": `🤖  آیا می توانید در کاتالوگ روباتها در استور بوت امتیاز بالایی داده و اظهار نظر خوبی در مورد این روبات ثبت کنید؟
 		این کار کمتر از یک دقیقه از وقت شما را می گیرد! 😇`,
 
@@ -1473,7 +1533,6 @@ var TRANS = map[string]map[string]string{
 	‎3. Write your message or press "Skip this step" button
 
 	Thank you very much! As a result of your actions, even more people will learn about the bot.All this will serve as the additional motivation for the developers! 😎`,
-
 
 		"es-ES": `<b>Como valorar en 3 simples pasos:</b>
 
@@ -1802,6 +1861,18 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"fa-IR": "می خواهید چه چیزی را تنظیم کنید؟",
 		"it-IT": "Cosa vuoi modificare?",
 		"ru-RU": "Что будем настраивать?",
+	},
+	MT_NO_OUTSTANDING_TRANSFERS: {
+		"de-DE": "", // TODO(DE)
+		"en-US": `You are trying to create return record but there are no outstanding debts.
+
+If you believe this is a mistale please let us know in @DebtsTrackerGroup.`,
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": `Вы пытаетесь создать запись о возврате долга, но мы не нашли не закрытых долгов.
+
+Если вы считаете что это ошибка пожалуйста дайте нам знать в @DebtsTrackerGroup.`,
 	},
 	MT_ATTEMPT_TO_CREATE_DEBT_WITH_INTEREST_AFFECTING_OUTSTANDING: {
 		"de-DE": "", // TODO(DE)
@@ -2317,6 +2388,22 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 		"it-IT": "Bill: %v", // TODO(IT) verify
 		"ru-RU": "Cчёт: %v",
 	},
+	MESSAGE_TEXT_GROUPS_ONLY_COMMAND: {
+		"de-DE": "",
+		"en-US": "This command is available in group chats only for now.",
+		"es-ES": "",
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "Эта команда пока что доступна только в групповых чатах",
+	},
+	MESSAGE_TEXT_ALREADY_HAS_CONTACT_WITH_SUCH_NAME: {
+		"de-DE": "", // TODO(DE)
+		"en-US": "You already have contact with name: %v",
+		"es-ES": "", // TODO(ES)
+		"fa-IR": "", // TODO(FA)
+		"it-IT": "", // TODO(IT)
+		"ru-RU": "У вас уже есть контакт с таким именем: %v",
+	},
 	MESSAGE_TEXT_ALREADY_BILL_MEMBER: {
 		"de-DE": "%v, du teilst diese Rechnung bereits.",
 		"en-US": "%v, you are sharing this bill already.",
@@ -2510,15 +2597,12 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"ru-RU": `Меня зовут <b>Коллектус</b>.`,
 	},
 	SPLITUS_TG_COMMANDS: {
-		"de-DE": `<b>Bot Befehle:</b>
-
-	/groups - Gruppen anzeigen
-	/bills - ausstehende Rechnungen anzeigen
-	/help - weitere Informationen über den Bot`,
+		"de-DE": ``,
 		"en-US": `<b>Bot commands:</b>
-
 	/groups - List of groups
 	/bills - List of outstanding bills
+	/menu - Main menu
+	/settings - Settings
 	/help - Learn how to use bot, report issues, ask questions`,
 		"es-ES": ``, // TODO(ES)
 		"fa-IR": ``, // TODO(FA)
@@ -2526,6 +2610,8 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"ru-RU": `<b>Команды для бота:</b>
 	/groups - Список групп
 	/bills - Список незакрытых платежей
+	/menu - Главное меню
+	/settings - Настройки
 	/help - Узнать как использовать, сообщить о проблеме, задать вопрос`,
 	},
 	COLLECTUS_TG_COMMANDS: {
@@ -2542,7 +2628,7 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 	/fundraisings - Список активных сборов
 	/help - Узнать как использовать, сообщить о проблеме, задать вопрос`,
 	},
-	MESSAGE_TEXT_SEND_HELP_COMMAND_FOR_HELP: {// This is the same for all languages.
+	MESSAGE_TEXT_SEND_HELP_COMMAND_FOR_HELP: { // This is the same for all languages.
 		"de-DE": `Sende /help für Hilfe über den Umgang mit diesen Bot.`,
 		"en-US": `Send /help for details on how to use this bot.`,
 		"es-ES": ``,
@@ -2550,7 +2636,7 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"it-IT": ``,
 		"ru-RU": `Отправьте /help для справки по использованию бота.`,
 	},
-	MESSAGE_TEXT_HI: {// This is the same for all languages.
+	MESSAGE_TEXT_HI: { // This is the same for all languages.
 		"de-DE": `¡Hola! Hi! Привет! سلام! Hallo!`,
 		"en-US": `¡Hola! Hi! Привет! سلام! Hallo!`,
 		"es-ES": `¡Hola! Hi! Привет! سلام! Hallo!`,
@@ -2558,7 +2644,7 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"it-IT": `¡Hola! Hi! Привет! سلام! Hallo!`,
 		"ru-RU": `¡Hola! Hi! Привет! سلام! Hallo!`,
 	},
-	MESSAGE_TEXT_HI_USERNAME: {// This is the same for all languages.
+	MESSAGE_TEXT_HI_USERNAME: { // This is the same for all languages.
 		"de-DE": `Hi %v!`,
 		"en-US": `Hi %v!`,
 		"es-ES": `¡Hola %v!`,
@@ -2574,7 +2660,7 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"it-IT": `Puoi tornare al menu' principale tramite /menu`,
 		"ru-RU": `Можно вернуться назад в главное /меню`,
 	},
-	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: {// This is the same for all languages.
+	MESSAGE_TEXT_YOUR_SELECTED_PREFERRED_LANGUAGE: { // This is the same for all languages.
 		"de-DE": `Bevorzugte Sprache: %v`,
 		"en-US": `Preferred app language: %v`,
 		"es-ES": `Idioma favorito del bot: %v`,
@@ -2617,6 +2703,33 @@ And if you do collective purchases and want to split bills @SplitusBot is here t
 		"fa-IR": "اقدام بعدی چیست؟",
 		"it-IT": "Cosa posso fare ora?",
 		"ru-RU": "Что будем делать дальше?",
+	},
+	MESSAGE_TEXT_REFERRERS_TITLE: {
+		"en-US": "Our friends:",
+		"ru-RU": "Наши друзья:",
+	},
+	COMMAND_TEXT_ADD_MY_TG_CHANNEL: {
+		"en-US": "Add my channel",
+		"ru-RU": "Добавить мой канал",
+	},
+	MESSAGE_TEXT_DEBTUS_COMMANDS: {
+		"en-US": `<b>Commands for the bot</b>
+🏠 /menu - show main menu
+🔙 /return - return previously recorded debt
+📥 /got - record money you received from others
+📤 /gave - record money you gave to others
+📚 /history - latest transactions
+🏁 /balance - display current balance
+⚙ /settings - adjust your preferences`,
+
+		"ru-RU": `<b>Команды бота</b>
+🏠 /menu - показать основное меню
+🔙 /return - записать возврат долга
+📥 /got - записать о взятии в долг
+📤 /gave - записать о том что дали взаймы
+📚 /history - последние транзакции
+🏁 /balance - показать текущий баланс
+⚙ /settings - настройки`,
 	},
 	MESSAGE_TEXT_WHATS_NEXT_HINT: {
 		"de-DE": `
@@ -2828,6 +2941,14 @@ O usa il menu' qui sotto.`,
 		"it-IT": "Scegli un debito che e' stato restituito completamente o parzialmente.",
 		"ru-RU": "Выберите долг который был возвращён целиком или частично.",
 	},
+	MESSAGE_TEXT_NO_DEBTS_TO_RETURN: {
+		"de-DE": "You have no records for debts that can be returned.",
+		"en-US": "",
+		"es-ES": "",
+		"fa-IR": "",
+		"it-IT": "",
+		"ru-RU": "У вас нет записей о догах для возврата.",
+	},
 	MESSAGE_TEXT_PLEASE_ACKNOWLEDGE_TRANSFER: {
 		"de-DE": "Bitte stimme dem zu oder lehne es ab.",
 		"en-US": "Please confirm or decline this transfer.",
@@ -2920,7 +3041,6 @@ O usa il menu' qui sotto.`,
 		"es-ES": `¿Ha sido totalmente devuelta esta deuda?
 
 		<i>si ha sido devuelta parcialmente puedes introducir el importe.</i>`,
-
 
 		"fa-IR": `آیا این بدهی بصورت کامل بازپرداخت شده است؟
 
@@ -3577,7 +3697,6 @@ Puedo apuntar quién debe a quién y recordarte la fecha de devolución.
 
 ¿Qué te apetecería hacer?`,
 
-
 		"fa-IR": `سلام، من کالکتیوس هستم - حسابدار شخصی و مامور وصول شما
 
 من میتوانم اینکه چه کسی به چه کسی بدهکار است را ثبت کرده و زمان بازپرداخت را یادآوری کنم.
@@ -3646,7 +3765,6 @@ Si no tienes el código puedes dejarnos tu contacto y te lo enviaremos cuando se
 
 Enviamos 10 invitaciones por día a los primeros de la cola + 1 de modo casual.`,
 
-
 		"fa-IR": `<b>%v</b>,
 
 درحال حاضر ربات ما تنها با دریافت دعوت از دوستان در دسترس می باشد.
@@ -3693,11 +3811,9 @@ Your personal invitation code is: {{.InviteCode}}`,
 
 El código de tu invitación es: {{.InviteCode}}`,
 
-
 		"fa-IR": `سلام{{.ToName}}, {{.FromName}} شما را دعوت کرده تا برنامه ردیابی بدهی ها را امتحان کنید.- https://debtstracker.io/invite#id={{.InviteCode}}&ربات تلگرام={{.TgBot}}&{{.Utm}}
 
 کد دعوت شما: {{.InviteCode}}`,
-
 
 		"it-IT": `Ciao {{.ToName}}, {{.FromName}} ti ha invitato a provare 'debts tracking app' - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
@@ -3725,7 +3841,6 @@ You invitation code is: {{.InviteCode}}`,
 {{.FromName}} te ha invitado a probar la aplicación para controlar tus deudas - https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}
 
 El código de tu invitación es: {{.InviteCode}}`,
-
 
 		"fa-IR": `سلام{{.ToName}},
 
@@ -3762,7 +3877,6 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 <p>{{.FromName}} te ha invitado a <a href="https://debtstracker.io/invite#id={{.InviteCode}}&telegram-bot={{.TgBot}}&{{.Utm}}">probar la app para controlar tus deudas</a>.</p>
 
 <p>El código de tu invitación es: <b>{{.InviteCode}}</b></p>`,
-
 
 		"fa-IR": `<p>سلام{{.ToName}},</p>
 
@@ -3909,29 +4023,29 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   >> <i>Generating receipt...</i>`,
 		//-------------------------------------------------------
 	},
-//	INLINE_RECEIPT_MESSAGE: {
-//		//-------------------------------------------------------
-//		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
-//
-//`,
-//		//-------------------------------------------------------
-//		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
-//
-//`,
-//		//-------------------------------------------------------
-//		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
-//
-//`,
-//		//-------------------------------------------------------
-//		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
-//
-//`,
-//		//-------------------------------------------------------
-//		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
-//
-//`,
-//		//-------------------------------------------------------
-//	},
+	//	INLINE_RECEIPT_MESSAGE: {
+	//		//-------------------------------------------------------
+	//		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
+	//
+	//`,
+	//		//-------------------------------------------------------
+	//		"es-ES": `<b>{{.Creator}} ha creado una deuda</b> asociada a ti.
+	//
+	//`,
+	//		//-------------------------------------------------------
+	//		"fa-IR": `<b>{{.Creator}} یک بدهی </b> مرتبط با شما ثبت نموده است.
+	//
+	//`,
+	//		//-------------------------------------------------------
+	//		"it-IT": `<b>{{.Creator}} ha registrato un debito</b> associato a te.
+	//
+	//`,
+	//		//-------------------------------------------------------
+	//		"ru-RU": `<b>{{.Creator}} создал(а) запись о долге</b> касающегося Вас.
+	//
+	//`,
+	//		//-------------------------------------------------------
+	//	},
 	INLINE_RECEIPT_MESSAGE: {
 		//-------------------------------------------------------
 		"en-US": `<b>{{.Creator}} recorded a debt</b> associated with you.
@@ -4086,9 +4200,9 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	COMMAND_TEXT_MORE_ABOUT_INTEREST_COMMAND: {
 		"de-DE": "Mehr über Prozentsätze", // TODO(DE)
 		"en-US": "More about interest",
-		"es-ES": "Más sobre interés", // TODO(ES)
+		"es-ES": "Más sobre interés",   // TODO(ES)
 		"fa-IR": "بیشتر در مورد علاقه", // TODO(FA)
-		"it-IT": "Dimmi di più", // TODO(IT)
+		"it-IT": "Dimmi di più",        // TODO(IT)
 		"ru-RU": "Подробнее о процентах",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_INTEREST_SHORT: {
@@ -4452,5 +4566,97 @@ Interest is calculated daily (<i>every 24 hours</i>) using <a href="https://www.
 		"fa-IR": "حال شما چطوره؟",
 		"it-IT": "Come te la passi?",
 		"ru-RU": "Как идут дела?",
+	},
+	MESSAGE_TEXT_ABOUT_DRAW_SHORT: {
+		"de-DE": ``,
+		"en-US": `<b>From bot's creator</b>: Hi %v!
+
+I've spend lot's of time to make this bot useful, quick & reliable. I hope you'll like it if not yet.
+
+Hopefully it will become popular. That would allow me to spend more time working on it. And to make it better.
+
+I'm not too good at marketing & ads so I decided to spend my limited resource <b>rewarding you</b>!
+
+💰 Starting from the 1st quarter of the 2018 I'll <b>draw $100 between users of the bot</b>.'
+`,
+		"es-ES": ``,
+		"fa-IR": ``,
+		"it-IT": ``,
+		"ru-RU": `<b>От создателя бота:</b> Привет %v, буду краток.
+
+Я потратил много времени чтобы сделать этот бот удобным, быстрым и надёжным. Надеюсь он вам понравится если ещё нет.
+
+Очень хочется чтобы он стал ещё и востребованным. Это позволило бы мне уделять больше времени его развитию. И сделать ещё лучше.
+
+Я не силён в маркетинге и рекламе, да и времени/денег на это нет. Поэтому решил пойти простым путём.
+
+💰 Начиная c первого квартала 2018 года я буду периодически <b>разыгрывыть $100</b> среди пользователей этого бота.`,
+	},
+	MESSAGE_TEXT_ABOUT_DRAW_CALL_TO_ACTION: {
+		"en-US": `If you want to participate in prize drawing please check rules and click the "<b>✅ I'm in!</b>" button.
+
+🙏 Thanks for attention!
+
+<a href="https://t.me/trakhimenok">Alex</a>`,
+		"ru-RU": `Если хотите учавствовать в розыгрыше посмотрите условия и жмите "<b>✅ Хочу учавствовать!</b>".
+
+🙏 Спасибо за внимание!
+
+<a href="https://t.me/trakhimenok">Александр</a>`,
+	},
+	COMMAN_TEXT_MORE_ABOUT_DRAW: {
+		"en-US": "💵 How to win $100?",
+		"ru-RU": "💵 Как выиграть $100?",
+	},
+	COMMAN_TEXT_I_AM_IN_DRAW: {
+		"en-US": "✅ I'm in!",
+		"ru-RU": "✅ Хочу учавствовать!",
+	},
+	MESSAGE_TEXT_ABOUT_DRAW_MORE: {
+		//----------------------------------------------------------------------------------------------------------------
+		"en-US": `For now there would be 3 prizes drawn randomly (<i>and honestly(!), probably throw random.org</i>):
+
+ 🥇 Prize #1 - <code>$50</code> to one of Telegram channels published a post about this bot
+
+ 🥈 Prize #2 - <code>$30</code> to one of the users who invited others
+
+ 🥉 Prize #3 - <code>$20</code> to one of the users who accepted an invite
+
+While prizes will be drawn randomly and everybody can win chances will be proportional to your impact to bot's popularity.
+The more users you invited - the higher chances to win the prize (1:1).
+
+🙏 Thanks for attention and good luck!
+
+<a href="https://t.me/trakhimenok">Alex</a>`,
+		//----------------------------------------------------------------------------------------------------------------
+		"ru-RU": `На данный момент будет 3 денежных приза определяемых случайно (<i>и честно(!), скорее всего через random.org</i>):
+
+ 🥇 Приз №1 - <code>$50</code> одному из Телеграмм каналов написавшему про этот бот
+
+ 🥈 Приз №2 - <code>$30</code> пользователю пригласившему других пользователей
+
+ 🥉 Приз №3 - <code>$20</code> принявшему приглашение друго пользователя
+
+Хотя призы будут определяться случайным образом и у каждого будет возможность выиграть,
+шансы будут пропорциональны вашему вкладу в популяризацию бота.
+Пригласили больше пользователей - получили более высокий шанс выиграть приз (1:1).
+
+🙏 Спасибо за внимание и удачи!
+
+<a href="https://t.me/trakhimenok">Александр</a>`,
+	},
+	MESSAGE_TEXT_JOINED_DRAW: {
+		"en-US": `Thanks, we'll let you know when the draw is about to take place.
+
+For now you can start inviting friends (<i>by sending debt record receipt</i>) or post about the bot in your Telegram-channel.
+
+All invited users are already counted!
+(<i>to learn how to refer users from Telegram channel click 📢 in main menu</i>)`,
+		"ru-RU": `Спасибо, мы сообщим вам перед началом розыгрыша призов.
+
+А пока можете начинать приглашать друзей (<i>через отправку квитанций о долгах</i>) или писать о нас в вашем Телеграм-канале.
+
+Все приглашённые пользователи уже учитываются!
+(<i>чтобы узнать как приглашать пользователей через канал нажмите 📢 в главном меню</i>)`,
 	},
 }

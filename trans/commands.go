@@ -2,24 +2,31 @@ package trans
 
 import "strings"
 
-func Commands(command string, extra... string) (commands []string) {
+func Commands(command string, extra ...string) (commands []string) {
 	vals := TRANS[command]
-	commands = make([]string, len(vals)+len(extra))
-	var i int
+	commands = make([]string, 0, len(vals)*2+len(extra))
 	for _, val := range vals {
 		if val == "" {
 			continue
 		}
-		if strings.HasPrefix(val, "/") {
-			commands[i] = strings.ToLower(val)
-		} else {
-			commands[i] = "/" + strings.ToLower(val)
+		val = strings.ToLower(strings.TrimLeft(val, "/"))
+		for _, c := range commands {
+			if c == val { // duplicate
+				continue
+			}
 		}
-		i += 1
+		commands = append(commands, val)
+		if len(val) > 1 && !strings.Contains(val, " ") {
+			commands = append(commands, "/"+val)
+		}
 	}
 	for _, val := range extra {
-		commands[i] = val
-		i += 1
+		for _, c := range commands {
+			if c == val { // duplicate
+				continue
+			}
+		}
+		commands = append(commands, val)
 	}
 	return
 }

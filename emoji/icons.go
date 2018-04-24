@@ -10,6 +10,7 @@ const (
 	EMO_SMILING_RED_CHEEKS = "😊"
 	EMO_CONFUSED           = "😕"
 	EMO_EMBARRASSED        = "😳"
+	MAN_AND_WOMAN          = "👫"
 	ERROR_ICON             = "🚨"
 	BULB_ICON              = "💡"
 	PUBLIC_LOUDSPEAKER     = "📢"
