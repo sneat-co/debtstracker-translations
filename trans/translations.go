@@ -217,7 +217,7 @@ var TRANS = map[string]map[string]string{
 		"it-IT": " e ",
 		"ru-RU": " и ",
 	},
-	bots.MESSAGE_TEXT_OOPS_SOMETHING_WENT_WRONG: {
+	bots.MessageTextOopsSomethingWentWrong: {
 		"de-DE": "Ups, etwas ist schiefgelaufen... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 		"es-ES": "Ops,  algo ha salido mal... \xF0\x9F\x98\xB3",
@@ -707,7 +707,7 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "libro",
 		"ru-RU": "книгу",
 	},
-	bots.MESSAGE_TEXT_I_DID_NOT_UNDERSTAND_THE_COMMAND: {
+	bots.MessageTextBotDidNotUnderstandTheCommand: {
 		"de-DE": "\xF0\x9F\x98\xB3 Entschuldigung, aber ich habe deinen Befehl nicht verstanden. Vielleicht bin ich ein bisschen dumm...\n\nDu kannst zurück ins /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 		"es-ES": "\xF0\x9F\x98\xB3 Disculpa, no he entendido tu orden. Tal vez soy un poco tonto...\n\nPuedes volver al Menu principal /menu",
