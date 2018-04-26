@@ -4246,7 +4246,7 @@ Where (<i>first 2 params are required</i>):
  * <code>grace_period</code> - interest-less period. At the moment you can't set grace & min period at the same time'.
  * <code>note</code> - any explanatory text that will be visible to you and your counterparty.
 
-Interest is calculated daily (<i>every 24 hours</i>) using <a href="https://www.investopedia.com/terms/s/simple_interest.asp#utm_source=DebtsTrackerBot&utm_medium=telegram_bot&utm_campaign=new_debt_wizard">simple percent</a> formula.
+Interest is calculated daily (<i>every 24 hours</i>) using <a href="https://www.investopedia.com/terms/s/simple_interest.asp#utm_source=DebtsTrackerBot&utm_medium=telegram&utm_campaign=new_debt_wizard">simple percent</a> formula.
 
 <b>Examples</b>:
 
