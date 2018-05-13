@@ -469,11 +469,12 @@ var TRANS = map[string]map[string]string{
 		"ru-RU": "Отправить через Telelgram",
 	},
 	COMMAND_TEXT_GET_LINK_FOR_RECEIPT_IN_TELEGRAM: {
-		"en-US": "Get link for receipt in Telegram",
+		"en-US": "Get link for a receipt in Telegram",
 		"es-ES": "Obtener enlace para recibirlo en Telegram", // TODO(ES) verify
 		"fa-IR": "دریافت پیوند برای دریافت در Telegram",      // TODO(FA) verify
 		"it-IT": "Link per la ricevuta nel Telegram",         // TODO(IT)
 		"ru-RU": "Ссылка для квитанции в Телеграмме",
+		"de-DE": "Erhalten sie einen link für eine quittung in Telegram", // TODO(DE) verify
 	},
 	COMMAND_TEXT_COUNTERPARTY_HAS_NO_TELEGRAM: {
 		"de-DE": "Senden per FB, WhatsApp, Viber, etc.",
