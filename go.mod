@@ -1,4 +1,4 @@
-module github.com/sneat-co/debstracker-translations
+module github.com/sneat-co/debtstracker-translations
 
 go 1.20
 
