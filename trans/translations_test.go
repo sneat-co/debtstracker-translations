@@ -10,9 +10,9 @@ import (
 var (
 	supportedLocales = []string{"ru-RU", "en-US", "fa-IR", "pl-PL", "pt-PT", "es-ES", "fr-FR", "it-IT", "ja-JP", "zh-CN", "de-DE", "ko-KO"}
 	requiredLocales  = []string{"en-US", "es-ES", "ru-RU", "it-IT", "fa-IR"}
-	desiredLocales   = []string{"it-IT", "fa-IR", "es-ES"}
-	reVars           = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
-	reWords          = regexp.MustCompile(`\w+|%(?:v|d)`)
+	//desiredLocales   = []string{"it-IT", "fa-IR", "es-ES"}
+	reVars  = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
+	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
 )
 
 func TestTRANS(t *testing.T) {
@@ -57,13 +57,13 @@ func TestTRANS(t *testing.T) {
 			continue
 		}
 		if len(missingLocales) > 0 {
-			desiredMisses := make([]string, 0, len(missingLocales))
+			//desiredMisses := make([]string, 0, len(missingLocales))
 			requiredMisses := make([]string, 0, len(missingLocales))
 			if _, ok := requiredMissCount[key]; ok {
 				requiredMisses = append(requiredMisses, key)
 				requiredMissCount[key] += 1
-			} else {
-				desiredMisses = append(desiredMisses, key)
+				//} else {
+				//desiredMisses = append(desiredMisses, key)
 			}
 			//if len(desiredMisses) > 0 {
 			//	t.Logf("Key `%v` is missing optional translations for: %v", key, missingLocales)
