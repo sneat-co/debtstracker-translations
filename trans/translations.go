@@ -1,8 +1,6 @@
 package trans
 
-import (
-	"github.com/strongo/bots-framework/core"
-)
+import "github.com/bots-go-framework/bots-fw/botsfw"
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
@@ -217,7 +215,7 @@ var TRANS = map[string]map[string]string{
 		"it-IT": " e ",
 		"ru-RU": " и ",
 	},
-	bots.MessageTextOopsSomethingWentWrong: {
+	botsfw.MessageTextOopsSomethingWentWrong: {
 		"de-DE": "Ups, etwas ist schiefgelaufen... \xF0\x9F\x98\xB3",
 		"en-US": "Oops, something went wrong... \xF0\x9F\x98\xB3",
 		"es-ES": "Ops,  algo ha salido mal... \xF0\x9F\x98\xB3",
@@ -708,7 +706,7 @@ var TRANS = map[string]map[string]string{
 		"it-IT": "libro",
 		"ru-RU": "книгу",
 	},
-	bots.MessageTextBotDidNotUnderstandTheCommand: {
+	botsfw.MessageTextBotDidNotUnderstandTheCommand: {
 		"de-DE": "\xF0\x9F\x98\xB3 Entschuldigung, aber ich habe deinen Befehl nicht verstanden. Vielleicht bin ich ein bisschen dumm...\n\nDu kannst zurück ins /menu",
 		"en-US": "\xF0\x9F\x98\xB3 Sorry, I did not understand your order. May be I'm a little bit dumb...\n\nYou can return to main /menu",
 		"es-ES": "\xF0\x9F\x98\xB3 Disculpa, no he entendido tu orden. Tal vez soy un poco tonto...\n\nPuedes volver al Menu principal /menu",

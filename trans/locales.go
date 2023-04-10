@@ -1,8 +1,9 @@
 package trans
 
 import (
-	"github.com/pkg/errors"
-	"github.com/strongo/app"
+	"errors"
+	"fmt"
+	strongo "github.com/strongo/app"
 	"strings"
 )
 
@@ -16,7 +17,7 @@ var ErrUnsupportedLocale = errors.New("unsupported locale")
 func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale, err error) {
 	var ok bool
 	if locale, ok = SupportedLocalesByCode5[code5]; !ok {
-		err = errors.WithMessage(ErrUnsupportedLocale, code5)
+		err = fmt.Errorf("%w: %s", ErrUnsupportedLocale, code5)
 	}
 	return locale, err
 }
