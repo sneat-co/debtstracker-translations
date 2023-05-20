@@ -3,7 +3,7 @@ package trans
 import (
 	"errors"
 	"fmt"
-	strongo "github.com/strongo/app"
+	"github.com/strongo/i18n"
 	"strings"
 )
 
@@ -14,7 +14,7 @@ type DebtsTrackerLocales struct {
 var ErrUnsupportedLocale = errors.New("unsupported locale")
 
 // GetLocaleByCode5 - get locale by code
-func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale, err error) {
+func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale i18n.Locale, err error) {
 	var ok bool
 	if locale, ok = SupportedLocalesByCode5[code5]; !ok {
 		err = fmt.Errorf("%w: %s", ErrUnsupportedLocale, code5)
@@ -23,14 +23,14 @@ func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale strongo.Locale
 }
 
 // SupportedLocalesByCode5 - supported locales by code 5
-var SupportedLocales []strongo.Locale = []strongo.Locale{
-	strongo.LocaleDeDe,
-	strongo.LocaleEnUS,
-	strongo.LocaleEsEs,
-	strongo.LocaleFaIr,
-	strongo.LocaleItIt,
-	strongo.LocaleRuRu,
-	//strongo.LocaleIdId,
+var SupportedLocales []i18n.Locale = []i18n.Locale{
+	i18n.LocaleDeDe,
+	i18n.LocaleEnUS,
+	i18n.LocaleEsEs,
+	i18n.LocaleFaIr,
+	i18n.LocaleItIt,
+	i18n.LocaleRuRu,
+	//i18n.LocaleIdId,
 	//LocaleEsEs,
 	//LocaleFrFr,
 	//LocalePtPt,
@@ -38,7 +38,7 @@ var SupportedLocales []strongo.Locale = []strongo.Locale{
 }
 
 // SupportedLocales  - supported locales
-var SupportedLocalesByCode5 = make(map[string]strongo.Locale, len(SupportedLocales))
+var SupportedLocalesByCode5 = make(map[string]i18n.Locale, len(SupportedLocales))
 
 func init() {
 	for _, locale := range SupportedLocales {
@@ -48,9 +48,9 @@ func init() {
 
 // ChooseLocaleIcon - locale icons
 var ChooseLocaleIcon string = strings.Join([]string{
-	strongo.LocaleEnUS.FlagIcon,
-	strongo.LocaleRuRu.FlagIcon,
-	strongo.LocaleItIt.FlagIcon,
-	//strongo.LocaleIdId.FlagIcon,
-	strongo.LocaleFaIr.FlagIcon,
+	i18n.LocaleEnUS.FlagIcon,
+	i18n.LocaleRuRu.FlagIcon,
+	i18n.LocaleItIt.FlagIcon,
+	//i18n.LocaleIdId.FlagIcon,
+	i18n.LocaleFaIr.FlagIcon,
 }, " ")
