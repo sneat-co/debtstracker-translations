@@ -2,6 +2,8 @@ github.com/bots-go-framework/bots-fw v0.9.10 h1:OKXf7bSc47rsa0l9Izb+qgvsajXbOmgS
 github.com/bots-go-framework/bots-fw v0.9.10/go.mod h1:2XxS/he3tJ56rSy1ckMYOKRQ7rLV0orh5CoYGTD0Rw4=
 github.com/dal-go/dalgo v0.2.3 h1:n5B7kPf6YZn0gu1SP79USFMDB0BmuxhWLgI690lO7Ks=
 github.com/dal-go/dalgo v0.2.3/go.mod h1:Fv3s/hxtByMVY7PSOi6SJ/5B981kNCuKGBa5O0xHCnM=
+github.com/dal-go/dalgo v0.2.29 h1:nxwhjDkVFQ1QX4JjREOSG0omelj9+LUo1g9VomTNZpU=
+github.com/dal-go/dalgo v0.2.29/go.mod h1:REh0bOj3Nf7esWrhEtXivfaZX5OhVyRofF0crxGlsdc=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/julienschmidt/httprouter v1.3.0 h1:U0609e9tgbseu3rBINet9P48AI/D3oJs4dN7jwJOQ1U=
