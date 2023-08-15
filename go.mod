@@ -3,15 +3,15 @@ module github.com/sneat-co/debtstracker-translations
 go 1.20
 
 require (
-	github.com/bots-go-framework/bots-fw v0.17.3
+	github.com/bots-go-framework/bots-fw v0.21.0
 	github.com/strongo/app v0.5.7
 	github.com/strongo/i18n v0.0.4
 )
 
 require (
-	github.com/bots-go-framework/bots-fw-store v0.0.7 // indirect
+	github.com/bots-go-framework/bots-fw-store v0.1.0 // indirect
 	github.com/bots-go-framework/bots-go-core v0.0.1 // indirect
-	github.com/dal-go/dalgo v0.2.29 // indirect
+	github.com/dal-go/dalgo v0.2.31 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/julienschmidt/httprouter v1.3.0 // indirect
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 // indirect
