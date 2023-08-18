@@ -12,6 +12,8 @@ github.com/bots-go-framework/bots-fw v0.17.3 h1:1COEVdXTasG06CNzpfddTx8Eoprh7uk1
 github.com/bots-go-framework/bots-fw v0.17.3/go.mod h1:UXHnomSLrzphczDC/MA/tuX6v+QReBCVCbp8bT8eA/k=
 github.com/bots-go-framework/bots-fw v0.21.0 h1:LssHDTnuIqOX4AvwUaIAJVE3G0leq++eQ/s4XKUDnGY=
 github.com/bots-go-framework/bots-fw v0.21.0/go.mod h1:gsHiyC44WWZvneqav1R6a2GwUmixgo96PQXXDNiw5X4=
+github.com/bots-go-framework/bots-fw v0.21.1 h1:lMI+nsO9YiyWV/8KKKZhcV1mvmy2NKbnLZIaD4kShr8=
+github.com/bots-go-framework/bots-fw v0.21.1/go.mod h1:Hw+VlAJUG5PzZChWP2Xdmk4Ln92pDiwZpbAf09Imzr0=
 github.com/bots-go-framework/bots-fw-store v0.0.7 h1:Prq99VAJWtVkgLkwXtvMQIg0dsi3XQWoFmWRqBj4j5k=
 github.com/bots-go-framework/bots-fw-store v0.0.7/go.mod h1:XkLKnHugQ98Wr5VIlw2YuRYJNMcqqYDDw/j47plxmBY=
 github.com/bots-go-framework/bots-fw-store v0.1.0 h1:Ob2r28xC2Qui8a5vAskBI0YpiMncYnyhXoKnpBn5BdU=
@@ -24,6 +26,8 @@ github.com/dal-go/dalgo v0.2.29 h1:nxwhjDkVFQ1QX4JjREOSG0omelj9+LUo1g9VomTNZpU=
 github.com/dal-go/dalgo v0.2.29/go.mod h1:REh0bOj3Nf7esWrhEtXivfaZX5OhVyRofF0crxGlsdc=
 github.com/dal-go/dalgo v0.2.31 h1:i+22Fn1Y2lYSna8sPJIdaPHAvfVijthXvXIXWe7GOUU=
 github.com/dal-go/dalgo v0.2.31/go.mod h1:741DXTLpQfmvkazyEiivX8OBFylpzS1QErdh/6WquqI=
+github.com/dal-go/dalgo v0.2.33 h1:/ol2ytx/gnrp/AQhw2tMFz471ifTFshcAAkkGkZ4+uo=
+github.com/dal-go/dalgo v0.2.33/go.mod h1:741DXTLpQfmvkazyEiivX8OBFylpzS1QErdh/6WquqI=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/julienschmidt/httprouter v1.3.0 h1:U0609e9tgbseu3rBINet9P48AI/D3oJs4dN7jwJOQ1U=
