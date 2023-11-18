@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.4
 
 require (
-	github.com/bots-go-framework/bots-fw v0.21.7
+	github.com/bots-go-framework/bots-fw v0.22.0
 	github.com/strongo/app v0.5.7
 	github.com/strongo/i18n v0.0.4
 )
