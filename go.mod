@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.4
 
 require (
-	github.com/bots-go-framework/bots-fw v0.23.3
+	github.com/bots-go-framework/bots-fw v0.23.4
 	github.com/strongo/i18n v0.0.4
 )
 
@@ -16,6 +16,6 @@ require (
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 // indirect
 	github.com/strongo/gamp v0.0.1 // indirect
 	github.com/strongo/random v0.0.1 // indirect
-	github.com/strongo/strongoapp v0.9.1 // indirect
+	github.com/strongo/strongoapp v0.10.0 // indirect
 	github.com/strongo/validation v0.0.6 // indirect
 )
