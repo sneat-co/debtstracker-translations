@@ -2,7 +2,7 @@ module github.com/sneat-co/debtstracker-translations
 
 go 1.21
 
-toolchain go1.22.3
+toolchain go1.22.4
 
 require (
 	github.com/bots-go-framework/bots-fw v0.25.2
