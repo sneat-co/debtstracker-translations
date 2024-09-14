@@ -2,30 +2,33 @@ package trans
 
 import (
 	"fmt"
+	"github.com/strongo/i18n"
 	"regexp"
 	"strings"
 	"testing"
 )
 
 var (
-	supportedLocales = []string{
-		"ru-RU",
-		"en-US",
-		"fa-IR",
-		"pl-PL",
-		"pt-PT",
-		"es-ES",
-		"fr-FR",
-		"it-IT",
-		"ja-JP",
-		"zh-CN",
-		"de-DE",
-		"ko-KO",
+	requiredLocales = []string{
+		i18n.LocaleCodeEnUK,
+		i18n.LocaleCodeEsES,
+		i18n.LocaleCodeRuRU,
+		i18n.LocaleCodeItIT,
+		i18n.LocaleCodeFaIR,
 	}
-	requiredLocales = []string{"en-US", "es-ES", "ru-RU", "it-IT", "fa-IR"}
+	supportedLocales = append(requiredLocales,
+		i18n.LocaleCodeEnUS,
+		i18n.LocaleCodePlPL,
+		i18n.LocaleCodePtPT,
+		i18n.LocaleCodeFrFR,
+		i18n.LocaleCodeJaJP,
+		i18n.LocaleCodeZhCN,
+		i18n.LocaleCodeKoKO,
+		i18n.LocaleCodeDeDE,
+	)
 	//desiredLocales   = []string{"it-IT", "fa-IR", "es-ES"}
-	reVars  = regexp.MustCompile(`%(v|d)|\{\{\..+?}}`)
-	reWords = regexp.MustCompile(`\w+|%(?:v|d)`)
+	reVars  = regexp.MustCompile(`%[vd]|\{\{\..+?}}`)
+	reWords = regexp.MustCompile(`\w+|%[vd]`)
 )
 
 func TestTRANS(t *testing.T) {
@@ -64,9 +67,9 @@ func TestTRANS(t *testing.T) {
 			}
 			countsByLang[lang] = counts
 		}
-		enCounts, ok := countsByLang["en-US"]
+		enCounts, ok := countsByLang[i18n.LocaleCodeEnUK]
 		if !ok {
-			t.Errorf("Key %v missing en-US trnaslation", key)
+			t.Errorf("Key %v missing en-UK trnaslation", key)
 			continue
 		}
 		if len(missingLocales) > 0 {
@@ -85,10 +88,10 @@ func TestTRANS(t *testing.T) {
 				t.Errorf("Key `%v` is missing required translations for: %v", key, requiredMisses)
 			}
 		}
-		wordsCount += len(reWords.FindAllString(vals["en-US"], -1))
+		wordsCount += len(reWords.FindAllString(vals[i18n.LocaleCodeEnUK], -1))
 		reported := make(map[string]int)
 		for lang, counts := range countsByLang {
-			if lang == "en-US" {
+			if lang == i18n.LocaleCodeEnUK {
 				continue
 			}
 			for enV, enCount := range enCounts {
