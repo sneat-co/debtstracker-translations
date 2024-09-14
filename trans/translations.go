@@ -4581,4 +4581,40 @@ You can learn about new features of the bot in @SneatApp channel where <a href="
 Вы можете узнавать о новых возможностях бота в канале @SneatApp_ru где <a href="https://t.me/StarGiveaways_RU">мы разыгрываем 500 🌟 КАЖДЫЙ месяц</a>.
 `,
 	},
+	SPACE_CMD_TEXT: {
+		"en-UK": "Current space: %s <b>%s</b>",
+		"ru-RU": "Текущее пространство: %s <b>%s</b>",
+	},
+	SPACE_CMD_BTN_CONTACTS: {
+		"en-UK": "Contacts",
+		"ru-RU": "Контакты",
+	},
+	SPACE_CMD_BTN_MEMBER: {
+		"en-UK": "Members",
+		"ru-RU": "Участники",
+	},
+	SPACE_CMD_BTN_ASSETS: {
+		"en-UK": "Assets",
+		"ru-RU": "Активы",
+	},
+	SPACE_CMD_BTN_BUDGET: {
+		"en-UK": "Budget",
+		"ru-RU": "Бюджет",
+	},
+	SPACE_CMD_BTN_DEBTS: {
+		"en-UK": "Debts",
+		"ru-RU": "Долги",
+	},
+	SPACE_CMD_BTN_CALENDAR: {
+		"en-UK": "Calendar",
+		"ru-RU": "Календарь",
+	},
+	BTN_SPACES: {
+		"en-UK": "Spaces",
+		"ru-RU": "Пространства",
+	},
+	SPACE_CMD_BTN_SETTINGS: {
+		"en-UK": "Settings",
+		"ru-RU": "Настройки",
+	},
 }

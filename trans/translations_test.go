@@ -11,12 +11,12 @@ import (
 var (
 	requiredLocales = []string{
 		i18n.LocaleCodeEnUK,
-		i18n.LocaleCodeEsES,
 		i18n.LocaleCodeRuRU,
-		i18n.LocaleCodeItIT,
-		i18n.LocaleCodeFaIR,
 	}
 	supportedLocales = append(requiredLocales,
+		i18n.LocaleCodeEsES,
+		i18n.LocaleCodeItIT,
+		i18n.LocaleCodeFaIR,
 		i18n.LocaleCodeEnUS,
 		i18n.LocaleCodePlPL,
 		i18n.LocaleCodePtPT,
