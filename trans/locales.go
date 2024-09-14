@@ -16,28 +16,35 @@ var ErrUnsupportedLocale = errors.New("unsupported locale")
 // GetLocaleByCode5 - get locale by code
 func (DebtsTrackerLocales) GetLocaleByCode5(code5 string) (locale i18n.Locale, err error) {
 	var ok bool
-	if locale, ok = SupportedLocalesByCode5[code5]; !ok {
-		err = fmt.Errorf("%w: %s", ErrUnsupportedLocale, code5)
+	if locale, ok = SupportedLocalesByCode5[code5]; ok {
+		return locale, nil
 	}
-	return locale, err
+	code2 := code5[:2]
+	for _, l := range SupportedLocales {
+		if strings.HasPrefix(l.Code5, code2) {
+			return l, nil
+		}
+	}
+	return locale, fmt.Errorf("%w: %s", ErrUnsupportedLocale, code5)
+}
+
+// SupportedLocales - supported locales
+var SupportedLocales []i18n.Locale = []i18n.Locale{
+	i18n.LocaleEnUK,
+	i18n.LocaleDeDe,
+	i18n.LocaleEsEs,
+	i18n.LocaleFaIr,
+	i18n.LocaleFrFr,
+	i18n.LocaleJaJp,
+	i18n.LocaleItIt,
+	i18n.LocaleRuRu,
+	i18n.LocaleUaUa,
+	i18n.LocaleZhCn,
+	i18n.LocalePtPt,
+	i18n.LocalePtBr,
 }
 
 // SupportedLocalesByCode5 - supported locales by code 5
-var SupportedLocales []i18n.Locale = []i18n.Locale{
-	i18n.LocaleDeDe,
-	i18n.LocaleEnUS,
-	i18n.LocaleEsEs,
-	i18n.LocaleFaIr,
-	i18n.LocaleItIt,
-	i18n.LocaleRuRu,
-	//i18n.LocaleIdId,
-	//LocaleEsEs,
-	//LocaleFrFr,
-	//LocalePtPt,
-	//LocalePtBr,
-}
-
-// SupportedLocales  - supported locales
 var SupportedLocalesByCode5 = make(map[string]i18n.Locale, len(SupportedLocales))
 
 func init() {
