@@ -3,7 +3,7 @@ module github.com/sneat-co/debtstracker-translations
 go 1.22.3
 
 require (
-	github.com/bots-go-framework/bots-fw v0.40.0
+	github.com/bots-go-framework/bots-fw v0.40.1
 	github.com/strongo/i18n v0.6.1
 )
 
