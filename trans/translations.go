@@ -4692,7 +4692,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Kişiler",
 		"id-ID": "Kontak",
 	},
-	SPACE_CMD_BTN_MEMBER: {
+	SPACE_CMD_BTN_MEMBERS: {
 		"en-UK": "Members",
 		"ru-RU": "Участники",
 		"es-ES": "Miembros",
@@ -4709,6 +4709,24 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"pt-BR": "Membros",
 		"tr-TR": "Üyeler",
 		"id-ID": "Anggota",
+	},
+	SPACE_CMD_BTN_FAMILY_MEMBERS: {
+		"en-UK": "Family members",
+		"ru-RU": "Члены семьи",
+		"es-ES": "Miembros de la familia",
+		"fa-IR": "اعضای خانواده",
+		"it-IT": "Membri della famiglia",
+		"de-DE": "Familienmitglieder",
+		"fr-FR": "Membres de la famille",
+		"pl-PL": "Członkowie rodziny",
+		"pt-PT": "Membros da família",
+		"ko-KO": "가족 구성원",
+		"ja-JP": "家族のメンバー",
+		"zh-CN": "家庭成员",
+		"ua-UA": "Члени сім'ї",
+		"pt-BR": "Membros da família",
+		"tr-TR": "Aile üyeleri",
+		"id-ID": "Anggota keluarga",
 	},
 	SPACE_CMD_BTN_ASSETS: {
 		"en-UK": "Assets",
