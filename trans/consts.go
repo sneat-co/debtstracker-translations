@@ -638,10 +638,29 @@ const (
 	SPACE_CMD_BTN_DEBTS          = "SPACE_CMD_BTN_DEBTS"
 	SPACE_CMD_BTN_CALENDAR       = "SPACE_CMD_BTN_CALENDAR"
 	SPACE_CMD_BTN_SETTINGS       = "SPACE_CMD_BTN_SETTINGS"
+	SPACE_CMD_BTN_LISTS          = "SPACE_CMD_BTN_LISTS"
 	BTN_SPACES                   = "BTN_SPACES"
+)
 
+const (
 	LIST_CMD_BUY   = "LIST_CMD_BUY"
 	LIST_CMD_TODO  = "LIST_CMD_TODO"
 	LIST_CMD_WATCH = "LIST_CMD_WATCH"
 	LIST_CMD_READ  = "LIST_CMD_READ"
+
+	ListsOfFamily  = "LISTS_OF_FAMILY"
+	ListsOfPrivate = "LISTS_OF_PRIVATE"
+	ListsOfSpace   = "LISTS_OF_SPACE"
+
+	ListCmdBtnToBuy   = "LIST_CMD_BTN_TO_BUY"
+	ListCmdBtnToDo    = "LIST_CMD_BTN_TODO"
+	ListCmdBtnToWatch = "LIST_CMD_BTN_TO_WATCH"
+	ListCmdBtnToRead  = "LIST_CMD_BTN_TO_READ"
+)
+
+const (
+	Tasks     = "Tasks"
+	Books     = "Books"
+	Movies    = "Movies"
+	Groceries = "Groceries"
 )
