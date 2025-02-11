@@ -2,112 +2,161 @@ package trans
 
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
+/*
+Proper order of locale keys in vat TRANS:
+	- "en-UK":
+	- "ru-RU":
+	- "de-DE":
+	- "es-ES":
+	- "fr-FR":
+	- "it-IT":
+	- "pt-BR":
+	- "fa-IR":
+*/
+
 // TRANS - translation string
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": {
-		"de-DE": "BEISPIEL",
 		"en-UK": "SAMPLE",
-		"es-ES": "EJEMPLO",
-		"fa-IR": "نمونه",
-		"it-IT": "ESEMPIO",
 		"ru-RU": "ПРИМЕР",
+		"de-DE": "BEISPIEL",
+		"es-ES": "EJEMPLO",
+		"fr-FR": "EXEMPLE",
+		"it-IT": "ESEMPIO",
+		"pt-BR": "EXEMPLO",
+		"fa-IR": "نمونه",
 	},
 
 	"Jan": {
-		"de-DE": "Jan",
 		"en-UK": "Jan",
-		"es-ES": "Enero",
-		"fa-IR": "ژانویه",
-		"it-IT": "Gen",
 		"ru-RU": "Янв.",
+		"de-DE": "Jan",
+		"es-ES": "Ene",
+		"fr-FR": "Jan",
+		"it-IT": "Gen",
+		"pt-BR": "Jan",
+		"fa-IR": "ژانویه",
 	},
+
 	"Feb": {
-		"de-DE": "Feb",
 		"en-UK": "Feb",
-		"es-ES": "Feb",
-		"fa-IR": "فوریه",
-		"it-IT": "Feb",
 		"ru-RU": "Фев.",
+		"de-DE": "Feb",
+		"es-ES": "Feb",
+		"fr-FR": "Fév",
+		"it-IT": "Feb",
+		"pt-BR": "Fev",
+		"fa-IR": "فوریه",
 	},
+
 	"Mar": {
-		"de-DE": "Mär",
 		"en-UK": "Mar",
+		"ru-RU": "Мврт",
+		"de-DE": "Mär",
 		"es-ES": "Mar",
-		"fa-IR": "مارس",
+		"fr-FR": "Mars",
 		"it-IT": "Mar",
-		"ru-RU": "Мрт.",
+		"pt-BR": "Março",
+		"fa-IR": "مارس",
 	},
+
 	"Apr": {
-		"de-DE": "Apr",
 		"en-UK": "Apr",
-		"es-ES": "Abr",
-		"fa-IR": "آوریل",
-		"it-IT": "Apr",
 		"ru-RU": "Апр.",
+		"de-DE": "Apr",
+		"es-ES": "Abr",
+		"fr-FR": "Avril",
+		"it-IT": "Apr",
+		"pt-BR": "Abr",
+		"fa-IR": "آوریل",
 	},
+
 	"May": {
-		"de-DE": "Mai",
 		"en-UK": "May",
-		"es-ES": "May",
-		"fa-IR": "مه",
-		"it-IT": "Mag",
 		"ru-RU": "Май ",
+		"de-DE": "Mai",
+		"es-ES": "May",
+		"fr-FR": "Mai",
+		"it-IT": "Mag",
+		"pt-BR": "Maio",
+		"fa-IR": "مه",
 	},
+
 	"Jun": {
-		"de-DE": "Jun",
-		"en-UK": "Jun",
-		"es-ES": "Jun",
-		"fa-IR": "ژوئن",
-		"it-IT": "Giu",
+		"en-UK": "June",
 		"ru-RU": "Июнь",
+		"de-DE": "Jun",
+		"es-ES": "Jun",
+		"fr-FR": "Juin",
+		"it-IT": "Giu",
+		"pt-BR": "Junho",
+		"fa-IR": "ژوئن",
 	},
+
 	"Jul": {
-		"de-DE": "Jul",
-		"en-UK": "Jul",
-		"es-ES": "Jul",
-		"fa-IR": "ژوئیه",
-		"it-IT": "Lug",
+		"en-UK": "July",
 		"ru-RU": "Июль",
+		"de-DE": "Jul",
+		"es-ES": "Jul",
+		"fr-FR": "Juil",
+		"it-IT": "Lug",
+		"pt-BR": "Julho",
+		"fa-IR": "ژوئیه",
 	},
+
 	"Aug": {
-		"de-DE": "Aug",
 		"en-UK": "Aug",
-		"es-ES": "Ago",
-		"fa-IR": "اوت",
-		"it-IT": "Ago",
 		"ru-RU": "Авг.",
+		"de-DE": "Aug",
+		"es-ES": "Ago",
+		"fr-FR": "Août",
+		"it-IT": "Ago",
+		"pt-BR": "Ago",
+		"fa-IR": "اوت",
 	},
+
 	"Sep": {
-		"de-DE": "Sep",
 		"en-UK": "Sep",
-		"es-ES": "Sep",
-		"fa-IR": "سپتامبر",
-		"it-IT": "Sett",
 		"ru-RU": "Сен.",
+		"de-DE": "Sep",
+		"es-ES": "Sep",
+		"fr-FR": "Sep",
+		"it-IT": "Sett",
+		"pt-BR": "Set",
+		"fa-IR": "سپتامبر",
 	},
+
 	"Oct": {
-		"de-DE": "Okt",
 		"en-UK": "Oct",
-		"es-ES": "Oct",
-		"fa-IR": "اکتبر",
-		"it-IT": "Ott",
 		"ru-RU": "Окт.",
+		"de-DE": "Okt",
+		"es-ES": "Oct",
+		"fr-FR": "Octobre", // Placeholder
+		"it-IT": "Ott",
+		"pt-BR": "Outubro", // Placeholder
+		"fa-IR": "اکتبر",
 	},
+
 	"Nov": {
-		"de-DE": "Nov",
 		"en-UK": "Nov",
-		"es-ES": "Nov",
-		"fa-IR": "نوامبر",
-		"it-IT": "Nov",
 		"ru-RU": "Нбр.",
+		"de-DE": "Nov",
+		"es-ES": "Nov",
+		"fr-FR": "Novembre", // Placeholder
+		"it-IT": "Nov",
+		"pt-BR": "Novembro", // Placeholder
+		"fa-IR": "نوامبر",
 	},
+
 	"Dec": {
-		"de-DE": "Dez",
 		"en-UK": "Dec",
-		"es-ES": "Dic",
-		"fa-IR": "دسامبر",
-		"it-IT": "Dic",
 		"ru-RU": "Дек.",
+		"de-DE": "Dez",
+		"es-ES": "Dic",
+		"fr-FR": "Décembre", // Placeholder
+		"it-IT": "Dic",
+		"pt-BR": "Dezembro", // Placeholder
+		"fa-IR": "دسامبر",
 	},
 	COMMAND_START: {
 		"de-DE": "start",
@@ -4062,29 +4111,35 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
   >> <a href="{{.ReceiptUrl}}">Посмотреть квитанцию</a>`,
 		//-------------------------------------------------------
 	},
-	INLINE_INVITE_TITLE: {
-		"de-DE": "Einladung zu %v",
-		"en-UK": "Invitation to %v",
-		"es-ES": "Invitación a %v",
-		"fa-IR": "دعوت به %v",
-		"it-IT": "Invito per %v",
-		"ru-RU": "Приглашение в %v",
+	InlineInviteToJoinFamilyTitle: {
+		"en-UK": "Invitation to join family at @%s",
+		"ru-RU": "Приглашение в семью на @%s",
+		"de-DE": "Einladung der Familie beizutreten bei @%s",
+		"es-ES": "Invitación para unirse a la familia en @%s",
+		"fr-FR": "Invitation à rejoindre la famille à @%s",
+		"it-IT": "Invito a unirsi alla famiglia a @%s",
+		"pt-BR": "Convite para se juntar à família em @%s",
+		"fa-IR": "دعوت به پیوستن به خانواده در @%s",
 	},
-	INLINE_INVITE_DESCRIPTION: {
-		"de-DE": "Klick hier, um eine Einladung zu versenden",
+	InlineInviteToJoinFamilyDescription: {
 		"en-UK": "Click here to send an invite",
-		"es-ES": "Haz click para enviar la invitación",
-		"fa-IR": "برای ارسال یک دعوتنامه اینجا کلیک کنید.",
-		"it-IT": "Clicca qui per spedire un invito",
 		"ru-RU": "Нажмите здесь для отправки приглашения",
+		"de-DE": "Klick hier, um eine Einladung zu versenden",
+		"es-ES": "Haz click para enviar la invitación",
+		"fr-FR": "Cliquez ici pour envoyer une invitation",
+		"it-IT": "Clicca qui per spedire un invito",
+		"pt-BR": "Clique aqui para enviar um convite",
+		"fa-IR": "برای ارسال یک دعوتنامه اینجا کلیک کنید.",
 	},
-	INLINE_INVITE_MESSAGE: {
-		"de-DE": "%v hat dich eingeladen %v auszuprobieren",
-		"en-UK": "%v invited you to try %v",
-		"es-ES": "%v te ha invitado a probar %v",
-		"fa-IR": "%v شمارا دعوت کرده است به امتحان %v",
-		"it-IT": "%v ti ha invitato a provare %v",
-		"ru-RU": "%v пригласил вас попробовать %v",
+	InlineInviteToJoinFamilyMessage: {
+		"en-UK": "%s invited you to join family account at @%s",
+		"ru-RU": "%s пригласил(а) вас присоединиться к семье на @%s",
+		"de-DE": "%s hat dich eingeladen dem Familienkonto beizutreten bei @%s",
+		"es-ES": "%s te ha invitado a unirte a la cuenta familiar en @%s",
+		"fr-FR": "%s vous a invité à rejoindre le compte familial à @%s",
+		"it-IT": "%s ti ha invitato a unirti all'account familiare a @%s",
+		"pt-BR": "%s convidou você para se juntar à conta da família em @%s",
+		"fa-IR": "%s شما را به پیوستن به حساب خانواده در @%s دعوت کرده است.",
 	},
 	SMS_RECEIPT_YOU_GOT: {
 		"de-DE": "Du hast dir %v von %v geliehen.",

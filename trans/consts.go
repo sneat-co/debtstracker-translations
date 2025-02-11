@@ -366,9 +366,9 @@ const (
 	INLINE_RECEIPT_MESSAGE            = "INLINE_RECEIPT_MESSAGE"
 	INLINE_RECEIPT_CHOOSE_LANGUAGE    = "INLINE_RECEIPT_CHOOSE_LANGUAGE"
 
-	INLINE_INVITE_TITLE       = "INLINE_INVITE_TITLE"
-	INLINE_INVITE_DESCRIPTION = "INLINE_INVITE_DESCRIPTION"
-	INLINE_INVITE_MESSAGE     = "INLINE_INVITE_MESSAGE"
+	InlineInviteToJoinFamilyTitle       = "InlineInviteToJoinFamilyTitle"
+	InlineInviteToJoinFamilyDescription = "InlineInviteToJoinFamilyDescription"
+	InlineInviteToJoinFamilyMessage     = "InlineInviteToJoinFamilyMessage"
 )
 
 // Command texts
