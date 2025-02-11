@@ -3,7 +3,7 @@ package trans
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
 /*
-Proper order of locale keys in vat TRANS:
+Proper order of locale keys in var TRANS:
 	- "en-UK":
 	- "ru-RU":
 	- "de-DE":
