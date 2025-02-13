@@ -29,6 +29,7 @@ var (
 		i18n.LocaleCodeIdID,
 		i18n.LocaleCodeUaUA,
 		i18n.LocaleCodePtBR,
+		i18n.LocaleCodeUzUZ,
 	)
 	//desiredLocales   = []string{"it-IT", "fa-IR", "es-ES"}
 	reVars  = regexp.MustCompile(`%[vd]|\{\{\..+?}}`)
