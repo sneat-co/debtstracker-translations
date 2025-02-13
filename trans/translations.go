@@ -3,28 +3,45 @@ package trans
 const adsCommandTitle = "\xE2\xAD\x90\xE2\xAD\x90\xE2\xAD\x90"
 
 /*
-Proper order of locale keys in var TRANS:
-	- "en-UK":
-	- "ru-RU":
-	- "de-DE":
-	- "es-ES":
-	- "fr-FR":
-	- "it-IT":
-	- "pt-BR":
-	- "fa-IR":
+Proper order of locale keys in var TRANS, use it as a reference for all values:
+- "de-DE":
+- "en-UK":
+- "en-US":
+- "es-ES":
+- "fa-IR":
+- "fr-FR":
+- "id-ID":
+- "it-IT":
+- "ja-JP":
+- "ko-KO":
+- "pl-PL":
+- "pt-BR":
+- "ru-RU":
+- "tr-TR":
+- "ua-UA":
+- "uz-UZ":
+- "zh-CN":
 */
 
 // TRANS - translation string
 var TRANS = map[string]map[string]string{
 	"EXAMPLE": {
-		"en-UK": "SAMPLE",
-		"ru-RU": "ПРИМЕР",
 		"de-DE": "BEISPIEL",
+		"en-UK": "SAMPLE",
 		"es-ES": "EJEMPLO",
-		"fr-FR": "EXEMPLE",
-		"it-IT": "ESEMPIO",
-		"pt-BR": "EXEMPLO",
 		"fa-IR": "نمونه",
+		"fr-FR": "EXEMPLE",
+		"id-ID": "CONTOH",
+		"it-IT": "ESEMPIO",
+		"ja-JP": "例",
+		"ko-KO": "예",
+		"pl-PL": "PRZYKŁAD",
+		"pt-BR": "EXEMPLO",
+		"ru-RU": "ПРИМЕР",
+		"tr-TR": "ÖRNEK",
+		"ua-UA": "ПРИКЛАД",
+		"uz-UZ": "MISOL",
+		"zh-CN": "例子",
 	},
 
 	"Jan": {
@@ -2959,14 +2976,6 @@ O usa il menu' qui sotto.`,
 		"it-IT": "I dati dell'utente sono stati cancellati",
 		"ru-RU": "Данные пользователя удалены",
 	},
-	MESSAGE_TEXT_PLEASE_WAIT_WHILE_WE_GENERATE_INVITE_CODE: {
-		"de-DE": "Einen Moment - der Sicherheitscode wird generiert...",
-		"en-UK": "Please wait a moment while we are generating a security access code...",
-		"es-ES": "Por favor, espera un momento mientras generamos un código de acceso seguro…",
-		"fa-IR": "لطفاً کمی صبر کنید تا ما یک کد دسترسی امنیتی  ایجاد کنیم.",
-		"it-IT": "Aspetta un attimo mentre sto generando un codice di accesso sicuro...",
-		"ru-RU": "Пожалуйста подождите пока мы генерируем секретный код доступа...",
-	},
 	MESSAGE_TEXT_RETURN_ASK_TO_CHOOSE_COUNTERPARTY: {
 		"de-DE": "Bitte wähle, wer die Schuld beglichen hat oder wem du sie zurückgezahlt hast.",
 		"en-UK": "Please choose who returned the debt or to who you returned it.",
@@ -3256,13 +3265,117 @@ O usa il menu' qui sotto.`,
 		"it-IT": "Rifiuta",
 		"ru-RU": "Отклонить",
 	},
-	COMMAND_TEXT_ACCEPT_INVITE: {
+	FamilyMember: {
+		"de-DE": "Familienmitglied",
+		"en-UK": "Family member",
+		"en-US": "Family member", // Placeholder
+		"es-ES": "Miembro de la familia",
+		"fa-IR": "عضو خانواده",
+		"fr-FR": "Membre de la famille", // Placeholder
+		"id-ID": "Anggota keluarga",     // Placeholder
+		"it-IT": "Membro della famiglia",
+		"ja-JP": "家族の一員",             // Placeholder
+		"ko-KO": "가족 구성원",            // Placeholder
+		"pl-PL": "Członek rodziny",   // Placeholder
+		"pt-BR": "Membro da família", // Placeholder
+		"ru-RU": "Член семьи",
+		"tr-TR": "Aile üyesi",  // Placeholder
+		"ua-UA": "Член родини", // Placeholder
+		"uz-UZ": "Oila aʼzosi", // Placeholder
+		"zh-CN": "家庭成员",        // Placeholder
+	},
+	UserHasNotJoinedSpaceYet: {
+		"de-DE": "Dieser Kontakt ist diesem Bereich noch nicht beigetreten.",
+		"en-UK": "This contact has not joined this space yet.",
+		"es-ES": "Este contacto aún no se ha unido a este espacio.",
+		"fa-IR": "این مخاطب هنوز به این فضا نپیوسته است.",
+		"fr-FR": "Ce contact n'a pas encore rejoint cet espace.",
+		"id-ID": "Kontak ini belum bergabung dengan ruang ini.",
+		"it-IT": "Questo contatto non si è ancora unito a questo spazio.",
+		"ja-JP": "この連絡先はまだこのスペースに参加していません。",
+		"ko-KO": "이 연락처는 아직 이 공간에 참여하지 않았습니다.",
+		"pl-PL": "Ten kontakt nie dołączył jeszcze do tej przestrzeni.",
+		"pt-BR": "Este contato ainda não entrou neste espaço.",
+		"ru-RU": "Eще не присоединился к этому пространству.",
+		"tr-TR": "Bu kişi henüz bu alana katılmadı.",
+		"ua-UA": "Цей контакт ще не приєднався до цього простору.",
+		"uz-UZ": "Bu kontakt hali bu joyga qoʻshilmadi.",
+		"zh-CN": "该联系人尚未加入此空间。",
+	},
+	UserHasNotJoinedFamilySpaceYet: {
+		"de-DE": "Ist diesem Familienbereich noch nicht beigetreten.",
+		"en-UK": "Has not joined this family space yet.",
+		"es-ES": "Aún no se ha unido a este espacio familiar.",
+		"fa-IR": "هنوز به این فضای خانوادگی نپیوسته است.",
+		"fr-FR": "N'a pas encore rejoint cet espace familial.",
+		"id-ID": "Belum bergabung dengan ruang keluarga ini.",
+		"it-IT": "Non si è ancora unito a questo spazio familiare.",
+		"ja-JP": "このファミリースペースにまだ参加していません。",
+		"ko-KO": "아직 이 가족 공간에 참여하지 않았습니다.",
+		"pl-PL": "Nie dołączył jeszcze do tej przestrzeni rodzinnej.",
+		"pt-BR": "Ainda não entrou neste espaço familiar.",
+		"ru-RU": "Eще не присоединился к этому семейному пространству.",
+		"tr-TR": "Henüz bu aile alanına katılmadı.",
+		"ua-UA": "Ще не приєднався до цього сімейного простору.",
+		"uz-UZ": "Hali bu oila bo'shlig'iga qo'shilmagan.",
+		"zh-CN": "尚未加入该家庭空间。",
+	},
+	BtnSendInviteByTelegram: {
+		"de-DE": "Einladung über Telegram senden",
+		"en-UK": "Send invite over Telegram",
+		"en-US": "Send invite over Telegram",
+		"es-ES": "Enviar invitación por Telegram",
+		"fa-IR": "ارسال دعوتنامه از طریق تلگرام",
+		"fr-FR": "Envoyer une invitation via Telegram",
+		"id-ID": "Kirim undangan melalui Telegram",
+		"it-IT": "Invia invito tramite Telegram",
+		"ja-JP": "Telegramで招待を送る",
+		"ko-KO": "텔레그램으로 초대 보내기",
+		"pl-PL": "Wyślij zaproszenie przez Telegram",
+		"pt-BR": "Enviar convite pelo Telegram",
+		"ru-RU": "Отправить приглашение через Telegram",
+		"tr-TR": "Telegram üzerinden davetiye gönder",
+		"ua-UA": "Надіслати запрошення через Telegram",
+		"uz-UZ": "Telegram orqali taklif yuboring",
+		"zh-CN": "通过Telegram发送邀请",
+	},
+	BtnTextAcceptInvite: {
 		"de-DE": "Akzeptiere Einladung",
 		"en-UK": "Accept invite",
+		"en-US": "Accept invite",
 		"es-ES": "Aceptar la invitación",
 		"fa-IR": "قبول دعوت",
+		"fr-FR": "Accepter l'invitation",
+		"id-ID": "Terima undangan",
 		"it-IT": "Accetta l'invito",
+		"ja-JP": "招待を承認",
+		"ko-KO": "초대 수락",
+		"pl-PL": "Zaakceptuj zaproszenie",
+		"pt-BR": "Aceitar convite",
 		"ru-RU": "Принять приглашение",
+		"tr-TR": "Daveti kabul et",
+		"ua-UA": "Прийняти запрошення",
+		"uz-UZ": "Taklifni qabul qilish",
+		"zh-CN": "接受邀请",
+	},
+	BtnTextDeclineInvite: {
+		"de-DE": "Ablehnen Einladung",
+		"en-UK": "Decline invite",
+		"en-US": "Decline invite",
+		"es-ES": "Rechazar la invitación",
+		"fa-IR": "رد دعوت",
+		"fr-FR": "Décliner l'invitation",
+		"id-ID": "Tolak undangan",
+		"it-IT": "Rifiuta l'invito",
+		"ja-JP": "招待を拒否",
+		"ko-KO": "초대 거절",
+		"pl-PL": "Odrzuć zaproszenie",
+		"pt-BR": "Recusar convite",
+		"ru-RU": "Отклонить приглашение",
+		"tr-TR": "Daveti reddet",
+		"ua-UA": "Відхилити запрошення",
+		"uz-UZ": "Taklifni rad etish",
+		"zh-CN": "拒绝邀请",
 	},
 	COMMAND_TEXT_VIEW_RECEIPT_DETAILS: {
 		"de-DE": "Quittungsdetails anzeigen",
@@ -4131,15 +4244,41 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 		"pt-BR": "Clique aqui para enviar um convite",
 		"fa-IR": "برای ارسال یک دعوتنامه اینجا کلیک کنید.",
 	},
-	InlineInviteToJoinFamilyMessage: {
-		"en-UK": "%s invited you to join family account at @%s",
-		"ru-RU": "%s пригласил(а) вас присоединиться к семье на @%s",
-		"de-DE": "%s hat dich eingeladen dem Familienkonto beizutreten bei @%s",
-		"es-ES": "%s te ha invitado a unirte a la cuenta familiar en @%s",
-		"fr-FR": "%s vous a invité à rejoindre le compte familial à @%s",
-		"it-IT": "%s ti ha invitato a unirti all'account familiare a @%s",
-		"pt-BR": "%s convidou você para se juntar à conta da família em @%s",
-		"fa-IR": "%s شما را به پیوستن به حساب خانواده در @%s دعوت کرده است.",
+	YouAreInvitedToJoinFamilyMessage: {
+		"de-DE": "Sie sind eingeladen, dem Familienkonto bei @{BOT_ID} beizutreten.",
+		"en-UK": "You are invited to join family account at @{BOT_ID}.",
+		"es-ES": "Se te invita a unirte a la cuenta familiar en @{BOT_ID}.",
+		"fa-IR": "شما دعوت شده‌اید که به حساب خانواده در @{BOT_ID} بپیوندید.",
+		"fr-FR": "Vous êtes invité à rejoindre le compte familial sur @{BOT_ID}.",
+		"id-ID": "Anda diundang untuk bergabung dengan akun keluarga di @{BOT_ID}.",
+		"it-IT": "Sei invitato a unirti al conto familiare su @{BOT_ID}.",
+		"ja-JP": "@{BOT_ID}で家族アカウントに参加するように招待されています。",
+		"ko-KO": "@{BOT_ID}에서 가족 계정에 초대되었습니다.",
+		"pl-PL": "Zostałeś zaproszony do dołączenia do konta rodzinnego na @{BOT_ID}.",
+		"pt-BR": "Você foi convidado a entrar na conta familiar em @{BOT_ID}.",
+		"ru-RU": "Вас пригласили присоединиться к семейному аккаунту на @{BOT_ID}.",
+		"tr-TR": "@{BOT_ID} üzerinde aile hesabına katılmaya davetlisiniz.",
+		"ua-UA": "Вас запросили приєднатися до сімейного акаунта на @{BOT_ID}.",
+		"uz-UZ": "Sizni @{BOT_ID} oilaviy hisobiga qo‘shilishga taklif qilishdi.",
+		"zh-CN": "您被邀请加入 @{BOT_ID} 的家庭账户。",
+	},
+	BtnViewFamilyAccount: {
+		"de-DE": "Familienkonto ansehen",
+		"en-UK": "View family account",
+		"es-ES": "Ver cuenta familiar",
+		"fa-IR": "مشاهده حساب خانواده",
+		"fr-FR": "Voir le compte familial",
+		"id-ID": "Lihat akun keluarga",
+		"it-IT": "Visualizza conto familiare",
+		"ja-JP": "家族アカウントを表示",
+		"ko-KO": "가족 계정 보기",
+		"pl-PL": "Zobacz konto rodzinne",
+		"pt-BR": "Ver conta familiar",
+		"ru-RU": "Посмотреть семейный аккаунт",
+		"tr-TR": "Aile hesabını görüntüle",
+		"ua-UA": "Переглянути сімейний акаунт",
+		"uz-UZ": "Oilaviy hisobni ko‘rish",
+		"zh-CN": "查看家庭账户",
 	},
 	SMS_RECEIPT_YOU_GOT: {
 		"de-DE": "Du hast dir %v von %v geliehen.",
