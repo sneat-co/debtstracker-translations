@@ -4850,7 +4850,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 
 Ви можете дізнатися про нові функції бота на каналі @SneatApp, де <a href="https://t.me/StarGiveaways_EN">ми роздаємо 500 🌟 КОЖНОГО місяця</a>.`,
 	},
-	SPACE_CMD_TEXT: {
+	SpaceCmdText: {
 		"en-UK": "Current space: %s <b>%s</b>",
 		"ru-RU": "Текущее пространство: %s <b>%s</b>",
 		"es-ES": "Espacio actual: %s <b>%s</b>",
@@ -4868,7 +4868,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Mevcut alan: %s <b>%s</b>",
 		"id-ID": "Ruang saat ini: %s <b>%s</b>",
 	},
-	SPACE_CMD_BTN_CONTACTS: {
+	SpaceCmdBtnContacts: {
 		"en-UK": "Contacts",
 		"ru-RU": "Контакты",
 		"es-ES": "Contactos",
@@ -4886,7 +4886,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Kişiler",
 		"id-ID": "Kontak",
 	},
-	SPACE_CMD_BTN_MEMBERS: {
+	SpaceCmdBtnMembers: {
 		"en-UK": "Members",
 		"ru-RU": "Участники",
 		"es-ES": "Miembros",
@@ -4904,7 +4904,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Üyeler",
 		"id-ID": "Anggota",
 	},
-	SPACE_CMD_BTN_FAMILY_MEMBERS: {
+	SpaceCmdBtnFamilyMembers: {
 		"en-UK": "Family members",
 		"ru-RU": "Члены семьи",
 		"es-ES": "Miembros de la familia",
@@ -4922,7 +4922,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Aile üyeleri",
 		"id-ID": "Anggota keluarga",
 	},
-	SPACE_CMD_BTN_LISTS: {
+	SpaceCmdBtnLists: {
 		"en-UK": "Lists",
 		"ru-RU": "Списки",
 		"es-ES": "Listas",
@@ -4940,7 +4940,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Listeler",
 		"id-ID": "Daftar",
 	},
-	SPACE_CMD_BTN_ASSETS: {
+	SpaceCmdBtnAssets: {
 		"en-UK": "Assets",
 		"ru-RU": "Активы",
 		"es-ES": "Activos",
@@ -4958,7 +4958,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Varlıklar",
 		"id-ID": "Aset",
 	},
-	SPACE_CMD_BTN_BUDGET: {
+	SpaceCmdBtnBudget: {
 		"en-UK": "Budget",
 		"ru-RU": "Бюджет",
 		"es-ES": "Presupuesto",
@@ -4976,7 +4976,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Bütçe",
 		"id-ID": "Anggaran",
 	},
-	SPACE_CMD_BTN_DEBTS: {
+	SpaceCmdBtnDebts: {
 		"en-UK": "Debts",
 		"ru-RU": "Долги",
 		"es-ES": "Deudas",
@@ -4994,7 +4994,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Borçlar",
 		"id-ID": "Hutang",
 	},
-	SPACE_CMD_BTN_CALENDAR: {
+	SpaceCmdBtnCalendar: {
 		"en-UK": "Calendar",
 		"ru-RU": "Календарь",
 		"es-ES": "Calendario",
@@ -5012,7 +5012,26 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Takvim",
 		"id-ID": "Kalender",
 	},
-	BTN_SPACES: {
+	SpaceCmdBtnTrackers: {
+		"de-DE": "Tracker", // Placeholder
+		"en-UK": "Trackers",
+		"en-US": "Trackers",     // Placeholder
+		"es-ES": "Rastreadores", // Placeholder
+		"fa-IR": "ردیاب‌ها",     // Placeholder
+		"fr-FR": "Traqueurs",    // Placeholder
+		"id-ID": "Pelacak",      // Placeholder
+		"it-IT": "Tracker",      // Placeholder
+		"ja-JP": "トラッカー",        // Placeholder
+		"ko-KO": "추적기",          // Placeholder
+		"pl-PL": "Monitorujące", // Placeholder
+		"pt-BR": "Rastreadores", // Placeholder
+		"ru-RU": "Трекеры",
+		"tr-TR": "İzleyiciler",   // Placeholder
+		"ua-UA": "Трекери",       // Placeholder
+		"uz-UZ": "Kuzatuvchilar", // Placeholder
+		"zh-CN": "追踪器",           // Placeholder
+	},
+	BtnSpaces: {
 		"en-UK": "Spaces",
 		"ru-RU": "Пространства",
 		"es-ES": "Espacios",
@@ -5030,7 +5049,7 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Mekanlar",
 		"id-ID": "Ruang",
 	},
-	SPACE_CMD_BTN_SETTINGS: {
+	SpaceCmdBtnSettings: {
 		"en-UK": "Settings",
 		"ru-RU": "Настройки",
 		"es-ES": "Ajustes",

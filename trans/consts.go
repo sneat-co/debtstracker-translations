@@ -639,17 +639,18 @@ const (
 )
 
 const (
-	SPACE_CMD_TEXT               = "SPACE_CMD_TEXT"
-	SPACE_CMD_BTN_CONTACTS       = "SPACE_CMD_BTN_CONTACTS"
-	SPACE_CMD_BTN_MEMBERS        = "SPACE_CMD_BTN_MEMBER"
-	SPACE_CMD_BTN_FAMILY_MEMBERS = "SPACE_CMD_BTN_FAMILY_MEMBERS"
-	SPACE_CMD_BTN_ASSETS         = "SPACE_CMD_BTN_ASSETS"
-	SPACE_CMD_BTN_BUDGET         = "SPACE_CMD_BTN_BUDGET"
-	SPACE_CMD_BTN_DEBTS          = "SPACE_CMD_BTN_DEBTS"
-	SPACE_CMD_BTN_CALENDAR       = "SPACE_CMD_BTN_CALENDAR"
-	SPACE_CMD_BTN_SETTINGS       = "SPACE_CMD_BTN_SETTINGS"
-	SPACE_CMD_BTN_LISTS          = "SPACE_CMD_BTN_LISTS"
-	BTN_SPACES                   = "BTN_SPACES"
+	SpaceCmdText             = "SPACE_CMD_TEXT"
+	SpaceCmdBtnContacts      = "SPACE_CMD_BTN_CONTACTS"
+	SpaceCmdBtnMembers       = "SPACE_CMD_BTN_MEMBER"
+	SpaceCmdBtnFamilyMembers = "SPACE_CMD_BTN_FAMILY_MEMBERS"
+	SpaceCmdBtnAssets        = "SPACE_CMD_BTN_ASSETS"
+	SpaceCmdBtnBudget        = "SPACE_CMD_BTN_BUDGET"
+	SpaceCmdBtnDebts         = "SPACE_CMD_BTN_DEBTS"
+	SpaceCmdBtnCalendar      = "SPACE_CMD_BTN_CALENDAR"
+	SpaceCmdBtnTrackers      = "SPACE_CMD_BTN_TRACKERS"
+	SpaceCmdBtnSettings      = "SPACE_CMD_BTN_SETTINGS"
+	SpaceCmdBtnLists         = "SPACE_CMD_BTN_LISTS"
+	BtnSpaces                = "BTN_SPACES"
 )
 
 const (
