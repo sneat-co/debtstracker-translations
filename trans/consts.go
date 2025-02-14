@@ -651,6 +651,9 @@ const (
 	SpaceCmdBtnSettings      = "SPACE_CMD_BTN_SETTINGS"
 	SpaceCmdBtnLists         = "SPACE_CMD_BTN_LISTS"
 	BtnSpaces                = "BTN_SPACES"
+	BtnBackToSpace           = "BTN_BACK_TO_SPACE"
+	BtnPrivate               = "BTN_PRIVATE"
+	BtnFamily                = "BTN_FAMILY"
 )
 
 const (

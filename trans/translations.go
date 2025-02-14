@@ -5337,4 +5337,40 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"tr-TR": "Listeler @ %s",
 		"id-ID": "Daftar @ %s",
 	},
+	BtnBackToSpace: {
+		"en-UK": "Back to space",
+		"ru-RU": "К пространству",
+	},
+	BtnPrivate: {
+		"en-UK": "Private",
+		"fr-FR": "Privé",   // French (France)
+		"de-DE": "Privat",  // German (Germany)
+		"es-ES": "Privado", // Spanish (Spain)
+		"it-IT": "Privato", // Italian (Italy)
+		"pt-PT": "Privado", // Portuguese (Portugal)
+		"zh-CN": "私人",      // Chinese (Simplified)
+		"ja-JP": "プライベート",  // Japanese
+		"ko-KR": "개인",      // Korean
+		"ar-SA": "خاص",     // Arabic (Saudi Arabia)
+		"hi-IN": "निजी",    // Hindi (India)
+		"ru-RU": "Личное",  // Russian
+	},
+	BtnFamily: {
+		"en-UK": "Family",
+		"ru-RU": "Семья",
+		"es-ES": "Familia",
+		"fa-IR": "خانواده",
+		"it-IT": "Famiglia",
+		"de-DE": "Familie",
+		"fr-FR": "Famille",
+		"pl-PL": "Rodzina",
+		"pt-PT": "Família",
+		"ko-KO": "가족",
+		"ja-JP": "家族",
+		"zh-CN": "家庭",
+		"ua-UA": "Сім'я",
+		"pt-BR": "Família",
+		"tr-TR": "Aile",
+		"id-ID": "Keluarga",
+	},
 }
