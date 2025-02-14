@@ -5350,10 +5350,9 @@ Możesz dowiedzieć się o nowych funkcjach bota na kanale @SneatApp, gdzie <a h
 		"pt-PT": "Privado", // Portuguese (Portugal)
 		"zh-CN": "私人",      // Chinese (Simplified)
 		"ja-JP": "プライベート",  // Japanese
-		"ko-KR": "개인",      // Korean
-		"ar-SA": "خاص",     // Arabic (Saudi Arabia)
-		"hi-IN": "निजी",    // Hindi (India)
-		"ru-RU": "Личное",  // Russian
+		"ko-KO": "개인",      // Korean
+		//"hi-IN": "निजी",    // Hindi (India)
+		"ru-RU": "Личное", // Russian
 	},
 	BtnFamily: {
 		"en-UK": "Family",
